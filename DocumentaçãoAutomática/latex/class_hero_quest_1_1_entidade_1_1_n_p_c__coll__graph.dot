@@ -1,0 +1,24 @@
+digraph "HeroQuest.Entidade.NPC"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="HeroQuest.Entidade.NPC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="HeroQuest.Entidade.Ser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_entidade_1_1_ser.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="HeroQuest.Entidade.Entidade",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_entidade_1_1_entidade.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sprite" ];
+  Node4 [label="HeroQuest.Imagem.Sprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_imagem_1_1_sprite.html",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" inventário" ];
+  Node5 [label="HeroQuest.Entidade.Inventário",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_entidade_1_1_invent_xC3_xA1rio.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gui" ];
+  Node6 [label="HeroQuest.GUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_g_u_i.html",tooltip=" "];
+  Node7 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pose" ];
+  Node7 [label="HeroQuest.Pose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_pose.html",tooltip=" "];
+  Node8 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" itensEquipados" ];
+  Node8 [label="HeroQuest.Entidade.Item",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_entidade_1_1_item.html",tooltip=" "];
+  Node9 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" armadura" ];
+  Node9 [label="HeroQuest.Entidade.Armadura",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hero_quest_1_1_entidade_1_1_armadura.html",tooltip=" "];
+}
