@@ -1,0 +1,43 @@
+interface TipoEntidade
+{
+}
+
+enum tiposHeroQuest implements TipoEntidade
+{
+	ESQUELETO
+	{
+		static boolean amigo = false;
+		public Entidade create()
+		{
+		}
+	}
+
+	GOBLIN
+	{
+		static boolean amigo = false;
+		public Entidade create()
+		{
+		}
+	}
+
+	FEITICEIRO
+	{
+		static boolean amigo = true;
+
+		public Entidade create()
+		{
+		}
+	}
+
+
+	public boolean compareTo(tiposHeroQuest)
+	{
+		if(tiposHeroQuest.amigo == this.amigo)
+		{
+			return true;
+
+		}
+
+		return false;
+	}
+}
