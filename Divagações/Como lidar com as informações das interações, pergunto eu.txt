@@ -1,0 +1,9 @@
+Opções para controlar interações:
+	1. Entidade tem Sala como atributo
+	2. Entidade tem ListaInteração como atributo
+	3. Entidade (ou subclasse) guarda informação relevante (uma Entidade) como atributo
+	4. ListaInteração age como intermediário entre as interações cedendo informação necessária
+
+Concluímos que a quarta preserva melhor o encapsulamento, mas não entendemos muito bem como executar e parece ser o mais trabalhoso.
+Tirste.
+Devemos conversar mais entre si e com Montecchi
