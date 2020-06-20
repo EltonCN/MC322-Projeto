@@ -1,0 +1,6 @@
+<map id="br.unicamp.mc322.projeto.game.entity.hero.Elf" name="br.unicamp.mc322.projeto.game.entity.hero.Elf">
+<area shape="rect" id="node1" title=" " alt="" coords="24,273,316,300"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html" title=" " alt="" coords="27,184,313,225"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="27,95,313,136"/>
+<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html" title=" " alt="" coords="5,5,335,47"/>
+</map>

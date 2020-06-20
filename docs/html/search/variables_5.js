@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inventário_152',['inventário',['../class_hero_quest_1_1_entidade_1_1_entidade_a29416373aea678475783c77441210f5c.html#a29416373aea678475783c77441210f5c',1,'HeroQuest::Entidade::Entidade']]],
-  ['itensequipados_153',['itensEquipados',['../class_hero_quest_1_1_entidade_1_1_ser_a4504739161c1cca585d166d89b3569b3.html#a4504739161c1cca585d166d89b3569b3',1,'HeroQuest::Entidade::Ser']]]
+  ['name_368',['name',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html#a0331c5d89e85bb259a07b5df5d9e8983',1,'br::unicamp::mc322::projeto::gameengine::item::Item']]]
 ];

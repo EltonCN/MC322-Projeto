@@ -1,0 +1,8 @@
+<map id="br.unicamp.mc322.projeto.gameengine.action.Movement" name="br.unicamp.mc322.projeto.gameengine.action.Movement">
+<area shape="rect" id="node1" title=" " alt="" coords="343,104,632,145"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_chase_movement.html" title=" " alt="" coords="719,5,931,47"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dice_movement.html" title=" " alt="" coords="719,71,931,112"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1magic_1_1_teleport.html" title=" " alt="" coords="699,136,950,177"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_random_movement.html" title=" " alt="" coords="680,201,969,243"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,104,295,145"/>
+</map>

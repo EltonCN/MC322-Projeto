@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loader_134',['Loader',['../class_hero_quest_1_1_game_system_1_1_loader_a6a4542d6cd106e7b2c917a908c525d71.html#a6a4542d6cd106e7b2c917a908c525d71',1,'HeroQuest::GameSystem::Loader']]]
+  ['kill_341',['kill',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#af20b9935549f63efc2150f6d2634692c',1,'br::unicamp::mc322::projeto::gameengine::entity::Entity']]]
 ];

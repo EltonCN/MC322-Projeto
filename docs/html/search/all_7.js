@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['jogo_39',['Jogo',['../class_hero_quest_1_1_game_system_1_1_jogo.html',1,'HeroQuest.GameSystem.Jogo'],['../class_hero_quest_1_1_game_system_1_1_jogo_ab38f38e95b434692f4994b8ad85150e8.html#ab38f38e95b434692f4994b8ad85150e8',1,'HeroQuest.GameSystem.Jogo.Jogo(String arquivo)'],['../class_hero_quest_1_1_game_system_1_1_jogo_ad8de2ccab430fba78a615504f26104cd.html#ad8de2ccab430fba78a615504f26104cd',1,'HeroQuest.GameSystem.Jogo.Jogo(Sala sala)'],['../class_hero_quest_1_1_game_system_1_1_jogo_ac2ba61331fc063980e9eca146429b69d.html#ac2ba61331fc063980e9eca146429b69d',1,'HeroQuest.GameSystem.Jogo.Jogo(LinkedList&lt; Sala &gt; salas, int idPrimeira)']]],
-  ['jogo_2ejava_40',['Jogo.java',['../_jogo_8java.html',1,'']]]
+  ['hasplayer_82',['hasPlayer',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room.html#a7a0d464cd0420cc64300c6135524f331',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::Room']]],
+  ['heroquestentitytype_83',['HeroQuestEntityType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html',1,'br::unicamp::mc322::projeto::game::entity']]],
+  ['heroquestentitytype_2ejava_84',['HeroQuestEntityType.java',['../_hero_quest_entity_type_8java.html',1,'']]],
+  ['hide_85',['hide',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_menu.html#a1cb1c2ecc21d8b78ae9197e059633803',1,'br::unicamp::mc322::projeto::gameengine::input::Menu']]]
 ];

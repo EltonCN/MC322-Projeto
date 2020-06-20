@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pose_155',['pose',['../class_hero_quest_1_1_entidade_1_1_entidade_a81dd08e894af7c44dce928b5cb572626.html#a81dd08e894af7c44dce928b5cb572626',1,'HeroQuest.Entidade.Entidade.pose()'],['../class_hero_quest_1_1_imagem_1_1_sprite_buffer_a3d15c77e5325605864646ac29e1efc02.html#a3d15c77e5325605864646ac29e1efc02',1,'HeroQuest.Imagem.SpriteBuffer.pose()']]],
-  ['prioridade_156',['prioridade',['../class_hero_quest_1_1_imagem_1_1_sprite_buffer_a9d8ff238bc67faaf12ac0672120ce508.html#a9d8ff238bc67faaf12ac0672120ce508',1,'HeroQuest::Imagem::SpriteBuffer']]]
+  ['value_370',['value',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html#a114f663ccd7de5726da7d186d8011531',1,'br::unicamp::mc322::projeto::gameengine::item::Item']]],
+  ['vida_371',['vida',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a7b41aab45f1251406c4eb48e4219096f',1,'br::unicamp::mc322::projeto::gameengine::entity::Creature']]]
 ];

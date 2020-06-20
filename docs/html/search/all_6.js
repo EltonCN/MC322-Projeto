@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['idatual_30',['idAtual',['../class_hero_quest_1_1_entidade_1_1_portal_a458e58bd7f212952ccecb265180fc564.html#a458e58bd7f212952ccecb265180fc564',1,'HeroQuest::Entidade::Portal']]],
-  ['igual_31',['igual',['../class_hero_quest_1_1_pose_a1ce3afa11babc7b747a860c1196f337d.html#a1ce3afa11babc7b747a860c1196f337d',1,'HeroQuest::Pose']]],
-  ['imprimir_32',['imprimir',['../class_hero_quest_1_1_imagem_1_1_sprite_a7d98287bf15f4815cb801fa1c0d03ef1.html#a7d98287bf15f4815cb801fa1c0d03ef1',1,'HeroQuest::Imagem::Sprite']]],
-  ['iniciar_33',['iniciar',['../class_hero_quest_1_1_game_system_1_1_jogo_a6daa3c474cef57f41f51b26d9dcc4a45.html#a6daa3c474cef57f41f51b26d9dcc4a45',1,'HeroQuest::GameSystem::Jogo']]],
-  ['inventÃ¡rio_2ejava_34',['InventÃ¡rio.java',['../_invent_xC3_x83_xC2_xA1rio_8java.html',1,'']]],
-  ['inventário_35',['Inventário',['../class_hero_quest_1_1_entidade_1_1_invent_xC3_xA1rio.html',1,'HeroQuest.Entidade.Inventário'],['../class_hero_quest_1_1_entidade_1_1_entidade_a29416373aea678475783c77441210f5c.html#a29416373aea678475783c77441210f5c',1,'HeroQuest.Entidade.Entidade.inventário()']]],
-  ['item_36',['Item',['../class_hero_quest_1_1_entidade_1_1_item.html',1,'HeroQuest::Entidade']]],
-  ['item_2ejava_37',['Item.java',['../_item_8java.html',1,'']]],
-  ['itensequipados_38',['itensEquipados',['../class_hero_quest_1_1_entidade_1_1_ser_a4504739161c1cca585d166d89b3569b3.html#a4504739161c1cca585d166d89b3569b3',1,'HeroQuest::Entidade::Ser']]]
+  ['game_74',['Game',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game.html',1,'br.unicamp.mc322.projeto.gameengine.gamesystem.Game'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game.html#ad31c575ad6e85371255b64991e7ef720',1,'br.unicamp.mc322.projeto.gameengine.gamesystem.Game.Game(Room firstRoom)'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game.html#aefc8a3d44228e22e430df8b39a4261d1',1,'br.unicamp.mc322.projeto.gameengine.gamesystem.Game.Game(LinkedList&lt; Room &gt; room, int index)']]],
+  ['game_2ejava_75',['Game.java',['../_game_8java.html',1,'']]],
+  ['getinstance_76',['getInstance',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager.html#a98f26b065605913a5239271b603f0ec5',1,'br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager.getInstance()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html#aaf6b0cf0ba0ae496ae786287eb89c740',1,'br.unicamp.mc322.projeto.gameengine.input.Keyboard.getInstance()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html#a94518614262e464e22a73de99182e7d9',1,'br.unicamp.mc322.projeto.gameengine.output.image.SpriteFactory.getInstance()']]],
+  ['getmessages_77',['getMessages',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a30967117b34d8cec6d4faae4735fe639',1,'br::unicamp::mc322::projeto::gameengine::entity::Entity']]],
+  ['getspritebuffer_78',['getSpriteBuffer',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html#ab673773b1a2c104922f3b354928f24bc',1,'br.unicamp.mc322.projeto.gameengine.output.image.SpriteFactory.getSpriteBuffer(entityType entityType, int index)'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html#af530cb96ef4a8284197dd2a624f9c2db',1,'br.unicamp.mc322.projeto.gameengine.output.image.SpriteFactory.getSpriteBuffer(EntityType entityType)']]],
+  ['gettype_79',['getType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message.html#a43ac130c375021cf78dadfd6ab32b7a1',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::message::Message']]],
+  ['goblin_80',['Goblin',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1monster_1_1_goblin.html',1,'br::unicamp::mc322::projeto::game::entity::monster']]],
+  ['goblin_2ejava_81',['Goblin.java',['../_goblin_8java.html',1,'']]]
 ];

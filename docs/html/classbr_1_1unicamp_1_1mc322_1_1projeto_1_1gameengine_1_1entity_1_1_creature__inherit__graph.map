@@ -1,0 +1,12 @@
+<map id="br.unicamp.mc322.projeto.gameengine.entity.Creature" name="br.unicamp.mc322.projeto.gameengine.entity.Creature">
+<area shape="rect" id="node1" title=" " alt="" coords="717,188,1004,229"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1hero_1_1_barbarian.html" title=" " alt="" coords="1063,5,1340,47"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1hero_1_1_dwarf.html" title=" " alt="" coords="1063,71,1340,112"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1hero_1_1_elf.html" title=" " alt="" coords="1055,137,1347,163"/>
+<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1hero_1_1_wizard.html" title=" " alt="" coords="1063,188,1340,229"/>
+<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1monster_1_1_goblin.html" title=" " alt="" coords="1052,253,1351,295"/>
+<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1monster_1_1_magic_skeleton.html" title=" " alt="" coords="1052,319,1351,360"/>
+<area shape="rect" id="node10" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1monster_1_1_skeleton.html" title=" " alt="" coords="1052,384,1351,425"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="383,188,669,229"/>
+<area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html" title=" " alt="" coords="5,188,335,229"/>
+</map>

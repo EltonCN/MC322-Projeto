@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['nome_46',['nome',['../class_hero_quest_1_1_entidade_1_1_entidade_a477be4eb44e1fc2d8ca1466dd55cbbc0.html#a477be4eb44e1fc2d8ca1466dd55cbbc0',1,'HeroQuest.Entidade.Entidade.nome()'],['../class_hero_quest_1_1_entidade_1_1_item_a7023a77d96814cb45359af842bd898de.html#a7023a77d96814cb45359af842bd898de',1,'HeroQuest.Entidade.Item.nome()']]],
-  ['npc_47',['NPC',['../class_hero_quest_1_1_entidade_1_1_n_p_c.html',1,'HeroQuest::Entidade']]],
-  ['npc_2ejava_48',['NPC.java',['../_n_p_c_8java.html',1,'']]]
+  ['longsword_99',['LongSword',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_long_sword.html',1,'br::unicamp::mc322::projeto::game']]],
+  ['longsword_2ejava_100',['LongSword.java',['../_long_sword_8java.html',1,'']]]
 ];

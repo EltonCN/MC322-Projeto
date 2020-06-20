@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['armadura_146',['armadura',['../class_hero_quest_1_1_entidade_1_1_ser_a1a0961035022a45bd64b9c41a299353e.html#a1a0961035022a45bd64b9c41a299353e',1,'HeroQuest::Entidade::Ser']]]
+  ['armadura_360',['armadura',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#aee3c71f8ef5d35bfbbae21917be57948',1,'br::unicamp::mc322::projeto::gameengine::entity::Creature']]]
 ];

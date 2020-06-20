@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['getentidades_17',['getEntidades',['../class_hero_quest_1_1_game_system_1_1_sala_a16056022e9fadc4181aedf4b5f59ad6a.html#a16056022e9fadc4181aedf4b5f59ad6a',1,'HeroQuest::GameSystem::Sala']]],
-  ['getgui_18',['getGUI',['../class_hero_quest_1_1_entidade_1_1_entidade_a210d666680347f6c4cb185c86a87cdae.html#a210d666680347f6c4cb185c86a87cdae',1,'HeroQuest::Entidade::Entidade']]],
-  ['getinicio_19',['getInicio',['../class_hero_quest_1_1_game_system_1_1_loader_a71c57df4335f309825fd73acb0605271.html#a71c57df4335f309825fd73acb0605271',1,'HeroQuest::GameSystem::Loader']]],
-  ['getsala_20',['getSala',['../class_hero_quest_1_1_game_system_1_1_loader_a562880b4bbde369db06354d1ae06942c.html#a562880b4bbde369db06354d1ae06942c',1,'HeroQuest::GameSystem::Loader']]],
-  ['grupo_21',['grupo',['../class_hero_quest_1_1_entidade_1_1_entidade_ae0a9b69a6f541ca836ba48c838b06bf5.html#ae0a9b69a6f541ca836ba48c838b06bf5',1,'HeroQuest::Entidade::Entidade']]],
-  ['gui_22',['GUI',['../class_hero_quest_1_1_g_u_i.html',1,'HeroQuest.GUI'],['../class_hero_quest_1_1_entidade_1_1_entidade_a46143cbdd0d4084d693a5a98f8b0597d.html#a46143cbdd0d4084d693a5a98f8b0597d',1,'HeroQuest.Entidade.Entidade.gui()']]],
-  ['gui_2ejava_23',['GUI.java',['../_g_u_i_8java.html',1,'']]]
+  ['elf_63',['Elf',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1hero_1_1_elf.html',1,'br::unicamp::mc322::projeto::game::entity::hero']]],
+  ['elf_2ejava_64',['Elf.java',['../_elf_8java.html',1,'']]],
+  ['entity_65',['Entity',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html',1,'br.unicamp.mc322.projeto.gameengine.entity.Entity'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#ae2bb7c01f4ed9a3dcb40f723e0a09c06',1,'br.unicamp.mc322.projeto.gameengine.entity.Entity.Entity()']]],
+  ['entity_2ejava_66',['Entity.java',['../_entity_8java.html',1,'']]],
+  ['entitydiedexception_67',['EntityDiedException',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1exception_1_1_entity_died_exception.html',1,'br::unicamp::mc322::projeto::gameengine::exception']]],
+  ['entitydiedexception_2ejava_68',['EntityDiedException.java',['../_entity_died_exception_8java.html',1,'']]],
+  ['entitytype_69',['EntityType',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type.html',1,'br::unicamp::mc322::projeto::gameengine::entity']]],
+  ['entitytype_2ejava_70',['EntityType.java',['../_entity_type_8java.html',1,'']]],
+  ['equal_71',['equal',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#a43f0ff1fa2f1bd608535e2f04995251e',1,'br::unicamp::mc322::projeto::gameengine::Pose']]]
 ];

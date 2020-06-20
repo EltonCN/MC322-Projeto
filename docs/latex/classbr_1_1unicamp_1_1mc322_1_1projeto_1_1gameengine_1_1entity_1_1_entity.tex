@@ -1,0 +1,142 @@
+\hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{}\doxysection{Referência à classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity}
+\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+
+
+Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae2bb7c01f4ed9a3dcb40f723e0a09c06}{Entity}} (String name)
+\item 
+abstract boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_acc652210b9c4e77c1fb7df5d3ce978b4}{alive}} ()
+\item 
+abstract Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af20b9935549f63efc2150f6d2634692c}{kill}} ()
+\item 
+abstract \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_abd508626c27f595cda1d50ad04249158}{run}} ()
+\item 
+boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_afb5fab26bfe14f878cd0f13ac0c91be7}{adjacent}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)
+\item 
+Linked\+List$<$ Message $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a30967117b34d8cec6d4faae4735fe639}{get\+Messages}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item}{Item}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a98100ec4cef929913784c833f88ea80e}{inventory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae2bb7c01f4ed9a3dcb40f723e0a09c06}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae2bb7c01f4ed9a3dcb40f723e0a09c06}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+Entity (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})}
+
+Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} Construtor de entidade
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & -\/ Nome da entidade \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_afb5fab26bfe14f878cd0f13ac0c91be7}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_afb5fab26bfe14f878cd0f13ac0c91be7}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!adjacent@{adjacent}}
+\index{adjacent@{adjacent}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{adjacent()}{adjacent()}}
+{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+adjacent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+Operation adjacent Verifica se outra entidade é adjacente a esta
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em entity} & -\/ Entidade para verificar se é adjacente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_acc652210b9c4e77c1fb7df5d3ce978b4}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_acc652210b9c4e77c1fb7df5d3ce978b4}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!alive@{alive}}
+\index{alive@{alive}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{alive()}{alive()}}
+{\footnotesize\ttfamily abstract boolean br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Operation alive Verifica se a entidade ainda deve ser executada
+
+\begin{DoxyReturn}{Retorna}
+boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a30967117b34d8cec6d4faae4735fe639}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a30967117b34d8cec6d4faae4735fe639}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!getMessages@{getMessages}}
+\index{getMessages@{getMessages}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{getMessages()}{getMessages()}}
+{\footnotesize\ttfamily Linked\+List$<$Message$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+get\+Messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation get\+Messages
+
+\begin{DoxyReturn}{Retorna}
+Linked\+List$<$\+Message$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af20b9935549f63efc2150f6d2634692c}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af20b9935549f63efc2150f6d2634692c}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!kill@{kill}}
+\index{kill@{kill}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily abstract Linked\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+kill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Operation kill Encerra a entidade e retorna outras entidades decorrentes de seu fim
+
+\begin{DoxyReturn}{Retorna}
+Linked\+List$<$\+Entity$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_abd508626c27f595cda1d50ad04249158}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_abd508626c27f595cda1d50ad04249158}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!run@{run}}
+\index{run@{run}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily abstract br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Operation run Executa um ciclo da entidade
+
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature_afe97d72bcfa0f05807b7f21f7920a53c}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Creature}}.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a98100ec4cef929913784c833f88ea80e}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a98100ec4cef929913784c833f88ea80e}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!inventory@{inventory}}
+\index{inventory@{inventory}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{inventory}{inventory}}
+{\footnotesize\ttfamily Linked\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item}{Item}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+inventory\hspace{0.3cm}{\ttfamily [protected]}}
+
+Itens que a entidade contém 
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eltsu/\+Documents/\+Git\+Hub/\+M\+C322-\/\+Projeto/\+Java\+U\+M\+L/br/unicamp/mc322/projeto/gameengine/entity/\mbox{\hyperlink{_entity_8java}{Entity.\+java}}\end{DoxyCompactItemize}
