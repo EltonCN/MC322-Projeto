@@ -8,6 +8,6 @@ var namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine =
     [ "item", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item.html", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item" ],
     [ "output", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output.html", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output" ],
     [ "utility", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1utility.html", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1utility" ],
-    [ "Metric", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", null ],
+    [ "Metric", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric" ],
     [ "Pose", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose" ]
 ];

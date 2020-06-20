@@ -9,7 +9,7 @@ var dir_7f4b476316551c7e2ca19c87d62f7e7b =
       [ "Dagger", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dagger.html", null ]
     ] ],
     [ "Dice.java", "_dice_8java.html", [
-      [ "Dice", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dice.html", null ]
+      [ "Dice", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dice.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dice" ]
     ] ],
     [ "DiceMovement.java", "_dice_movement_8java.html", [
       [ "DiceMovement", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dice_movement.html", null ]

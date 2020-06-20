@@ -14,5 +14,8 @@ var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature 
     [ "dinheiro", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#ae1a1657a91a29095b9f5060e5ba1d5aa", null ],
     [ "itensEquipados", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a9432c3e7c0569b99b3878a49298e07fa", null ],
     [ "PI", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a6c53b1197413dfdb7ad83dbed7c2ca88", null ],
+    [ "unnamed_11", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a61fed3db120827b4018adff9cdac48b7", null ],
+    [ "unnamed_12", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a1b8b058f069b2b6d47a0804f75a4d94b", null ],
+    [ "unnamed_15", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a1c81568410275ba138720ebe5c2d4e55", null ],
     [ "vida", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_creature.html#a7b41aab45f1251406c4eb48e4219096f", null ]
 ];

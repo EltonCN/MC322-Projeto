@@ -1,5 +1,15 @@
 \hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{}\doxysection{Referência à classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room}
 \label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}}
+
+
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
@@ -9,13 +19,26 @@ Linked\+List$<$ Sprite\+Buffer $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a42226b9200f6f9b842e40332860219ae}{instantiate\+Entity}} ()
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_afb5cfccf13fde1426f41c7fdf4af9ed0}{insert\+Entity}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}}\mbox{[}$\,$\mbox{]} entity\+Type, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}}\mbox{[}$\,$\mbox{]} pose)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_afb5cfccf13fde1426f41c7fdf4af9ed0}{insert\+Entity}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_af131b1941b7150485383485e861f3d90}{entity\+Type}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}}\mbox{[}$\,$\mbox{]} pose)
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a7c9192c8640d3a65062d926eac51f116}{insert\+Entity}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} entity\+Type, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} pose)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a7c9192c8640d3a65062d926eac51f116}{insert\+Entity}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_af131b1941b7150485383485e861f3d90}{entity\+Type}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} pose)
 \item 
 boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a7a0d464cd0420cc64300c6135524f331}{has\+Player}} ()
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a11cbd8f9b9a0329d4a52e31e15cd3332}{next\+Room}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a3bdac8a29cab40d08b7a56c300df5388}{entity}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal}{Portal}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a321e46058fcadd568d48ec79f07bf18c}{portal}}
+\item 
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_af131b1941b7150485383485e861f3d90}{entity\+Type}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal}{Portal}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_ab9d0b24ebfdcea88889942d55e610ce5}{unnamed\+\_\+4}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_ab203ce236841bd896bc231d11a0ef86a}{unnamed\+\_\+3}}
 \end{DoxyCompactItemize}
 
 
@@ -96,6 +119,39 @@ Operation show Retorna os sprites buffers da sala
 Linked\+List$<$\+Sprite\+Buffer$>$ 
 \end{DoxyReturn}
 
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a3bdac8a29cab40d08b7a56c300df5388}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a3bdac8a29cab40d08b7a56c300df5388}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}!entity@{entity}}
+\index{entity@{entity}!br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}}
+\doxysubsubsection{\texorpdfstring{entity}{entity}}
+{\footnotesize\ttfamily Linked\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room.\+entity\hspace{0.3cm}{\ttfamily [private]}}
+
+Attributes Entidades instanciadas dentro da sala \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_af131b1941b7150485383485e861f3d90}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_af131b1941b7150485383485e861f3d90}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}!entityType@{entityType}}
+\index{entityType@{entityType}!br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}}
+\doxysubsubsection{\texorpdfstring{entityType}{entityType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room.\+entity\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunto de entidades que a sala irá conter quando for iniciada \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a321e46058fcadd568d48ec79f07bf18c}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_a321e46058fcadd568d48ec79f07bf18c}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}!portal@{portal}}
+\index{portal@{portal}!br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}}
+\doxysubsubsection{\texorpdfstring{portal}{portal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal}{Portal}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room.\+portal\hspace{0.3cm}{\ttfamily [private]}}
+
+Portais dentro da sala \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_ab203ce236841bd896bc231d11a0ef86a}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_ab203ce236841bd896bc231d11a0ef86a}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}!unnamed\_3@{unnamed\_3}}
+\index{unnamed\_3@{unnamed\_3}!br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}}
+\doxysubsubsection{\texorpdfstring{unnamed\_3}{unnamed\_3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room.\+unnamed\+\_\+3\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_ab9d0b24ebfdcea88889942d55e610ce5}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room_ab9d0b24ebfdcea88889942d55e610ce5}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}!unnamed\_4@{unnamed\_4}}
+\index{unnamed\_4@{unnamed\_4}!br.unicamp.mc322.projeto.gameengine.gamesystem.Room@{br.unicamp.mc322.projeto.gameengine.gamesystem.Room}}
+\doxysubsubsection{\texorpdfstring{unnamed\_4}{unnamed\_4}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal}{Portal}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Room.\+unnamed\+\_\+4\hspace{0.3cm}{\ttfamily [private]}}
+
+Associations 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
 \item 

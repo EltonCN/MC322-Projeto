@@ -45,7 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_action_8java.html",
-"namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1exception.html"
+"classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

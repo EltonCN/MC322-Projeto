@@ -1,5 +1,15 @@
 \hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game}{}\doxysection{Referência à classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game}
 \label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game}\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}}
+
+
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
@@ -7,13 +17,26 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1ga
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_ad31c575ad6e85371255b64991e7ef720}{Game}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} first\+Room)
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_aefc8a3d44228e22e430df8b39a4261d1}{Game}} (Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} $>$ room, int index)
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_aefc8a3d44228e22e430df8b39a4261d1}{Game}} (Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a3c663ecc905ef258c98f5acafe563d1d}{room}}, int index)
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a2300948f3953a18621861b2c86a1a34f}{insert\+Room}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} room)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a2300948f3953a18621861b2c86a1a34f}{insert\+Room}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a3c663ecc905ef258c98f5acafe563d1d}{room}})
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_abbb8044732e22f32b61aad4798eb6dbf}{insert\+Room}} (Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} $>$ room)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_abbb8044732e22f32b61aad4798eb6dbf}{insert\+Room}} (Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a3c663ecc905ef258c98f5acafe563d1d}{room}})
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a808941c1847aebb4d68b39914b927177}{set\+Screen}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen}{Screen}} screen)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a808941c1847aebb4d68b39914b927177}{set\+Screen}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen}{Screen}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_aa5cc5547faf46243fbfd0ec550b72117}{screen}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a3c663ecc905ef258c98f5acafe563d1d}{room}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_ab3d5888acc21f2feaa238e20578c14ec}{active\+Room}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen}{Screen}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_aa5cc5547faf46243fbfd0ec550b72117}{screen}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen}{Screen}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a34ddb815ab565cb6aa0e8ee6e45c42c0}{unnamed\+\_\+7}}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a35102b867079e96799b89efe36e17469}{unnamed\+\_\+6}}
 \end{DoxyCompactItemize}
 
 
@@ -101,6 +124,40 @@ Operation set\+Screen Define a tela que será usada pelo jogo
 \hline
 \end{DoxyParams}
 
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_ab3d5888acc21f2feaa238e20578c14ec}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_ab3d5888acc21f2feaa238e20578c14ec}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}!activeRoom@{activeRoom}}
+\index{activeRoom@{activeRoom}!br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}}
+\doxysubsubsection{\texorpdfstring{activeRoom}{activeRoom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game.\+active\+Room\hspace{0.3cm}{\ttfamily [private]}}
+
+A sala sendo executada atualmente \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a3c663ecc905ef258c98f5acafe563d1d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a3c663ecc905ef258c98f5acafe563d1d}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}!room@{room}}
+\index{room@{room}!br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}}
+\doxysubsubsection{\texorpdfstring{room}{room}}
+{\footnotesize\ttfamily Linked\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game.\+room\hspace{0.3cm}{\ttfamily [private]}}
+
+Attributes Lista das salas contidas no jogo ~\newline
+ \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_aa5cc5547faf46243fbfd0ec550b72117}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_aa5cc5547faf46243fbfd0ec550b72117}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}!screen@{screen}}
+\index{screen@{screen}!br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen}{Screen}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game.\+screen\hspace{0.3cm}{\ttfamily [private]}}
+
+Tela onde serão exibidos os elementos do jogo \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a35102b867079e96799b89efe36e17469}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a35102b867079e96799b89efe36e17469}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}!unnamed\_6@{unnamed\_6}}
+\index{unnamed\_6@{unnamed\_6}!br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}}
+\doxysubsubsection{\texorpdfstring{unnamed\_6}{unnamed\_6}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room}{Room}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game.\+unnamed\+\_\+6\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a34ddb815ab565cb6aa0e8ee6e45c42c0}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game_a34ddb815ab565cb6aa0e8ee6e45c42c0}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}!unnamed\_7@{unnamed\_7}}
+\index{unnamed\_7@{unnamed\_7}!br.unicamp.mc322.projeto.gameengine.gamesystem.Game@{br.unicamp.mc322.projeto.gameengine.gamesystem.Game}}
+\doxysubsubsection{\texorpdfstring{unnamed\_7}{unnamed\_7}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen}{Screen}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+Game.\+unnamed\+\_\+7\hspace{0.3cm}{\ttfamily [private]}}
+
+Associations 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
 \item 

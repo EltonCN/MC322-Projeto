@@ -22,7 +22,7 @@ var dir_a148886a258e5952fb7e2af7ebd40a1a =
       [ "Player", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_player.html", null ]
     ] ],
     [ "Portal.java", "_portal_8java.html", [
-      [ "Portal", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal.html", null ]
+      [ "Portal", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_portal" ]
     ] ],
     [ "Solid.java", "_solid_8java.html", [
       [ "Solid", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_solid.html", null ]
