@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['hashtable_93',['hashTable',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html#a8e0fbff24651b4dff98aa71bc6c882c1',1,'br::unicamp::mc322::projeto::gameengine::output::image::SpriteFactory']]],
-  ['hasplayer_94',['hasPlayer',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room.html#a7a0d464cd0420cc64300c6135524f331',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::Room']]],
-  ['heroquestentitytype_95',['HeroQuestEntityType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html',1,'br::unicamp::mc322::projeto::game::entity']]],
-  ['heroquestentitytype_2ejava_96',['HeroQuestEntityType.java',['../_hero_quest_entity_type_8java.html',1,'']]],
-  ['hide_97',['hide',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_menu.html#a1cb1c2ecc21d8b78ae9197e059633803',1,'br::unicamp::mc322::projeto::gameengine::input::Menu']]]
+  ['hashtable_94',['hashTable',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html#a8e0fbff24651b4dff98aa71bc6c882c1',1,'br::unicamp::mc322::projeto::gameengine::output::image::SpriteFactory']]],
+  ['hasplayer_95',['hasPlayer',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room.html#a7a0d464cd0420cc64300c6135524f331',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::Room']]],
+  ['heroquestentitytype_96',['HeroQuestEntityType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html',1,'br::unicamp::mc322::projeto::game::entity']]],
+  ['heroquestentitytype_2ejava_97',['HeroQuestEntityType.java',['../_hero_quest_entity_type_8java.html',1,'']]],
+  ['hide_98',['hide',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_menu.html#a1cb1c2ecc21d8b78ae9197e059633803',1,'br::unicamp::mc322::projeto::gameengine::input::Menu']]]
 ];

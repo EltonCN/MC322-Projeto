@@ -9,7 +9,7 @@ var dir_31f5c76cc624be6dd256bcf386be31e0 =
     [ "output", "dir_9092552f9d484a9bbff33574911a2ca4.html", "dir_9092552f9d484a9bbff33574911a2ca4" ],
     [ "utility", "dir_b7167edc4bb088f6ab1a24f1ecdfeb14.html", "dir_b7167edc4bb088f6ab1a24f1ecdfeb14" ],
     [ "Metric.java", "_metric_8java.html", [
-      [ "Metric", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric" ]
+      [ "Metric", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric" ]
     ] ],
     [ "Pose.java", "_pose_8java.html", [
       [ "Pose", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose" ]

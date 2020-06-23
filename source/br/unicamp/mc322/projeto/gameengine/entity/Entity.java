@@ -35,9 +35,13 @@ public abstract class Entity
      * Construtor de entidade
      *
      * @param name - Nome da entidade
+     * @param pose - Pose inicial da entidade
      * @return 
      */
-    public Entity ( String name );
+    public Entity ( String name , Pose pose)
+    {
+        
+    }
 
     /**
      * Operation alive

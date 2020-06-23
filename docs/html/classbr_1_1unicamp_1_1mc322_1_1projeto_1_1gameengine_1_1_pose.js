@@ -7,7 +7,7 @@ var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose =
     [ "adjacent", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#a2f9a3430918ca952232f754300d9e245", null ],
     [ "distance", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#ade00108c84fc4be9ef15ec1f4820f7d6", null ],
     [ "equal", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#a43f0ff1fa2f1bd608535e2f04995251e", null ],
-    [ "euclidianDistance", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#add5565cecfbb745135a7f983c5e92bf8", null ],
+    [ "euclideanDistance", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#aa1bf79ddf577dee5b37135a10a57fe89", null ],
     [ "fixAngle", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#a833ede563127944513f9a6f82381efc7", null ],
     [ "manhattanDistance", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#aae4fad426769ccbd23dc8db0cf146000", null ],
     [ "move", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html#a3427434777a24f77293935bc1526189f", null ],

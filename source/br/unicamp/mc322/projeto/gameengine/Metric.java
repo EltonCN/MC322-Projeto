@@ -1,17 +1,8 @@
 package br.unicamp.mc322.projeto.gameengine;
 
 
-public class Metric
-
+public enum Metric
 {
-    /** Attributes */
-    /**
-     * 
-     */
-      Euclidean;
-    /**
-     * 
-     */
-      Manhattan;
+      EUCLIDEAN, MANHATTAN
 }
 

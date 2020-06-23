@@ -1,5 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine;
 
+import java.lang.Math;
+
 import br.unicamp.mc322.projeto.gameengine.Pose;
 import br.unicamp.mc322.projeto.gameengine.Metric;
 
@@ -25,7 +27,12 @@ public class Pose
      *
      * @return 
      */
-    public Pose (  ){}
+    public Pose (  )
+    {
+        this.x = 0;
+        this.y = 0;
+        this.angle = 0;
+    }
     /**
      * Operation Pose
      * Constroi uma pose com coordenadas x, y definidas e ângulo 0
@@ -34,7 +41,12 @@ public class Pose
      * @param y - Coordenada y da pose
      * @return 
      */
-    public Pose ( float x, float y ){}
+    public Pose ( float x, float y )
+    {
+        this.x = x;
+        this.y = y;
+        this.angle = 0;
+    }
     /**
      * Operation Pose
      * Constrói uma pose a partir de outra pose
@@ -42,7 +54,12 @@ public class Pose
      * @param pose - Pose que será copiada
      * @return 
      */
-    public Pose ( Pose pose ){}
+    public Pose ( Pose pose )
+    {
+        this.x = pose.x;
+        this.y = pose.y;
+        this.angle = pose.angle;
+    }
     /**
      * Operation Pose
      * Constrói uma nova pose com coordenadas determinadas
@@ -52,7 +69,12 @@ public class Pose
      * @param angle - Ângulo da nova pose
      * @return 
      */
-    public Pose ( float x, float y, float angle ){}
+    public Pose ( float x, float y, float angle )
+    {
+        this.x = x;
+        this.y = y;
+        this.angle = angle;
+    }
     /**
      * Operation set
      * Define as coordenadas da pose
@@ -60,7 +82,11 @@ public class Pose
      * @param x - Posição x da pose
      * @param y - Posição y da pose
      */
-    public void set ( float x, float y ){}
+    public void set ( float x, float y )
+    {
+        this.x = x;
+        this.y = y;
+    }
     /**
      * Operation set
      * Define as coordenadas da pose
@@ -69,7 +95,12 @@ public class Pose
      * @param y - Posição y da pose
      * @param angle - Ângulo da pose
      */
-    public void set ( float x, float y, float angle ){}
+    public void set ( float x, float y, float angle )
+    {
+        set(x,y);
+
+        this.angle = angle;
+    }
     /**
      * Operation move
      * Movimenta/incrementa a pose
@@ -77,7 +108,11 @@ public class Pose
      * @param x - Incremento no eixo x
      * @param y - Incremento no eixo y
      */
-    public void move ( float x, float y ){}
+    public void move ( float x, float y )
+    {
+        this.x += x;
+        this.y += y;
+    }
     /**
      * Operation move
      * Movimenta/incrementa a pose
@@ -86,7 +121,11 @@ public class Pose
      * @param y - Incremento no eixo y
      * @param angle - Incremento no ângulo
      */
-    public void move ( float x, float y, float angle ){}
+    public void move ( float x, float y, float angle )
+    {
+        move(x,y);
+        this.angle += angle;
+    }
     /**
      * Operation adjacent
      * Verifica se uma outra posição é adjacente a esta
@@ -102,7 +141,23 @@ public class Pose
      * @param pose - A outra pose
      * @return boolean
      */
-    public boolean equal ( Pose pose ){}
+    public boolean equal ( Pose pose )
+    {
+        if(this.x != pose.x)
+        {
+            return false;
+        }
+        if(this.y != pose.y)
+        {
+            return false;
+        }
+        if(this.angle != pose.angle)
+        {
+            return false;
+        }
+
+        return true;
+    }
     /**
      * Operation distance
      * Calcula a distância entre essa e outra pose
@@ -110,22 +165,59 @@ public class Pose
      * @param pose - A outra pose
      * @param metric - Métrica a ser utilizada
      * @return float
+     * 
+     * /todo Gerar execção para tipo inexistente de métrica
      */
-    public float distance ( Pose pose, Metric metric ){}
+    public float distance ( Pose pose, Metric metric )
+    {
+        switch(metric)
+        {
+            case EUCLIDEAN:
+                return this.euclideanDistance(pose);
+
+            case MANHATTAN:
+                return manhattanDistance(pose);
+
+            default:
+
+        }
+
+        return 0;
+    }
     /**
-     * Operation euclidianDistance
+     * Operation euclideanDistance
      * Calcula a distância euclidiana até outra pose
      *
      * @param pose - A outra pose
      * @return float
      */
-    private float euclidianDistance ( Pose pose ){}
+    private float euclideanDistance ( Pose pose )
+    {
+        float result = 0;
+
+        result += Math.pow(pose.x-this.x, 2);
+
+        result += Math.pow(pose.y-this.y, 2);
+
+        return (float) Math.sqrt(result);
+    }
     /**
      * Operation fixAngle
      * Corrige o ângulo (mantém sempre entre 0 e 360)
      *
      */
-    private void fixAngle (  ){}
+    private void fixAngle (  )
+    {
+        while(angle > 360)
+        {
+            angle -= 360;
+        }
+
+        while(angle < 360)
+        {
+            angle += 360;
+        }
+    }
     /**
      * Operation manhattanDistance
      * Calcula a distância de Manhattan até outra pose
@@ -133,6 +225,15 @@ public class Pose
      * @param pose - A outra pose
      * @return float
      */
-    private float manhattanDistance ( Pose pose ){}
+    private float manhattanDistance ( Pose pose )
+    {
+        float result = 0;
+
+        result += Math.abs(this.x-pose.x);
+
+        result += Math.abs(this.y-pose.y);
+
+        return result;
+    }
 }
 

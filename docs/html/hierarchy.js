@@ -50,7 +50,7 @@ var hierarchy =
     [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageType", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type.html", [
       [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.BasicMessageType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type.html", null ]
     ] ],
-    [ "br.unicamp.mc322.projeto.gameengine.Metric", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", null ],
+    [ "br.unicamp.mc322.projeto.gameengine.Metric", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.output.image.Paintable", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html", [
       [ "br.unicamp.mc322.projeto.gameengine.entity.Entity", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html", [
         [ "br.unicamp.mc322.projeto.gameengine.entity.Bag", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_bag.html", null ],

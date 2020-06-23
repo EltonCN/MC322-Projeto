@@ -1,5 +1,11 @@
 var searchData=
 [
-  ['text_469',['text',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message.html#a84b070eda790a5fb84ef83b7541e8c9d',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::message::Message']]],
-  ['type_470',['type',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message.html#a528e1e481447f66a7131b7e9181ab4c2',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::message::Message']]]
+  ['s_461',['S',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_key.html#a11fd165d226a9d92ffbd6ffe7993b897',1,'br::unicamp::mc322::projeto::gameengine::input::Key']]],
+  ['screen_462',['screen',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game.html#aa5cc5547faf46243fbfd0ec550b72117',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::Game']]],
+  ['selectable_463',['SELECTABLE',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type.html#ad11e258d74882f3f147b4d78c9dc3107',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::message::BasicMessageType']]],
+  ['skeleton_464',['SKELETON',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html#a525de3bf0bafb170f37c32d02826d919',1,'br::unicamp::mc322::projeto::game::entity::HeroQuestEntityType']]],
+  ['sprite_465',['sprite',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a335f3b3adf3981210e4e624068e5169b',1,'br.unicamp.mc322.projeto.gameengine.entity.Entity.sprite()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_buffer.html#ae4b56126a818537aa651f2f66bc44d9b',1,'br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer.sprite()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html#a54e3b0e12d9950385bdb6318075f34cd',1,'br.unicamp.mc322.projeto.gameengine.output.image.SpriteFactory.sprite()']]],
+  ['spritebuffer_466',['spriteBuffer',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen.html#aafd2b084308ecee3e79d542bf976b89c',1,'br::unicamp::mc322::projeto::gameengine::output::image::Screen']]],
+  ['submenu_467',['submenu',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_menu.html#a99a6aa987c358856fb3ef302513d1de9',1,'br::unicamp::mc322::projeto::gameengine::input::Menu']]],
+  ['subscriber_468',['subscriber',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a66d6ff61a618f2c73422a377a68a758e',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::message::MessageList']]]
 ];
