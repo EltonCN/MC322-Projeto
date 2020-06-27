@@ -1,7 +1,7 @@
 var dir_04c933ab2fe9fad97fb7e950190a8a0d =
 [
     [ "BasicMessageType.java", "_basic_message_type_8java.html", [
-      [ "BasicMessageType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type" ]
+      [ "BasicMessageType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type" ]
     ] ],
     [ "Message.java", "_message_8java.html", [
       [ "Message", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message" ]

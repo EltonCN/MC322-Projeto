@@ -1,11 +1,12 @@
 <map id="br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message" name="br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message">
-<area shape="rect" id="node1" title=" " alt="" coords="1435,112,1821,153"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type.html" title=" " alt="" coords="921,84,1308,125"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="971,149,1258,191"/>
-<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html" title=" " alt="" coords="461,5,791,47"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html" title=" " alt="" coords="30,105,310,131"/>
-<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_buffer.html" title=" " alt="" coords="461,149,791,191"/>
-<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite.html" title=" " alt="" coords="5,175,335,216"/>
-<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html" title=" " alt="" coords="474,215,778,242"/>
-<area shape="rect" id="node9" title=" " alt="" coords="451,267,801,308"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1421,179,1808,221"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html" title=" " alt="" coords="30,37,310,64"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="971,142,1258,183"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_buffer.html" title=" " alt="" coords="461,99,791,141"/>
+<area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type.html" title=" " alt="" coords="921,207,1308,249"/>
+<area shape="rect" id="node5" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html" title=" " alt="" coords="461,165,791,206"/>
+<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite.html" title=" " alt="" coords="5,125,335,166"/>
+<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html" title=" " alt="" coords="474,231,778,257"/>
+<area shape="rect" id="node9" title=" " alt="" coords="451,282,801,323"/>
+<area shape="rect" id="node10" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type.html" title=" " alt="" coords="971,273,1258,314"/>
 </map>

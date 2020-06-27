@@ -15,7 +15,11 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gam
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a9bf178172568a574fd88d681d68d1f0d}{Message}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} emitter\+Entity, String \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a84b070eda790a5fb84ef83b7541e8c9d}{text}})
 \item 
-\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a43ac130c375021cf78dadfd6ab32b7a1}{get\+Type}} ()
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a3f2da87346222f28d02de0de708f434f}{get\+Message\+Type}} ()
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a32a2e58ea6b39ea38d0b31b70a8b83dc}{get\+Pose}} ()
+\item 
+boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af658b8ae6be2137fe984fd0eb4e13f83}{in\+Range}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Privados}
 \begin{DoxyCompactItemize}
@@ -24,15 +28,13 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gam
 \item 
 String \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a84b070eda790a5fb84ef83b7541e8c9d}{text}}
 \item 
-entity\+Type \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a93e9331e5cc4f6e28bec9d42444b564d}{entity\+Type}}
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a164ce28565ef4a52796d693916ae6e06}{entity\+Type}}
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a01d1f38cd66ee958cdb3d432f0df1a24}{pose}}
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a6eb254ad37b63601d668200fd0f74fc3}{pose}}
 \item 
 float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af447eb303e2d959485a87ee8dc11180c}{range}}
 \item 
 \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a528e1e481447f66a7131b7e9181ab4c2}{type}}
-\item 
-\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_ae08e70d655c60d3e124880064c409217}{unnamed\+\_\+17}}
 \end{DoxyCompactItemize}
 
 
@@ -58,16 +60,45 @@ Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_
 
 
 \doxysubsection{Documentação dos métodos}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a43ac130c375021cf78dadfd6ab32b7a1}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a43ac130c375021cf78dadfd6ab32b7a1}} 
-\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!getType@{getType}}
-\index{getType@{getType}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
-\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a3f2da87346222f28d02de0de708f434f}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a3f2da87346222f28d02de0de708f434f}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!getMessageType@{getMessageType}}
+\index{getMessageType@{getMessageType}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
+\doxysubsubsection{\texorpdfstring{getMessageType()}{getMessageType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+get\+Message\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Operation get\+Type Retorna o tipo da entidade emissora
 
 \begin{DoxyReturn}{Retorna}
-Entity\+Type 
+Entity\+Type
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000003}{Tarefa}}]Retornar o tipo da entidade \end{DoxyRefDesc}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a32a2e58ea6b39ea38d0b31b70a8b83dc}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a32a2e58ea6b39ea38d0b31b70a8b83dc}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!getPose@{getPose}}
+\index{getPose@{getPose}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+get\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation get\+Type Retorna a pose da mensagem
+
+\begin{DoxyReturn}{Retorna}
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af658b8ae6be2137fe984fd0eb4e13f83}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af658b8ae6be2137fe984fd0eb4e13f83}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!inRange@{inRange}}
+\index{inRange@{inRange}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
+\doxysubsubsection{\texorpdfstring{inRange()}{inRange()}}
+{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+in\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+Verifica se a entidade está dentro do alcance da mensagem
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em entity} & -\/ entidade que será verificada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+booelan 
 \end{DoxyReturn}
 
 
@@ -78,25 +109,25 @@ Entity\+Type
 \doxysubsubsection{\texorpdfstring{emitter}{emitter}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+emitter\hspace{0.3cm}{\ttfamily [private]}}
 
-Attributes A entidade emissora da mensgem \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a93e9331e5cc4f6e28bec9d42444b564d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a93e9331e5cc4f6e28bec9d42444b564d}} 
+Attributes A entidade emissora da mensgem \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a164ce28565ef4a52796d693916ae6e06}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a164ce28565ef4a52796d693916ae6e06}} 
 \index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!entityType@{entityType}}
 \index{entityType@{entityType}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
 \doxysubsubsection{\texorpdfstring{entityType}{entityType}}
-{\footnotesize\ttfamily entity\+Type br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+entity\+Type\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type}{Entity\+Type}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+entity\+Type\hspace{0.3cm}{\ttfamily [private]}}
 
-Tipo da entidade emissora \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a01d1f38cd66ee958cdb3d432f0df1a24}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a01d1f38cd66ee958cdb3d432f0df1a24}} 
+Tipo da entidade emissora \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a6eb254ad37b63601d668200fd0f74fc3}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a6eb254ad37b63601d668200fd0f74fc3}} 
 \index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!pose@{pose}}
 \index{pose@{pose}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
 \doxysubsubsection{\texorpdfstring{pose}{pose}}
-{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+pose\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+pose\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af447eb303e2d959485a87ee8dc11180c}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af447eb303e2d959485a87ee8dc11180c}} 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} enviada na mensagem \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af447eb303e2d959485a87ee8dc11180c}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_af447eb303e2d959485a87ee8dc11180c}} 
 \index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!range@{range}}
 \index{range@{range}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
 \doxysubsubsection{\texorpdfstring{range}{range}}
 {\footnotesize\ttfamily float br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+range\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a84b070eda790a5fb84ef83b7541e8c9d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a84b070eda790a5fb84ef83b7541e8c9d}} 
+Alcance enviado na mensagem \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a84b070eda790a5fb84ef83b7541e8c9d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_a84b070eda790a5fb84ef83b7541e8c9d}} 
 \index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!text@{text}}
 \index{text@{text}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
 \doxysubsubsection{\texorpdfstring{text}{text}}
@@ -108,13 +139,7 @@ Texto que representa o que a mensagem faz \mbox{\Hypertarget{classbr_1_1unicamp_
 \doxysubsubsection{\texorpdfstring{type}{type}}
 {\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+type\hspace{0.3cm}{\ttfamily [private]}}
 
-Tipo da mensagem sendo enviada \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_ae08e70d655c60d3e124880064c409217}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_ae08e70d655c60d3e124880064c409217}} 
-\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}!unnamed\_17@{unnamed\_17}}
-\index{unnamed\_17@{unnamed\_17}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message}}
-\doxysubsubsection{\texorpdfstring{unnamed\_17}{unnamed\_17}}
-{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message.\+unnamed\+\_\+17\hspace{0.3cm}{\ttfamily [private]}}
-
-Associations 
+Tipo da mensagem sendo enviada 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
 \item 
