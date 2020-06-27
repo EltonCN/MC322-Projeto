@@ -1,41 +1,8 @@
 package br.unicamp.mc322.projeto.gameengine.input;
 
 
-public class Key
-
+public enum Key
 {
-    /** Attributes */
-    /**
-     * 
-     */
-      RIGHTARROW;
-    /**
-     * 
-     */
-      LEFTARROW;
-    /**
-     * 
-     */
-      UPARROW;
-    /**
-     * 
-     */
-      DOWNARROW;
-    /**
-     * 
-     */
-      A;
-    /**
-     * 
-     */
-      S;
-    /**
-     * 
-     */
-      D;
-    /**
-     * 
-     */
-      W;
+    RIGHTARROW, LEFTARROW, UPARROW, DOWNARROW, A, S, D, W;
 }
 

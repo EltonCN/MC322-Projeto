@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
 import br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer;
+import br.unicamp.mc322.projeto.gameengine.Metric;
 import br.unicamp.mc322.projeto.gameengine.Pose;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.output.image.Paintable;
@@ -65,7 +66,7 @@ public abstract class Entity
      *
      * @return 
      */
-    abstract public run (  );
+    abstract public void run (  );
 
     /**
      * Operation adjacent
@@ -82,6 +83,18 @@ public abstract class Entity
      * @return LinkedList<Message>
      */
     public LinkedList<Message> getMessages (  );
+
+    /**
+     * Calcula a distância entre essa entidade e uma pose
+     * @todo implementar o método
+     * @param pose2
+     * @param euclidean
+     * @return
+     */
+    public float distance(Pose pose2, Metric euclidean) 
+    {
+		return 0;
+	}
 
 }
 

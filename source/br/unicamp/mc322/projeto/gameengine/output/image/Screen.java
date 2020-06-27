@@ -1,5 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.output.image;
 
+import java.util.LinkedList;
+
 import br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer;
 
 public class Screen
@@ -17,7 +19,7 @@ public class Screen
      * @param buffer - Sprite a ser adicionado
      * @return 
      */
-    public receiveBuffer ( SpriteBuffer buffer ){}
+    public void receiveBuffer ( SpriteBuffer buffer ){}
     /**
      * Operation show
      * Imprimir os elementos na tela

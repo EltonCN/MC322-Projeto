@@ -133,7 +133,19 @@ public class Pose
      * @param pose - A outra pose
      * @return boolean
      */
-    public boolean adjacent ( Pose pose ){}
+    public boolean adjacent ( Pose pose )
+    {
+        if(x-pose.x > 1 || x-pose.x < -1)
+        {
+            return false;
+        }
+        if(y-pose.y > 1 || y-pose.y < -1)
+        {
+            return false;
+        }
+
+        return true;
+    }
     /**
      * Operation equal
      * Compara pose com outra
