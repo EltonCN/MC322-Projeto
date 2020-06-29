@@ -33,7 +33,7 @@ var hierarchy =
     [ "br.unicamp.mc322.projeto.game.Dice", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_dice.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.exception.EntityDiedException", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1exception_1_1_entity_died_exception.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.entity.EntityType", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_type.html", [
-      [ "br.unicamp.mc322.projeto.game.entity.HeroQuestEntityType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html", null ]
+      [ "br.unicamp.mc322.projeto.game.entity.HeroQuestEntityType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html", null ]
     ] ],
     [ "br.unicamp.mc322.projeto.gameengine.gamesystem.Game", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_game.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.item.Item", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html", [
@@ -41,14 +41,13 @@ var hierarchy =
       [ "br.unicamp.mc322.projeto.gameengine.item.Consumable", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_consumable.html", null ],
       [ "br.unicamp.mc322.projeto.gameengine.item.Weapon", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_weapon.html", null ]
     ] ],
-    [ "br.unicamp.mc322.projeto.gameengine.input.Key", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_key.html", null ],
-    [ "br.unicamp.mc322.projeto.gameengine.input.Keyboard", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html", null ],
+    [ "br.unicamp.mc322.projeto.gameengine.input.Key", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_key.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.exception.MessageFailedException", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1exception_1_1_message_failed_exception.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageList", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageType", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type.html", [
-      [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.BasicMessageType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type.html", null ]
+      [ "br.unicamp.mc322.projeto.gameengine.gamesystem.message.BasicMessageType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_basic_message_type.html", null ]
     ] ],
     [ "br.unicamp.mc322.projeto.gameengine.Metric", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.output.image.Paintable", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html", [
@@ -74,5 +73,8 @@ var hierarchy =
     [ "br.unicamp.mc322.projeto.gameengine.output.image.Screen", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.output.image.Sprite", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite.html", null ],
     [ "br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_buffer.html", null ],
-    [ "br.unicamp.mc322.projeto.gameengine.output.image.SpriteFactory", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html", null ]
+    [ "br.unicamp.mc322.projeto.gameengine.output.image.SpriteFactory", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html", null ],
+    [ "KeyListener", null, [
+      [ "br.unicamp.mc322.projeto.gameengine.input.Keyboard", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html", null ]
+    ] ]
 ];

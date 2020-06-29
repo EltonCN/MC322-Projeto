@@ -25,7 +25,7 @@ public class Pose
      * Operation Pose
      * Construtor padrão, cria uma pose centrada na origem com ângulo 0
      *
-     * @return 
+     * @return
      */
     public Pose (  )
     {
@@ -39,7 +39,7 @@ public class Pose
      *
      * @param x - Coordenada x da pose
      * @param y - Coordenada y da pose
-     * @return 
+     * @return
      */
     public Pose ( float x, float y )
     {
@@ -52,7 +52,7 @@ public class Pose
      * Constrói uma pose a partir de outra pose
      *
      * @param pose - Pose que será copiada
-     * @return 
+     * @return
      */
     public Pose ( Pose pose )
     {
@@ -68,7 +68,7 @@ public class Pose
      * @param x - Coordenada x da nova pose
      * @param y - Coordenada y da nova pose
      * @param angle - Ângulo da nova pose
-     * @return 
+     * @return
      */
     public Pose ( float x, float y, float angle )
     {
@@ -136,14 +136,18 @@ public class Pose
      * @param pose - A outra pose
      * @return boolean
      */
-    public boolean adjacent(Pose pose) {    	
-    	for(int i = (int) (pose.x - 1); i <= pose.x + 1; i++) {
-    		for(int j = (int) (pose.y - 1); j <= pose.y + 1; j++) {
-    			if (i == this.x && j == this.y)
-    				return true;
-    		}
-    	}
-    	return false;
+    public boolean adjacent ( Pose pose )
+    {
+        if(x-pose.x > 1 || x-pose.x < -1)
+        {
+            return false;
+        }
+        if(y-pose.y > 1 || y-pose.y < -1)
+        {
+            return false;
+        }
+
+        return true;
     }
     /**
      * Operation equal
@@ -176,7 +180,7 @@ public class Pose
      * @param pose - A outra pose
      * @param metric - Métrica a ser utilizada
      * @return float
-     * 
+     *
      * /todo Gerar execção para tipo inexistente de métrica
      */
     public float distance ( Pose pose, Metric metric )
@@ -247,4 +251,3 @@ public class Pose
         return result;
     }
 }
-

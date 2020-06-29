@@ -11,8 +11,7 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+en
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity\+:
-\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -28,11 +27,13 @@ abstract boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game
 \item 
 abstract Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af20b9935549f63efc2150f6d2634692c}{kill}} ()
 \item 
-abstract \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_abd508626c27f595cda1d50ad04249158}{run}} ()
+abstract void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a97a3106dd715d82ce39c4d004069e54b}{run}} ()
 \item 
 boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_afb5fab26bfe14f878cd0f13ac0c91be7}{adjacent}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)
 \item 
 Linked\+List$<$ Message $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a30967117b34d8cec6d4faae4735fe639}{get\+Messages}} ()
+\item 
+float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a27a5f5e9eb18b1bb92503af230b96753}{distance}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} pose2, \mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric}{Metric}} euclidean)
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Protegidos}
 \begin{DoxyCompactItemize}
@@ -105,6 +106,24 @@ Operation alive Verifica se a entidade ainda deve ser executada
 \begin{DoxyReturn}{Retorna}
 boolean 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a27a5f5e9eb18b1bb92503af230b96753}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a27a5f5e9eb18b1bb92503af230b96753}} 
+\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!distance@{distance}}
+\index{distance@{distance}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}}}]{pose2,  }\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_metric}{Metric}}}]{euclidean }\end{DoxyParamCaption})}
+
+Calcula a distância entre essa entidade e uma pose \begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000001}{Tarefa}}]implementar o método \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parâmetros}
+{\em pose2} & \\
+\hline
+{\em euclidean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a30967117b34d8cec6d4faae4735fe639}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a30967117b34d8cec6d4faae4735fe639}} 
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!getMessages@{getMessages}}
 \index{getMessages@{getMessages}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
@@ -127,11 +146,11 @@ Operation kill Encerra a entidade e retorna outras entidades decorrentes de seu 
 \begin{DoxyReturn}{Retorna}
 Linked\+List$<$\+Entity$>$ 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_abd508626c27f595cda1d50ad04249158}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_abd508626c27f595cda1d50ad04249158}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a97a3106dd715d82ce39c4d004069e54b}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a97a3106dd715d82ce39c4d004069e54b}} 
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!run@{run}}
 \index{run@{run}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily abstract br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+{\footnotesize\ttfamily abstract void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
 
 Operation run Executa um ciclo da entidade
 

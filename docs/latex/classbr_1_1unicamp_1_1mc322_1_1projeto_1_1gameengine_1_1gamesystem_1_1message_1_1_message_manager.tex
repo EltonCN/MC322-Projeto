@@ -19,7 +19,9 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1ga
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a3bd64c5719848f7c4af9b70084d098c6}{clear}} ()
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a8c5267361d3c8ca31ef9e02c21d4d3a8}{send\+Message}} (Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message}{Message}} $>$ message)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a044ecbae4087785b6198c4c5f6f510f7}{send\+Message}} (Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message}{Message}} $>$ message)
+\item 
+Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message}{Message}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_afab7f2c565c1b689bdd62a78958cd766}{get\+Message}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity, \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}} type)
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
@@ -29,9 +31,7 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1ga
 \doxysubsection*{Atributos Privados}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list}{Message\+List}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_ac04e4c896f4e2d4f1be3e3cd6f56cd33}{message\+List}}
-\item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list}{Message\+List}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a7994d75ae9fa752a8ea86226c1ad1d3e}{unnamed\+\_\+10}}
+Array\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list}{Message\+List}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a023e0f953d2cf77de7194be783315765}{message\+List}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Privados Estáticos}
 \begin{DoxyCompactItemize}
@@ -72,11 +72,24 @@ Operation get\+Instance Retorna a instância atual de \mbox{\hyperlink{classbr_1
 \begin{DoxyReturn}{Retorna}
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager}{Message\+Manager}} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a8c5267361d3c8ca31ef9e02c21d4d3a8}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a8c5267361d3c8ca31ef9e02c21d4d3a8}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_afab7f2c565c1b689bdd62a78958cd766}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_afab7f2c565c1b689bdd62a78958cd766}} 
+\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily Linked\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message}{Message}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+get\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity,  }\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_type}{Message\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Retorna as mensagens disponíveis para uma entidade 
+\begin{DoxyParams}{Parâmetros}
+{\em entity} & \\
+\hline
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a044ecbae4087785b6198c4c5f6f510f7}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a044ecbae4087785b6198c4c5f6f510f7}} 
 \index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}!sendMessage@{sendMessage}}
 \index{sendMessage@{sendMessage}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}}
 \doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+send\+Message (\begin{DoxyParamCaption}\item[{Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message}{Message}} $>$}]{message }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+send\+Message (\begin{DoxyParamCaption}\item[{Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message}{Message}} $>$}]{message }\end{DoxyParamCaption})}
 
 Operation send\+Message Envia um conjunto de mensagens
 
@@ -110,19 +123,13 @@ Operation send\+Message Envia uma mensagem por uma lista
 \doxysubsubsection{\texorpdfstring{instance}{instance}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager}{Message\+Manager}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-Instância única do \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager}{Message\+Manager}} \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_ac04e4c896f4e2d4f1be3e3cd6f56cd33}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_ac04e4c896f4e2d4f1be3e3cd6f56cd33}} 
+Instância única do \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager}{Message\+Manager}} \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a023e0f953d2cf77de7194be783315765}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a023e0f953d2cf77de7194be783315765}} 
 \index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}!messageList@{messageList}}
 \index{messageList@{messageList}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}}
 \doxysubsubsection{\texorpdfstring{messageList}{messageList}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list}{Message\+List}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+message\+List\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list}{Message\+List}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+message\+List\hspace{0.3cm}{\ttfamily [private]}}
 
-Attributes Listas de mensagens gerenciadas \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a7994d75ae9fa752a8ea86226c1ad1d3e}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_manager_a7994d75ae9fa752a8ea86226c1ad1d3e}} 
-\index{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}!unnamed\_10@{unnamed\_10}}
-\index{unnamed\_10@{unnamed\_10}!br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager@{br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager}}
-\doxysubsubsection{\texorpdfstring{unnamed\_10}{unnamed\_10}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list}{Message\+List}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+gamesystem.\+message.\+Message\+Manager.\+unnamed\+\_\+10\hspace{0.3cm}{\ttfamily [private]}}
-
-Associations 
+Attributes Listas de mensagens gerenciadas 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
 \item 

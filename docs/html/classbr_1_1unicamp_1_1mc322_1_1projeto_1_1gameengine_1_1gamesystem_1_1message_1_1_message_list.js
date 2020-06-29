@@ -1,10 +1,11 @@
 var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list =
 [
-    [ "clear", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a3ebf6a4ae2b48524b9b76bd248c663a2", null ],
-    [ "sendMessage", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a78680720edeea9e6e5fd6321947eeafa", null ],
+    [ "MessageList", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a0983874470abcb874daa4d4034234322", null ],
+    [ "clear", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#ad6edc042477a1fe64fced187fe230622", null ],
+    [ "getMessages", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a268dcda2e93a460ed88f670a943906ed", null ],
+    [ "getType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#ac6e1dc156ccec1eb517eb2791d925b98", null ],
+    [ "sendMessage", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#ad9790a0e4d4ceeac2eb3daf077ed012c", null ],
     [ "sendMessage", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a6b8980d17cca0ed7e131d3540eae4dce", null ],
-    [ "message", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a0a6fbd238ea93e182b818f57fcdb354d", null ],
-    [ "messageType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a63f0c4b398c4c260c1e98fd145c77fdf", null ],
-    [ "subscriber", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a66d6ff61a618f2c73422a377a68a758e", null ],
-    [ "unnamed_14", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#aed83478f82de12f2e36bb9186f202e69", null ]
+    [ "message", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a06f29f90a7fc7b9c01886a2338850f7e", null ],
+    [ "messageType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1message_1_1_message_list.html#a74d2982af2f656cbc6b673b3dfc98a77", null ]
 ];

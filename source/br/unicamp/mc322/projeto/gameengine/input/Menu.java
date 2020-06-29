@@ -3,6 +3,9 @@ package br.unicamp.mc322.projeto.gameengine.input;
 import br.unicamp.mc322.projeto.gameengine.input.Menu;
 import br.unicamp.mc322.projeto.gameengine.output.image.Paintable;
 
+/**
+ * @todo Implementar
+ */
 public class Menu
  implements Paintable
 {
