@@ -59,6 +59,7 @@ public class Pose
         this.x = pose.x;
         this.y = pose.y;
         this.angle = pose.angle;
+        fixAngle();
     }
     /**
      * Operation Pose
@@ -74,6 +75,7 @@ public class Pose
         this.x = x;
         this.y = y;
         this.angle = angle;
+        fixAngle();
     }
     /**
      * Operation set
@@ -98,8 +100,8 @@ public class Pose
     public void set ( float x, float y, float angle )
     {
         set(x,y);
-
         this.angle = angle;
+        fixAngle();
     }
     /**
      * Operation move
@@ -125,6 +127,7 @@ public class Pose
     {
         move(x,y);
         this.angle += angle;
+        fixAngle();
     }
     /**
      * Operation adjacent
@@ -133,7 +136,15 @@ public class Pose
      * @param pose - A outra pose
      * @return boolean
      */
-    public boolean adjacent ( Pose pose ){}
+    public boolean adjacent(Pose pose) {    	
+    	for(int i = (int) (pose.x - 1); i <= pose.x + 1; i++) {
+    		for(int j = (int) (pose.y - 1); j <= pose.y + 1; j++) {
+    			if (i == this.x && j == this.y)
+    				return true;
+    		}
+    	}
+    	return false;
+    }
     /**
      * Operation equal
      * Compara pose com outra

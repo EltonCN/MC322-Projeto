@@ -1,6 +1,8 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
+import br.unicamp.mc322.projeto.gameengine.item.Armor;
 import br.unicamp.mc322.projeto.gameengine.item.Item;
+import br.unicamp.mc322.projeto.gameengine.Pose;
 import br.unicamp.mc322.projeto.gameengine.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.action.Movement;
 import br.unicamp.mc322.projeto.gameengine.entity.CharacterCommander;
@@ -8,7 +10,12 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 
 public abstract class Creature extends Entity
 {
-    /** Attributes */
+    public Creature(String name, Pose pose) {
+		super(name, pose);
+		// TODO Auto-generated constructor stub
+	}
+
+	/** Attributes */
     /**
      * 
      */
@@ -24,7 +31,7 @@ public abstract class Creature extends Entity
     /**
      * 
      */
-    protected Armadura armadura;
+    protected Armor armor;
     /**
      * 
      */
@@ -45,10 +52,7 @@ public abstract class Creature extends Entity
      * 
      */
     protected CharacterCommander commander;
-    /** Associations */
-    private CharacterCommander unnamed_15;
-    private Movement unnamed_12;
-    private Attack unnamed_11;
+
     /**
      * Operation run
      *

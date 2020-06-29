@@ -1,13 +1,18 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
 import br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer;
+
+import java.util.LinkedList;
+
 import br.unicamp.mc322.projeto.gameengine.Pose;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
+import br.unicamp.mc322.projeto.gameengine.gamesystem.message.BasicMessageType;
+import br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message;
+import br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager;
 import br.unicamp.mc322.projeto.gameengine.output.image.Paintable;
 import br.unicamp.mc322.projeto.gameengine.item.Item;
 
-public abstract class Entity
- implements Paintable
+public abstract class Entity implements Paintable
 {
     /** Attributes */
     /**
@@ -26,10 +31,7 @@ public abstract class Entity
      * Itens que a entidade contém
      */
     protected LinkedList<Item> inventory;
-    /** Associations */
-    private Item unnamed_5;
-    private SpriteBuffer unnamed_2;
-    private Pose unnamed_1;
+   
     /**
      * Operation Entity
      * Construtor de entidade
@@ -38,9 +40,25 @@ public abstract class Entity
      * @param pose - Pose inicial da entidade
      * @return 
      */
-    public Entity ( String name , Pose pose)
+    
+    public Entity (String name , Pose pose)
     {
-        
+        this.name = name;
+        this.pose = pose;
+        inventory = new LinkedList<Item>();
+    }
+    
+    public Entity (String name , Pose pose, LinkedList<Item> inventory) {
+    	this(name, pose);
+    	this.inventory = cloneInventory(inventory);
+    }
+    
+    private LinkedList<Item> cloneInventory(LinkedList<Item> items) {
+    	LinkedList<Item> inventory = new LinkedList<Item>();
+    	for(Item item: items) {
+    		inventory.add(item);
+    	}
+    	return inventory;
     }
 
     /**
@@ -57,15 +75,15 @@ public abstract class Entity
      *
      * @return LinkedList<Entity>
      */
-    abstract public LinkedList<Entity> kill (  );
-
+    public abstract LinkedList<Entity> kill (  );
+    
     /**
      * Operation run
      * Executa um ciclo da entidade
      *
      * @return 
      */
-    abstract public run (  );
+    public abstract run ();
 
     /**
      * Operation adjacent
@@ -74,14 +92,18 @@ public abstract class Entity
      * @param entity - Entidade para verificar se é adjacente
      * @return boolean
      */
-    public boolean adjacent ( Entity entity );
+    public boolean adjacent (Entity entity) {
+    	return entity.pose.adjacent(pose);
+    }
 
     /**
      * Operation getMessages
      *
      * @return LinkedList<Message>
      */
-    public LinkedList<Message> getMessages (  );
+    public LinkedList<Message> getMessages(BasicMessageType type) {
+    	return MessageManager.getInstance().getMessages(this, type);
+    }
 
 }
 

@@ -1,6 +1,10 @@
 package br.unicamp.mc322.projeto.gameengine.gamesystem.message;
 
 import br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager;
+
+import java.util.LinkedList;
+
+import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message;
 import br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageList;
 
@@ -31,7 +35,11 @@ public class MessageManager
      *
      * @return MessageManager
      */
-    public MessageManager getInstance (  ){}
+    public static MessageManager getInstance() {
+    	if (instance == null)
+    		instance = new MessageManager();
+    	return instance;
+    }
     /**
      * Operation clear
      * Limpa a lista de mensagens
@@ -53,5 +61,9 @@ public class MessageManager
      * @return 
      */
     private MessageManager (  ){}
+	public LinkedList<Message> getMessages(Entity entity, BasicMessageType type) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
