@@ -84,8 +84,7 @@ public class Pose
      * @param x - Posição x da pose
      * @param y - Posição y da pose
      */
-    public void set ( float x, float y )
-    {
+    public void set ( float x, float y ) {
         this.x = x;
         this.y = y;
     }
@@ -136,16 +135,13 @@ public class Pose
      * @param pose - A outra pose
      * @return boolean
      */
-    public boolean adjacent ( Pose pose )
-    {
+    public boolean adjacent(Pose pose) {
         if(x-pose.x > 1 || x-pose.x < -1)
-        {
             return false;
-        }
         if(y-pose.y > 1 || y-pose.y < -1)
-        {
             return false;
-        }
+        if(x - pose.x == 0 && y - pose.y == 0)
+    		return false;
 
         return true;
     }
