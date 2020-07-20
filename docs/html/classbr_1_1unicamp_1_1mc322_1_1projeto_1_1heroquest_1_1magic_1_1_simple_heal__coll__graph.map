@@ -1,0 +1,7 @@
+<map id="br.unicamp.mc322.projeto.heroquest.magic.SimpleHeal" name="br.unicamp.mc322.projeto.heroquest.magic.SimpleHeal">
+<area shape="rect" id="node1" title=" " alt="" coords="767,42,1043,83"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic.html" title=" " alt="" coords="428,15,704,57"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_element.html" title=" " alt="" coords="12,13,288,54"/>
+<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_cure.html" title=" " alt="" coords="415,83,717,109"/>
+<area shape="rect" id="node5" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,78,295,119"/>
+</map>

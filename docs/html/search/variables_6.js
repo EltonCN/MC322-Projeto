@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['goblin_453',['GOBLIN',['../enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1_hero_quest_entity_type.html#a67af6adb3bf79a073eb2d9ca2bd43d51',1,'br::unicamp::mc322::projeto::game::entity::HeroQuestEntityType']]]
+  ['goldcoin_672',['goldCoin',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#a304ffae10c7cc6262b95b4105c3806f9',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]]
 ];

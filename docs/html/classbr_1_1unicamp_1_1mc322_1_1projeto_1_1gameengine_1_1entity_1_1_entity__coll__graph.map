@@ -1,9 +1,4 @@
 <map id="br.unicamp.mc322.projeto.gameengine.entity.Entity" name="br.unicamp.mc322.projeto.gameengine.entity.Entity">
-<area shape="rect" id="node1" title=" " alt="" coords="921,149,1208,191"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_paintable.html" title=" " alt="" coords="461,5,791,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose.html" title=" " alt="" coords="30,105,310,131"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_buffer.html" title=" " alt="" coords="461,149,791,191"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite.html" title=" " alt="" coords="5,175,335,216"/>
-<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html" title=" " alt="" coords="474,215,778,242"/>
-<area shape="rect" id="node7" title=" " alt="" coords="451,267,801,308"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,292,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="123,5,175,32"/>
 </map>

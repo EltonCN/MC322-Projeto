@@ -1,0 +1,7 @@
+<map id="br.unicamp.mc322.projeto.heroquest.item.LongSword" name="br.unicamp.mc322.projeto.heroquest.item.LongSword">
+<area shape="rect" id="node1" title=" " alt="" coords="667,39,933,80"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html" title=" " alt="" coords="347,5,614,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_item.html" title=" " alt="" coords="19,13,281,39"/>
+<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="343,71,619,112"/>
+<area shape="rect" id="node5" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,71,295,112"/>
+</map>

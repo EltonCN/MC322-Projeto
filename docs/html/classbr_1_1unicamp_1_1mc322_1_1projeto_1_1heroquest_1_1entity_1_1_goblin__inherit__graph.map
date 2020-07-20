@@ -1,0 +1,11 @@
+<map id="br.unicamp.mc322.projeto.heroquest.entity.Goblin" name="br.unicamp.mc322.projeto.heroquest.entity.Goblin">
+<area shape="rect" id="node1" title=" " alt="" coords="1333,136,1607,177"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy.html" title=" " alt="" coords="1012,136,1285,177"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html" title=" " alt="" coords="691,136,964,177"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity.html" title=" " alt="" coords="359,71,632,112"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="9,5,296,47"/>
+<area shape="rect" id="node6" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototypable_entity.html" title=" " alt="" coords="5,71,300,112"/>
+<area shape="rect" id="node7" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_runnable_turn.html" title=" " alt="" coords="348,136,643,177"/>
+<area shape="rect" id="node8" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_runnable.html" title=" " alt="" coords="5,136,300,177"/>
+<area shape="rect" id="node9" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable.html" title=" " alt="" coords="359,201,632,243"/>
+</map>

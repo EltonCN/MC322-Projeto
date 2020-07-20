@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['keyboard_399',['Keyboard',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html#a09bc7ad624c4cbdcc805a31a97e03db2',1,'br::unicamp::mc322::projeto::gameengine::input::Keyboard']]],
-  ['keyeventtoindex_400',['keyEventToIndex',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html#a9755a68bd1a08865d91a2722047223cb',1,'br::unicamp::mc322::projeto::gameengine::input::Keyboard']]],
-  ['keypressed_401',['keyPressed',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html#a794c230ef3eb76bb04a10afe0dc6ad0d',1,'br::unicamp::mc322::projeto::gameengine::input::Keyboard']]],
-  ['keyreleased_402',['keyReleased',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html#a3256a7cf90ace78a7b8158ec7ee5b5de',1,'br::unicamp::mc322::projeto::gameengine::input::Keyboard']]],
-  ['keytyped_403',['keyTyped',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1input_1_1_keyboard.html#a4767f761702c72e731a14625bdb709c4',1,'br::unicamp::mc322::projeto::gameengine::input::Keyboard']]],
-  ['kill_404',['kill',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#af20b9935549f63efc2150f6d2634692c',1,'br::unicamp::mc322::projeto::gameengine::entity::Entity']]]
+  ['insertservice_603',['insertService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager.html#a6723f07f66110c2514abaf4b4b53f072',1,'br::unicamp::mc322::projeto::gameengine::service::ServiceManager']]],
+  ['insertstageprototype_604',['insertStagePrototype',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototype_stage_creator_service.html#ad2096c5de15bcf819fb089b3e17b8fe3',1,'br::unicamp::mc322::projeto::gameengine::service::PrototypeStageCreatorService']]],
+  ['interact_605',['interact',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_interactable.html#a4cb8bcd9650b7edd2ea0b1d1ab905141',1,'br::unicamp::mc322::projeto::heroquest::entity::Interactable']]],
+  ['isclicked_606',['isClicked',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_button.html#a91d36b2d327a83961526c47c2ca50b28',1,'br::unicamp::mc322::projeto::gameengine::service::Button']]],
+  ['isenabled_607',['isEnabled',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a046d6210b0e6dd639c21ac991dccf88f',1,'br::unicamp::mc322::projeto::gameengine::entity::Entity']]],
+  ['isinside_608',['isInside',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_area.html#a2dabc092b1afadcdf8ff3312615ab636',1,'br::unicamp::mc322::projeto::gameengine::component::Area']]],
+  ['isinturn_609',['isInTurn',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_runnable_turn.html#a6900e8dd9f63b7a1fc9d0cf4b22fc2e8',1,'br::unicamp::mc322::projeto::gameengine::service::RunnableTurn']]],
+  ['ispermanent_610',['isPermanent',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#aaead3de461c54d2d144d343071a66f4f',1,'br::unicamp::mc322::projeto::gameengine::entity::Entity']]],
+  ['ispressed_611',['isPressed',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_key_input_service.html#a17d4877447958d323b9cf3ef408a675a',1,'br::unicamp::mc322::projeto::gameengine::service::KeyInputService']]],
+  ['isreleased_612',['isReleased',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_key_input_service.html#aba35dc69cdb22f315d4f3bd77522624f',1,'br::unicamp::mc322::projeto::gameengine::service::KeyInputService']]],
+  ['item_613',['Item',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_item.html#a73215506744291f8db8805373b4a8e0d',1,'br::unicamp::mc322::projeto::heroquest::Item']]]
 ];

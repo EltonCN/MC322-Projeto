@@ -1,13 +1,23 @@
 var searchData=
 [
-  ['screen_280',['Screen',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_screen.html',1,'br::unicamp::mc322::projeto::gameengine::output::image']]],
-  ['shortsword_281',['ShortSword',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1_short_sword.html',1,'br::unicamp::mc322::projeto::game']]],
-  ['simpleattack_282',['SimpleAttack',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_simple_attack.html',1,'br::unicamp::mc322::projeto::gameengine::action']]],
-  ['simpleheal_283',['SimpleHeal',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1magic_1_1_simple_heal.html',1,'br::unicamp::mc322::projeto::game::magic']]],
-  ['skeleton_284',['Skeleton',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1game_1_1entity_1_1monster_1_1_skeleton.html',1,'br::unicamp::mc322::projeto::game::entity::monster']]],
-  ['solid_285',['Solid',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_solid.html',1,'br::unicamp::mc322::projeto::gameengine::entity']]],
-  ['sprite_286',['Sprite',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite.html',1,'br::unicamp::mc322::projeto::gameengine::output::image']]],
-  ['spritebuffer_287',['SpriteBuffer',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_buffer.html',1,'br::unicamp::mc322::projeto::gameengine::output::image']]],
-  ['spritefactory_288',['SpriteFactory',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1output_1_1image_1_1_sprite_factory.html',1,'br::unicamp::mc322::projeto::gameengine::output::image']]],
-  ['support_289',['Support',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_support.html',1,'br::unicamp::mc322::projeto::gameengine::action']]]
+  ['service_428',['Service',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['servicemanager_429',['ServiceManager',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['servicetype_430',['ServiceType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['shortsword_431',['ShortSword',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html',1,'br::unicamp::mc322::projeto::heroquest::item']]],
+  ['simpleattack_432',['SimpleAttack',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html',1,'br::unicamp::mc322::projeto::heroquest::action']]],
+  ['simpleheal_433',['SimpleHeal',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_simple_heal.html',1,'br::unicamp::mc322::projeto::heroquest::magic']]],
+  ['skeleton_434',['Skeleton',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton.html',1,'br::unicamp::mc322::projeto::heroquest::entity']]],
+  ['spartialentitystoreservice_435',['SpartialEntityStoreService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_spartial_entity_store_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['spriteextrinsic_436',['SpriteExtrinsic',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_extrinsic.html',1,'br::unicamp::mc322::projeto::gameengine::sprite']]],
+  ['spriteintrinsic_437',['SpriteIntrinsic',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_intrinsic.html',1,'br::unicamp::mc322::projeto::gameengine::sprite']]],
+  ['stagecreatorservice_438',['StageCreatorService',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['stageidentifier_439',['StageIdentifier',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_identifier.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['stagememento_440',['StageMemento',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_memento.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['stageprototype_441',['StagePrototype',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_prototype.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['stagetype_442',['StageType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service_1_1_stage_type.html',1,'br::unicamp::mc322::projeto::heroquest::service']]],
+  ['swingbutton_443',['SwingButton',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1menu_1_1_swing_button.html',1,'br::unicamp::mc322::projeto::gameengine::menu']]],
+  ['swingimage_444',['SwingImage',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_swing_image.html',1,'br::unicamp::mc322::projeto::gameengine::sprite']]],
+  ['swingmenu_445',['SwingMenu',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1menu_1_1_swing_menu.html',1,'br::unicamp::mc322::projeto::gameengine::menu']]],
+  ['swingscreen_446',['SwingScreen',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_swing_screen.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['swingstringimage_447',['SwingStringImage',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_swing_string_image.html',1,'br::unicamp::mc322::projeto::gameengine::sprite']]]
 ];
