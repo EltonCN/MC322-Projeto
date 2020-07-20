@@ -1,4 +1,4 @@
-package br.unicamp.mc322.projeto.heroquest;
+package br.unicamp.mc322.projeto.heroquest.item;
 
 import br.unicamp.mc322.projeto.heroquest.Item;
 

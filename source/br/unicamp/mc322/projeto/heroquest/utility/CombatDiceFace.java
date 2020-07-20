@@ -1,7 +1,7 @@
-package br.unicamp.mc322.projeto.heroquest;
+package br.unicamp.mc322.projeto.heroquest.utility;
 
 
-public class CombatDiceFace
+public enum CombatDiceFace
 
 {
     /** Attributes */

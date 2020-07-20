@@ -1,4 +1,4 @@
-package br.unicamp.mc322.projeto.heroquest;
+package br.unicamp.mc322.projeto.heroquest.utility;
 
 import br.unicamp.mc322.projeto.heroquest.CombatDiceFace;
 import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;

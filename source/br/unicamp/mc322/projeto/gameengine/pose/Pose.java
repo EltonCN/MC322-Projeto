@@ -1,4 +1,4 @@
-package br.unicamp.mc322.projeto.gameengine;
+package br.unicamp.mc322.projeto.gameengine.pose;
 
 import java.lang.Math;
 
