@@ -4,6 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer;
 
 import java.util.LinkedList;
 
+import br.unicamp.mc322.projeto.gameengine.Metric;
 import br.unicamp.mc322.projeto.gameengine.Pose;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.gamesystem.message.BasicMessageType;
@@ -81,9 +82,9 @@ public abstract class Entity implements Paintable
      * Operation run
      * Executa um ciclo da entidade
      *
-     * @return 
+     * @return boolean - False se o turno da entidade não estiver terminado
      */
-    public abstract run ();
+    public abstract boolean  run ();
 
     /**
      * Operation adjacent
@@ -104,6 +105,20 @@ public abstract class Entity implements Paintable
     public LinkedList<Message> getMessages(BasicMessageType type) {
     	return MessageManager.getInstance().getMessages(this, type);
     }
+
+    /**
+     * Operation distance
+     * 
+     * Calcula a distância até uma pose
+     * 
+     * @param pose2 A outra pose
+     * @param metric Métrica a ser utilizada
+     * @return float
+     */
+    public float distance(Pose pose2, Metric metric) 
+    {
+		return this.pose.distance(pose2, metric);
+	}
 
 }
 
