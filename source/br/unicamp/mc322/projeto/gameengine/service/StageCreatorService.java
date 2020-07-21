@@ -4,7 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.service.StageIdentifier;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
 public interface StageCreatorService
- implements Service
+ extends Service
 {
     /**
      * Operation loadStage

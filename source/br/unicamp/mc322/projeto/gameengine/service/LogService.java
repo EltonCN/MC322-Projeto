@@ -5,7 +5,7 @@ import br.unicamp.mc322.projeto.gameengine.service.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
 public interface LogService
- implements Service
+ extends Service
 {
     /**
      * Operation sendLog

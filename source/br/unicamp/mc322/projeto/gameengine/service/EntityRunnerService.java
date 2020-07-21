@@ -3,7 +3,7 @@ package br.unicamp.mc322.projeto.gameengine.service;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
 public interface EntityRunnerService
- implements Service
+ extends Service
 {
     /**
      * Operation run

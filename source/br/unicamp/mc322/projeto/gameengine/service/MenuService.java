@@ -4,7 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.service.Menu;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
 public interface MenuService
- implements Service
+ extends Service
 {
     /**
      * Operation addMenu

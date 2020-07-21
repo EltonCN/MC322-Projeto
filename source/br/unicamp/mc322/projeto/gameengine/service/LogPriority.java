@@ -1,13 +1,10 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
-
-public class LogPriority
-
+/**
+ * Prioridade da entrada no log
+ */
+public enum LogPriority
 {
-    /** Attributes */
-    /**
-     * 
-     */
       DEBUG, ERROR, LOG, WARNING;
 }
 

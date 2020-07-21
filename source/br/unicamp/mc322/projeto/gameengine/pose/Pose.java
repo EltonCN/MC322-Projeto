@@ -75,43 +75,7 @@ public class Pose
         this.angle = angle;
         fixAngle();
     }
-    /**
-     * Operation set
-     * Define as coordenadas da pose
-     *
-     * @param x - Posição x da pose
-     * @param y - Posição y da pose
-     */
-    public void set ( float x, float y ) {
-        this.x = x;
-        this.y = y;
-    }
-    /**
-     * Operation set
-     * Define as coordenadas da pose
-     *
-     * @param x - Posição x da pose
-     * @param y - Posição y da pose
-     * @param angle - Ângulo da pose
-     */
-    public void set ( float x, float y, float angle )
-    {
-        set(x,y);
-        this.angle = angle;
-        fixAngle();
-    }
-    /**
-     * Operation set
-     * Define as coordenadas da pose
-     *
-     * @param x - Posição x da pose
-     * @param y - Posição y da pose
-     * @param angle - Ângulo da pose
-     */
-    public void set (Pose pose)
-    {
-        set(pose.x,pose.y, pose.angle);
-    }
+
     /**
      * Operation move
      * Movimenta/incrementa a pose
@@ -119,10 +83,11 @@ public class Pose
      * @param x - Incremento no eixo x
      * @param y - Incremento no eixo y
      */
-    public void move ( float x, float y )
+    public Pose move ( float x, float y )
     {
-        this.x += x;
-        this.y += y;
+        Pose pose = new Pose(this.x+x, this.y+y, this.angle);
+
+        return pose;
     }
     /**
      * Operation move
@@ -132,11 +97,11 @@ public class Pose
      * @param y - Incremento no eixo y
      * @param angle - Incremento no ângulo
      */
-    public void move ( float x, float y, float angle )
+    public Pose move ( float x, float y, float angle )
     {
-        move(x,y);
-        this.angle += angle;
-        fixAngle();
+        Pose pose = new Pose(this.x+x, this.y+y, this.angle+angle);
+
+        return pose;
     }
     /**
      * Operation adjacent
@@ -256,4 +221,10 @@ public class Pose
 
         return result;
     }
+	public float getX() {
+		return x;
+	}
+	public float getY() {
+		return y;
+	}
 }

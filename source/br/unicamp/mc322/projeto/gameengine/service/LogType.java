@@ -1,21 +1,10 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
-
-public class LogType
-
+/**
+ * Tipos de Log existentes
+ */
+public enum LogType
 {
-    /** Attributes */
-    /**
-     * 
-     */
-      ENTITYRUNNER, ENTITYSTORE, STAGECREATOR;
-    /**
-     * 
-     */
-      KEYINPUT, RESOURCE, IMAGEOUTPUT, LOG;
-    /**
-     * 
-     */
-      OTHER;
+  ENTITYRUNNER, ENTITYSTORE, STAGECREATOR, KEYINPUT, RESOURCE, IMAGEOUTPUT, LOG, MANAGER, OTHER;
 }
 

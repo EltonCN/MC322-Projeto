@@ -4,9 +4,12 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
+import br.unicamp.mc322.projeto.gameengine.service.exception.*;
+
+import java.util.NoSuchElementException;
 
 public interface EntityStoreService
- implements Service
+ extends Service
 {
     /**
      * Operation store
@@ -14,7 +17,7 @@ public interface EntityStoreService
      *
      * @param entity - Entidade a ser armazenada
      */
-    public void store ( Entity entity );
+    public void store ( Entity entity ) throws DisabledServiceException;
 
     /**
      * Operation getRange
@@ -25,7 +28,7 @@ public interface EntityStoreService
      * @param metric - Métrica que será utilizada para calcular o range
      * @return Entity[]
      */
-    public Entity[] getRange ( Pose origin, float radius, Metric metric );
+    public Entity[] getRange ( Pose origin, float radius, Metric metric ) throws DisabledServiceException;
 
     /**
      * Operation changePose
@@ -35,7 +38,7 @@ public interface EntityStoreService
      * @param final - Pose final da entidade
      * @param entity - Entidade que será movida
      */
-    public void changePose ( Pose origin, Pose final, Entity entity );
+    public void changePose ( Pose origin, Pose end ) throws DisabledServiceException, NoSuchElementException;
 
     /**
      * Operation removeEntity
@@ -43,7 +46,7 @@ public interface EntityStoreService
      *
      * @param pose - Pose da entidade que será removida
      */
-    public void removeEntity ( Pose pose );
+    public void removeEntity ( Pose pose ) throws DisabledServiceException;
 
     /**
      * Operation removeEntity
@@ -51,7 +54,7 @@ public interface EntityStoreService
      *
      * @param entity - Entidade que será removida
      */
-    public void removeEntity ( Entity entity );
+    public void removeEntity ( Entity entity ) throws DisabledServiceException;
 
 }
 
