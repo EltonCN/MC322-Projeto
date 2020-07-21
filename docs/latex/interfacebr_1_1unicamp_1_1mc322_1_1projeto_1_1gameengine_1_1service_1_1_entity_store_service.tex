@@ -1,0 +1,119 @@
+\hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service}{}\doxysection{Referência ao interface br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service}
+\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service}\index{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}}
+
+
+Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_aa804b53ae7a56e4a9c683d130abadb13}{store}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_af54b71217e7ecb5a51a147cc306cc17d}{get\+Range}} (Pose origin, float radius, Metric metric)
+\item 
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_a72687a5c11e9c320fd647f0d9af837c4}{change\+Pose}} (Pose origin, Pose final, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)
+\item 
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_ad35426316ccf589e8d82edd64f1edbeb}{remove\+Entity}} (Pose pose)
+\item 
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_a43aacfeb00c706c4a0c0727eaaa78941}{remove\+Entity}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_a72687a5c11e9c320fd647f0d9af837c4}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_a72687a5c11e9c320fd647f0d9af837c4}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}!changePose@{changePose}}
+\index{changePose@{changePose}!br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}}
+\doxysubsubsection{\texorpdfstring{changePose()}{changePose()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service.\+change\+Pose (\begin{DoxyParamCaption}\item[{Pose}]{origin,  }\item[{Pose}]{final,  }\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+Operation change\+Pose Altera a pose de alguma entidade
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em origin} & -\/ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} de origem da entidade \\
+\hline
+{\em final} & -\/ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} final da entidade \\
+\hline
+{\em entity} & -\/ Entidade que será movida \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_af54b71217e7ecb5a51a147cc306cc17d}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_af54b71217e7ecb5a51a147cc306cc17d}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}!getRange@{getRange}}
+\index{getRange@{getRange}!br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service.\+get\+Range (\begin{DoxyParamCaption}\item[{Pose}]{origin,  }\item[{float}]{radius,  }\item[{Metric}]{metric }\end{DoxyParamCaption})}
+
+Operation get\+Range Retorna a lista de entidades dentro de um range específico
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em origin} & -\/ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} de origem \\
+\hline
+{\em radius} & -\/ Range de alcance \\
+\hline
+{\em metric} & -\/ Métrica que será utilizada para calcular o range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Entity\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_a43aacfeb00c706c4a0c0727eaaa78941}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_a43aacfeb00c706c4a0c0727eaaa78941}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service.\+remove\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+Operation remove\+Entity Remove uma entidade
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em entity} & -\/ Entidade que será removida \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_ad35426316ccf589e8d82edd64f1edbeb}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_ad35426316ccf589e8d82edd64f1edbeb}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}!removeEntity@{removeEntity}}
+\index{removeEntity@{removeEntity}!br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}}
+\doxysubsubsection{\texorpdfstring{removeEntity()}{removeEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service.\+remove\+Entity (\begin{DoxyParamCaption}\item[{Pose}]{pose }\end{DoxyParamCaption})}
+
+Operation remove\+Entity Remove uma entidade
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pose} & -\/ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1_pose}{Pose}} da entidade que será removida \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_aa804b53ae7a56e4a9c683d130abadb13}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service_aa804b53ae7a56e4a9c683d130abadb13}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}!store@{store}}
+\index{store@{store}!br.unicamp.mc322.projeto.gameengine.service.EntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Entity\+Store\+Service.\+store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption})}
+
+Operation store Armazena uma entidade
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em entity} & -\/ Entidade a ser armazenada \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para este interface foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/eltsu/\+Documents/\+Git\+Hub/\+M\+C322-\/\+Projeto/source/br/unicamp/mc322/projeto/gameengine/service/\mbox{\hyperlink{_entity_store_service_8java}{Entity\+Store\+Service.\+java}}\end{DoxyCompactItemize}

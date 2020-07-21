@@ -1,13 +1,23 @@
 var searchData=
 [
-  ['screen_2ejava_358',['Screen.java',['../_screen_8java.html',1,'']]],
-  ['shortsword_2ejava_359',['ShortSword.java',['../_short_sword_8java.html',1,'']]],
-  ['simpleattack_2ejava_360',['SimpleAttack.java',['../_simple_attack_8java.html',1,'']]],
-  ['simpleheal_2ejava_361',['SimpleHeal.java',['../_simple_heal_8java.html',1,'']]],
-  ['skeleton_2ejava_362',['Skeleton.java',['../_skeleton_8java.html',1,'']]],
-  ['solid_2ejava_363',['Solid.java',['../_solid_8java.html',1,'']]],
-  ['sprite_2ejava_364',['Sprite.java',['../_sprite_8java.html',1,'']]],
-  ['spritebuffer_2ejava_365',['SpriteBuffer.java',['../_sprite_buffer_8java.html',1,'']]],
-  ['spritefactory_2ejava_366',['SpriteFactory.java',['../_sprite_factory_8java.html',1,'']]],
-  ['support_2ejava_367',['Support.java',['../_support_8java.html',1,'']]]
+  ['service_2ejava_543',['Service.java',['../_service_8java.html',1,'']]],
+  ['servicemanager_2ejava_544',['ServiceManager.java',['../_service_manager_8java.html',1,'']]],
+  ['servicetype_2ejava_545',['ServiceType.java',['../_service_type_8java.html',1,'']]],
+  ['shortsword_2ejava_546',['ShortSword.java',['../_short_sword_8java.html',1,'']]],
+  ['simpleattack_2ejava_547',['SimpleAttack.java',['../_simple_attack_8java.html',1,'']]],
+  ['simpleheal_2ejava_548',['SimpleHeal.java',['../_simple_heal_8java.html',1,'']]],
+  ['skeleton_2ejava_549',['Skeleton.java',['../_skeleton_8java.html',1,'']]],
+  ['spartialentitystoreservice_2ejava_550',['SpartialEntityStoreService.java',['../_spartial_entity_store_service_8java.html',1,'']]],
+  ['spriteextrinsic_2ejava_551',['SpriteExtrinsic.java',['../_sprite_extrinsic_8java.html',1,'']]],
+  ['spriteintrinsic_2ejava_552',['SpriteIntrinsic.java',['../_sprite_intrinsic_8java.html',1,'']]],
+  ['stagecreatorservice_2ejava_553',['StageCreatorService.java',['../_stage_creator_service_8java.html',1,'']]],
+  ['stageidentifier_2ejava_554',['StageIdentifier.java',['../_stage_identifier_8java.html',1,'']]],
+  ['stagememento_2ejava_555',['StageMemento.java',['../_stage_memento_8java.html',1,'']]],
+  ['stageprototype_2ejava_556',['StagePrototype.java',['../_stage_prototype_8java.html',1,'']]],
+  ['stagetype_2ejava_557',['StageType.java',['../_stage_type_8java.html',1,'']]],
+  ['swingbutton_2ejava_558',['SwingButton.java',['../_swing_button_8java.html',1,'']]],
+  ['swingimage_2ejava_559',['SwingImage.java',['../_swing_image_8java.html',1,'']]],
+  ['swingmenu_2ejava_560',['SwingMenu.java',['../_swing_menu_8java.html',1,'']]],
+  ['swingscreen_2ejava_561',['SwingScreen.java',['../_swing_screen_8java.html',1,'']]],
+  ['swingstringimage_2ejava_562',['SwingStringImage.java',['../_swing_string_image_8java.html',1,'']]]
 ];

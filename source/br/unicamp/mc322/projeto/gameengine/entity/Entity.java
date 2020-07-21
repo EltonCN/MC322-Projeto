@@ -1,109 +1,90 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
-import br.unicamp.mc322.projeto.gameengine.output.image.SpriteBuffer;
+import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 
-import java.util.LinkedList;
+public abstract class Entity
 
-import br.unicamp.mc322.projeto.gameengine.Pose;
-import br.unicamp.mc322.projeto.gameengine.entity.Entity;
-import br.unicamp.mc322.projeto.gameengine.gamesystem.message.BasicMessageType;
-import br.unicamp.mc322.projeto.gameengine.gamesystem.message.Message;
-import br.unicamp.mc322.projeto.gameengine.gamesystem.message.MessageManager;
-import br.unicamp.mc322.projeto.gameengine.output.image.Paintable;
-import br.unicamp.mc322.projeto.gameengine.item.Item;
-
-public abstract class Entity implements Paintable
 {
     /** Attributes */
     /**
-     * SpriteBuffer atual da entidade
-     */
-    private SpriteBuffer sprite;
-    /**
-     * Pose atual da entidade
+     * Pose da entidade
      */
     private Pose pose;
     /**
-     * Nome da entidade
+     * 
      */
-    private String name;
-    /**
-     * Itens que a entidade contém
-     */
-    protected LinkedList<Item> inventory;
-   
+    protected boolean enabled;
     /**
      * Operation Entity
      * Construtor de entidade
      *
-     * @param name - Nome da entidade
-     * @param pose - Pose inicial da entidade
+     * @param pose - 
      * @return 
      */
-    
-    public Entity (String name , Pose pose)
-    {
-        this.name = name;
-        this.pose = pose;
-        inventory = new LinkedList<Item>();
-    }
-    
-    public Entity (String name , Pose pose, LinkedList<Item> inventory) {
-    	this(name, pose);
-    	this.inventory = cloneInventory(inventory);
-    }
-    
-    private LinkedList<Item> cloneInventory(LinkedList<Item> items) {
-    	LinkedList<Item> inventory = new LinkedList<Item>();
-    	for(Item item: items) {
-    		inventory.add(item);
-    	}
-    	return inventory;
-    }
+    public Entity ( Pose pose );
 
     /**
-     * Operation alive
-     * Verifica se a entidade ainda deve ser executada
+     * Operation isPermanent
+     * Verifica se a entidade é permanente
      *
      * @return boolean
      */
-    abstract public boolean alive (  );
+    public boolean isPermanent (  );
 
     /**
-     * Operation kill
-     * Encerra a entidade e retorna outras entidades decorrentes de seu fim
+     * Operation stageChanged
+     * Executa operações em trocas de estágio
      *
-     * @return LinkedList<Entity>
      */
-    public abstract LinkedList<Entity> kill (  );
-    
-    /**
-     * Operation run
-     * Executa um ciclo da entidade
-     *
-     * @return 
-     */
-    public abstract run ();
+    public void stageChanged (  );
 
     /**
-     * Operation adjacent
-     * Verifica se outra entidade é adjacente a esta
+     * Operation isEnabled
+     * Verifica se a entidade está ativa
      *
-     * @param entity - Entidade para verificar se é adjacente
      * @return boolean
      */
-    public boolean adjacent (Entity entity) {
-    	return entity.pose.adjacent(pose);
-    }
+    public boolean isEnabled (  );
 
     /**
-     * Operation getMessages
+     * Operation disable
+     * Desativa a entidade
      *
-     * @return LinkedList<Message>
      */
-    public LinkedList<Message> getMessages(BasicMessageType type) {
-    	return MessageManager.getInstance().getMessages(this, type);
-    }
+    public void disable (  );
+
+    /**
+     * Operation draw
+     * Desenha a entidade na tela
+     *
+     */
+    public void draw (  );
+
+    /**
+     * Operation getPose
+     * Retorna a pose da entidade
+     *
+     * @return Pose
+     */
+    public Pose getPose (  );
+
+    /**
+     * Operation moveTo
+     * Move a entidade para uma pose específica
+     *
+     * @param pose - 
+     */
+    protected void moveTo ( Pose pose );
+
+    /**
+     * Operation moveBy
+     * Move a entidade por um deslocamento específico
+     *
+     * @param deltaX - 
+     * @param deltaY - 
+     * @param deltaAngle - 
+     */
+    protected void moveBy ( float deltaX, float deltaY, float deltaAngle );
 
 }
 

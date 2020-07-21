@@ -1,17 +1,14 @@
 var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity =
 [
-    [ "Entity", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a4e04c8ea302fbf0d0b5065dca6e4d988", null ],
-    [ "adjacent", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#afb5fab26bfe14f878cd0f13ac0c91be7", null ],
-    [ "alive", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#acc652210b9c4e77c1fb7df5d3ce978b4", null ],
-    [ "distance", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a27a5f5e9eb18b1bb92503af230b96753", null ],
-    [ "getMessages", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a30967117b34d8cec6d4faae4735fe639", null ],
-    [ "kill", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#af20b9935549f63efc2150f6d2634692c", null ],
-    [ "run", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a97a3106dd715d82ce39c4d004069e54b", null ],
-    [ "inventory", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a98100ec4cef929913784c833f88ea80e", null ],
-    [ "name", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a3d4c7695aeb7a706d3c7fb5d1d3e1259", null ],
-    [ "pose", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a5d94623f8a8c4320626f60df3e94d5f1", null ],
-    [ "sprite", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a335f3b3adf3981210e4e624068e5169b", null ],
-    [ "unnamed_1", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#acecf1fe815bb59791d278020270f2d23", null ],
-    [ "unnamed_2", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a5846a94beaca6a2e4ac7e0ae6fdb6581", null ],
-    [ "unnamed_5", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a0212405f4d494512cc6d6c040bf0676c", null ]
+    [ "Entity", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#aab08b3ddb17af085175b269c630eaba6", null ],
+    [ "disable", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#ace6c297ccac178dc05deca0847f73d2e", null ],
+    [ "draw", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#af7ebeab7de7f6211aa884bdc61cd6a01", null ],
+    [ "getPose", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a2db607f3c7ff64080f8e556c8edd2792", null ],
+    [ "isEnabled", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a046d6210b0e6dd639c21ac991dccf88f", null ],
+    [ "isPermanent", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#aaead3de461c54d2d144d343071a66f4f", null ],
+    [ "moveBy", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a28b952a6353b29343f523cb8b46e9ad6", null ],
+    [ "moveTo", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a7e690754e6408b38e703b7c8918eca51", null ],
+    [ "stageChanged", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#af63e56b0023e7b7903af32ea0a2c240d", null ],
+    [ "enabled", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a5b8f7facbda293bf2685093df41498f0", null ],
+    [ "pose", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a5d94623f8a8c4320626f60df3e94d5f1", null ]
 ];

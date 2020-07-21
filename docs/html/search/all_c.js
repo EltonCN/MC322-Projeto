@@ -1,7 +1,24 @@
 var searchData=
 [
-  ['name_149',['name',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html#a3d4c7695aeb7a706d3c7fb5d1d3e1259',1,'br.unicamp.mc322.projeto.gameengine.entity.Entity.name()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room.html#a4d435ca2cc744fc56440f6ac88214145',1,'br.unicamp.mc322.projeto.gameengine.gamesystem.Room.name()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1item_1_1_item.html#a0331c5d89e85bb259a07b5df5d9e8983',1,'br.unicamp.mc322.projeto.gameengine.item.Item.name()']]],
-  ['nextroom_150',['nextRoom',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1gamesystem_1_1_room.html#a11cbd8f9b9a0329d4a52e31e15cd3332',1,'br::unicamp::mc322::projeto::gameengine::gamesystem::Room']]],
-  ['npc_151',['NPC',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_n_p_c.html',1,'br::unicamp::mc322::projeto::gameengine::entity']]],
-  ['npc_2ejava_152',['NPC.java',['../_n_p_c_8java.html',1,'']]]
+  ['name_206',['name',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player.html#a1b557c93100b21065b26a4d1caef3b7a',1,'br.unicamp.mc322.projeto.heroquest.entity.Player.name()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_item.html#afa852dd5cb35690a432eee4266bc29d9',1,'br.unicamp.mc322.projeto.heroquest.Item.name()']]],
+  ['nattackdice_207',['nAttackDice',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#a53aa68994ec8906a974e012dc76c1da3',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]],
+  ['ndefensedice_208',['nDefenseDice',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#acaf348318cf724f34ae2b818e8468c03',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]],
+  ['notavaibleserviceexception_209',['NotAvaibleServiceException',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_not_avaible_service_exception.html',1,'br::unicamp::mc322::projeto::gameengine::service::exception']]],
+  ['notavaibleserviceexception_2ejava_210',['NotAvaibleServiceException.java',['../_not_avaible_service_exception_8java.html',1,'']]],
+  ['nulimageoutputservice_211',['NulImageOutputService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_nul_image_output_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nulimageoutputservice_2ejava_212',['NulImageOutputService.java',['../_nul_image_output_service_8java.html',1,'']]],
+  ['nullentityrunnerservice_213',['NullEntityRunnerService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_runner_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nullentityrunnerservice_2ejava_214',['NullEntityRunnerService.java',['../_null_entity_runner_service_8java.html',1,'']]],
+  ['nullentitystoreservice_215',['NullEntityStoreService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_store_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nullentitystoreservice_2ejava_216',['NullEntityStoreService.java',['../_null_entity_store_service_8java.html',1,'']]],
+  ['nullkeyinputservice_217',['NullKeyInputService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_key_input_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nullkeyinputservice_2ejava_218',['NullKeyInputService.java',['../_null_key_input_service_8java.html',1,'']]],
+  ['nulllogservice_219',['NullLogService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_log_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nulllogservice_2ejava_220',['NullLogService.java',['../_null_log_service_8java.html',1,'']]],
+  ['nullmenuservice_221',['NullMenuService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_menu_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nullmenuservice_2ejava_222',['NullMenuService.java',['../_null_menu_service_8java.html',1,'']]],
+  ['nullresourceservice_223',['NullResourceService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_resource_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nullresourceservice_2ejava_224',['NullResourceService.java',['../_null_resource_service_8java.html',1,'']]],
+  ['nullstagecreatorservice_225',['NullStageCreatorService',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['nullstagecreatorservice_2ejava_226',['NullStageCreatorService.java',['../_null_stage_creator_service_8java.html',1,'']]]
 ];
