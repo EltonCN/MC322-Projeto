@@ -74,7 +74,7 @@ public abstract class Entity
      *
      * @param pose - 
      */
-    protected void moveTo ( Pose pose );
+    public void moveTo ( Pose pose );
 
     /**
      * Operation moveBy

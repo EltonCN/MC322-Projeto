@@ -246,4 +246,10 @@ public class Pose
 
         return result;
     }
+	public float getX() {
+		return x;
+	}
+	public float getY() {
+		return y;
+	}
 }
