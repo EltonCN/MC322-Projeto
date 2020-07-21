@@ -1,9 +1,8 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
-import br.unicamp.mc322.projeto.gameengine.service.Service;
+import java.awt.event.KeyEvent;
 
-public interface KeyInputService
- implements Service
+public interface KeyInputService extends Service
 {
     /**
      * Operation isPressed
@@ -12,7 +11,7 @@ public interface KeyInputService
      * @param key - Tecla
      * @return boolean
      */
-    public boolean isPressed ( Key key );
+    public boolean isPressed (KeyEvent key);
 
     /**
      * Operation isReleased
@@ -21,7 +20,7 @@ public interface KeyInputService
      * @param key - Tecla
      * @return boolean
      */
-    public boolean isReleased ( Key key );
+    public boolean isReleased (KeyEvent key);
 
 }
 
