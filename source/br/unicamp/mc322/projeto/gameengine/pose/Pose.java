@@ -2,8 +2,6 @@ package br.unicamp.mc322.projeto.gameengine.pose;
 
 import java.lang.Math;
 
-import br.unicamp.mc322.projeto.gameengine.Pose;
-import br.unicamp.mc322.projeto.gameengine.Metric;
 
 public class Pose
 
@@ -101,6 +99,18 @@ public class Pose
         set(x,y);
         this.angle = angle;
         fixAngle();
+    }
+    /**
+     * Operation set
+     * Define as coordenadas da pose
+     *
+     * @param x - Posição x da pose
+     * @param y - Posição y da pose
+     * @param angle - Ângulo da pose
+     */
+    public void set (Pose pose)
+    {
+        set(pose.x,pose.y, pose.angle);
     }
     /**
      * Operation move
