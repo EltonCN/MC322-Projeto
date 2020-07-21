@@ -21,7 +21,9 @@ public abstract class Entity
      * @param pose - 
      * @return 
      */
-    public Entity ( Pose pose );
+    public Entity (Pose pose) {
+    	this.pose = pose;
+    }
 
     /**
      * Operation isPermanent
@@ -29,7 +31,9 @@ public abstract class Entity
      *
      * @return boolean
      */
-    public boolean isPermanent (  );
+    public boolean isPermanent (  ) {
+    	return false;
+    }
 
     /**
      * Operation stageChanged
@@ -66,7 +70,9 @@ public abstract class Entity
      *
      * @return Pose
      */
-    public Pose getPose (  );
+    public Pose getPose() {
+    	return pose;
+    }
 
     /**
      * Operation moveTo
@@ -74,7 +80,9 @@ public abstract class Entity
      *
      * @param pose - 
      */
-    protected void moveTo ( Pose pose );
+    protected void moveTo (Pose pose) {
+    	this.pose.set(pose);
+    }
 
     /**
      * Operation moveBy
@@ -84,7 +92,9 @@ public abstract class Entity
      * @param deltaY - 
      * @param deltaAngle - 
      */
-    protected void moveBy ( float deltaX, float deltaY, float deltaAngle );
+    protected void moveBy ( float deltaX, float deltaY, float deltaAngle ) {
+    	this.pose.move(deltaX, deltaY, deltaAngle);
+    }
 
 }
 

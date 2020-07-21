@@ -67,7 +67,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn i
      * @param nDefenseDice - Quantidade de dados de defesa que a criatura possui
      * @return 
      */
-    public Creature ( Pose pose, int nAttackDice, int nDefenseDice );
+    public Creature(Pose pose, int nAttackDice, int nDefenseDice);
 
     /**
      * Operation Creature
@@ -78,7 +78,12 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn i
      * @param nDefenseDice - Quantidade de dados de defesa que a criatura possui
      * @return 
      */
-    public Creature ( Pose pose, int life, int nAttackDice, int nDefenseDice );
+    public Creature (Pose pose, int life, int nAttackDice, int nDefenseDice) {
+    	super(pose);
+    	this.life = life;
+    	this.nAttackDice = nAttackDice;
+    	this.nDefenseDice = nDefenseDice;
+    }
 
     /**
      * Operation run
@@ -89,17 +94,26 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn i
 
     /**
      * Operation sofrerAtaque
+     * @return 
      *
      * @return 
      */
-    protected sofrerAtaque (  );
+    protected void sofrerAtaque (int damage) {
+    	if (damage >= 0)
+    		life -= damage;
+    	else; //TODO ADD EXCEPTION A1 MAYBE?
+    }
 
     /**
      * Operation curar
      *
      * @return 
      */
-    protected curar (  );
+    protected curar (int hpPlus) {
+    	if (hpPlus >= 0)
+    		life += hpPlus;
+    	else; //TODO ADD EXCEPTION A1 MAYBE?
+    }
 
     /**
      * Operation realizarAtaque
@@ -121,7 +135,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn i
      *
      * @return 
      */
-    protected drop (  );
+    protected drop ();
 
 }
 
