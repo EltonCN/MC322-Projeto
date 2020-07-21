@@ -40,7 +40,7 @@ public abstract class Entity
      * Executa operações em trocas de estágio
      *
      */
-    public void stageChanged (  );
+    public void stageChanged ();
 
     /**
      * Operation isEnabled
@@ -48,14 +48,18 @@ public abstract class Entity
      *
      * @return boolean
      */
-    public boolean isEnabled (  );
+    public boolean isEnabled() {
+    	return enabled;
+    }
 
     /**
      * Operation disable
      * Desativa a entidade
      *
      */
-    public void disable (  );
+    public void disable (  ) {
+    	enabled = false;
+    }
 
     /**
      * Operation draw

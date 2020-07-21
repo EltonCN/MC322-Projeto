@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
+import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 
 public class SimpleAttack
@@ -23,5 +24,10 @@ public class SimpleAttack
      * @return 
      */
     public SimpleAttack ( float damage, float reach ){}
+	@Override
+	public void run(Entity origin) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
