@@ -82,7 +82,7 @@ public class ServiceManager
      *
      * @return ServiceManager
      */
-    public ServiceManager getInstance (  )
+    public static ServiceManager getInstance (  )
     {
         if(instance == null)
         {

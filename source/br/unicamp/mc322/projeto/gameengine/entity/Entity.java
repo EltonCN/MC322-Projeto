@@ -1,6 +1,11 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
+import br.unicamp.mc322.projeto.gameengine.service.EntityStoreService;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 
 public abstract class Entity
 
@@ -84,9 +89,30 @@ public abstract class Entity
      *
      * @param pose - 
      */
-    public void moveTo ( Pose pose );
-    protected void moveTo (Pose pose) {
-    	this.pose.set(pose);
+    /**
+     * @todo Lidar com exceções
+     */
+    public void moveTo (Pose pose) 
+    {
+        this.pose = pose;
+        
+        ServiceManager m = ServiceManager.getInstance();
+
+        try
+        {
+            EntityStoreService s = (EntityStoreService) m.getService(ServiceType.ENTITYSTORE);
+
+            s.changePose(this.pose, pose);
+        }
+        catch(DisabledServiceException e)
+        {
+
+        }
+        catch(NotAvaibleServiceException e)
+        {
+
+        }
+
     }
 
     /**
@@ -98,7 +124,10 @@ public abstract class Entity
      * @param deltaAngle - 
      */
     protected void moveBy ( float deltaX, float deltaY, float deltaAngle ) {
-    	this.pose.move(deltaX, deltaY, deltaAngle);
+        Pose end = this.pose.move(deltaX, deltaY, deltaAngle);
+        
+        moveTo(end);
+
     }
 
 }
