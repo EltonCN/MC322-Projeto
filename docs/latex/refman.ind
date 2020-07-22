@@ -1,0 +1,1205 @@
+\begin{theindex}
+
+  \item {add}
+    \subitem {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{138}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.Menu}, 
+		\hyperpage{83}
+  \item {addMenu}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.MenuService}, 
+		\hyperpage{85}
+  \item {addPrototype}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageMemento}, 
+		\hyperpage{130}
+  \item {addSprite}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ImageOutputService}, 
+		\hyperpage{66}
+  \item {adjacent}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, \hyperpage{99}
+  \item {AIR}
+    \subitem {br.unicamp.mc322.projeto.heroquest.magic.Element}, 
+		\hyperpage{48}
+  \item {AISLE}
+    \subitem {br.unicamp.mc322.projeto.heroquest.service.StageType}, 
+		\hyperpage{134}
+  \item {angle}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{102}
+  \item {Area}
+    \subitem {br.unicamp.mc322.projeto.gameengine.component.Area}, 
+		\hyperpage{24}
+  \item {arg}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityPrototype}, 
+		\hyperpage{55}
+  \item {armor}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{39}
+  \item {AUDIO}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ResourceType}, 
+		\hyperpage{111}
+
+  \indexspace
+
+  \item {Bag}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Bag}, 
+		\hyperpage{29}
+  \item {basicAttack}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{39}
+  \item {basicMovement}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+  \item {br}, \hyperpage{15}
+  \item {br.unicamp}, \hyperpage{15}
+  \item {br.unicamp.mc322}, \hyperpage{15}
+  \item {br.unicamp.mc322.projeto}, \hyperpage{15}
+  \item {br.unicamp.mc322.projeto.gameengine}, \hyperpage{16}
+  \item {br.unicamp.mc322.projeto.gameengine.action}, \hyperpage{16}
+  \item {br.unicamp.mc322.projeto.gameengine.action.Action}, 
+		\hyperpage{21}
+    \subitem {run}, \hyperpage{21}
+  \item {br.unicamp.mc322.projeto.gameengine.action.ActionFailedException}, 
+		\hyperpage{23}
+  \item {br.unicamp.mc322.projeto.gameengine.component}, \hyperpage{16}
+  \item {br.unicamp.mc322.projeto.gameengine.component.Area}, 
+		\hyperpage{23}
+    \subitem {Area}, \hyperpage{24}
+    \subitem {isInside}, \hyperpage{24}
+    \subitem {metric}, \hyperpage{25}
+    \subitem {origin}, \hyperpage{25}
+    \subitem {range}, \hyperpage{25}
+  \item {br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea}, 
+		\hyperpage{55}
+    \subitem {getRange}, \hyperpage{56}
+  \item {br.unicamp.mc322.projeto.gameengine.entity}, \hyperpage{16}
+  \item {br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException}, 
+		\hyperpage{46}
+  \item {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{50}
+    \subitem {disable}, \hyperpage{52}
+    \subitem {draw}, \hyperpage{52}
+    \subitem {enabled}, \hyperpage{54}
+    \subitem {Entity}, \hyperpage{51}
+    \subitem {getPose}, \hyperpage{52}
+    \subitem {isEnabled}, \hyperpage{52}
+    \subitem {isPermanent}, \hyperpage{52}
+    \subitem {moveBy}, \hyperpage{53}
+    \subitem {moveTo}, \hyperpage{53}
+    \subitem {pose}, \hyperpage{54}
+    \subitem {stageChanged}, \hyperpage{53}
+  \item {br.unicamp.mc322.projeto.gameengine.menu}, \hyperpage{16}
+  \item {br.unicamp.mc322.projeto.gameengine.menu.SwingButton}, 
+		\hyperpage{135}
+  \item {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{137}
+    \subitem {add}, \hyperpage{138}
+    \subitem {hide}, \hyperpage{138}
+    \subitem {item}, \hyperpage{139}
+    \subitem {show}, \hyperpage{139}
+    \subitem {submenu}, \hyperpage{139}
+    \subitem {unnamed\_2}, \hyperpage{139}
+  \item {br.unicamp.mc322.projeto.gameengine.Metric}, \hyperpage{86}
+    \subitem {EUCLIDEAN}, \hyperpage{86}
+    \subitem {MANHATTAN}, \hyperpage{86}
+  \item {br.unicamp.mc322.projeto.gameengine.Pose}, \hyperpage{97}
+    \subitem {adjacent}, \hyperpage{99}
+    \subitem {angle}, \hyperpage{102}
+    \subitem {distance}, \hyperpage{99}
+    \subitem {equal}, \hyperpage{99}
+    \subitem {euclideanDistance}, \hyperpage{100}
+    \subitem {fixAngle}, \hyperpage{100}
+    \subitem {manhattanDistance}, \hyperpage{100}
+    \subitem {move}, \hyperpage{101}
+    \subitem {Pose}, \hyperpage{97, 98}
+    \subitem {set}, \hyperpage{101, 102}
+    \subitem {x}, \hyperpage{102}
+    \subitem {y}, \hyperpage{102}
+  \item {br.unicamp.mc322.projeto.gameengine.service}, \hyperpage{17}
+  \item {br.unicamp.mc322.projeto.gameengine.service.Button}, 
+		\hyperpage{31}
+    \subitem {isClicked}, \hyperpage{31}
+  \item {br.unicamp.mc322.projeto.gameengine.service.EntityPrototype}, 
+		\hyperpage{54}
+    \subitem {arg}, \hyperpage{55}
+    \subitem {class}, \hyperpage{55}
+    \subitem {pose}, \hyperpage{55}
+  \item {br.unicamp.mc322.projeto.gameengine.service.EntityRunnerService}, 
+		\hyperpage{57}
+    \subitem {run}, \hyperpage{57}
+  \item {br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}, 
+		\hyperpage{58}
+    \subitem {changePose}, \hyperpage{58}
+    \subitem {getRange}, \hyperpage{59}
+    \subitem {removeEntity}, \hyperpage{59}
+    \subitem {store}, \hyperpage{60}
+  \item {br.unicamp.mc322.projeto.gameengine.service.exception}, 
+		\hyperpage{17}
+  \item {br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException}, 
+		\hyperpage{46}
+  \item {br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException}, 
+		\hyperpage{87}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ImageOutputService}, 
+		\hyperpage{66}
+    \subitem {addSprite}, \hyperpage{66}
+    \subitem {update}, \hyperpage{67}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ImageResourceService}, 
+		\hyperpage{67}
+    \subitem {hashTable}, \hyperpage{68}
+    \subitem {sprite}, \hyperpage{68}
+  \item {br.unicamp.mc322.projeto.gameengine.service.Keyboard}, 
+		\hyperpage{71}
+  \item {br.unicamp.mc322.projeto.gameengine.service.KeyInputService}, 
+		\hyperpage{72}
+    \subitem {isPressed}, \hyperpage{73}
+    \subitem {isReleased}, \hyperpage{73}
+  \item {br.unicamp.mc322.projeto.gameengine.service.LogPriority}, 
+		\hyperpage{75}
+    \subitem {DEBUG}, \hyperpage{75}
+    \subitem {ERROR}, \hyperpage{75}
+    \subitem {LOG}, \hyperpage{76}
+    \subitem {WARNING}, \hyperpage{76}
+  \item {br.unicamp.mc322.projeto.gameengine.service.LogService}, 
+		\hyperpage{76}
+    \subitem {sendLog}, \hyperpage{77}
+  \item {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{77}
+    \subitem {ENTITYRUNNER}, \hyperpage{77}
+    \subitem {ENTITYSTORE}, \hyperpage{78}
+    \subitem {IMAGEOUTPUT}, \hyperpage{78}
+    \subitem {KEYINPUT}, \hyperpage{78}
+    \subitem {LOG}, \hyperpage{78}
+    \subitem {OTHER}, \hyperpage{78}
+    \subitem {RESOURCE}, \hyperpage{78}
+    \subitem {STAGECREATOR}, \hyperpage{78}
+  \item {br.unicamp.mc322.projeto.gameengine.service.Menu}, 
+		\hyperpage{83}
+    \subitem {add}, \hyperpage{83}
+    \subitem {hide}, \hyperpage{84}
+    \subitem {show}, \hyperpage{84}
+  \item {br.unicamp.mc322.projeto.gameengine.service.MenuService}, 
+		\hyperpage{85}
+    \subitem {addMenu}, \hyperpage{85}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NulImageOutputService}, 
+		\hyperpage{88}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullEntityRunnerService}, 
+		\hyperpage{89}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullEntityStoreService}, 
+		\hyperpage{90}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullKeyInputService}, 
+		\hyperpage{91}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullLogService}, 
+		\hyperpage{92}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullMenuService}, 
+		\hyperpage{93}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullResourceService}, 
+		\hyperpage{94}
+  \item {br.unicamp.mc322.projeto.gameengine.service.NullStageCreatorService}, 
+		\hyperpage{95}
+  \item {br.unicamp.mc322.projeto.gameengine.service.PrototypableEntity}, 
+		\hyperpage{103}
+    \subitem {createPrototype}, \hyperpage{103}
+  \item {br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService}, 
+		\hyperpage{104}
+    \subitem {insertStagePrototype}, \hyperpage{105}
+    \subitem {stagePrototype}, \hyperpage{105}
+    \subitem {unnamed\_6}, \hyperpage{105}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ResourceExtrinsic}, 
+		\hyperpage{108}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ResourceService}, 
+		\hyperpage{109}
+    \subitem {getResource}, \hyperpage{109}
+    \subitem {setFile}, \hyperpage{110}
+    \subitem {setRoot}, \hyperpage{110}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ResourceType}, 
+		\hyperpage{111}
+    \subitem {AUDIO}, \hyperpage{111}
+    \subitem {IMAGE}, \hyperpage{111}
+  \item {br.unicamp.mc322.projeto.gameengine.service.Runnable}, 
+		\hyperpage{111}
+    \subitem {run}, \hyperpage{112}
+  \item {br.unicamp.mc322.projeto.gameengine.service.RunnableTurn}, 
+		\hyperpage{112}
+    \subitem {isInTurn}, \hyperpage{113}
+    \subitem {startTurn}, \hyperpage{113}
+  \item {br.unicamp.mc322.projeto.gameengine.service.Service}, 
+		\hyperpage{113}
+    \subitem {end}, \hyperpage{114}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{114}
+    \subitem {defineServiceManager}, \hyperpage{115}
+    \subitem {getInstance}, \hyperpage{116}
+    \subitem {getService}, \hyperpage{116}
+    \subitem {insertService}, \hyperpage{116}
+    \subitem {instance}, \hyperpage{117}
+    \subitem {service}, \hyperpage{117}
+    \subitem {ServiceManager}, \hyperpage{115}
+    \subitem {setAllNullService}, \hyperpage{117}
+    \subitem {setNullService}, \hyperpage{117}
+    \subitem {unnamed\_3}, \hyperpage{117}
+  \item {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+    \subitem {ENTITYRUNNER}, \hyperpage{118}
+    \subitem {ENTITYSTORE}, \hyperpage{118}
+    \subitem {IMAGEOUTPUT}, \hyperpage{118}
+    \subitem {KEYINPUT}, \hyperpage{118}
+    \subitem {LOG}, \hyperpage{118}
+    \subitem {STAGECREATION}, \hyperpage{118}
+  \item {br.unicamp.mc322.projeto.gameengine.service.SpartialEntityStoreService}, 
+		\hyperpage{123}
+  \item {br.unicamp.mc322.projeto.gameengine.service.StageCreatorService}, 
+		\hyperpage{128}
+    \subitem {loadStage}, \hyperpage{129}
+    \subitem {unload}, \hyperpage{129}
+  \item {br.unicamp.mc322.projeto.gameengine.service.StageIdentifier}, 
+		\hyperpage{129}
+  \item {br.unicamp.mc322.projeto.gameengine.service.StageMemento}, 
+		\hyperpage{130}
+    \subitem {addPrototype}, \hyperpage{130}
+    \subitem {entityPrototype}, \hyperpage{132}
+    \subitem {load}, \hyperpage{132}
+    \subitem {unnamed\_7}, \hyperpage{132}
+    \subitem {unnamed\_8}, \hyperpage{132}
+  \item {br.unicamp.mc322.projeto.gameengine.service.StagePrototype}, 
+		\hyperpage{133}
+    \subitem {createMemento}, \hyperpage{133}
+    \subitem {entityPrototype}, \hyperpage{133}
+    \subitem {memento}, \hyperpage{134}
+  \item {br.unicamp.mc322.projeto.gameengine.service.SwingScreen}, 
+		\hyperpage{140}
+    \subitem {mainPainel}, \hyperpage{140}
+  \item {br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}, 
+		\hyperpage{142}
+  \item {br.unicamp.mc322.projeto.gameengine.service.TurnEntityRunnerService}, 
+		\hyperpage{144}
+  \item {br.unicamp.mc322.projeto.gameengine.sprite}, \hyperpage{18}
+  \item {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{124}
+    \subitem {pose}, \hyperpage{126}
+    \subitem {priority}, \hyperpage{126}
+    \subitem {setPose}, \hyperpage{125}
+    \subitem {setPriority}, \hyperpage{125}
+    \subitem {SpriteIntrinsic}, \hyperpage{126}
+    \subitem {spriteIntrinsic}, \hyperpage{126}
+    \subitem {unnamed\_1}, \hyperpage{126}
+  \item {br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic}, 
+		\hyperpage{127}
+    \subitem {file}, \hyperpage{128}
+    \subitem {SpriteIntrinsic}, \hyperpage{127}
+  \item {br.unicamp.mc322.projeto.gameengine.sprite.SwingImage}, 
+		\hyperpage{136}
+  \item {br.unicamp.mc322.projeto.gameengine.sprite.SwingStringImage}, 
+		\hyperpage{141}
+  \item {br.unicamp.mc322.projeto.gameengine.utility}, \hyperpage{18}
+  \item {br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator}, 
+		\hyperpage{106}
+    \subitem {getResult}, \hyperpage{106}
+    \subitem {max}, \hyperpage{107}
+    \subitem {min}, \hyperpage{107}
+    \subitem {RandomGenerator}, \hyperpage{106}
+  \item {br.unicamp.mc322.projeto.heroquest}, \hyperpage{18}
+  \item {br.unicamp.mc322.projeto.heroquest.action}, \hyperpage{18}
+  \item {br.unicamp.mc322.projeto.heroquest.action.Attack}, 
+		\hyperpage{27}
+  \item {br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}, 
+		\hyperpage{32}
+  \item {br.unicamp.mc322.projeto.heroquest.action.Cure}, 
+		\hyperpage{42}
+  \item {br.unicamp.mc322.projeto.heroquest.action.DiceMovement}, 
+		\hyperpage{45}
+  \item {br.unicamp.mc322.projeto.heroquest.action.Movement}, 
+		\hyperpage{87}
+  \item {br.unicamp.mc322.projeto.heroquest.action.Reaction}, 
+		\hyperpage{107}
+  \item {br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}, 
+		\hyperpage{120}
+    \subitem {damage}, \hyperpage{121}
+    \subitem {reach}, \hyperpage{121}
+    \subitem {SimpleAttack}, \hyperpage{121}
+  \item {br.unicamp.mc322.projeto.heroquest.CombatDice}, \hyperpage{33}
+    \subitem {getResult}, \hyperpage{33}
+    \subitem {unnamed\_11}, \hyperpage{33}
+  \item {br.unicamp.mc322.projeto.heroquest.CombatDiceFace}, 
+		\hyperpage{34}
+    \subitem {HEROSHIELD}, \hyperpage{34}
+    \subitem {MONSTERSHIELD}, \hyperpage{34}
+    \subitem {SKULL}, \hyperpage{34}
+  \item {br.unicamp.mc322.projeto.heroquest.component}, \hyperpage{19}
+  \item {br.unicamp.mc322.projeto.heroquest.component.LightObstructorArea}, 
+		\hyperpage{74}
+    \subitem {drawMask}, \hyperpage{75}
+  \item {br.unicamp.mc322.projeto.heroquest.Consumable}, \hyperpage{35}
+  \item {br.unicamp.mc322.projeto.heroquest.entity}, \hyperpage{19}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Attackable}, 
+		\hyperpage{28}
+    \subitem {getDefenseScore}, \hyperpage{28}
+    \subitem {takeDamage}, \hyperpage{28}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Bag}, \hyperpage{29}
+    \subitem {Bag}, \hyperpage{29}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Barbarian}, 
+		\hyperpage{30}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{36}
+    \subitem {armor}, \hyperpage{39}
+    \subitem {basicAttack}, \hyperpage{39}
+    \subitem {basicMovement}, \hyperpage{40}
+    \subitem {caster}, \hyperpage{40}
+    \subitem {Creature}, \hyperpage{37}
+    \subitem {curar}, \hyperpage{38}
+    \subitem {drop}, \hyperpage{38}
+    \subitem {equippedItem}, \hyperpage{40}
+    \subitem {goldCoin}, \hyperpage{40}
+    \subitem {handUsed}, \hyperpage{40}
+    \subitem {life}, \hyperpage{40}
+    \subitem {move}, \hyperpage{38}
+    \subitem {nAttackDice}, \hyperpage{40}
+    \subitem {nDefenseDice}, \hyperpage{40}
+    \subitem {PI}, \hyperpage{41}
+    \subitem {realizarAtaque}, \hyperpage{38}
+    \subitem {run}, \hyperpage{39}
+    \subitem {sofrerAtaque}, \hyperpage{39}
+    \subitem {totalHand}, \hyperpage{41}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Curable}, 
+		\hyperpage{41}
+    \subitem {cureLife}, \hyperpage{41}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Door}, 
+		\hyperpage{47}
+    \subitem {Door}, \hyperpage{47}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Dwarf}, 
+		\hyperpage{48}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Elf}, \hyperpage{49}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Enemy}, 
+		\hyperpage{50}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Goblin}, 
+		\hyperpage{61}
+    \subitem {Goblin}, \hyperpage{61}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{62}
+    \subitem {HeroQuestEntity}, \hyperpage{62}
+    \subitem {inventory}, \hyperpage{63}
+    \subitem {lightObstructorArea}, \hyperpage{63}
+    \subitem {obstructor}, \hyperpage{63}
+    \subitem {toggleObstructor}, \hyperpage{63}
+    \subitem {unnamed\_5}, \hyperpage{63}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Interactable}, 
+		\hyperpage{69}
+    \subitem {interact}, \hyperpage{69}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.MagicSkeleton}, 
+		\hyperpage{82}
+    \subitem {MagicSkeleton}, \hyperpage{82}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Player}, 
+		\hyperpage{96}
+    \subitem {name}, \hyperpage{96}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Skeleton}, 
+		\hyperpage{122}
+    \subitem {Skeleton}, \hyperpage{123}
+  \item {br.unicamp.mc322.projeto.heroquest.entity.Wizard}, 
+		\hyperpage{146}
+  \item {br.unicamp.mc322.projeto.heroquest.HeroQuestGame}, 
+		\hyperpage{64}
+  \item {br.unicamp.mc322.projeto.heroquest.Item}, \hyperpage{70}
+    \subitem {Item}, \hyperpage{70}
+    \subitem {name}, \hyperpage{70}
+    \subitem {value}, \hyperpage{71}
+  \item {br.unicamp.mc322.projeto.heroquest.item}, \hyperpage{19}
+  \item {br.unicamp.mc322.projeto.heroquest.item.Armor}, \hyperpage{26}
+    \subitem {transformDamage}, \hyperpage{26}
+  \item {br.unicamp.mc322.projeto.heroquest.item.Dagger}, 
+		\hyperpage{44}
+    \subitem {unnamed\_12}, \hyperpage{44}
+  \item {br.unicamp.mc322.projeto.heroquest.item.LongSword}, 
+		\hyperpage{79}
+    \subitem {unnamed\_13}, \hyperpage{79}
+  \item {br.unicamp.mc322.projeto.heroquest.item.ShortSword}, 
+		\hyperpage{119}
+  \item {br.unicamp.mc322.projeto.heroquest.item.Weapon}, 
+		\hyperpage{145}
+    \subitem {hand}, \hyperpage{146}
+    \subitem {uses}, \hyperpage{146}
+    \subitem {Weapon}, \hyperpage{145}
+  \item {br.unicamp.mc322.projeto.heroquest.magic}, \hyperpage{19}
+  \item {br.unicamp.mc322.projeto.heroquest.magic.Element}, 
+		\hyperpage{48}
+    \subitem {AIR}, \hyperpage{48}
+    \subitem {EARTH}, \hyperpage{48}
+    \subitem {FIRE}, \hyperpage{49}
+    \subitem {WATER}, \hyperpage{49}
+  \item {br.unicamp.mc322.projeto.heroquest.magic.Fireball}, 
+		\hyperpage{60}
+  \item {br.unicamp.mc322.projeto.heroquest.magic.Magic}, 
+		\hyperpage{80}
+    \subitem {element}, \hyperpage{80}
+    \subitem {unnamed\_4}, \hyperpage{81}
+  \item {br.unicamp.mc322.projeto.heroquest.magic.MagicMissile}, 
+		\hyperpage{81}
+  \item {br.unicamp.mc322.projeto.heroquest.magic.SimpleHeal}, 
+		\hyperpage{122}
+  \item {br.unicamp.mc322.projeto.heroquest.magic.Teleport}, 
+		\hyperpage{142}
+  \item {br.unicamp.mc322.projeto.heroquest.service}, \hyperpage{20}
+  \item {br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService}, 
+		\hyperpage{64}
+    \subitem {stageType}, \hyperpage{65}
+    \subitem {unnamed\_9}, \hyperpage{65}
+  \item {br.unicamp.mc322.projeto.heroquest.service.StageType}, 
+		\hyperpage{134}
+    \subitem {AISLE}, \hyperpage{134}
+    \subitem {ROOM}, \hyperpage{134}
+  \item {br.unicamp.mc322.projeto.heroquest.utility}, \hyperpage{20}
+  \item {br.unicamp.mc322.projeto.heroquest.utility.D6Dice}, 
+		\hyperpage{43}
+    \subitem {getResult}, \hyperpage{43}
+    \subitem {unnamed\_10}, \hyperpage{44}
+
+  \indexspace
+
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/action/Action.java}, 
+		\hyperpage{149}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/action/ActionFailedException.java}, 
+		\hyperpage{149}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/component/Area.java}, 
+		\hyperpage{149}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/component/EntityRangeArea.java}, 
+		\hyperpage{150}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/entity/DisabledEntityException.java}, 
+		\hyperpage{150}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/entity/Entity.java}, 
+		\hyperpage{150}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/menu/SwingButton.java}, 
+		\hyperpage{151}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/menu/SwingMenu.java}, 
+		\hyperpage{151}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/pose/Metric.java}, 
+		\hyperpage{151}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/pose/Pose.java}, 
+		\hyperpage{151}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/Button.java}, 
+		\hyperpage{152}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/EntityPrototype.java}, 
+		\hyperpage{152}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/EntityRunnerService.java}, 
+		\hyperpage{152}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/EntityStoreService.java}, 
+		\hyperpage{153}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/exception/DisabledServiceException.java}, 
+		\hyperpage{153}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/exception/NotAvaibleServiceException.java}, 
+		\hyperpage{153}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ImageOutputService.java}, 
+		\hyperpage{153}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ImageResourceService.java}, 
+		\hyperpage{154}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/Keyboard.java}, 
+		\hyperpage{154}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/KeyInputService.java}, 
+		\hyperpage{154}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/LogPriority.java}, 
+		\hyperpage{155}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/LogService.java}, 
+		\hyperpage{155}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/LogType.java}, 
+		\hyperpage{155}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/Menu.java}, 
+		\hyperpage{155}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/MenuService.java}, 
+		\hyperpage{156}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NulImageOutputService.java}, 
+		\hyperpage{156}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullEntityRunnerService.java}, 
+		\hyperpage{156}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullEntityStoreService.java}, 
+		\hyperpage{157}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullKeyInputService.java}, 
+		\hyperpage{157}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullLogService.java}, 
+		\hyperpage{157}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullMenuService.java}, 
+		\hyperpage{157}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullResourceService.java}, 
+		\hyperpage{158}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/NullStageCreatorService.java}, 
+		\hyperpage{158}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/PrototypableEntity.java}, 
+		\hyperpage{158}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/PrototypeStageCreatorService.java}, 
+		\hyperpage{159}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ResourceExtrinsic.java}, 
+		\hyperpage{159}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ResourceService.java}, 
+		\hyperpage{159}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ResourceType.java}, 
+		\hyperpage{159}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/Runnable.java}, 
+		\hyperpage{160}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/RunnableTurn.java}, 
+		\hyperpage{160}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/Service.java}, 
+		\hyperpage{160}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ServiceManager.java}, 
+		\hyperpage{161}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/ServiceType.java}, 
+		\hyperpage{161}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/SpartialEntityStoreService.java}, 
+		\hyperpage{161}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/StageCreatorService.java}, 
+		\hyperpage{161}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/StageIdentifier.java}, 
+		\hyperpage{162}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/StageMemento.java}, 
+		\hyperpage{162}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/StagePrototype.java}, 
+		\hyperpage{162}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/SwingScreen.java}, 
+		\hyperpage{163}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/TerminalLogService.java}, 
+		\hyperpage{163}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/service/TurnEntityRunnerService.java}, 
+		\hyperpage{163}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/sprite/SpriteExtrinsic.java}, 
+		\hyperpage{163}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/sprite/SpriteIntrinsic.java}, 
+		\hyperpage{164}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/sprite/SwingImage.java}, 
+		\hyperpage{164}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/sprite/SwingStringImage.java}, 
+		\hyperpage{164}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/gameengine/utility/RandomGenerator.java}, 
+		\hyperpage{165}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/Attack.java}, 
+		\hyperpage{165}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/ChaseMovement.java}, 
+		\hyperpage{165}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/Cure.java}, 
+		\hyperpage{165}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/DiceMovement.java}, 
+		\hyperpage{166}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/Movement.java}, 
+		\hyperpage{166}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/Reaction.java}, 
+		\hyperpage{166}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/action/SimpleAttack.java}, 
+		\hyperpage{167}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/CombatDice.java}, 
+		\hyperpage{167}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/CombatDiceFace.java}, 
+		\hyperpage{167}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/component/LightObstructorArea.java}, 
+		\hyperpage{167}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/Consumable.java}, 
+		\hyperpage{168}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Attackable.java}, 
+		\hyperpage{168}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Bag.java}, 
+		\hyperpage{168}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Barbarian.java}, 
+		\hyperpage{169}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Creature.java}, 
+		\hyperpage{169}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Curable.java}, 
+		\hyperpage{169}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Door.java}, 
+		\hyperpage{169}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Dwarf.java}, 
+		\hyperpage{170}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Elf.java}, 
+		\hyperpage{170}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Enemy.java}, 
+		\hyperpage{170}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Goblin.java}, 
+		\hyperpage{171}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/HeroQuestEntity.java}, 
+		\hyperpage{171}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Interactable.java}, 
+		\hyperpage{171}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/MagicSkeleton.java}, 
+		\hyperpage{171}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Player.java}, 
+		\hyperpage{172}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Skeleton.java}, 
+		\hyperpage{172}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/entity/Wizard.java}, 
+		\hyperpage{172}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/HeroQuestGame.java}, 
+		\hyperpage{173}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/Item.java}, 
+		\hyperpage{173}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/item/Armor.java}, 
+		\hyperpage{173}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/item/Dagger.java}, 
+		\hyperpage{173}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/item/LongSword.java}, 
+		\hyperpage{174}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/item/ShortSword.java}, 
+		\hyperpage{174}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/item/Weapon.java}, 
+		\hyperpage{174}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/magic/Element.java}, 
+		\hyperpage{175}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/magic/Fireball.java}, 
+		\hyperpage{175}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/magic/Magic.java}, 
+		\hyperpage{175}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/magic/MagicMissile.java}, 
+		\hyperpage{175}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/magic/SimpleHeal.java}, 
+		\hyperpage{176}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/magic/Teleport.java}, 
+		\hyperpage{176}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/service/HeroQuestStageCreatorService.java}, 
+		\hyperpage{176}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/service/StageType.java}, 
+		\hyperpage{177}
+  \item {C:/Users/eltsu/Documents/GitHub/MC322-\/Projeto/source/br/unicamp/mc322/projeto/heroquest/utility/D6Dice.java}, 
+		\hyperpage{177}
+  \item {caster}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+  \item {changePose}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}, 
+		\hyperpage{58}
+  \item {class}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityPrototype}, 
+		\hyperpage{55}
+  \item {createMemento}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StagePrototype}, 
+		\hyperpage{133}
+  \item {createPrototype}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.PrototypableEntity}, 
+		\hyperpage{103}
+  \item {Creature}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{37}
+  \item {curar}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{38}
+  \item {cureLife}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Curable}, 
+		\hyperpage{41}
+
+  \indexspace
+
+  \item {damage}
+    \subitem {br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}, 
+		\hyperpage{121}
+  \item {DEBUG}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogPriority}, 
+		\hyperpage{75}
+  \item {defineServiceManager}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{115}
+  \item {disable}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{52}
+  \item {distance}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, \hyperpage{99}
+  \item {Door}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Door}, 
+		\hyperpage{47}
+  \item {draw}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{52}
+  \item {drawMask}
+    \subitem {br.unicamp.mc322.projeto.heroquest.component.LightObstructorArea}, 
+		\hyperpage{75}
+  \item {drop}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{38}
+
+  \indexspace
+
+  \item {EARTH}
+    \subitem {br.unicamp.mc322.projeto.heroquest.magic.Element}, 
+		\hyperpage{48}
+  \item {element}
+    \subitem {br.unicamp.mc322.projeto.heroquest.magic.Magic}, 
+		\hyperpage{80}
+  \item {enabled}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{54}
+  \item {end}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.Service}, 
+		\hyperpage{114}
+  \item {Entity}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{51}
+  \item {entityPrototype}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageMemento}, 
+		\hyperpage{132}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StagePrototype}, 
+		\hyperpage{133}
+  \item {ENTITYRUNNER}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{77}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+  \item {ENTITYSTORE}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+  \item {equal}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, \hyperpage{99}
+  \item {equippedItem}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+  \item {ERROR}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogPriority}, 
+		\hyperpage{75}
+  \item {EUCLIDEAN}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Metric}, 
+		\hyperpage{86}
+  \item {euclideanDistance}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{100}
+
+  \indexspace
+
+  \item {file}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic}, 
+		\hyperpage{128}
+  \item {FIRE}
+    \subitem {br.unicamp.mc322.projeto.heroquest.magic.Element}, 
+		\hyperpage{49}
+  \item {fixAngle}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{100}
+
+  \indexspace
+
+  \item {getDefenseScore}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Attackable}, 
+		\hyperpage{28}
+  \item {getInstance}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{116}
+  \item {getPose}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{52}
+  \item {getRange}
+    \subitem {br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea}, 
+		\hyperpage{56}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}, 
+		\hyperpage{59}
+  \item {getResource}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ResourceService}, 
+		\hyperpage{109}
+  \item {getResult}
+    \subitem {br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator}, 
+		\hyperpage{106}
+    \subitem {br.unicamp.mc322.projeto.heroquest.CombatDice}, 
+		\hyperpage{33}
+    \subitem {br.unicamp.mc322.projeto.heroquest.utility.D6Dice}, 
+		\hyperpage{43}
+  \item {getService}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{116}
+  \item {Goblin}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Goblin}, 
+		\hyperpage{61}
+  \item {goldCoin}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+
+  \indexspace
+
+  \item {hand}
+    \subitem {br.unicamp.mc322.projeto.heroquest.item.Weapon}, 
+		\hyperpage{146}
+  \item {handUsed}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+  \item {hashTable}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ImageResourceService}, 
+		\hyperpage{68}
+  \item {HeroQuestEntity}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{62}
+  \item {HEROSHIELD}
+    \subitem {br.unicamp.mc322.projeto.heroquest.CombatDiceFace}, 
+		\hyperpage{34}
+  \item {hide}
+    \subitem {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{138}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.Menu}, 
+		\hyperpage{84}
+
+  \indexspace
+
+  \item {IMAGE}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ResourceType}, 
+		\hyperpage{111}
+  \item {IMAGEOUTPUT}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+  \item {insertService}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{116}
+  \item {insertStagePrototype}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService}, 
+		\hyperpage{105}
+  \item {instance}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{117}
+  \item {interact}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Interactable}, 
+		\hyperpage{69}
+  \item {inventory}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{63}
+  \item {isClicked}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.Button}, 
+		\hyperpage{31}
+  \item {isEnabled}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{52}
+  \item {isInside}
+    \subitem {br.unicamp.mc322.projeto.gameengine.component.Area}, 
+		\hyperpage{24}
+  \item {isInTurn}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.RunnableTurn}, 
+		\hyperpage{113}
+  \item {isPermanent}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{52}
+  \item {isPressed}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.KeyInputService}, 
+		\hyperpage{73}
+  \item {isReleased}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.KeyInputService}, 
+		\hyperpage{73}
+  \item {Item}
+    \subitem {br.unicamp.mc322.projeto.heroquest.Item}, \hyperpage{70}
+  \item {item}
+    \subitem {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{139}
+
+  \indexspace
+
+  \item {KEYINPUT}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+
+  \indexspace
+
+  \item {life}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+  \item {lightObstructorArea}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{63}
+  \item {load}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageMemento}, 
+		\hyperpage{132}
+  \item {loadStage}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageCreatorService}, 
+		\hyperpage{129}
+  \item {LOG}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogPriority}, 
+		\hyperpage{76}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+
+  \indexspace
+
+  \item {MagicSkeleton}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.MagicSkeleton}, 
+		\hyperpage{82}
+  \item {mainPainel}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.SwingScreen}, 
+		\hyperpage{140}
+  \item {MANHATTAN}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Metric}, 
+		\hyperpage{86}
+  \item {manhattanDistance}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{100}
+  \item {max}
+    \subitem {br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator}, 
+		\hyperpage{107}
+  \item {memento}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StagePrototype}, 
+		\hyperpage{134}
+  \item {metric}
+    \subitem {br.unicamp.mc322.projeto.gameengine.component.Area}, 
+		\hyperpage{25}
+  \item {min}
+    \subitem {br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator}, 
+		\hyperpage{107}
+  \item {MONSTERSHIELD}
+    \subitem {br.unicamp.mc322.projeto.heroquest.CombatDiceFace}, 
+		\hyperpage{34}
+  \item {move}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{101}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{38}
+  \item {moveBy}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{53}
+  \item {moveTo}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{53}
+
+  \indexspace
+
+  \item {name}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Player}, 
+		\hyperpage{96}
+    \subitem {br.unicamp.mc322.projeto.heroquest.Item}, \hyperpage{70}
+  \item {nAttackDice}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+  \item {nDefenseDice}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{40}
+
+  \indexspace
+
+  \item {obstructor}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{63}
+  \item {origin}
+    \subitem {br.unicamp.mc322.projeto.gameengine.component.Area}, 
+		\hyperpage{25}
+  \item {OTHER}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+
+  \indexspace
+
+  \item {PI}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{41}
+  \item {Pose}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{97, 98}
+  \item {pose}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{54}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityPrototype}, 
+		\hyperpage{55}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{126}
+  \item {priority}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{126}
+
+  \indexspace
+
+  \item {RandomGenerator}
+    \subitem {br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator}, 
+		\hyperpage{106}
+  \item {range}
+    \subitem {br.unicamp.mc322.projeto.gameengine.component.Area}, 
+		\hyperpage{25}
+  \item {reach}
+    \subitem {br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}, 
+		\hyperpage{121}
+  \item {realizarAtaque}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{38}
+  \item {removeEntity}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}, 
+		\hyperpage{59}
+  \item {RESOURCE}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+  \item {ROOM}
+    \subitem {br.unicamp.mc322.projeto.heroquest.service.StageType}, 
+		\hyperpage{134}
+  \item {run}
+    \subitem {br.unicamp.mc322.projeto.gameengine.action.Action}, 
+		\hyperpage{21}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityRunnerService}, 
+		\hyperpage{57}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.Runnable}, 
+		\hyperpage{112}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{39}
+
+  \indexspace
+
+  \item {sendLog}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogService}, 
+		\hyperpage{77}
+  \item {service}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{117}
+  \item {ServiceManager}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{115}
+  \item {set}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{101, 102}
+  \item {setAllNullService}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{117}
+  \item {setFile}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ResourceService}, 
+		\hyperpage{110}
+  \item {setNullService}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{117}
+  \item {setPose}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{125}
+  \item {setPriority}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{125}
+  \item {setRoot}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ResourceService}, 
+		\hyperpage{110}
+  \item {show}
+    \subitem {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{139}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.Menu}, 
+		\hyperpage{84}
+  \item {SimpleAttack}
+    \subitem {br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}, 
+		\hyperpage{121}
+  \item {Skeleton}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Skeleton}, 
+		\hyperpage{123}
+  \item {SKULL}
+    \subitem {br.unicamp.mc322.projeto.heroquest.CombatDiceFace}, 
+		\hyperpage{34}
+  \item {sofrerAtaque}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{39}
+  \item {sprite}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ImageResourceService}, 
+		\hyperpage{68}
+  \item {SpriteIntrinsic}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{126}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic}, 
+		\hyperpage{127}
+  \item {spriteIntrinsic}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{126}
+  \item {stageChanged}
+    \subitem {br.unicamp.mc322.projeto.gameengine.entity.Entity}, 
+		\hyperpage{53}
+  \item {STAGECREATION}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceType}, 
+		\hyperpage{118}
+  \item {STAGECREATOR}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogType}, 
+		\hyperpage{78}
+  \item {stagePrototype}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService}, 
+		\hyperpage{105}
+  \item {stageType}
+    \subitem {br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService}, 
+		\hyperpage{65}
+  \item {startTurn}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.RunnableTurn}, 
+		\hyperpage{113}
+  \item {store}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.EntityStoreService}, 
+		\hyperpage{60}
+  \item {submenu}
+    \subitem {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{139}
+
+  \indexspace
+
+  \item {takeDamage}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Attackable}, 
+		\hyperpage{28}
+  \item {toggleObstructor}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{63}
+  \item {totalHand}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.Creature}, 
+		\hyperpage{41}
+  \item {transformDamage}
+    \subitem {br.unicamp.mc322.projeto.heroquest.item.Armor}, 
+		\hyperpage{26}
+
+  \indexspace
+
+  \item {unload}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageCreatorService}, 
+		\hyperpage{129}
+  \item {unnamed\_1}
+    \subitem {br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic}, 
+		\hyperpage{126}
+  \item {unnamed\_10}
+    \subitem {br.unicamp.mc322.projeto.heroquest.utility.D6Dice}, 
+		\hyperpage{44}
+  \item {unnamed\_11}
+    \subitem {br.unicamp.mc322.projeto.heroquest.CombatDice}, 
+		\hyperpage{33}
+  \item {unnamed\_12}
+    \subitem {br.unicamp.mc322.projeto.heroquest.item.Dagger}, 
+		\hyperpage{44}
+  \item {unnamed\_13}
+    \subitem {br.unicamp.mc322.projeto.heroquest.item.LongSword}, 
+		\hyperpage{79}
+  \item {unnamed\_2}
+    \subitem {br.unicamp.mc322.projeto.gameengine.menu.SwingMenu}, 
+		\hyperpage{139}
+  \item {unnamed\_3}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ServiceManager}, 
+		\hyperpage{117}
+  \item {unnamed\_4}
+    \subitem {br.unicamp.mc322.projeto.heroquest.magic.Magic}, 
+		\hyperpage{81}
+  \item {unnamed\_5}
+    \subitem {br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}, 
+		\hyperpage{63}
+  \item {unnamed\_6}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService}, 
+		\hyperpage{105}
+  \item {unnamed\_7}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageMemento}, 
+		\hyperpage{132}
+  \item {unnamed\_8}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.StageMemento}, 
+		\hyperpage{132}
+  \item {unnamed\_9}
+    \subitem {br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService}, 
+		\hyperpage{65}
+  \item {update}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.ImageOutputService}, 
+		\hyperpage{67}
+  \item {uses}
+    \subitem {br.unicamp.mc322.projeto.heroquest.item.Weapon}, 
+		\hyperpage{146}
+
+  \indexspace
+
+  \item {value}
+    \subitem {br.unicamp.mc322.projeto.heroquest.Item}, \hyperpage{71}
+
+  \indexspace
+
+  \item {WARNING}
+    \subitem {br.unicamp.mc322.projeto.gameengine.service.LogPriority}, 
+		\hyperpage{76}
+  \item {WATER}
+    \subitem {br.unicamp.mc322.projeto.heroquest.magic.Element}, 
+		\hyperpage{49}
+  \item {Weapon}
+    \subitem {br.unicamp.mc322.projeto.heroquest.item.Weapon}, 
+		\hyperpage{145}
+
+  \indexspace
+
+  \item {x}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{102}
+
+  \indexspace
+
+  \item {y}
+    \subitem {br.unicamp.mc322.projeto.gameengine.Pose}, 
+		\hyperpage{102}
+
+\end{theindex}

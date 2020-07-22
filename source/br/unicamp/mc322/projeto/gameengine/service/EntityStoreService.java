@@ -3,13 +3,11 @@ package br.unicamp.mc322.projeto.gameengine.service;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
-import br.unicamp.mc322.projeto.gameengine.service.Service;
 import br.unicamp.mc322.projeto.gameengine.service.exception.*;
 
 import java.util.NoSuchElementException;
 
-public interface EntityStoreService
- extends Service
+public interface EntityStoreService extends Service
 {
     /**
      * Operation store
@@ -56,5 +54,18 @@ public interface EntityStoreService
      */
     public void removeEntity ( Entity entity ) throws DisabledServiceException;
 
+
+    /**
+     * Retorna a quantidade de entidades armazenadas
+     * @return
+     */
+    public int countEntity() throws DisabledServiceException;
+
+    /**
+     * Retorna uma entidade pelo índice
+     * @param index - índice da entidade
+     * @return - entidade correspondente ao índice
+     */
+    public Entity getEntity(int index); 
 }
 

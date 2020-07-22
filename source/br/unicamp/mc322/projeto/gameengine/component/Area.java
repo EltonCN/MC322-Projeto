@@ -3,6 +3,9 @@ package br.unicamp.mc322.projeto.gameengine.component;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 
+/**
+ * Uma área no plano
+ */
 public class Area
 
 {
@@ -10,15 +13,15 @@ public class Area
     /**
      * Pose de origem da área
      */
-    private Pose origin;
+    protected Pose origin;
     /**
      * Alcance da área
      */
-    private float range;
+    protected float range;
     /**
      * Métrica que a área utiliza para verificar o alcance
      */
-    private Metric metric;
+    protected Metric metric;
     /**
      * Operation Area
      * Construtor de área
@@ -28,7 +31,12 @@ public class Area
      * @param metric - Métrica a ser utilizada para verificar o alcance
      * @return 
      */
-    public Area ( Pose origin, float range, Metric metric ){}
+    public Area ( Pose origin, float range, Metric metric )
+    {
+        this.origin = origin;
+        this.range = range;
+        this.metric = metric;
+    }
     /**
      * Operation isInside
      * Verifica se uma pose está contida na área
@@ -36,6 +44,13 @@ public class Area
      * @param pose - Pose a ser verificada
      * @return boolean
      */
-    public boolean isInside ( Pose pose ){}
+    public boolean isInside ( Pose pose )
+    {
+        if(origin.distance(pose, metric) <=range)
+        {
+            return true;
+        }
+        return false;
+    }
 }
 

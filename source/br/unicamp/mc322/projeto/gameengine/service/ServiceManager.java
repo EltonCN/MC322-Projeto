@@ -4,6 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 
 /**
  * Gerencia e permite acesso aos serviços do jogo
@@ -52,7 +53,15 @@ public class ServiceManager
         {
             LogService log = (LogService) service[ServiceType.LOG.ordinal()];
 
-            log.sendLog(LogType.MANAGER, LogPriority.ERROR, "Serviço Inexistente", "Foi solicitado um serviço inexistente do tipo "+serviceType.toString());
+            try
+            {
+                log.sendLog(LogType.MANAGER, LogPriority.ERROR, "Serviço Inexistente", "Foi solicitado um serviço inexistente do tipo "+serviceType.toString());
+            }
+            catch(ServiceException e)
+            {
+                
+            }
+            
 
             throw new NotAvaibleServiceException("Foi solicitado um serviço inexitente");
         }
@@ -68,9 +77,12 @@ public class ServiceManager
     {
         if(instance != null)
         {
-            LogService log = (LogService) service[ServiceType.LOG.ordinal()];
 
-            log.sendLog(LogType.MANAGER, LogPriority.WARNING, "Redefinição de Manager", "Está sendo definido um novo service manager, porém já há um existente");
+            try
+            {
+                log.sendLog(LogType.MANAGER, LogPriority.WARNING, "Redefinição de Manager", "Está sendo definido um novo service manager, porém já há um existente");
+            }
+           
         }
 
         instance = serviceManager;
@@ -120,14 +132,14 @@ public class ServiceManager
     /**
      * Operation ServiceManager
      * Construtor de ServiceManager
-     *
-     * @return 
+     * Define todos os serviços como nulos
+     * 
      */
     private ServiceManager (  )
     {
         this.service = new Service[ServiceType.nServiceType];
 
-        this.service[ServiceType.LOG.ordinal()] = ServiceType.LOG.getNullService();
+        this.setAllNullService();
     }
 }
 

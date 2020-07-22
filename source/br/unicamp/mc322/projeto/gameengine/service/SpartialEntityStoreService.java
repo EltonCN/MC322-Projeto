@@ -201,5 +201,15 @@ public class SpartialEntityStoreService implements EntityStoreService
 
         throw new NoSuchElementException("Elemento não encontrado na lista");
     }
+
+    @Override
+    public int countEntity() throws DisabledServiceException {
+        return list.size();
+    }
+
+    @Override
+    public Entity getEntity(int index) {
+        return list.get(index);
+    }
 }
 

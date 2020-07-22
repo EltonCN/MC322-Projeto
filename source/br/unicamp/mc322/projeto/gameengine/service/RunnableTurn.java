@@ -1,9 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
-import br.unicamp.mc322.projeto.gameengine.service.Runnable;
-
 public interface RunnableTurn
- implements Runnable
+ extends Runnable
 {
     /**
      * Operation startTurn

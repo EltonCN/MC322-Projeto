@@ -7,7 +7,7 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
 /**
  * @todo Definir superclasse apropriada, e criar construtores
  */
-public class DisabledServiceException extends Exception
+public class DisabledServiceException extends ServiceException
 {
     public DisabledServiceException(String s)
     {
