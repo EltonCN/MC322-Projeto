@@ -43,8 +43,8 @@ public class DiceMovement implements Movement
 				}
 			}
 		} catch (NotAvaibleServiceException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.exit(1);
 		}
 	}
 }

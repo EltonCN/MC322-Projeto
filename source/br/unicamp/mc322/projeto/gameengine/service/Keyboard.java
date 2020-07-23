@@ -15,7 +15,7 @@ public class Keyboard implements KeyInputService
 	@Override
 	public char getUserInput() {
 		Scanner input = new Scanner(System.in);
-		// TODO
+		// TODO CHANGE IMPLEMENTATION LATER
 		return Character.toLowerCase(input.next().strip().replace(" ", "").charAt(0));
 	}
 
