@@ -1,8 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.heroquest.entity.Creature;
-import br.unicamp.mc322.projeto.heroquest.entity.Curable;
+import br.unicamp.mc322.projeto.heroquest.action.DiceMovement;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
@@ -17,6 +16,7 @@ public abstract class Player extends Creature implements Curable
 	
     public Player(Pose pose, int nAttackDice, int nDefenseDice, int life) {
 		super(pose, nAttackDice, nDefenseDice, life);
+		basicMovement = new DiceMovement();
 	}
 	
     @Override
