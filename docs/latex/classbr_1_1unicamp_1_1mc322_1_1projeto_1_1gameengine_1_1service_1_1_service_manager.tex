@@ -13,20 +13,20 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+ser
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a6723f07f66110c2514abaf4b4b53f072}{insert\+Service}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a1dc85a17a08db60637faaf6827dace6b}{service}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}} service\+Type)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a81e8c1a9bf762ead74b350849ec3b79b}{insert\+Service}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a1dc85a17a08db60637faaf6827dace6b}{service}}, \mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}} service\+Type)
+\item 
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ab15d4135454d84ab587f075b4b61b2b0}{get\+Service}} (\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}} service\+Type)  throws Not\+Avaible\+Service\+Exception     
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a5d01c88148fba77ea49dc415f69bdb57}{define\+Service\+Manager}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} service\+Manager)
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_acef2a3bb836899f07759f03d6eac5301}{get\+Instance}} ()
-\item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a35d33439a293903f69c3de6b14e0adc1}{set\+Null\+Service}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}} service\+Type)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a35d33439a293903f69c3de6b14e0adc1}{set\+Null\+Service}} (\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}} service\+Type)
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ac795c32982f7a22e3180e07134296890}{set\+All\+Null\+Service}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Funções do Pacote}
+\doxysubsection*{Membros públicos estáticos}
 \begin{DoxyCompactItemize}
 \item 
-public$<$ S extends \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_adfe91acb58aaecc05f97b2b2e2a519aa}{get\+Service}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}} service\+Type)
+static \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_afd729c7c9990dca9011d6834ad282485}{get\+Instance}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
@@ -37,8 +37,6 @@ public$<$ S extends \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a1dc85a17a08db60637faaf6827dace6b}{service}}
-\item 
-\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_aa2e51eea712658cee1daefb5d8568311}{unnamed\+\_\+3}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Privados Estáticos}
 \begin{DoxyCompactItemize}
@@ -47,6 +45,9 @@ static \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Descrição detalhada}
+Gerencia e permite acesso aos serviços do jogo 
+
 \doxysubsection{Documentação dos Construtores \& Destrutor}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ab9323c8da65524e2256d9b89487a2bd1}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ab9323c8da65524e2256d9b89487a2bd1}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!ServiceManager@{ServiceManager}}
@@ -54,12 +55,7 @@ static \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1
 \doxysubsubsection{\texorpdfstring{ServiceManager()}{ServiceManager()}}
 {\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+Service\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} Construtor de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}}
-
-\begin{DoxyReturn}{Retorna}
-
-\end{DoxyReturn}
-
+Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} Construtor de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} Define todos os serviços como nulos 
 
 \doxysubsection{Documentação dos métodos}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a5d01c88148fba77ea49dc415f69bdb57}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a5d01c88148fba77ea49dc415f69bdb57}} 
@@ -75,22 +71,22 @@ Operation define\+Service\+Manager Define uma outra implementação de \mbox{\hy
 {\em service\+Manager} & -\/ \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_acef2a3bb836899f07759f03d6eac5301}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_acef2a3bb836899f07759f03d6eac5301}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_afd729c7c9990dca9011d6834ad282485}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_afd729c7c9990dca9011d6834ad282485}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!getInstance@{getInstance}}
 \index{getInstance@{getInstance}!br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}}
 \doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Operation get\+Instance Retorna a instância atual de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}}. Cria a padrão se ainda não defi
+Operation get\+Instance Retorna a instância atual de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}}. Cria a padrão se ainda não defida
 
 \begin{DoxyReturn}{Retorna}
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager}{Service\+Manager}} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_adfe91acb58aaecc05f97b2b2e2a519aa}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_adfe91acb58aaecc05f97b2b2e2a519aa}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ab15d4135454d84ab587f075b4b61b2b0}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ab15d4135454d84ab587f075b4b61b2b0}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!getService@{getService}}
 \index{getService@{getService}!br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}}
 \doxysubsubsection{\texorpdfstring{getService()}{getService()}}
-{\footnotesize\ttfamily public$<$S extends \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}}$>$ br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+get\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}}}]{service\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+get\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}}}]{service\+Type }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_not_avaible_service_exception}{Not\+Avaible\+Service\+Exception}}}
 
 Operation get\+Service Retorna um serviço
 
@@ -100,13 +96,13 @@ Operation get\+Service Retorna um serviço
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Retorna}
-$<$\+S extends=\char`\"{}\char`\"{} service$>$=\char`\"{}\char`\"{}$>$ 
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a6723f07f66110c2514abaf4b4b53f072}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a6723f07f66110c2514abaf4b4b53f072}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a81e8c1a9bf762ead74b350849ec3b79b}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_a81e8c1a9bf762ead74b350849ec3b79b}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!insertService@{insertService}}
 \index{insertService@{insertService}!br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}}
 \doxysubsubsection{\texorpdfstring{insertService()}{insertService()}}
-{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+insert\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}}}]{service,  }\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}}}]{service\+Type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+insert\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}}}]{service,  }\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}}}]{service\+Type }\end{DoxyParamCaption})}
 
 Operation insert\+Service Define uma implementação de serviço
 
@@ -117,9 +113,8 @@ Operation insert\+Service Define uma implementação de serviço
 {\em service\+Type} & -\/ Tipo de serviço que ele implementa \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Retorna}
-
-\end{DoxyReturn}
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000009}{Tarefa}}]Verificação do tipo de serviço, para se certificar que o serviço fornecido pertence ao tipo fornecido \end{DoxyRefDesc}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ac795c32982f7a22e3180e07134296890}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_ac795c32982f7a22e3180e07134296890}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!setAllNullService@{setAllNullService}}
 \index{setAllNullService@{setAllNullService}!br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}}
@@ -130,7 +125,7 @@ Operation set\+All\+Null\+Service Define todos os serviços como nulos \mbox{\Hy
 \index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!setNullService@{setNullService}}
 \index{setNullService@{setNullService}!br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}}
 \doxysubsubsection{\texorpdfstring{setNullService()}{setNullService()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+set\+Null\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}}}]{service\+Type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+set\+Null\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type}{Service\+Type}}}]{service\+Type }\end{DoxyParamCaption})}
 
 Operation set\+Null\+Service Define que um serviço utilizará uma definição nula
 
@@ -154,13 +149,7 @@ Attributes Instância do gerenciador de serviços definida \mbox{\Hypertarget{cl
 \doxysubsubsection{\texorpdfstring{service}{service}}
 {\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+service\hspace{0.3cm}{\ttfamily [private]}}
 
-Serviços existentes \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_aa2e51eea712658cee1daefb5d8568311}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager_aa2e51eea712658cee1daefb5d8568311}} 
-\index{br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}!unnamed\_3@{unnamed\_3}}
-\index{unnamed\_3@{unnamed\_3}!br.unicamp.mc322.projeto.gameengine.service.ServiceManager@{br.unicamp.mc322.projeto.gameengine.service.ServiceManager}}
-\doxysubsubsection{\texorpdfstring{unnamed\_3}{unnamed\_3}}
-{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service}{Service}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service\+Manager.\+unnamed\+\_\+3\hspace{0.3cm}{\ttfamily [private]}}
-
-Associations 
+Serviços existentes 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
 \item 

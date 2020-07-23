@@ -1,0 +1,4 @@
+var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception =
+[
+    [ "DisabledServiceException", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception.html#a174b925cccc7974a640a3f38367a0dce", null ]
+];

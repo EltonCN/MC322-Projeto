@@ -1,10 +1,6 @@
 <map id="br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService" name="br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService">
-<area shape="rect" id="node1" title=" " alt="" coords="817,31,1112,72"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html" title=" " alt="" coords="381,5,676,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="799,47,1093,88"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html" title=" " alt="" coords="374,5,669,47"/>
 <area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service.html" title=" " alt="" coords="5,5,300,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_prototype.html" title=" " alt="" coords="381,123,676,164"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_memento.html" title=" " alt="" coords="817,168,1112,209"/>
-<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_prototype.html" title=" " alt="" coords="381,224,676,265"/>
-<area shape="rect" id="node7" title=" " alt="" coords="127,231,179,258"/>
-<area shape="rect" id="node8" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_identifier.html" title=" " alt="" coords="5,123,300,164"/>
+<area shape="rect" id="node4" title=" " alt="" coords="349,71,693,112"/>
 </map>

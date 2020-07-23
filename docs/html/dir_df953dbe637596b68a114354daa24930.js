@@ -10,6 +10,9 @@ var dir_df953dbe637596b68a114354daa24930 =
     [ "EntityRunnerService.java", "_entity_runner_service_8java.html", [
       [ "EntityRunnerService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_runner_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_runner_service" ]
     ] ],
+    [ "EntitySpartialComparator.java", "_entity_spartial_comparator_8java.html", [
+      [ "EntitySpartialComparator", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_spartial_comparator.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_spartial_comparator" ]
+    ] ],
     [ "EntityStoreService.java", "_entity_store_service_8java.html", [
       [ "EntityStoreService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_entity_store_service" ]
     ] ],
@@ -20,19 +23,19 @@ var dir_df953dbe637596b68a114354daa24930 =
       [ "ImageResourceService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_image_resource_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_image_resource_service" ]
     ] ],
     [ "Keyboard.java", "_keyboard_8java.html", [
-      [ "Keyboard", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_keyboard.html", null ]
+      [ "Keyboard", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_keyboard.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_keyboard" ]
     ] ],
     [ "KeyInputService.java", "_key_input_service_8java.html", [
       [ "KeyInputService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_key_input_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_key_input_service" ]
     ] ],
     [ "LogPriority.java", "_log_priority_8java.html", [
-      [ "LogPriority", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority" ]
+      [ "LogPriority", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority" ]
     ] ],
     [ "LogService.java", "_log_service_8java.html", [
       [ "LogService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service" ]
     ] ],
     [ "LogType.java", "_log_type_8java.html", [
-      [ "LogType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type" ]
+      [ "LogType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type" ]
     ] ],
     [ "Menu.java", "_menu_8java.html", [
       [ "Menu", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_menu.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_menu" ]
@@ -40,20 +43,20 @@ var dir_df953dbe637596b68a114354daa24930 =
     [ "MenuService.java", "_menu_service_8java.html", [
       [ "MenuService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_menu_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_menu_service" ]
     ] ],
-    [ "NulImageOutputService.java", "_nul_image_output_service_8java.html", [
-      [ "NulImageOutputService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_nul_image_output_service.html", null ]
-    ] ],
     [ "NullEntityRunnerService.java", "_null_entity_runner_service_8java.html", [
-      [ "NullEntityRunnerService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_runner_service.html", null ]
+      [ "NullEntityRunnerService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_runner_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_runner_service" ]
     ] ],
     [ "NullEntityStoreService.java", "_null_entity_store_service_8java.html", [
-      [ "NullEntityStoreService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_store_service.html", null ]
+      [ "NullEntityStoreService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_store_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_entity_store_service" ]
+    ] ],
+    [ "NullImageOutputService.java", "_null_image_output_service_8java.html", [
+      [ "NullImageOutputService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_image_output_service.html", null ]
     ] ],
     [ "NullKeyInputService.java", "_null_key_input_service_8java.html", [
       [ "NullKeyInputService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_key_input_service.html", null ]
     ] ],
     [ "NullLogService.java", "_null_log_service_8java.html", [
-      [ "NullLogService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_log_service.html", null ]
+      [ "NullLogService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_log_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_log_service" ]
     ] ],
     [ "NullMenuService.java", "_null_menu_service_8java.html", [
       [ "NullMenuService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_menu_service.html", null ]
@@ -62,7 +65,7 @@ var dir_df953dbe637596b68a114354daa24930 =
       [ "NullResourceService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_resource_service.html", null ]
     ] ],
     [ "NullStageCreatorService.java", "_null_stage_creator_service_8java.html", [
-      [ "NullStageCreatorService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service.html", null ]
+      [ "NullStageCreatorService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service" ]
     ] ],
     [ "PrototypableEntity.java", "_prototypable_entity_8java.html", [
       [ "PrototypableEntity", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototypable_entity.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototypable_entity" ]
@@ -92,10 +95,10 @@ var dir_df953dbe637596b68a114354daa24930 =
       [ "ServiceManager", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_manager" ]
     ] ],
     [ "ServiceType.java", "_service_type_8java.html", [
-      [ "ServiceType", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type" ]
+      [ "ServiceType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type" ]
     ] ],
     [ "SpartialEntityStoreService.java", "_spartial_entity_store_service_8java.html", [
-      [ "SpartialEntityStoreService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_spartial_entity_store_service.html", null ]
+      [ "SpartialEntityStoreService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_spartial_entity_store_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_spartial_entity_store_service" ]
     ] ],
     [ "StageCreatorService.java", "_stage_creator_service_8java.html", [
       [ "StageCreatorService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service" ]
@@ -113,9 +116,9 @@ var dir_df953dbe637596b68a114354daa24930 =
       [ "SwingScreen", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_swing_screen.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_swing_screen" ]
     ] ],
     [ "TerminalLogService.java", "_terminal_log_service_8java.html", [
-      [ "TerminalLogService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service.html", null ]
+      [ "TerminalLogService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service" ]
     ] ],
     [ "TurnEntityRunnerService.java", "_turn_entity_runner_service_8java.html", [
-      [ "TurnEntityRunnerService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_turn_entity_runner_service.html", null ]
+      [ "TurnEntityRunnerService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_turn_entity_runner_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_turn_entity_runner_service" ]
     ] ]
 ];

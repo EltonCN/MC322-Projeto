@@ -7,7 +7,7 @@ var dir_581752da2cc6301a03e0af4698720c05 =
       [ "Bag", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag" ]
     ] ],
     [ "Barbarian.java", "_barbarian_8java.html", [
-      [ "Barbarian", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian.html", null ]
+      [ "Barbarian", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian" ]
     ] ],
     [ "Creature.java", "_creature_8java.html", [
       [ "Creature", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature" ]
@@ -19,13 +19,13 @@ var dir_581752da2cc6301a03e0af4698720c05 =
       [ "Door", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door" ]
     ] ],
     [ "Dwarf.java", "_dwarf_8java.html", [
-      [ "Dwarf", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_dwarf.html", null ]
+      [ "Dwarf", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_dwarf.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_dwarf" ]
     ] ],
     [ "Elf.java", "_elf_8java.html", [
-      [ "Elf", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf.html", null ]
+      [ "Elf", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf" ]
     ] ],
     [ "Enemy.java", "_enemy_8java.html", [
-      [ "Enemy", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy.html", null ]
+      [ "Enemy", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy" ]
     ] ],
     [ "Goblin.java", "_goblin_8java.html", [
       [ "Goblin", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_goblin.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_goblin" ]
@@ -46,6 +46,6 @@ var dir_581752da2cc6301a03e0af4698720c05 =
       [ "Skeleton", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton" ]
     ] ],
     [ "Wizard.java", "_wizard_8java.html", [
-      [ "Wizard", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard.html", null ]
+      [ "Wizard", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard" ]
     ] ]
 ];

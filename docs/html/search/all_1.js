@@ -3,7 +3,7 @@ var searchData=
   ['action_22',['action',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action.html',1,'br.unicamp.mc322.projeto.gameengine.action'],['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action.html',1,'br.unicamp.mc322.projeto.heroquest.action']]],
   ['bag_23',['Bag',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html',1,'br.unicamp.mc322.projeto.heroquest.entity.Bag'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html#a8b9554347dc8ca5b3ef2d8ebe495f9b0',1,'br.unicamp.mc322.projeto.heroquest.entity.Bag.Bag()']]],
   ['bag_2ejava_24',['Bag.java',['../_bag_8java.html',1,'']]],
-  ['barbarian_25',['Barbarian',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian.html',1,'br::unicamp::mc322::projeto::heroquest::entity']]],
+  ['barbarian_25',['Barbarian',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian.html',1,'br.unicamp.mc322.projeto.heroquest.entity.Barbarian'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian.html#a81669ffab4d2fa88e621eabba84f970c',1,'br.unicamp.mc322.projeto.heroquest.entity.Barbarian.Barbarian()']]],
   ['barbarian_2ejava_26',['Barbarian.java',['../_barbarian_8java.html',1,'']]],
   ['basicattack_27',['basicAttack',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#a19555df6aaf2e5bd3c9ae1951ac1748d',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]],
   ['basicmovement_28',['basicMovement',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#a6d9b3c0fba5067d0b5eb9e21cb0918dd',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]],
@@ -19,9 +19,10 @@ var searchData=
   ['magic_38',['magic',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic.html',1,'br::unicamp::mc322::projeto::heroquest']]],
   ['mc322_39',['mc322',['../namespacebr_1_1unicamp_1_1mc322.html',1,'br::unicamp']]],
   ['menu_40',['menu',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1menu.html',1,'br::unicamp::mc322::projeto::gameengine']]],
-  ['projeto_41',['projeto',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto.html',1,'br::unicamp::mc322']]],
-  ['service_42',['service',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service.html',1,'br.unicamp.mc322.projeto.gameengine.service'],['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service.html',1,'br.unicamp.mc322.projeto.heroquest.service']]],
-  ['sprite_43',['sprite',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite.html',1,'br::unicamp::mc322::projeto::gameengine']]],
-  ['unicamp_44',['unicamp',['../namespacebr_1_1unicamp.html',1,'br']]],
-  ['utility_45',['utility',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1utility.html',1,'br.unicamp.mc322.projeto.gameengine.utility'],['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1utility.html',1,'br.unicamp.mc322.projeto.heroquest.utility']]]
+  ['pose_41',['pose',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose.html',1,'br::unicamp::mc322::projeto::gameengine']]],
+  ['projeto_42',['projeto',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto.html',1,'br::unicamp::mc322']]],
+  ['service_43',['service',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service.html',1,'br.unicamp.mc322.projeto.gameengine.service'],['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service.html',1,'br.unicamp.mc322.projeto.heroquest.service']]],
+  ['sprite_44',['sprite',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite.html',1,'br::unicamp::mc322::projeto::gameengine']]],
+  ['unicamp_45',['unicamp',['../namespacebr_1_1unicamp.html',1,'br']]],
+  ['utility_46',['utility',['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1utility.html',1,'br.unicamp.mc322.projeto.gameengine.utility'],['../namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1utility.html',1,'br.unicamp.mc322.projeto.heroquest.utility']]]
 ];

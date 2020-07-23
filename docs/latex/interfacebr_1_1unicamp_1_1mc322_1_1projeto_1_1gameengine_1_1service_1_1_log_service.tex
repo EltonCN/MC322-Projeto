@@ -2,8 +2,7 @@
 \label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service}\index{br.unicamp.mc322.projeto.gameengine.service.LogService@{br.unicamp.mc322.projeto.gameengine.service.LogService}}
 
 
-Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service
-\nopagebreak
+Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+se
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service\+:
-\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,7 +21,7 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+ser
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service_aa6ded85eafeec8a780badd12bfb0dd06}{send\+Log}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type}{Log\+Type}} log\+Type, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority}{Log\+Priority}} priority, String subject, String message)
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service_aa6ded85eafeec8a780badd12bfb0dd06}{send\+Log}} (\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type}{Log\+Type}} log\+Type, \mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority}{Log\+Priority}} priority, String subject, String message)  throws Disabled\+Service\+Exception
 \end{DoxyCompactItemize}
 
 
@@ -32,7 +30,7 @@ void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1
 \index{br.unicamp.mc322.projeto.gameengine.service.LogService@{br.unicamp.mc322.projeto.gameengine.service.LogService}!sendLog@{sendLog}}
 \index{sendLog@{sendLog}!br.unicamp.mc322.projeto.gameengine.service.LogService@{br.unicamp.mc322.projeto.gameengine.service.LogService}}
 \doxysubsubsection{\texorpdfstring{sendLog()}{sendLog()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service.\+send\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type}{Log\+Type}}}]{log\+Type,  }\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority}{Log\+Priority}}}]{priority,  }\item[{String}]{subject,  }\item[{String}]{message }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service.\+send\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type}{Log\+Type}}}]{log\+Type,  }\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority}{Log\+Priority}}}]{priority,  }\item[{String}]{subject,  }\item[{String}]{message }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
 
 Operation send\+Log
 
@@ -47,6 +45,15 @@ Operation send\+Log
 {\em message} & -\/ \\
 \hline
 \end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepções}
+{\em Disabled\+Service\+Exception} & caso o serviço tenha sido desabilitado \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a23e43373f556345e9e272425b8a276d3}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service}} e \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_log_service_afd0ba73ea221ae06746bb4cf72632ea6}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Null\+Log\+Service}}.
+
 
 
 A documentação para este interface foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
