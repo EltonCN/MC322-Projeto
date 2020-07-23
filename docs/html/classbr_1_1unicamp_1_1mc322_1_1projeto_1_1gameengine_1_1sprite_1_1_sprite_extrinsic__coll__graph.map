@@ -1,6 +1,6 @@
 <map id="br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic" name="br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic">
-<area shape="rect" id="node1" title=" " alt="" coords="425,71,712,112"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_resource_extrinsic.html" title=" " alt="" coords="5,5,300,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_intrinsic.html" title=" " alt="" coords="9,71,296,112"/>
-<area shape="rect" id="node4" title=" " alt="" coords="127,137,179,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="443,71,729,112"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_resource_extrinsic.html" title=" " alt="" coords="14,5,309,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_intrinsic.html" title=" " alt="" coords="18,71,305,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="5,137,317,163"/>
 </map>

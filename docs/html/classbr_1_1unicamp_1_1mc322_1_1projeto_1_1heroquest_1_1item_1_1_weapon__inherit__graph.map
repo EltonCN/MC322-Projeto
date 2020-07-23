@@ -1,7 +1,7 @@
 <map id="br.unicamp.mc322.projeto.heroquest.item.Weapon" name="br.unicamp.mc322.projeto.heroquest.item.Weapon">
-<area shape="rect" id="node1" title=" " alt="" coords="316,71,583,112"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html" title=" " alt="" coords="631,5,897,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html" title=" " alt="" coords="631,71,897,112"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html" title=" " alt="" coords="631,136,897,177"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_item.html" title=" " alt="" coords="5,78,268,105"/>
+<area shape="rect" id="node1" title=" " alt="" coords="344,71,611,112"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html" title=" " alt="" coords="659,5,925,47"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html" title=" " alt="" coords="659,71,925,112"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html" title=" " alt="" coords="659,136,925,177"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="5,78,296,105"/>
 </map>

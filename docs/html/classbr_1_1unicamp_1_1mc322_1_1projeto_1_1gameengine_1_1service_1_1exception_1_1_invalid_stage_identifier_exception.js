@@ -1,0 +1,6 @@
+var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception =
+[
+    [ "InvalidStageIdentifierException", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception.html#a4817c40331cc286e8daeba65c0073d4f", null ],
+    [ "InvalidStageIdentifierException", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception.html#a5fae9198c23276a957a88dc94749d913", null ],
+    [ "InvalidStageIdentifierException", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception.html#a6a0776ceea367f58a3cc9fa927aeb5da", null ]
+];

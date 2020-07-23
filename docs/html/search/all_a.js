@@ -1,17 +1,19 @@
 var searchData=
 [
-  ['life_168',['life',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#ad7cb21144f92565076130ff1bbd2fce9',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]],
-  ['lightobstructorarea_169',['LightObstructorArea',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html',1,'br.unicamp.mc322.projeto.heroquest.component.LightObstructorArea'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity.html#a263954f833dab58b600340de0260bddf',1,'br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity.lightObstructorArea()']]],
-  ['lightobstructorarea_2ejava_170',['LightObstructorArea.java',['../_light_obstructor_area_8java.html',1,'']]],
-  ['load_171',['load',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_memento.html#a3377fff934589cd010133ed8dbdf13f0',1,'br::unicamp::mc322::projeto::gameengine::service::StageMemento']]],
-  ['loadstage_172',['loadStage',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html#a2d15fd46656ae1458f71dc7ee9931be1',1,'br::unicamp::mc322::projeto::gameengine::service::StageCreatorService']]],
-  ['log_173',['LOG',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority.html#a1a0c344797a53810249d0ab75e4203d0',1,'br.unicamp.mc322.projeto.gameengine.service.LogPriority.LOG()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type.html#a1568473f5afcb8d37514f4398659f18d',1,'br.unicamp.mc322.projeto.gameengine.service.LogType.LOG()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type.html#a9809a1306194eeb45d7ea64ca7ff4dc3',1,'br.unicamp.mc322.projeto.gameengine.service.ServiceType.LOG()']]],
-  ['logpriority_174',['LogPriority',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
-  ['logpriority_2ejava_175',['LogPriority.java',['../_log_priority_8java.html',1,'']]],
-  ['logservice_176',['LogService',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
-  ['logservice_2ejava_177',['LogService.java',['../_log_service_8java.html',1,'']]],
-  ['logtype_178',['LogType',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
-  ['logtype_2ejava_179',['LogType.java',['../_log_type_8java.html',1,'']]],
-  ['longsword_180',['LongSword',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html',1,'br::unicamp::mc322::projeto::heroquest::item']]],
-  ['longsword_2ejava_181',['LongSword.java',['../_long_sword_8java.html',1,'']]]
+  ['life_184',['life',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html#ad7cb21144f92565076130ff1bbd2fce9',1,'br::unicamp::mc322::projeto::heroquest::entity::Creature']]],
+  ['lightobstructorarea_185',['LightObstructorArea',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html',1,'br.unicamp.mc322.projeto.heroquest.component.LightObstructorArea'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity.html#a263954f833dab58b600340de0260bddf',1,'br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity.lightObstructorArea()']]],
+  ['lightobstructorarea_2ejava_186',['LightObstructorArea.java',['../_light_obstructor_area_8java.html',1,'']]],
+  ['list_187',['list',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_spartial_entity_store_service.html#aa86d44825ec8885fb29eb8f91ab101d8',1,'br::unicamp::mc322::projeto::gameengine::service::SpartialEntityStoreService']]],
+  ['load_188',['load',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_memento.html#a3377fff934589cd010133ed8dbdf13f0',1,'br.unicamp.mc322.projeto.gameengine.service.StageMemento.load()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_prototype.html#a538df7f93fbdfcc460ad7bc9b9675dcb',1,'br.unicamp.mc322.projeto.gameengine.service.StagePrototype.load()']]],
+  ['loadstage_189',['loadStage',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service.html#a9fbb743c26dbc9f0362dd5caf069301a',1,'br.unicamp.mc322.projeto.gameengine.service.NullStageCreatorService.loadStage()'],['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototype_stage_creator_service.html#a44e9e168ae9a8fbd93cb540450fa7c48',1,'br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService.loadStage()'],['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html#a2d15fd46656ae1458f71dc7ee9931be1',1,'br.unicamp.mc322.projeto.gameengine.service.StageCreatorService.loadStage()']]],
+  ['log_190',['LOG',['../enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority.html#a1a0c344797a53810249d0ab75e4203d0',1,'br.unicamp.mc322.projeto.gameengine.service.LogPriority.LOG()'],['../enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type.html#a1568473f5afcb8d37514f4398659f18d',1,'br.unicamp.mc322.projeto.gameengine.service.LogType.LOG()'],['../enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_type.html#a9809a1306194eeb45d7ea64ca7ff4dc3',1,'br.unicamp.mc322.projeto.gameengine.service.ServiceType.LOG()']]],
+  ['logpriority_191',['LogPriority',['../enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['logpriority_2ejava_192',['LogPriority.java',['../_log_priority_8java.html',1,'']]],
+  ['logservice_193',['LogService',['../interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['logservice_2ejava_194',['LogService.java',['../_log_service_8java.html',1,'']]],
+  ['logtype_195',['LogType',['../enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type.html',1,'br::unicamp::mc322::projeto::gameengine::service']]],
+  ['logtype_2ejava_196',['LogType.java',['../_log_type_8java.html',1,'']]],
+  ['longsword_197',['LongSword',['../classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html',1,'br::unicamp::mc322::projeto::heroquest::item']]],
+  ['longsword_2ejava_198',['LongSword.java',['../_long_sword_8java.html',1,'']]],
+  ['lista_20de_20tarefas_199',['Lista de tarefas',['../todo.html',1,'']]]
 ];

@@ -117,13 +117,13 @@ Diagrama de colaboração para br.unicamp.mc322.projeto.gameengine.service.Stage
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
-<tr class="memitem:a2d15fd46656ae1458f71dc7ee9931be1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html#a2d15fd46656ae1458f71dc7ee9931be1">loadStage</a> (<a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_identifier.html">StageIdentifier</a> identifier)</td></tr>
+<tr class="memitem:a2d15fd46656ae1458f71dc7ee9931be1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html#a2d15fd46656ae1458f71dc7ee9931be1">loadStage</a> (<a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_identifier.html">StageIdentifier</a> identifier)  throws DisabledServiceException, InvalidStageIdentifierException</td></tr>
 <tr class="separator:a2d15fd46656ae1458f71dc7ee9931be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a867938dbb110916d35ad3f50d1f672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html#a2a867938dbb110916d35ad3f50d1f672">unload</a> ()</td></tr>
+<tr class="memitem:a2a867938dbb110916d35ad3f50d1f672"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_creator_service.html#a2a867938dbb110916d35ad3f50d1f672">unload</a> ()  throws DisabledServiceException</td></tr>
 <tr class="separator:a2a867938dbb110916d35ad3f50d1f672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service')"><img src="closed.png" alt="-"/>&#160;Membros públicos herdados de <a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service.html">br.unicamp.mc322.projeto.gameengine.service.Service</a></td></tr>
-<tr class="memitem:a691fc47c0e08cab131de080b0c55eea7 inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service.html#a691fc47c0e08cab131de080b0c55eea7">end</a> ()</td></tr>
-<tr class="separator:a691fc47c0e08cab131de080b0c55eea7 inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8b52057d063bddecd796b70a1f243e inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service.html#afe8b52057d063bddecd796b70a1f243e">end</a> ()</td></tr>
+<tr class="separator:afe8b52057d063bddecd796b70a1f243e inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentação dos métodos</h2>
 <a id="a2d15fd46656ae1458f71dc7ee9931be1"></a>
@@ -137,7 +137,7 @@ Membros públicos</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_identifier.html">StageIdentifier</a>&#160;</td>
           <td class="paramname"><em>identifier</em></td><td>)</td>
-          <td></td>
+          <td> throws <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception.html">DisabledServiceException</a>, <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception.html">InvalidStageIdentifierException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -148,6 +148,8 @@ Membros públicos</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implementado em <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototype_stage_creator_service.html#a44e9e168ae9a8fbd93cb540450fa7c48">br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService</a> e <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service.html#a9fbb743c26dbc9f0362dd5caf069301a">br.unicamp.mc322.projeto.gameengine.service.NullStageCreatorService</a>.</p>
 
 </div>
 </div>
@@ -161,11 +163,13 @@ Membros públicos</h2></td></tr>
           <td class="memname">void br.unicamp.mc322.projeto.gameengine.service.StageCreatorService.unload </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> throws <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception.html">DisabledServiceException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Operation unload Descarrega o estágio atual </p>
+
+<p>Implementado em <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototype_stage_creator_service.html#a9693b8c173b511d8d5ee744ab511a1a5">br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService</a> e <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_null_stage_creator_service.html#af3aae4d255e838445261e21f662f7049">br.unicamp.mc322.projeto.gameengine.service.NullStageCreatorService</a>.</p>
 
 </div>
 </div>

@@ -2,8 +2,7 @@
 \label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service}\index{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}}
 
 
-Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service
-\nopagebreak
+Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,15 +11,105 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+se
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service\+:
-\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=301pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Outros membros herdados}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a2cc2243ddf27c14ed0b9e94d76050b84}{Terminal\+Log\+Service}} ()
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_ac11feb31260b803a4e81edef172a9d99}{end}} ()
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a23e43373f556345e9e272425b8a276d3}{send\+Log}} (\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type}{Log\+Type}} log\+Type, \mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority}{Log\+Priority}} priority, String subject, String message)  throws Disabled\+Service\+Exception     
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a7412ef1d492db9aba032682eff3167e2}{get\+Time}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_aa1c91fcfa6851c81e2265babc322dd39}{ended}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Serviço de Logging pelo terminal 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a2cc2243ddf27c14ed0b9e94d76050b84}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a2cc2243ddf27c14ed0b9e94d76050b84}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}!TerminalLogService@{TerminalLogService}}
+\index{TerminalLogService@{TerminalLogService}!br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}}
+\doxysubsubsection{\texorpdfstring{TerminalLogService()}{TerminalLogService()}}
+{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service.\+Terminal\+Log\+Service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Construtor de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service}{Terminal\+Log\+Service}}
+
+Define o serviço como não terminado 
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_ac11feb31260b803a4e81edef172a9d99}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_ac11feb31260b803a4e81edef172a9d99}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}!end@{end}}
+\index{end@{end}!br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service.\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation end Encerra o serviço, que não deve mais realizar suas operações \begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_afe8b52057d063bddecd796b70a1f243e}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a7412ef1d492db9aba032682eff3167e2}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a7412ef1d492db9aba032682eff3167e2}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}!getTime@{getTime}}
+\index{getTime@{getTime}!br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily String br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service.\+get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Retorna o tempo atual \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a23e43373f556345e9e272425b8a276d3}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_a23e43373f556345e9e272425b8a276d3}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}!sendLog@{sendLog}}
+\index{sendLog@{sendLog}!br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}}
+\doxysubsubsection{\texorpdfstring{sendLog()}{sendLog()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service.\+send\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_type}{Log\+Type}}}]{log\+Type,  }\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_priority}{Log\+Priority}}}]{priority,  }\item[{String}]{subject,  }\item[{String}]{message }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
+
+Operation send\+Log
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em log\+Type} & -\/ \\
+\hline
+{\em priority} & -\/ \\
+\hline
+{\em subject} & -\/ Assunto/\+Resumo do log \\
+\hline
+{\em message} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepções}
+{\em Disabled\+Service\+Exception} & caso o serviço tenha sido desabilitado \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_log_service_aa6ded85eafeec8a780badd12bfb0dd06}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Log\+Service}}.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_aa1c91fcfa6851c81e2265babc322dd39}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_terminal_log_service_aa1c91fcfa6851c81e2265babc322dd39}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}!ended@{ended}}
+\index{ended@{ended}!br.unicamp.mc322.projeto.gameengine.service.TerminalLogService@{br.unicamp.mc322.projeto.gameengine.service.TerminalLogService}}
+\doxysubsubsection{\texorpdfstring{ended}{ended}}
+{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Terminal\+Log\+Service.\+ended\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}

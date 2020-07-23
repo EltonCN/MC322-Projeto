@@ -1,13 +1,8 @@
 package br.unicamp.mc322.projeto.heroquest.service;
 
 
-public class StageType
-
+public enum StageType
 {
-    /** Attributes */
-    /**
-     * 
-     */
       ROOM, AISLE;
 }
 

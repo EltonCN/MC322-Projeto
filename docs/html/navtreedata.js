@@ -23,6 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "HeroQuest", "index.html", [
+    [ "Lista de tarefas", "todo.html", null ],
     [ "Pacotes", "namespaces.html", [
       [ "Pacotes", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -31,7 +32,7 @@ var NAVTREE =
       [ "Índice dos componentes", "classes.html", null ],
       [ "Hierarquia de classes", "hierarchy.html", "hierarchy" ],
       [ "Componentes membro", "functions.html", [
-        [ "Tudo", "functions.html", null ],
+        [ "Tudo", "functions.html", "functions_dup" ],
         [ "Funções", "functions_func.html", null ],
         [ "Variáveis", "functions_vars.html", null ]
       ] ]
@@ -45,7 +46,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_action_8java.html",
-"classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_item.html#ac21c7c43244be118aa9d247da6b8dd32"
+"classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_turn_entity_runner_service.html#ae22d255c23b40adb0acafd7067faa17b",
+"interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_image_output_service.html"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

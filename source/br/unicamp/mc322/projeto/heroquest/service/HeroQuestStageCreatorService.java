@@ -10,7 +10,5 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
      * Tipo de cada estágio
      */
     public StageType[] stageType;
-    /** Associations */
-    private StageType unnamed_9;
 }
 
