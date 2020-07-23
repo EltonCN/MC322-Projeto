@@ -21,6 +21,12 @@ public interface KeyInputService extends Service
      * @return boolean
      */
     /*public boolean isReleased (KeyEvent key);*/
+	/**
+     * Operation getUserInput
+     * Retorna o input do usuário
+     *
+     * @return char
+     */
 	public char getUserInput();
 
 }
