@@ -12,15 +12,12 @@ public class Keyboard implements KeyInputService
 	}
 
 	@Override
-	public boolean isPressed(KeyEvent key) {
+	public char getUserInput() {
 		// TODO Auto-generated method stub
-		return false;
+		return 0;
 	}
 
-	@Override
-	public boolean isReleased(KeyEvent key) {
-		// TODO Auto-generated method stub
-		return false;
+	
 	}
 }
 

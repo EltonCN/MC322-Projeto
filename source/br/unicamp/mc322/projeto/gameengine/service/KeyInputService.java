@@ -11,7 +11,7 @@ public interface KeyInputService extends Service
      * @param key - Tecla
      * @return boolean
      */
-    public boolean isPressed (KeyEvent key);
+    /*public boolean isPressed (KeyEvent key);/*
 
     /**
      * Operation isReleased
@@ -20,7 +20,8 @@ public interface KeyInputService extends Service
      * @param key - Tecla
      * @return boolean
      */
-    public boolean isReleased (KeyEvent key);
+    /*public boolean isReleased (KeyEvent key);*/
+	public char getUserInput();
 
 }
 
