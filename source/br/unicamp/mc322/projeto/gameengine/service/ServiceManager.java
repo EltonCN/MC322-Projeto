@@ -80,7 +80,13 @@ public class ServiceManager
 
             try
             {
+                LogService log = (LogService)service[ServiceType.LOG.ordinal()];
+
                 log.sendLog(LogType.MANAGER, LogPriority.WARNING, "Redefinição de Manager", "Está sendo definido um novo service manager, porém já há um existente");
+            }
+            catch(ServiceException e)
+            {
+
             }
            
         }

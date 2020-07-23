@@ -1,5 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
+import java.time.LocalDateTime;
+
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 
 /**
@@ -42,8 +44,28 @@ public class TerminalLogService implements LogService
 
         log += message;
 
-        System.out.println(log);
+        System.out.println(getTime()+" "+log);
 
+    }
+
+    /**
+     * Retorna o tempo atual
+     */
+    private String getTime()
+    {
+        LocalDateTime now = LocalDateTime.now();
+
+        String dia = Integer.toString(now.getDayOfMonth()) + "/";
+
+        dia += Integer.toString(now.getMonthValue())+"/";
+
+        dia += Integer.toString(now.getYear());
+
+        String time = Integer.toString(now.getHour())+":";
+        time += Integer.toString(now.getMinute())+":";
+        time += Integer.toString(now.getSecond())+":";
+
+        return dia+" - "+time;
     }
 }
 

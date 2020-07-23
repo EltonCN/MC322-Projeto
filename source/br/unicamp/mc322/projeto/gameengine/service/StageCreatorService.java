@@ -1,5 +1,8 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.InvalidStageIdentifierException;
+
 public interface StageCreatorService
  extends Service
 {
@@ -9,14 +12,14 @@ public interface StageCreatorService
      *
      * @param identifier - Identificador do estágio que será carregado
      */
-    public void loadStage ( StageIdentifier identifier );
+    public void loadStage ( StageIdentifier identifier ) throws DisabledServiceException, InvalidStageIdentifierException;
 
     /**
      * Operation unload
      * Descarrega o estágio atual
      *
      */
-    public void unload (  );
+    public void unload (  ) throws DisabledServiceException;
 
 }
 

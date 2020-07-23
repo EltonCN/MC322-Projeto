@@ -62,7 +62,7 @@ public class TurnEntityRunnerService implements EntityRunnerService
         }
         catch(NotAvaibleServiceException e)
         {
-            throw new NotAvaibleServiceException(e, "Não é possível utilizar esse serviço sem um armazenador de entidades");
+            throw new NotAvaibleServiceException("Não é possível utilizar esse serviço sem um armazenador de entidades", e);
         }
 
         for(int i = 0; i<s.countEntity(); i++)
