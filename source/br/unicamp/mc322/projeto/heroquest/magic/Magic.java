@@ -10,7 +10,6 @@ public abstract class Magic
      * Elemento da magia
      */
     private Element element;
-    /** Associations */
-    private Element unnamed_4;
+
 }
 

@@ -45,7 +45,7 @@ public abstract class Entity
      * Executa operações em trocas de estágio
      *
      */
-    public void stageChanged ();
+    public abstract void stageChanged ();
 
     /**
      * Operation isEnabled
@@ -71,7 +71,7 @@ public abstract class Entity
      * Desenha a entidade na tela
      *
      */
-    public void draw (  );
+    public abstract void draw (  );
 
     /**
      * Operation getPose

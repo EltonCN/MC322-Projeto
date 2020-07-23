@@ -12,3 +12,4 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
     public StageType[] stageType;
 }
 
+
