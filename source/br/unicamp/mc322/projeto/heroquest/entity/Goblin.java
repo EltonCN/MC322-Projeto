@@ -1,5 +1,8 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
+import br.unicamp.mc322.projeto.gameengine.pose.Pose;
+import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
+import br.unicamp.mc322.projeto.heroquest.action.ChaseMovement;
 import br.unicamp.mc322.projeto.heroquest.entity.Enemy;
 
 public class Goblin extends Enemy
@@ -10,6 +13,11 @@ public class Goblin extends Enemy
      *
      * @return 
      */
-    public Goblin (  ){}
+    public Goblin (Pose pose) {
+    	super(pose);
+    	basicMovement = new ChaseMovement();
+    }
+
+
 }
 

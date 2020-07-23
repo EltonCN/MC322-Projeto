@@ -1,7 +1,8 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.heroquest.entity.Creature;
+import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
+import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
@@ -9,8 +10,8 @@ public abstract class Enemy extends Creature
 {
 
 	public Enemy(Pose pose) {
-		super(pose, 3, 2, 2); //We decides as standards to enemys
-		// TODO Auto-generated constructor stub
+		super(pose, 3, 2, 2); //We decided as standards to enemys
+		basicMovement = new RandomMovement();
 	}
 	
 	@Override
@@ -22,5 +23,22 @@ public abstract class Enemy extends Creature
     	}
     	return defenseFaces;
     }
+
+	@Override
+	public void startTurn() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public boolean isInTurn() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public EntityPrototype createPrototype() {
+		Object[] args= new Object[0];
+		return new EntityPrototype(getClass(), getPose(), args);
+	}
 }
 

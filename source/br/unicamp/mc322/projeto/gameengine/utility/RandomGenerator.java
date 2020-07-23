@@ -27,6 +27,17 @@ public class RandomGenerator
     	this.max = max;
     }
     /**
+     * Operation RandomGenerator
+     * Construtor de RandomGenerator
+     *
+     * @param max - Maior número a ser gerado (inclusive)
+     * @return 
+     */
+    public RandomGenerator (int max){
+    	this.min = 1;
+    	this.max = max;
+    }
+    /**
      * Operation getResult
      * Retorna o número aleatório entre mín e max (inclusive)
      *

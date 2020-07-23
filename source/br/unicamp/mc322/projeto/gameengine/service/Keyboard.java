@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
 import java.awt.event.KeyEvent;
+import java.util.Scanner;
 
 public class Keyboard implements KeyInputService
 {
@@ -13,11 +14,10 @@ public class Keyboard implements KeyInputService
 
 	@Override
 	public char getUserInput() {
-		// TODO Auto-generated method stub
-		return 0;
+		Scanner input = new Scanner(System.in);
+		// TODO
+		return Character.toLowerCase(input.next().strip().replace(" ", "").charAt(0));
 	}
 
-	
-	}
 }
 

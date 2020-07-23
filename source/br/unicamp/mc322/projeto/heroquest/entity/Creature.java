@@ -4,6 +4,7 @@ import br.unicamp.mc322.projeto.heroquest.item.Armor;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
+import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity;
@@ -75,6 +76,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	this.nAttackDice = nAttackDice;
     	this.nDefenseDice = nDefenseDice;
     	totalHand = 2;
+    	basicMovement = new NullMovement();
     }
 
     /**
@@ -145,7 +147,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return
      */
-    protected void moveN() {
+    public void moveN() {
     	move(0, 1);
     }
     /**
@@ -153,7 +155,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return
      */
-    protected void moveS() {
+    public void moveS() {
     	move(0, -1);
     }
     /**
@@ -161,7 +163,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return
      */
-    protected void moveE() {
+    public void moveE() {
     	move(1, 0);
     }
     /**
@@ -169,7 +171,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return
      */
-    protected void moveW() {
+    public void moveW() {
     	move(-1, 0);
     }
     /**
