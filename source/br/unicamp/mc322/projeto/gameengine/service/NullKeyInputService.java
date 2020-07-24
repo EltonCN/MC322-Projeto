@@ -2,8 +2,7 @@ package br.unicamp.mc322.projeto.gameengine.service;
 
 import br.unicamp.mc322.projeto.gameengine.service.KeyInputService;
 
-public class NullKeyInputService
- implements KeyInputService
+public class NullKeyInputService implements KeyInputService
 {
 
 	@Override
@@ -14,8 +13,7 @@ public class NullKeyInputService
 
 	@Override
 	public char getUserInput() {
-		// TODO Auto-generated method stub
-		return 0;
+		return ' ';
 	}
 }
 
