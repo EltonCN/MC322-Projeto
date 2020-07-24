@@ -11,14 +11,8 @@ import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 public class ChaseMovement implements Movement {
 
 	@Override
-	public void run(Entity origin) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void move(Creature mover) {
-		Attackable foe = chooseFoe(mover, getFoes(mover)); // Every attackable is an entity, then exceptions are unlikely to occur
+		Attackable foe = chooseFoe(mover, getFoes(mover));
 		if (mover.getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN) == 1)
 			return; // Mover can already attack foe, no move needed 
 		if (mover.getPose().getX() < ((Entity) foe).getPose().getX())
