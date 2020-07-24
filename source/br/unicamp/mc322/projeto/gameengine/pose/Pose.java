@@ -241,18 +241,8 @@ public class Pose
      * @todo - tratar e gerar exceções
      */
 	public boolean isPositionOccupiable() {
-        EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 1, Metric.MANHATTAN);
-        
-        Entity[] inside = possibleFutureArea.getEntitiesInside();
+        EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 0, Metric.MANHATTAN);
+        return possibleFutureArea.getEntitiesInside().length == 0;
 
-        for(Entity e : inside)
-        {
-            if(this.equal(e.getPose()))
-            {
-                return true;
-            }
-        }
-
-    	return false;
     }
 }

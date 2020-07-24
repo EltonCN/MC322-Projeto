@@ -5,12 +5,6 @@ import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 
 public class RandomMovement implements Movement {
-	
-	@Override
-	public void run(Entity origin) {
-		// TODO Auto-generated method stub
-
-	}
 
 	@Override
 	public void move(Creature mover) {

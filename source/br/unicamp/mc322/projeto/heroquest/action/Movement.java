@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
 import br.unicamp.mc322.projeto.gameengine.action.Action;
+import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 
 public interface Movement extends Action 
@@ -14,7 +15,12 @@ public interface Movement extends Action
 	 * @param Creature - mover
 	 * @return void
 	 */
-	public void move(Creature mover);
+	public abstract void move(Creature mover);
+	
+	@Override
+	public default void run(Entity origin) {
+		move((Creature) origin);
+	}
 
 }
 
