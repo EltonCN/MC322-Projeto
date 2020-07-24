@@ -13,6 +13,7 @@ import br.unicamp.mc322.projeto.gameengine.service.StagePrototype;
 import br.unicamp.mc322.projeto.gameengine.service.SwingScreen;
 import br.unicamp.mc322.projeto.gameengine.service.TerminalLogService;
 import br.unicamp.mc322.projeto.gameengine.service.TurnEntityRunnerService;
+import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
@@ -30,7 +31,9 @@ public class HeroQuestGame
 
         m.setAllNullService();
 
-        m.insertService(new TurnEntityRunnerService(), ServiceType.ENTITYRUNNER);
+        TurnEntityRunnerService runner = new TurnEntityRunnerService();
+
+        m.insertService(runner, ServiceType.ENTITYRUNNER);
         m.insertService(new SpartialEntityStoreService(), ServiceType.ENTITYSTORE);
         m.insertService(new PrototypeStageCreatorService(), ServiceType.STAGECREATION);
         m.insertService(new TerminalLogService(), ServiceType.LOG);
@@ -41,6 +44,22 @@ public class HeroQuestGame
         
 
         loadDefaultStage();
+        try
+        {
+            while(true)
+            {
+                runner.run();
+            }
+            
+        }
+        catch(ServiceException e)
+        {
+            System.out.println("Não foi possível executar o serviço executor de entidades, o jogo será encerrado");
+            e.printStackTrace();
+            System.exit(1);
+        }
+        
+
     }
 
     private void loadDefaultStage()
@@ -71,6 +90,7 @@ public class HeroQuestGame
         {
             System.out.println("Não foi possível carregar os estágios. O jogo será encerrado");
             e.printStackTrace();
+            System.exit(1);
         }
 
     }

@@ -58,7 +58,7 @@ public class TurnEntityRunnerService implements EntityRunnerService
 
         try
         {
-            s = (EntityStoreService) m.getService(ServiceType.ENTITYRUNNER);
+            s = (EntityStoreService) m.getService(ServiceType.ENTITYSTORE);
         }
         catch(NotAvaibleServiceException e)
         {

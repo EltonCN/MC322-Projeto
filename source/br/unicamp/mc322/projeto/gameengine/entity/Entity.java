@@ -48,7 +48,13 @@ public abstract class Entity
      * Executa operações em trocas de estágio
      *
      */
-    public abstract void stageChanged ();
+    public void stageChanged ()
+    {
+        if(isPermanent() == false)
+        {
+            this.disable();
+        }
+    }
 
     /**
      * Operation isEnabled

@@ -53,10 +53,6 @@ public abstract class Enemy extends Creature
 		return false;
 	}
 
-	@Override
-	public EntityPrototype createPrototype() {
-		Object[] args= new Object[0];
-		return new EntityPrototype(getClass(), getPose(), args);
-	}
+
 }
 

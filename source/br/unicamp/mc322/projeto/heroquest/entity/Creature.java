@@ -2,6 +2,8 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.heroquest.item.Armor;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
+import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
+import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.heroquest.action.Movable;
@@ -158,6 +160,45 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * @return 
      *//*
     protected drop ();*/ //TODO ADD DROP LATER
+
+    public void moveBy(float deltaX, float deltaY)
+    {
+        super.moveBy(deltaX, deltaY, 0);
+    }
+
+    public void takeDamage ( float damage )
+    {
+        if(this.armor == null)
+        {
+            this.life -= damage;
+        }
+        else
+        {
+            this.life -= armor.transformDamage(damage);
+        }
+
+        if(life<0)
+        {
+            life = 0;
+            this.disable();
+        }
+        
+    }
+
+    public int getAttackScore()
+    {
+        int score = 0;
+        
+        for(int i = 0; i< this.nAttackDice; i++)
+        {
+			if(CombatDice.getResult() == CombatDiceFace.SKULL)
+			{
+				score += 1;
+			}
+        }
+
+        return score;
+    }
 
 }
 
