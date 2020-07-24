@@ -14,17 +14,16 @@ public class DiceMovement implements Movement
 	@Override
 	public void run(Entity origin) {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public void move(Creature mover) {
-		int steps = D6Dice.getResult();
-		boolean doneMoving = false;
+		int steps = D6Dice.getResult(); // Rolling the dice
 		KeyInputService keyboard;
 		try {
 			keyboard = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
 			boolean didItMove = false;
+			boolean doneMoving = false;
 			for(int i = 0; i < steps && !doneMoving; i++) {
 				switch(keyboard.getUserInput()) {
 					case 'a':

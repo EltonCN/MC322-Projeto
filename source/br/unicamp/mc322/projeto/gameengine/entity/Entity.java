@@ -28,6 +28,7 @@ public abstract class Entity
      * @param pose -
      * @return
      */
+    
     public Entity (Pose pose) {
     	this.pose = pose;
     }

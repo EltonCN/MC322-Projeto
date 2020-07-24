@@ -154,7 +154,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return boolean
      */
-    public boolean moveN() {
+    public boolean moveN() { // moveUp
     	return move(0, 1);
     }
     /**
@@ -162,7 +162,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return boolean
      */
-    public boolean moveS() {
+    public boolean moveS() { // moveDown
     	return move(0, -1);
     }
     /**
@@ -170,7 +170,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return boolean
      */
-    public boolean moveE() {
+    public boolean moveE() { // moveRight
     	return move(1, 0);
     }
     /**
@@ -178,7 +178,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Movimenta a entidade para o norte
      * @return boolean
      */
-    public boolean moveW() {
+    public boolean moveW() { // moveLeft
     	return move(-1, 0);
     }
     /**
@@ -187,6 +187,10 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     */
     public abstract int getDefenseScore();
 
+    //GETTER
+    public boolean getIsFriendly() {
+    	return isFriendly;
+    }
     /**
      * Operation drop
      *
