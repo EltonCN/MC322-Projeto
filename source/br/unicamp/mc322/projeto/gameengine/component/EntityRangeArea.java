@@ -32,7 +32,7 @@ public class EntityRangeArea extends Area {
      *
      * @return Entity[]
      */
-    public Entity[] getEntitiesInside (  )
+    public Entity[] getEntitiesInside ()
     {
         ServiceManager m = ServiceManager.getInstance();
         

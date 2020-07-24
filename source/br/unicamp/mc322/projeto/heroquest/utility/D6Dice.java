@@ -6,7 +6,7 @@ public class D6Dice
 
 {
     /** Associations */
-    private static RandomGenerator rand6 = new RandomGenerator(1,6);
+    private static RandomGenerator rand6 = new RandomGenerator(6);
     /**
      * Operation getResult
      * Retorna um número aleatório entre 1 e 6 (inclusive)

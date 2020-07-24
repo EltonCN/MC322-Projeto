@@ -240,7 +240,7 @@ public class Pose
      * @return boolean
      */
 	public boolean isPositionOccupiable() {
-    	EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 1, Metric.MANHATTAN);
+    	EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 0, Metric.MANHATTAN);
     	return possibleFutureArea.getEntitiesInside().length == 0; // If the No of Entities in a pose is zero, then it is occupiable 
     }
 }
