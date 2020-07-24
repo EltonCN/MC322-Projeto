@@ -2,15 +2,12 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.heroquest.item.Armor;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
-import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
-import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.heroquest.action.Movable;
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity;
 import br.unicamp.mc322.projeto.gameengine.service.RunnableTurn;
-import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 
 public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable,Attacker, Movable
 {
@@ -112,10 +109,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      *
      * @return 
      */
-    public void run () {
-    	basicMovement.run(this);
-    	attack(); //TODO MAKE SURE IT IS ATTACKING JUST IF POSSIBLE AND (FRIENDLY) <=> (NOT FRIENDLY)
-    }
+    public abstract void run();
 
     /**
      * Operation sofrerAtaque
@@ -133,8 +127,9 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Operation attack
      * 
      * @return 
+     * @throws ActionFailedException 
      */
-    protected void attack (  ) {
+    protected void attack(  ) throws ActionFailedException {
     	basicAttack.run(this);
     }
 
@@ -146,7 +141,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * @param deltaY
      * @return boolean
      */
-    protected boolean move (float deltaX, float deltaY) {
+    protected boolean move(float deltaX, float deltaY) {
     	return moveBy(deltaX, deltaY, 0);
     }
 

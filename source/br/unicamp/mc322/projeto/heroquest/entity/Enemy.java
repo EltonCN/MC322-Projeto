@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
@@ -25,6 +26,22 @@ public abstract class Enemy extends Creature
     	return defenseFaces;
     }
 
+	@Override
+	public void run() {
+    	try {
+			basicMovement.run(this);
+		} catch (ActionFailedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	try {
+			attack();
+		} catch (ActionFailedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    }
+	
 	@Override
 	public void startTurn() {
 		// TODO Auto-generated method stub
