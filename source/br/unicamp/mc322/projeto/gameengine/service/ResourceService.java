@@ -5,7 +5,7 @@ import br.unicamp.mc322.projeto.gameengine.service.ResourceType;
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
 public interface ResourceService
- implements Service
+ extends Service
 {
     /**
      * Operation setFile
@@ -26,7 +26,7 @@ public interface ResourceService
      * @param index - Índice do recurso
      * @return ResourceExtrinsic
      */
-    public ResourceExtrinsic getResource ( ResourceType resourceType, Class class, int index );
+    public ResourceExtrinsic getResource ( ResourceType resourceType, Class c, int index );
 
     /**
      * Operation setRoot

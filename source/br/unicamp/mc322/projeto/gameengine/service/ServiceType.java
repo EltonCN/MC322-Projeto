@@ -8,7 +8,7 @@ public enum ServiceType
     /**
      * 
      */
-    LOG, ENTITYSTORE, STAGECREATION, KEYINPUT, IMAGEOUTPUT, ENTITYRUNNER, MENU;
+    LOG, ENTITYSTORE, STAGECREATION, KEYINPUT, IMAGEOUTPUT, ENTITYRUNNER, MENU, RESOURCE;
 
     static final public int nServiceType = 7;
 
@@ -35,6 +35,8 @@ public enum ServiceType
                 service = new NullEntityRunnerService();
             case MENU:
                 service = new NullMenuService();
+            case RESOURCE:
+                service = new NullResourceService();
         }
 
         return service;

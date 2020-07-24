@@ -1,13 +1,10 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
 
-public class ResourceType
+public enum ResourceType
 
 {
-    /** Attributes */
-    /**
-     * 
-     */
+  
       IMAGE, AUDIO;
 }
 

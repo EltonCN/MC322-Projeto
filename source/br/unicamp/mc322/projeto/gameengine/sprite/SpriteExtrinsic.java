@@ -41,8 +41,10 @@ public class SpriteExtrinsic
      * Operation setPriority
      * Define a prioridade da sprite
      *
-     * @param priority - Prioridade da Sprite
+     * @param low - Prioridade da Sprite
      */
-    public void setPriority ( int priority ){}
+    public void setPriority ( SpritePriority low ){}
+	public void setPriority(SpritePriority low) {
+	}
 }
 
