@@ -16,11 +16,20 @@ public interface Movement extends Action
 	 * @param Creature - mover
 	 * @return void
 	 */
-	public abstract void move(Creature mover);
+	public abstract void move(Movable mover);
 	
 	@Override
-	public default void run(Entity origin) throws ActionFailedException{
-		move((Creature) origin);
+	public default void run(Entity origin) throws ActionFailedException
+	{
+		try
+		{
+			move((Movable) origin);
+		}
+		catch(ClassCastException e)
+		{
+			throw new ActionFailedException("Apenas movíveis podem se mover", e);
+		}
+		
 	}
 
 }
