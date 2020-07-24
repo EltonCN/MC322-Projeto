@@ -12,16 +12,8 @@ public class KeyboardInputService implements KeyInputService {
 	boolean ignoringInput;
 	KeyEvent lastEvent;
 	
-	public KeyboardInputService() {
-		try {
-			watcher = (JPanel) ServiceManager.getInstance().getService(ServiceType.IMAGEOUTPUT);
-		} catch (NotAvaibleServiceException e) {
-			e.printStackTrace();
-			ServiceManager.getInstance().setNullService(ServiceType.KEYINPUT);
-			// Game doesn't work without input
-			// Then, scanner is used instead
-			ServiceManager.getInstance().insertService(new ScannerInputService(), ServiceType.KEYINPUT);
-		}
+	public KeyboardInputService() throws NotAvaibleServiceException {
+		watcher = (JPanel) ServiceManager.getInstance().getService(ServiceType.IMAGEOUTPUT);
 		
 		watcher.addKeyListener(new java.awt.event.KeyListener() {
             public void keyPressed(java.awt.event.KeyEvent evt) {

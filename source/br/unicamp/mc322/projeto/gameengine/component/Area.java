@@ -17,7 +17,7 @@ public class Area
     /**
      * Alcance da área
      */
-    protected float range;
+    protected float range; //float foi utilizado para possibilitar a extensão do código para versões não baseadas em grids com posições quantizadas
     /**
      * Métrica que a área utiliza para verificar o alcance
      */
@@ -36,6 +36,14 @@ public class Area
         this.range = range;
         this.metric = metric;
     }
+    
+    //Implementação de área infinita
+    public Area (Pose origin, Metric metric) {
+        this.origin = origin;
+        this.range = Integer.MAX_VALUE;
+        this.metric = metric;
+    }
+    
     /**
      * Operation isInside
      * Verifica se uma pose está contida na área
@@ -49,5 +57,9 @@ public class Area
         }
         return false;
     }
+    
+    protected boolean isAngleClose(float angle) {
+		return (origin.getAngle() - angle <= Math.PI/40); 
+	}
 }
 

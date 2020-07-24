@@ -19,7 +19,7 @@ public class Pose
      */
     private float y;
     /**
-     * Ângulo/rotação do elemento
+     * Ângulo/rotação do elemento em graus
      */
     private float angle;
     /**
@@ -162,7 +162,7 @@ public class Pose
         switch(metric)
         {
             case EUCLIDEAN:
-                return this.euclideanDistance(pose);
+                return euclideanDistance(pose);
 
             case MANHATTAN:
                 return manhattanDistance(pose);
@@ -231,6 +231,10 @@ public class Pose
 	}
 	public float getY() {
 		return y;
+	}
+	
+	public float getAngle() {
+		return angle;
 	}
 	
 	/**
