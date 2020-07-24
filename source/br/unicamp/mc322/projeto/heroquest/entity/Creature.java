@@ -6,12 +6,13 @@ import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
+import br.unicamp.mc322.projeto.heroquest.action.Movable;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity;
 import br.unicamp.mc322.projeto.gameengine.service.RunnableTurn;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 
-public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable,Attacker
+public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable,Attacker, Movable
 {
     /** Attributes */
     /**
@@ -149,38 +150,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	return moveBy(deltaX, deltaY, 0);
     }
 
-    /**
-     * Operation moveN
-     * Movimenta a entidade para o norte
-     * @return boolean
-     */
-    public boolean moveN() { // moveUp
-    	return move(0, 1);
-    }
-    /**
-     * Operation moveS
-     * Movimenta a entidade para o norte
-     * @return boolean
-     */
-    public boolean moveS() { // moveDown
-    	return move(0, -1);
-    }
-    /**
-     * Operation moveE
-     * Movimenta a entidade para o norte
-     * @return boolean
-     */
-    public boolean moveE() { // moveRight
-    	return move(1, 0);
-    }
-    /**
-     * Operation moveW
-     * Movimenta a entidade para o norte
-     * @return boolean
-     */
-    public boolean moveW() { // moveLeft
-    	return move(-1, 0);
-    }
+    
     /**
      * Operation getDefenseScore
      * Retorna o numero de dados rolados com face de defesa pra cima
