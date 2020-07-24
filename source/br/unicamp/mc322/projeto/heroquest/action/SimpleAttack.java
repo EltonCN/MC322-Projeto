@@ -123,5 +123,7 @@ public class SimpleAttack
 
         return attacker;
     }
+
+    
 }
 

@@ -4,6 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 
 public class Dagger extends Weapon 
 {
@@ -27,6 +28,12 @@ public class Dagger extends Weapon
     {
         attack.run(origin);
 
+    }
+
+    @Override
+    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    {
+        attack.run(origin, target);
     }
 }
 

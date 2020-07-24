@@ -56,4 +56,13 @@ public class AttackableRangeArea extends EntityRangeArea {
 		return attackables;
 	}
 
+	/**
+	 * Retorna todos os atacáveis que são do tipo de amigável dado
+	 * 
+	 * @todo implementar método inteiro
+	 */
+	public Attackable[] getAttackablesInside(boolean friendlyType) {
+		return null;
+	}
+
 }

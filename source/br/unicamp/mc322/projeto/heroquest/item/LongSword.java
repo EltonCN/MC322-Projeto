@@ -4,6 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 
 public class LongSword extends Weapon
 {
@@ -28,6 +29,12 @@ public class LongSword extends Weapon
     {
         attack.run(origin);
 
+    }
+
+    @Override
+    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    {
+        attack.run(origin, target);
     }
 }
 

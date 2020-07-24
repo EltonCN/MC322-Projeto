@@ -16,6 +16,9 @@ public class Fireball extends Magic implements Attack
     private static final Element magicalElement = Element.FIRE;
     private static final Metric metric = Metric.MANHATTAN;
     private static final float damage = 6;
+    private static final float adjacentDamage = 3;
+    private static final float adjacentDistance = 1;
+    private static final float reach = Movement.xStepSize*3;
 
     Fireball() 
     {
@@ -30,40 +33,54 @@ public class Fireball extends Magic implements Attack
      */
     public void run(Entity origin) throws ActionFailedException 
     {
-        Caster caster;
-        Attacker attacker;
+        
+        Attacker attacker = convertToAttacker(origin);
 
-        try
-        {
-            caster = (Caster) origin;
-        }
-        catch(ClassCastException e)
-        {
-            throw new ActionFailedException("A magia só pode ser lançada por conjuradores",e);
-        }
+        AttackableRangeArea area = new AttackableRangeArea(origin.getPose(), reach, metric);
 
-        try 
+        Attackable[] targets = area.getAttackablesInside(attacker);
+
+        if(targets.length == 0)
         {
-            attacker = (Attacker) origin;   
-        } catch (ClassCastException e) 
-        {
-            throw new ActionFailedException("Por ser uma magia de ataque, apenas atacantes podem lançá-la", e);
+            return;
         }
+        run(origin,targets[0]);
+
+    }
+
+    @Override
+    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    {
+        Caster caster = convertToCaster(origin);
+       
 
         if(checkSucess(caster) == false)
         {
             throw new ActionFailedException("O conjurador não conseguiu um valor no dado o suficiente");
         }
 
-        AttackableRangeArea area = new AttackableRangeArea(origin.getPose(), Movement.xStepSize*1, metric);
+        target.takeDamage(damage);
 
-        Attackable[] targets = area.getAttackablesInside(attacker);
+        AttackableRangeArea area = new AttackableRangeArea(target.getPose(), adjacentDistance, metric);
 
-        for(Attackable target : targets)
+        for(Attackable a : area.getAttackablesInside(target.getIsFriendly()))
         {
-            target.takeDamage(damage);
+            a.takeDamage(adjacentDamage);
         }
 
     }
+
+    private Attacker convertToAttacker(Entity origin) throws ActionFailedException
+    {
+        try 
+        {
+            return  (Attacker) origin;   
+        } catch (ClassCastException e) 
+        {
+            throw new ActionFailedException("Por ser uma magia de ataque, apenas atacantes podem lançá-la", e);
+        }
+    }
+
+
 }
 

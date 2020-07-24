@@ -15,5 +15,6 @@ public interface Attack extends Action
      */
     public void run ( Entity origin, Attackable target ) throws ActionFailedException;
 
+    
 }
 

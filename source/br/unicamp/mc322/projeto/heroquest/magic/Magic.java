@@ -2,6 +2,7 @@ package br.unicamp.mc322.projeto.heroquest.magic;
 
 import br.unicamp.mc322.projeto.gameengine.action.Action;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
+import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.entity.Caster;
 import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
 
@@ -34,6 +35,18 @@ public abstract class Magic implements Action
         else
         {
             return false;
+        }
+    }
+
+    protected Caster convertToCaster(Entity origin) throws ActionFailedException
+    {
+        try
+        {
+            return (Caster) origin;
+        }
+        catch(ClassCastException e)
+        {
+            throw new ActionFailedException("A magia só pode ser lançada por conjuradores",e);
         }
     }
 }
