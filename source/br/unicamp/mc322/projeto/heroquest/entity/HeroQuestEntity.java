@@ -7,6 +7,8 @@ import br.unicamp.mc322.projeto.gameengine.service.PrototypableEntity;
 
 public abstract class HeroQuestEntity extends Entity implements PrototypableEntity
 {
+    protected final float xStepSize = 1;
+    protected final float yStepSize = 1;
     /** Attributes */
     /**
      * Define se a entidade deve ou não obstruir a visão
@@ -20,8 +22,6 @@ public abstract class HeroQuestEntity extends Entity implements PrototypableEnti
      * Inventário da entidade
      */
     protected LinkedList<Item> inventory;
-    /** Associations */
-    private LightObstructorArea unnamed_5;
     /**
      * Operation HeroQuestEntity
      * Construtor de HeroQuestEntity
