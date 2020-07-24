@@ -63,6 +63,10 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      */
     protected Attack basicAttack;
     /**
+     * Ação de ataque básica
+     */
+    protected boolean isFriendly;
+    /**
      * Operation Creature
      *
      * @param pose - 
@@ -103,18 +107,20 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 
     /**
      * Operation run
+     * @return 
      *
      * @return 
      */
-    public run () {
-    	
+    public void run () {
+    	basicMovement.run(this);
+    	attack(); //TODO MAKE SURE IT IS ATTACKING JUST IF POSSIBLE AND (FRIENDLY) <=> (NOT FRIENDLY)
     }
 
     /**
      * Operation sofrerAtaque
      *
      * @param damage
-     * @return 
+     * @return void
      */
     public void takeDamage(int damage) {
     	if (damage >= 0)
@@ -123,11 +129,13 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     }
 
     /**
-     * Operation realizarAtaque
-     *
+     * Operation attack
+     * 
      * @return 
      */
-    protected realizarAtaque (  );
+    protected void attack (  ) {
+    	basicAttack.run(this);
+    }
 
     /**
      * Operation move
@@ -167,7 +175,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	move(1, 0);
     }
     /**
-     * Operation moveE
+     * Operation moveW
      * Movimenta a entidade para o norte
      * @return
      */

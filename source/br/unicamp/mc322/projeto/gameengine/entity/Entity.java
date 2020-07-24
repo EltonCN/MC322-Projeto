@@ -92,7 +92,7 @@ public abstract class Entity
     /**
      * @todo Lidar com exceções
      */
-    public void moveTo (Pose pose)
+    public final void moveTo (Pose pose)
     {
         this.pose = pose;
 
@@ -123,7 +123,7 @@ public abstract class Entity
      * @param deltaY -
      * @param deltaAngle -
      */
-    protected void moveBy ( float deltaX, float deltaY, float deltaAngle ) {
+    protected final void moveBy ( float deltaX, float deltaY, float deltaAngle ) {
         Pose end = this.pose.move(deltaX, deltaY, deltaAngle);
 
         moveTo(end);

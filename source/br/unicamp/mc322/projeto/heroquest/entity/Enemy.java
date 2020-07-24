@@ -12,6 +12,7 @@ public abstract class Enemy extends Creature
 	public Enemy(Pose pose) {
 		super(pose, 3, 2, 2); //We decided as standards to enemys
 		basicMovement = new RandomMovement();
+		isFriendly = false;
 	}
 	
 	@Override

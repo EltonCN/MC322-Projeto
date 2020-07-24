@@ -17,6 +17,7 @@ public abstract class Player extends Creature implements Curable
     public Player(Pose pose, int nAttackDice, int nDefenseDice, int life) {
 		super(pose, nAttackDice, nDefenseDice, life);
 		basicMovement = new DiceMovement();
+		isFriendly = true;
 	}
 	
     @Override
