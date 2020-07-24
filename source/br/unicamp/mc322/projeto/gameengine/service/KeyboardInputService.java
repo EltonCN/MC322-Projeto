@@ -9,7 +9,6 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceEx
 public class KeyboardInputService implements KeyInputService {
 
 	JPanel watcher;
-	boolean ignoringInput;
 	KeyEvent lastEvent;
 	
 	public KeyboardInputService() throws NotAvaibleServiceException {
@@ -32,7 +31,7 @@ public class KeyboardInputService implements KeyInputService {
         });
 		
 		
-		ignoringInput = true;
+		lastEvent = null;
 	}
 	
 	@Override
@@ -43,18 +42,19 @@ public class KeyboardInputService implements KeyInputService {
 
 	@Override
 	public char getUserInput() {
-		ignoringInput = false;
 		
-		// TODO FIX PROBLEMS
-		try {
-			new Thread().wait(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		lastEvent = null;
+		
+		// TODO MELHORAR IMPLEMENTAÇÃO
+		while(lastEvent == null) {
+			try {
+				Thread.currentThread().wait(100);
+			} catch (InterruptedException e) {
+				// DO NOTHING
+			}
 		}
 		
 		char input = lastEvent.toString().charAt(0);
-		ignoringInput = true;
 		lastEvent = null;
 		return input;
 	}
