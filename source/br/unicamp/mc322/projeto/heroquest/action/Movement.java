@@ -3,7 +3,6 @@ package br.unicamp.mc322.projeto.heroquest.action;
 import br.unicamp.mc322.projeto.gameengine.action.Action;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
-import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 
 public interface Movement extends Action 
 {
@@ -16,14 +15,14 @@ public interface Movement extends Action
 	 * @param Creature - mover
 	 * @return void
 	 */
-	public abstract void move(Movable mover);
+	public abstract void move(Movable movable);
 	
 	@Override
 	public default void run(Entity origin) throws ActionFailedException
 	{
 		try
 		{
-			move((Movable) origin);
+			move( (Movable) origin);
 		}
 		catch(ClassCastException e)
 		{

@@ -5,8 +5,8 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.entity.Curable;
 
 public interface Cure extends Action
- {
-	 
- }
+{
+    
+}
 
 

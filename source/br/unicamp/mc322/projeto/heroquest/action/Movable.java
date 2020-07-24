@@ -15,7 +15,8 @@ public interface Movable
      * 
      * @return boolean
      */
-    public default void moveN() { // moveUp
+    public default void moveN() 
+    { // moveUp
         moveBy(0, 1*yStepSize);
     }
     /**

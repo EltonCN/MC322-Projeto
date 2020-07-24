@@ -7,8 +7,9 @@ import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 public class RandomMovement implements Movement {
 
 	@Override
-	public void move(Creature mover) {
-		switch(new RandomGenerator(4).getResult()) {
+	public void move(Movable mover) {
+		switch(new RandomGenerator(4).getResult()) 
+		{
 		case 1:
 			mover.moveN();
 			break;
