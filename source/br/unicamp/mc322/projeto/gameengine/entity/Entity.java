@@ -36,7 +36,7 @@ public abstract class Entity
      *
      * @return boolean
      */
-    public boolean isPermanent (  ) {
+    public boolean isPermanent() {
     	return false;
     }
 
@@ -45,7 +45,8 @@ public abstract class Entity
      * Executa operações em trocas de estágio
      *
      */
-    public void stageChanged ();
+    public void changeStage() { //TODO CODE HERE
+	}
 
     /**
      * Operation isEnabled
@@ -71,7 +72,8 @@ public abstract class Entity
      * Desenha a entidade na tela
      *
      */
-    public void draw (  );
+    public void draw() { //TODO CODE HERE!!!
+	}
 
     /**
      * Operation getPose

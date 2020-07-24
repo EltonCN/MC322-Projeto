@@ -119,7 +119,7 @@ public class PrototypeStageCreatorService implements StageCreatorService
         {
             Entity e = s.getEntity(i);
             
-            e.stageChanged();
+            e.changeStage();
 
             if(e.isPermanent() == false)
             {

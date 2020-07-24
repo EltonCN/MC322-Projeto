@@ -44,7 +44,7 @@ public class DiceMovement implements Movement
 			}
 		} catch (NotAvaibleServiceException e) {
 			e.printStackTrace();
-			System.exit(1);
+			System.exit(1); //GAME CANNOT WORK WITHOUT INPUT
 		}
 	}
 }
