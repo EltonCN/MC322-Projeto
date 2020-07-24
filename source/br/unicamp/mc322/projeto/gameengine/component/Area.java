@@ -31,8 +31,7 @@ public class Area
      * @param metric - Métrica a ser utilizada para verificar o alcance
      * @return 
      */
-    public Area ( Pose origin, float range, Metric metric )
-    {
+    public Area (Pose origin, float range, Metric metric) {
         this.origin = origin;
         this.range = range;
         this.metric = metric;
@@ -44,10 +43,8 @@ public class Area
      * @param pose - Pose a ser verificada
      * @return boolean
      */
-    public boolean isInside ( Pose pose )
-    {
-        if(origin.distance(pose, metric) <=range)
-        {
+    public boolean isInside (Pose pose) {
+        if (origin.distance(pose, metric) <=range) {
             return true;
         }
         return false;
