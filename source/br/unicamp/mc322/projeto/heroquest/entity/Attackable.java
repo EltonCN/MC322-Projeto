@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
+import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 
 public interface Attackable
 
@@ -18,7 +19,15 @@ public interface Attackable
      *
      * @param damage - Dano a ser recebido
      */
-    public void takeDamage ( int damage );
+    public void takeDamage ( float damage );
+
+    /**
+     * Verifica se é amigável
+     * @return
+     */
+    public boolean getIsFriendly();
+
+	public Pose getPose();
 
 }
 

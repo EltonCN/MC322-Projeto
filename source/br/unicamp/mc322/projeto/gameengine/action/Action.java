@@ -11,7 +11,7 @@ public interface Action
      *
      * @param origin - Entidade que executará a ação
      */
-    public void run ( Entity origin );
+    public void run ( Entity origin ) throws ActionFailedException;
 
 }
 

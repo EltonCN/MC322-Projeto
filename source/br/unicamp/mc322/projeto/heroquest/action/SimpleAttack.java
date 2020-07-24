@@ -1,7 +1,12 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
-import br.unicamp.mc322.projeto.heroquest.action.Attack;
+import br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea;
+import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
+import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
+import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
+import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
 public class SimpleAttack
  implements Attack
@@ -10,7 +15,7 @@ public class SimpleAttack
     /**
      * Dano do ataque
      */
-    private float damage;
+    private int damageBonus;
     /**
      * Alcance do ataque
      */
@@ -19,19 +24,104 @@ public class SimpleAttack
      * Operation SimpleAttack
      * Construtor de SimpleAttack
      *
-     * @param damage - Dano do ataque
+     * @param damageBonus - Bônus de dano do ataque
      * @param reach - Alcance do ataque
      * @return 
      */
-    public SimpleAttack ( float damage, float reach )
+    public SimpleAttack ( int damageBonus, float reach )
     {
-        this.damage = damage;
+        this.damageBonus = damageBonus;
         this.reach = reach;
     }
-	@Override
-	public void run(Entity origin) {
-		// TODO Auto-generated method stub
+
+    @Override
+    /**
+     * Executa o ataque
+     * @todo verificar se todos os castings são necessários
+     * @todo mostrar em algum lugar os resultados dos dados bônus
+     */
+    public void run(Entity origin) throws ActionFailedException
+    {
+        Attacker attacker = convertToAttacker(origin);
+        
+        AttackableRangeArea area = new AttackableRangeArea(origin.getPose(), reach, metric);
+
+        Attackable[] targets = area.getAttackablesInside(attacker);
+
+        if(targets.length == 0)
+        {
+            throw new ActionFailedException("Não existem alvos para atacar");
+        }
+
+        Attackable finalTarget = null;
+        float minDistance = Float.MAX_VALUE;
+
+        for(Entity a : (Entity[]) targets )
+        {
+            if(a.getPose().distance(origin.getPose(), metric) < minDistance)
+            {
+                minDistance = a.getPose().distance(origin.getPose(), metric);
+                finalTarget = (Attackable) a;
+            }
+
+        }
+
+        doAttack(attacker, finalTarget);
+
+    }
+
+    @Override
+    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    {
+        if(origin.getPose().distance(target.getPose(), metric) < this.reach)
+        {
+            throw new ActionFailedException("O alvo está fora de alcance");
+        }
+
+        Attacker attacker = convertToAttacker(origin);
+
+        doAttack(attacker, target);
+    }
+
+    private void doAttack(Attacker attacker, Attackable target)
+    {
+        int defenseScore = target.getDefenseScore();
+
+        int attackScore = attacker.getAttackScore(); 
+
+        if(attackScore<defenseScore)
+        {
+            return;
+        }
+
+        int bonus = 0;
+
+        for(int i = 0; i<damageBonus; i++)
+        {
+            if(CombatDice.getResult() == CombatDiceFace.SKULL)
+            {
+                bonus += 1;
+            }
+        }
+
+        target.takeDamage((attackScore-defenseScore)+bonus);
 		
-	}
+    }
+
+    private Attacker convertToAttacker(Entity entity) throws ActionFailedException
+    {
+        Attacker attacker;
+
+        try
+        {
+            attacker = (Attacker) entity;
+        }
+        catch(ClassCastException e)
+        {
+            throw new ActionFailedException("Entidade fornecida não é Attacker, apenas Attacker podem atacar", e);
+        }
+
+        return attacker;
+    }
 }
 

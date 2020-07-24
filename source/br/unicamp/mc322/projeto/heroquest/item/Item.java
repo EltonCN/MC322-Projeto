@@ -8,11 +8,11 @@ public abstract class Item
     /**
      * Valor monetário do item
      */
-    protected float value;
+    private float value;
     /**
      * Nome do item
      */
-    protected String name;
+    private String name;
     /**
      * Operation Item
      * Construtor de item
@@ -21,7 +21,11 @@ public abstract class Item
      * @param value - Valor monetário do item
      * @return 
      */
-    public Item ( String name, float value );
+    public Item ( String name, float value )
+    {
+        this.name = name;
+        this.value = value;
+    }
 
 }
 

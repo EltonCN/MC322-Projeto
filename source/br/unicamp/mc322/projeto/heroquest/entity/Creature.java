@@ -11,7 +11,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity;
 import br.unicamp.mc322.projeto.gameengine.service.RunnableTurn;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 
-public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable
+public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable,Attacker
 {
     /** Attributes */
     /**

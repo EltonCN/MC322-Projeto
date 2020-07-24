@@ -1,8 +1,8 @@
 package br.unicamp.mc322.projeto.heroquest.item;
 
-import br.unicamp.mc322.projeto.heroquest.Item;
+import br.unicamp.mc322.projeto.heroquest.action.Attack;
 
-public abstract class Weapon extends Item
+public abstract class Weapon extends Item implements Attack
 {
     /** Attributes */
     /**
@@ -21,7 +21,12 @@ public abstract class Weapon extends Item
      * @param uses - Usos que a arma possui
      * @return 
      */
-    public Weapon ( int hand, int uses );
+    public Weapon (String name, float value, int hand, int uses )
+    {
+        super(name, value);
+        this.hand = hand;
+        this.uses = uses;
+    }
 
 }
 
