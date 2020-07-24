@@ -6,6 +6,11 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.entity.Caster;
 import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
 
+/**
+ * Representa uma magia
+ * 
+ * @todo Algumas (por enquanto todas) as magias após verificar se o sucesso falhou lançam exceção de ActionFailed. Alterar checkSucess para fazer isso
+ */
 public abstract class Magic implements Action
 
 {
