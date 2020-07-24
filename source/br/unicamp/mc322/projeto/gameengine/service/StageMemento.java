@@ -15,6 +15,12 @@ public class StageMemento
      * Protótipos das entidades no estágio
      */
     private LinkedList<EntityPrototype> entityPrototype;
+
+    public StageMemento()
+    {
+        this.entityPrototype = new LinkedList<EntityPrototype>();
+    }
+
     /**
      * Operation addPrototype
      * Adiciona um protótipo de entidade no estágio
@@ -61,7 +67,7 @@ public class StageMemento
                 {
                     LogService log = (LogService) m.getService(ServiceType.LOG);
 
-                    log.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "Entidade não pode ser instanciada", e.getMessage());
+                    log.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "StageMemento", e.getMessage());
                 }
                 catch(ServiceException e2)
                 {

@@ -54,15 +54,15 @@ public class EntityPrototype
         }
         catch(NoSuchMethodException e)
         {
-            throw new EntityRecipeException("Não foi possível instanciar a entidade" , e);
+            throw new EntityRecipeException("Não foi possível instanciar a entidade, construtor não encontrado" , e);
         }
         catch(ClassCastException e)
         {
-            throw new EntityRecipeException("Não foi possível instanciar a entidade",new NoEntityException(e));
+            throw new EntityRecipeException("Não foi possível instanciar a entidade, a classe não foi encontrada",new NoEntityException(e));
         }
         catch(Exception e)
         {
-            throw new EntityRecipeException("Não foi possível instanciar a entidade" , e);
+            throw new EntityRecipeException("Não foi possível instanciar a entidade, "+e.toString(), e);
         }
 
         

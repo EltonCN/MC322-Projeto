@@ -10,7 +10,7 @@ public enum ServiceType
      */
     LOG, ENTITYSTORE, STAGECREATION, KEYINPUT, IMAGEOUTPUT, ENTITYRUNNER, MENU, RESOURCE;
 
-    static final public int nServiceType = 7;
+    static final public int nServiceType = 8;
 
     /**
      * Retorna um serviço nulo de algum tipo

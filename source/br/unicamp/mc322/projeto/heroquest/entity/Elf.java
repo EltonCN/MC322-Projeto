@@ -4,7 +4,7 @@ import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
 import br.unicamp.mc322.projeto.heroquest.entity.Player;
 
-public class Elf extends Player
+public class Elf extends Player implements Caster
 {
 
 	public Elf(Pose pose) {

@@ -29,10 +29,6 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      */
     protected int life;
     /**
-     * Identifica a criatura como lançadora de magia
-     */
-    protected boolean caster;
-    /**
      * Itens que possui equipados
      */
     protected Item[] equippedItem;
