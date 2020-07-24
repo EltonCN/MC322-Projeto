@@ -12,11 +12,11 @@ public class Skeleton extends Enemy
      *
      * @return 
      */
-    public Skeleton (Pose pose  )
+    public Skeleton (Pose pose)
     {
         super(pose);
-        this.basicMovement = new RandomMovement();
-        this.basicAttack = ???;
+        basicMovement = new RandomMovement();
+        basicAttack = null; //TODO
     }
 }
 
