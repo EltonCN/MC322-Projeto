@@ -23,7 +23,11 @@ public class SimpleAttack
      * @param reach - Alcance do ataque
      * @return 
      */
-    public SimpleAttack ( float damage, float reach ){}
+    public SimpleAttack ( float damage, float reach )
+    {
+        this.damage = damage;
+        this.reach = reach;
+    }
 	@Override
 	public void run(Entity origin) {
 		// TODO Auto-generated method stub
