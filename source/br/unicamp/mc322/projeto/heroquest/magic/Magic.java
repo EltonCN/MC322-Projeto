@@ -43,7 +43,7 @@ public abstract class Magic implements Action
         }
     }
 
-    protected Caster convertToCaster(Entity origin) throws ActionFailedException
+    protected Caster convertToCaster(Object origin) throws ActionFailedException
     {
         try
         {

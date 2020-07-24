@@ -10,7 +10,7 @@ import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
 public class DiceMovement implements Movement
 {
 	@Override
-	public void move(Creature mover) {
+	public void move(Movable mover) {
 		int steps = D6Dice.getResult(); // Rolling the dice
 		KeyInputService keyboard;
 		try {

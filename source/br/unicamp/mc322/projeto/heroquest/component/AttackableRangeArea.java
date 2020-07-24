@@ -61,7 +61,8 @@ public class AttackableRangeArea extends EntityRangeArea {
 	 * 
 	 * @todo implementar método inteiro
 	 */
-	public Attackable[] getAttackablesInside(boolean friendlyType) {
+	public Attackable[] getAttackablesInside(boolean friendlyType)
+	{
 		return null;
 	}
 

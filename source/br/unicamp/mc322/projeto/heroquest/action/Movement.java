@@ -15,7 +15,7 @@ public interface Movement extends Action
 	 * @param Creature - mover
 	 * @return void
 	 */
-	public abstract void move(Movable movable);
+	public abstract void move(Movable movable) throws ActionFailedException;
 	
 	@Override
 	public default void run(Entity origin) throws ActionFailedException
