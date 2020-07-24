@@ -1,13 +1,13 @@
 package br.unicamp.mc322.projeto.heroquest.magic;
 
 
-public class Element
+public enum Element
 
 {
     /** Attributes */
     /**
      * 
      */
-      WATER, FIRE, EARTH, AIR;
+    WATER, FIRE, EARTH, AIR;
 }
 

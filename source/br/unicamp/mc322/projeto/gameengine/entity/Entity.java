@@ -16,15 +16,15 @@ public abstract class Entity
      */
     private Pose pose;
     /**
-     * 
+     *
      */
     protected boolean enabled;
     /**
      * Operation Entity
      * Construtor de entidade
      *
-     * @param pose - 
-     * @return 
+     * @param pose -
+     * @return
      */
     public Entity (Pose pose) {
     	this.pose = pose;
@@ -45,8 +45,7 @@ public abstract class Entity
      * Executa operações em trocas de estágio
      *
      */
-    public void changeStage() { //TODO CODE HERE
-	}
+    public abstract void stageChanged ();
 
     /**
      * Operation isEnabled
@@ -72,8 +71,7 @@ public abstract class Entity
      * Desenha a entidade na tela
      *
      */
-    public void draw() { //TODO CODE HERE!!!
-	}
+    public abstract void draw (  );
 
     /**
      * Operation getPose
@@ -89,15 +87,15 @@ public abstract class Entity
      * Operation moveTo
      * Move a entidade para uma pose específica
      *
-     * @param pose - 
+     * @param pose -
      */
     /**
      * @todo Lidar com exceções
      */
-    public void moveTo (Pose pose) 
+    public void moveTo (Pose pose)
     {
         this.pose = pose;
-        
+
         ServiceManager m = ServiceManager.getInstance();
 
         try
@@ -121,16 +119,15 @@ public abstract class Entity
      * Operation moveBy
      * Move a entidade por um deslocamento específico
      *
-     * @param deltaX - 
-     * @param deltaY - 
-     * @param deltaAngle - 
+     * @param deltaX -
+     * @param deltaY -
+     * @param deltaAngle -
      */
     protected void moveBy ( float deltaX, float deltaY, float deltaAngle ) {
         Pose end = this.pose.move(deltaX, deltaY, deltaAngle);
-        
+
         moveTo(end);
 
     }
 
 }
-
