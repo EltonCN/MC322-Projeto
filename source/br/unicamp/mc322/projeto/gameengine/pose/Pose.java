@@ -2,6 +2,8 @@ package br.unicamp.mc322.projeto.gameengine.pose;
 
 import java.lang.Math;
 
+import br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea;
+
 
 public class Pose
 
@@ -221,10 +223,24 @@ public class Pose
 
         return result;
     }
+    
+    //GETTERS
 	public float getX() {
 		return x;
 	}
 	public float getY() {
 		return y;
 	}
+	
+	/**
+     * Operation isPositionOccupiable
+     * Tells if a position is occupiable
+     *
+     * @param pose
+     * @return boolean
+     */
+	public boolean isPositionOccupiable() {
+    	EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 1, Metric.MANHATTAN);
+    	return possibleFutureArea.getEntitiesInside().length == 0; // If the No of Entities in a pose is zero, then it is occupiable 
+    }
 }

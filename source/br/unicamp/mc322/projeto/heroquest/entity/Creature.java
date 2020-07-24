@@ -143,44 +143,43 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      *
      * @param deltaX
      * @param deltaY
-     * @return 
-     * @return 
+     * @return boolean
      */
-    protected void move (float deltaX, float deltaY) {
-    	moveBy(deltaX, deltaY, 0);
+    protected boolean move (float deltaX, float deltaY) {
+    	return moveBy(deltaX, deltaY, 0);
     }
 
     /**
      * Operation moveN
      * Movimenta a entidade para o norte
-     * @return
+     * @return boolean
      */
-    public void moveN() {
-    	move(0, 1);
+    public boolean moveN() {
+    	return move(0, 1);
     }
     /**
      * Operation moveS
      * Movimenta a entidade para o norte
-     * @return
+     * @return boolean
      */
-    public void moveS() {
-    	move(0, -1);
+    public boolean moveS() {
+    	return move(0, -1);
     }
     /**
      * Operation moveE
      * Movimenta a entidade para o norte
-     * @return
+     * @return boolean
      */
-    public void moveE() {
-    	move(1, 0);
+    public boolean moveE() {
+    	return move(1, 0);
     }
     /**
      * Operation moveW
      * Movimenta a entidade para o norte
-     * @return
+     * @return boolean
      */
-    public void moveW() {
-    	move(-1, 0);
+    public boolean moveW() {
+    	return move(-1, 0);
     }
     /**
      * Operation getDefenseScore

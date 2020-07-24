@@ -24,23 +24,26 @@ public class DiceMovement implements Movement
 		KeyInputService keyboard;
 		try {
 			keyboard = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
+			boolean didItMove = false;
 			for(int i = 0; i < steps && !doneMoving; i++) {
 				switch(keyboard.getUserInput()) {
 					case 'a':
-						mover.moveW();
+						didItMove = mover.moveW();
 						break;
 					case 'w':
-						mover.moveN();
+						didItMove = mover.moveN();
 						break;
 					case 's':
-						mover.moveS();
+						didItMove = mover.moveS();
 						break;
 					case 'd':
-						mover.moveE();
+						didItMove = mover.moveE();
 						break;
 					default:
 						doneMoving = true;
 				}
+				
+				if (!didItMove) i--;
 			}
 		} catch (NotAvaibleServiceException e) {
 			e.printStackTrace();

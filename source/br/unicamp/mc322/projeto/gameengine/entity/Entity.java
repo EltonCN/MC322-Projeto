@@ -1,5 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
+import br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea;
+import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
@@ -63,7 +65,7 @@ public abstract class Entity
      *
      */
     public void disable (  ) {
-    	enabled = false;
+    	enabled = false; //TODO FINISH IMPLEMENTING! @Elton
     }
 
     /**
@@ -71,7 +73,7 @@ public abstract class Entity
      * Desenha a entidade na tela
      *
      */
-    public abstract void draw (  );
+    public abstract void draw();
 
     /**
      * Operation getPose
@@ -87,47 +89,45 @@ public abstract class Entity
      * Operation moveTo
      * Move a entidade para uma pose específica
      *
-     * @param pose -
+     * @param pose
+     * @return boolean - Did the move succeed?
      */
     /**
      * @todo Lidar com exceções
      */
-    public final void moveTo (Pose pose)
-    {
-        this.pose = pose;
-
+    public final boolean moveTo(Pose pose) {
+    	if (!pose.isPositionOccupiable())
+    		return false;
+    	
         ServiceManager m = ServiceManager.getInstance();
 
-        try
-        {
+        try {
             EntityStoreService s = (EntityStoreService) m.getService(ServiceType.ENTITYSTORE);
 
             s.changePose(this.pose, pose);
+        } catch(DisabledServiceException e) {
+        	//TODO IMPLEMENT
+        } catch(NotAvaibleServiceException e) {
+        	//TODO IMPLEMENT
         }
-        catch(DisabledServiceException e)
-        {
-
-        }
-        catch(NotAvaibleServiceException e)
-        {
-
-        }
-
+        
+        this.pose = new Pose(pose);
+        return true;
     }
 
     /**
      * Operation moveBy
      * Move a entidade por um deslocamento específico
      *
-     * @param deltaX -
-     * @param deltaY -
-     * @param deltaAngle -
+     * @param deltaX
+     * @param deltaY
+     * @param deltaAngle
+     * @return boolean - Did the move succeed?
      */
-    protected final void moveBy ( float deltaX, float deltaY, float deltaAngle ) {
-        Pose end = this.pose.move(deltaX, deltaY, deltaAngle);
-
-        moveTo(end);
-
+    protected final boolean moveBy(float deltaX, float deltaY, float deltaAngle) {
+        
+    	Pose end = new Pose(this.pose).move(deltaX, deltaY, deltaAngle);
+    	return moveTo(end);        
     }
-
+    
 }
