@@ -6,7 +6,6 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
-import br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.StringSprite;
 
 /**
