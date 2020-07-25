@@ -1,7 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
-import java.util.LinkedList;
-
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
+import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea;
@@ -9,23 +9,6 @@ import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 
 public class ChaseMovement implements Movement {
-
-	@Override
-	public void move(Creature mover) {
-		Attackable foe = chooseFoe(mover, getFoes(mover));
-		if (mover.getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN) == 1)
-			return; // Mover can already attack foe, no move needed 
-		if (mover.getPose().getX() < ((Entity) foe).getPose().getX())
-			mover.moveE();
-		else if (mover.getPose().getX() > ((Entity) foe).getPose().getX())
-			mover.moveW();
-		else if (mover.getPose().getY() < ((Entity) foe).getPose().getY())
-			mover.moveN();
-		else if (mover.getPose().getY() > ((Entity) foe).getPose().getY())
-			mover.moveS();
-		
-
-	}
 	
 	private Attackable chooseFoe(Creature mover, Attackable[] foes) {
 		float minDistance = Float.MAX_VALUE;
@@ -43,7 +26,47 @@ public class ChaseMovement implements Movement {
 	}
 	
 	private Attackable[] getFoes(Creature mover) {
-		return new AttackableRangeArea().getAttackablesInsideToAttacker(mover);
+		return new AttackableRangeArea().getAttackablesInside(mover);
+	}
+
+	@Override
+	public void move(Movable movable) throws ActionFailedException {
+		Attackable foe = chooseFoe((Creature) movable, getFoes((Creature) movable));
+		if (((Entity) movable).getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN) == 1)
+			return; // Movable pode atacar foe: não é necessário se mover
+		
+		if (((Entity) movable).getPose().getX() < ((Entity) foe).getPose().getX())
+			try {
+				movable.moveE();
+				return;
+			} catch (InvalidMovementException e) {
+				// Não faça nada: comportamento esperado
+			}
+		
+		if (((Entity) movable).getPose().getX() > ((Entity) foe).getPose().getX())
+			try {
+				movable.moveW();
+				return;
+			} catch (InvalidMovementException e) {
+				// Não faça nada: comportamento esperado
+			}
+		
+		if (((Entity) movable).getPose().getY() < ((Entity) foe).getPose().getY())
+			try {
+				movable.moveN();
+				return;
+			} catch (InvalidMovementException e) {
+				// Não faça nada: comportamento esperado
+			}
+		
+		if (((Entity) movable).getPose().getY() > ((Entity) foe).getPose().getY())
+			try {
+				movable.moveS();
+				return;
+			} catch (InvalidMovementException e) {
+				// Não faça nada: comportamento esperado
+			}
+		
 	}
 }
 

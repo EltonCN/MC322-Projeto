@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
+import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
@@ -103,11 +104,12 @@ public abstract class Entity
      * @return boolean - Did the move succeed?
      */
     /**
+     * @throws InvalidMovementException 
      * @todo Lidar com exceções
      */
-    public final boolean moveTo(Pose pose) {
+    public final void moveTo(Pose pose) throws InvalidMovementException {
     	if (!pose.isPositionOccupiable())
-    		return false;
+    		throw new InvalidMovementException();
     	
         ServiceManager m = ServiceManager.getInstance();
 
@@ -122,7 +124,6 @@ public abstract class Entity
         }
         
         this.pose = new Pose(pose);
-        return true;
     }
 
     /**
@@ -133,11 +134,12 @@ public abstract class Entity
      * @param deltaY
      * @param deltaAngle
      * @return boolean - Did the move succeed?
+     * @throws InvalidMovementException 
      */
-    protected final boolean moveBy(float deltaX, float deltaY, float deltaAngle) {
+    protected final void moveBy(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException {
         
     	Pose end = new Pose(this.pose).move(deltaX, deltaY, deltaAngle);
-    	return moveTo(end);        
+    	moveTo(end);        
     }
     
 }

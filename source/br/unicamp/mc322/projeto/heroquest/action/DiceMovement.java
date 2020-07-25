@@ -15,31 +15,33 @@ public class DiceMovement implements Movement
 		KeyInputService keyboard;
 		try {
 			keyboard = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
-			boolean didItMove = false;
 			boolean doneMoving = false;
 			for(int i = 0; i < steps && !doneMoving; i++) {
-				switch(keyboard.getUserInput()) {
-					case 'a':
-						didItMove = mover.moveW();
-						break;
-					case 'w':
-						didItMove = mover.moveN();
-						break;
-					case 's':
-						didItMove = mover.moveS();
-						break;
-					case 'd':
-						didItMove = mover.moveE();
-						break;
-					default:
-						doneMoving = true;
+				try {
+					switch(keyboard.getUserInput()) {
+						case 'a':
+							mover.moveW();
+							break;
+						case 'w':
+							mover.moveN();
+							break;
+						case 's':
+							mover.moveS();
+							break;
+						case 'd':
+							mover.moveE();
+							break;
+						default:
+							doneMoving = true;
+					}
+				} catch (InvalidMovementException e) {
+					i--;
 				}
 				
-				if (!didItMove) i--;
 			}
 		} catch (NotAvaibleServiceException e) {
 			e.printStackTrace();
-			System.exit(1); //GAME CANNOT WORK WITHOUT INPUT
+			System.exit(1); // Jogo não funciona sem input: Finaliza!
 		}
 	}
 }

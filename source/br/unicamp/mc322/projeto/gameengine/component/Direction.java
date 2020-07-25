@@ -17,16 +17,15 @@ public class Direction extends Area {
 	
 	public Direction(Pose origin, float range, Metric metric) {
 		super(origin, range, metric);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Direction(Pose origin, Metric metric) {
 		super(origin, metric);
-		// TODO Auto-generated constructor stub
+		range = Integer.MAX_VALUE; //Infinite direction
 	}
 
 	public boolean isInDirection(Pose pose) {
-		if (isInside(pose) && isAngleClose((float) Math.atan2(pose.getY() - origin.getY(), pose.getX() - origin.getX())))
+		if (isInside(pose) && isAngleClose((float) Math.toDegrees(Math.atan2(pose.getY() - origin.getY(), pose.getX() - origin.getX()))))
 			return true;
 		return false;
 	}
@@ -87,12 +86,12 @@ public class Direction extends Area {
 		return l;
 	}
 	
-	public Entity getEntityInIndex(int i) {
+	public Entity getEntityInIndex(int i) throws NullPointerException {
 		Entity[] entities = getEntitiesInDirectionInOrder();
 		if (i > entities.length)
 			return entities[entities.length - 1];
 		if (entities.length == 0)
-			return null;
+			throw new NullPointerException();
 		return entities[i];
 	}
 	
