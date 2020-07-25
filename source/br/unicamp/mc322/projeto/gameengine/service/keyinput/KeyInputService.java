@@ -1,7 +1,5 @@
 package br.unicamp.mc322.projeto.gameengine.service.keyinput;
 
-import java.awt.event.KeyEvent;
-
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
 public interface KeyInputService extends Service
