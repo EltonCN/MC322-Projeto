@@ -64,18 +64,18 @@ public class StringImageOutputService implements ImageOutputService
 
         }
         
-        for(int i = 0; i<xSpriteSize; i++)
+        for(int j = ySpriteSize - 1; j >= 0; j--)
         {
-            for(int j = 0; j<ySpriteSize; j++)
+            for(int i = 0; i < xSpriteSize; i++)
             {
                 if(frame[i][j] == null)
                 {
-                    System.out.print("  ");
+                    System.out.print("    ");
                 }
                 else
                 {
                     StringSprite s = (StringSprite) frame[i][j].getSprite();
-                    System.out.print(s.getSprite());
+                    System.out.print(" " + s.getSprite() + " ");
                 }
             }
             System.out.println();
@@ -83,7 +83,7 @@ public class StringImageOutputService implements ImageOutputService
 
         for(int i = 0; i<nLineBreak; i++)
         {
-            System.out.println("-----------------------------------------");
+            System.out.println("----------------------------");
         }
 
     }

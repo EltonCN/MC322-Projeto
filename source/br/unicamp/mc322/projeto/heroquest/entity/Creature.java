@@ -200,6 +200,8 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     protected void equipWeapon(Weapon weapon) {
     	if (usedHand + weapon.getHands() < totalHand + 1)
     		equippedWeapons[usedHand++] = weapon;
+    	else
+    		addItemToInventory(weapon);
     }
     
     /**

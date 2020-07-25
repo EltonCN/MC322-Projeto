@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.utility;
 
+import java.util.Date;
 import java.util.Random;
 
 public class RandomGenerator
@@ -45,6 +46,8 @@ public class RandomGenerator
      */
     public int getResult() {
     	Random rand = new Random();
+    	// Setando a semente com um número consideravelmente aleatório
+    	rand.setSeed((new Date().getTime()) * new Date(new Date().toString().hashCode()).toString().hashCode() * System.nanoTime());
     	return (int) min + rand.nextInt(max - min - 1) + 1;
     }
 }

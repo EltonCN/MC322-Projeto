@@ -19,8 +19,9 @@ public abstract class Player extends Creature implements Curable, Looter
     private String name;
     
 	
-    public Player(Pose pose, int nAttackDice, int nDefenseDice, int life) {
+    public Player(Pose pose, int nAttackDice, int nDefenseDice, int life, String name) {
 		super(pose, nAttackDice, nDefenseDice, life);
+		this.name = name;
 		basicMovement = new DiceMovement();
 		isFriendly = true;
 	}

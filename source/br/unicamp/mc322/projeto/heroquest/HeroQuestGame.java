@@ -56,11 +56,12 @@ public class HeroQuestGame
 
 
         loadDefaultStage();
+        output.update();
         try {
             while(true) {
                 runner.run();
                 output.update();
-                Thread.currentThread().sleep(1000);
+                Thread.currentThread().sleep(3000);
             }
             
         }
@@ -88,7 +89,7 @@ public class HeroQuestGame
         EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
         stage0.addPrototype(player);
 
-        EntityPrototype monster = new EntityPrototype(Skeleton.class, 2, 2);
+        EntityPrototype monster = new EntityPrototype(Skeleton.class, 7, 3);
         stage0.addPrototype(monster);
 
         ServiceManager m = ServiceManager.getInstance();
