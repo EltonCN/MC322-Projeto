@@ -2,8 +2,7 @@ package br.unicamp.mc322.projeto.gameengine.service;
 
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 
-public interface LogService
- extends Service
+public interface LogService extends Service
 {
     /**
      * Operation sendLog

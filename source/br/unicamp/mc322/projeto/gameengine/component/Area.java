@@ -58,8 +58,9 @@ public class Area
         return false;
     }
     
+    // Métodos trigonométricos podem sofrer com imprecisões. Vamos sem bem generosos ao dizer que dois ângulos são "iguais"
     protected boolean isAngleClose(float angle) {
-		return (origin.getAngle() - angle <= Math.PI/40); 
+		return (origin.getAngle() - angle <= 1); 
 	}
 }
 

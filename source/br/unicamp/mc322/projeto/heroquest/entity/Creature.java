@@ -8,10 +8,11 @@ import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.heroquest.action.Movable;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
+import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.RunnableTurn;
 
-public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable,Attacker, Movable
+public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable, Attacker, Movable
 {
     /** Attributes */
     /**
@@ -127,7 +128,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * @return 
      * @throws ActionFailedException 
      */
-    protected void attack(  ) throws ActionFailedException {
+    protected void attack() throws ActionFailedException {
     	basicAttack.run(this);
     }
 
@@ -137,10 +138,12 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      *
      * @param deltaX
      * @param deltaY
+     * @return 
      * @return boolean
+     * @throws InvalidMovementException 
      */
-    protected boolean move(float deltaX, float deltaY) {
-    	return moveBy(deltaX, deltaY, 0);
+    protected void move(float deltaX, float deltaY) throws InvalidMovementException {
+    	moveBy(deltaX, deltaY, 0);
     }
 
     
@@ -158,45 +161,35 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Operation drop
      *
      * @return 
+     * @throws InvalidMovementException 
      *//*
     protected drop ();*/ //TODO ADD DROP LATER
 
-    public void moveBy(float deltaX, float deltaY)
-    {
-        super.moveBy(deltaX, deltaY, 0);
+    public void moveBy(float deltaX, float deltaY) throws InvalidMovementException {
+        moveBy(deltaX, deltaY, 0);
     }
 
-    public void takeDamage ( float damage )
-    {
-        if(this.armor == null)
-        {
+    public void takeDamage(float damage) {
+        if (this.armor == null) {
             this.life -= damage;
-        }
-        else
-        {
+        } else {
             this.life -= armor.transformDamage(damage);
         }
 
-        if(life<0)
-        {
+        if (life < 0) {
             life = 0;
             this.disable();
         }
-        
     }
 
-    public int getAttackScore()
-    {
+    public int getAttackScore() {
         int score = 0;
         
-        for(int i = 0; i< this.nAttackDice; i++)
-        {
-			if(CombatDice.getResult() == CombatDiceFace.SKULL)
-			{
+        for(int i = 0; i < nAttackDice; i++) {
+			if (CombatDice.getResult() == CombatDiceFace.SKULL){
 				score += 1;
 			}
         }
-
         return score;
     }
 
