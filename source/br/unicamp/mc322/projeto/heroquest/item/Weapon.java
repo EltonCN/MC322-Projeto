@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.item;
 
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
@@ -9,9 +10,12 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
+import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
+import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
+import br.unicamp.mc322.projeto.heroquest.entity.Creature;
 
-public abstract class Weapon extends Item implements Attack
-{
+public abstract class Weapon extends Item implements Attack {
     /** Attributes */
     /**
      * Mãos que a arma utiliza
@@ -26,6 +30,7 @@ public abstract class Weapon extends Item implements Attack
      */
     private static final Weapon[] WEAPONS_IN_GAME = {new LongSword(), new ShortSword(), new Dagger()};
 
+    protected SimpleAttack attack;
     /**
      * Operation Weapon
      * Construtor de Weapon
@@ -78,6 +83,30 @@ public abstract class Weapon extends Item implements Attack
 			}
     	}
     	return getWeapon(0);
+    }
+    
+    @Override
+    public void attack(Attacker origin, Attackable target) throws ActionFailedException {
+        attack.attack(origin, target);
+        if (--uses < 1)
+        	try {
+        		((Creature) origin).removeWeapon(this);
+        	} catch(ClassCastException e) {
+        		try {
+					LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+					l.sendLog(LogType.OTHER, LogPriority.ERROR, "Attacker's Weapon", "Tentativa de conversão inválida de Attacker para Creature");
+				} catch (NotAvaibleServiceException | DisabledServiceException e1) {
+					e1.printStackTrace();
+				}
+        		
+        	}
+        	
+    }
+
+    @Override
+    public void attack(Attacker origin) throws ActionFailedException {
+        attack.attack(origin);
+        uses--;
     }
 
 }

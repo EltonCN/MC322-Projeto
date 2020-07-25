@@ -1,7 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.heroquest.item.Armor;
-import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
@@ -136,7 +135,14 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     public void takeDamage(int damage) {
     	if (damage >= 0)
     		life -= damage;
-    	else; //TODO ADD EXCEPTION A1 MAYBE?
+    	else {
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature", "Operação inválida para número negativo");
+			} catch (NotAvaibleServiceException | DisabledServiceException e) {
+				e.printStackTrace();
+			}
+    	}
     }
 
     /**
@@ -192,7 +198,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Dois itens de uma mão ou um item de uma duas mãos
      */
     protected void equipWeapon(Weapon weapon) {
-    	if (usedHand + weapon.getHands() < 3)
+    	if (usedHand + weapon.getHands() < totalHand + 1)
     		equippedWeapons[usedHand++] = weapon;
     }
     
@@ -212,12 +218,40 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
 				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature", "Não foi possível descartar a arma, pois ela não foi encontrada.");
 			} catch (NotAvaibleServiceException | DisabledServiceException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
     		
     	}
     	return null;
+    }
+    
+    public void removeWeapon(Weapon w) {
+    	try {
+	    	if (equippedWeapons[0] == w)
+	    		removeWeapon(0);    		
+	    	else if (equippedWeapons[1] == w)
+	    		removeWeapon(1); 
+	    	else {
+	    		try {
+					LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+					l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature's Weapon", "Uma tentativa de remover arma falhou: a arma não está em sua mão");
+				} catch (NotAvaibleServiceException e1) {
+					e1.printStackTrace();
+				} catch (DisabledServiceException e1) {
+					e1.printStackTrace();
+				}
+	    	}
+    	} catch (NullPointerException e) {
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature's Weapon", "Uma tentativa de remover arma falhou:" + e.toString());
+			} catch (NotAvaibleServiceException e1) {
+				e1.printStackTrace();
+			} catch (DisabledServiceException e1) {
+				e1.printStackTrace();
+			}
+    		
+    	}
     }
 
     public void takeDamage(float damage) {
