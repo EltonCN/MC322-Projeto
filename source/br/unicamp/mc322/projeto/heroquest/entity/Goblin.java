@@ -12,7 +12,7 @@ public class Goblin extends Enemy
      * @return
      */
     public Goblin (Pose pose) {
-    	super(pose);
+    	super(pose, 2, 2, 2); // Balanceamento escolhido: fraco genérico
     	basicMovement = new ChaseMovement();
     }
 

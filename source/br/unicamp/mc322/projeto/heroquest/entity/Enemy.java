@@ -8,9 +8,8 @@ import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
 public abstract class Enemy extends Creature
 {
-
-	public Enemy(Pose pose) {
-		super(pose, 3, 2, 2); //We decided as standards to enemys
+	public Enemy(Pose pose, int life, int nAttackDice, int nDefenseDice) {
+		super(pose, life, nAttackDice, nDefenseDice);
 		basicMovement = new RandomMovement();
 		isFriendly = false;
 	}
