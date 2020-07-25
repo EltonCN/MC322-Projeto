@@ -1,5 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.component;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
 
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
@@ -14,14 +16,25 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceEx
 public class Direction extends Area {
 
 
+	private Comparator<Entity> comp = new Comparator<Entity>() {
+		public int compare(Entity e1, Entity e2) {
+			float r1 = origin.distance(e1.getPose(), metric);
+			float r2 = origin.distance(e2.getPose(), metric);
+			
+			if (r1 < r2) return -1;
+			else if (r1 > r2) return 1;
+			else return 0;
+		}
+
+	};
 	
 	public Direction(Pose origin, float range, Metric metric) {
 		super(origin, range, metric);
 	}
 	
 	public Direction(Pose origin, Metric metric) {
-		super(origin, metric);
-		range = Integer.MAX_VALUE; //Infinite direction
+		super(origin, Integer.MAX_VALUE, metric);
+		//Infinite direction
 	}
 
 	public boolean isInDirection(Pose pose) {
@@ -60,31 +73,13 @@ public class Direction extends Area {
 		for(int i = 0; i <  entities.length; i++) {
 			sortedEntities.add(entities[i]);
 		}
-		return (Entity[]) sortNotThatGood(sortedEntities).toArray();
-	}
-	
-	private int compareEntities(Entity e1, Entity e2) {
-		float r1 = origin.distance(e1.getPose(), metric);
-		float r2 = origin.distance(e2.getPose(), metric);
 		
-		if (r1 > r2) return -1;
-		else if (r1 < r2) return 1;
-		else return 0;
+		Collections.sort(sortedEntities, comp);
+		
+		return (Entity[]) sortedEntities.toArray();
 	}
 	
-	private LinkedList<Entity> sortNotThatGood(LinkedList<Entity> l) {
-		for (int i = 0;  i < l.size(); i++) {
-			int smaller = i;
-			for (int j = i; j <  l.size(); j++) {
-				if (compareEntities(l.get(smaller), l.get(j)) == -1)
-					smaller = j;
-			}
-			Entity temp = l.get(i);
-			l.set(i, l.get(smaller));
-			l.set(smaller, temp);
-		}
-		return l;
-	}
+	
 	
 	public Entity getEntityInIndex(int i) throws NullPointerException {
 		Entity[] entities = getEntitiesInDirectionInOrder();
