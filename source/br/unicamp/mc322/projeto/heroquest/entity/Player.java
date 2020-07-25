@@ -42,9 +42,33 @@ public abstract class Player extends Creature implements Curable
      * informs whether the Player has stopped moving
      * @return boolean
      */
+    //Eu considerei que ele quer parar de se mover quando aperta qualquer outra tecla se não WASD
+    //Então, a gnt pode tirar esse método?
     protected boolean wantStopMoving() {
     	return false; //TODO ADD RELATION TO INPUT LATER
     }
+    
+
+
+	@Override
+	public void startTurn() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isInTurn() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+    
+    
     
     @Override
     public int getDefenseScore(){

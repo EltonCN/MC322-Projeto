@@ -1,7 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.heroquest.entity.Player;
 
 public class Wizard extends Player implements Caster
 {
@@ -11,6 +10,12 @@ public class Wizard extends Player implements Caster
 		PI = 6;
 		caster = true;
 		// TODO ADD WEAPONS AND MAGIC
+	}
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
 	}
 }
 

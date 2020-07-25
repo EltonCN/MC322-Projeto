@@ -4,6 +4,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JPanel;
 
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 
 public class KeyboardInputService implements KeyInputService {
@@ -20,12 +21,12 @@ public class KeyboardInputService implements KeyInputService {
             }
 
 			@Override
-			public void keyTyped(KeyEvent e) { // DO NOTHING
+			public void keyTyped(KeyEvent e) { // faça nada
 				// TODO Auto-generated method stub
 			}
 
 			@Override
-			public void keyReleased(KeyEvent e) { // DO NOTHING
+			public void keyReleased(KeyEvent e) { // faça nada
 				// TODO Auto-generated method stub
 			}
         });
@@ -45,12 +46,21 @@ public class KeyboardInputService implements KeyInputService {
 		
 		lastEvent = null;
 		
-		// TODO MELHORAR IMPLEMENTAÇÃO
+		int cycles = 0;
 		while(lastEvent == null) {
 			try {
 				Thread.currentThread().wait(100);
 			} catch (InterruptedException e) {
-				// DO NOTHING
+				if(++cycles % 10 != 0) // Apenas a cada segundo relate o tempo de espera pelo usuário
+					continue;
+				try {
+					LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+					l.sendLog(LogType.KEYINPUT, LogPriority.LOG, "KeyboardInputService", "Esperando a entrada do usuário a " + cycles/10  + " segundos.");
+				} catch (NotAvaibleServiceException e1) {
+					e1.printStackTrace();
+				} catch (DisabledServiceException e1) {
+					e1.printStackTrace();
+				}
 			}
 		}
 		

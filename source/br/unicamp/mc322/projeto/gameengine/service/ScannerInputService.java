@@ -2,8 +2,25 @@ package br.unicamp.mc322.projeto.gameengine.service;
 
 import java.util.Scanner;
 
-public class ScannerInputService implements KeyInputService
-{
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+
+public class ScannerInputService implements KeyInputService {
+	
+	Scanner input;
+	
+	public ScannerInputService() {
+		this.input = new Scanner(System.in);
+		try {
+			LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+			l.sendLog(LogType.KEYINPUT, LogPriority.WARNING, "Scanner", "Resource might be limited");
+		} catch (NotAvaibleServiceException e) {
+			e.printStackTrace();
+		} catch (DisabledServiceException e) {
+			e.printStackTrace();
+		}
+		
+	}
 
 	@Override
 	public void end() {
@@ -13,7 +30,7 @@ public class ScannerInputService implements KeyInputService
 
 	@Override
 	public char getUserInput() {
-		Scanner input = new Scanner(System.in);
+		
 		return Character.toLowerCase(input.next().strip().replace(" ", "").charAt(0));
 	}
 

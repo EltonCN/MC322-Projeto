@@ -10,7 +10,6 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
-import br.unicamp.mc322.projeto.heroquest.entity.Enemy;
 
 public class Skeleton extends Enemy
 {
@@ -32,10 +31,8 @@ public class Skeleton extends Enemy
      * 
      * @TODO tratar exceções
      */
-    public void draw()
-    {
-        try
-        {
+    public void draw() {
+        try {
             ServiceManager m = ServiceManager.getInstance();
 
             ResourceService s = (ResourceService) m.getService(ServiceType.RESOURCE);
@@ -49,10 +46,8 @@ public class Skeleton extends Enemy
             ImageOutputService imageService = (ImageOutputService) m.getService(ServiceType.IMAGEOUTPUT);
 
             imageService.addSprite(sprite);
-        }
-        catch(ServiceException e)
-        {
-
+        } catch(ServiceException e) {
+        	
         }
 
     }

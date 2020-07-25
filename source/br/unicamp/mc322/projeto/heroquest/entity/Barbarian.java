@@ -1,7 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.heroquest.entity.Player;
 
 public class Barbarian extends Player
 {
@@ -10,6 +9,12 @@ public class Barbarian extends Player
 		super(pose, 3, 2, 8);
 		PI = 2;
 		// TODO ADD WEAPONS
+	}
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
 	}
 }
 

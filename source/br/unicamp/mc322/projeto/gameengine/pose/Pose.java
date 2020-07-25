@@ -3,7 +3,6 @@ package br.unicamp.mc322.projeto.gameengine.pose;
 import java.lang.Math;
 
 import br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea;
-import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 
 
 public class Pose

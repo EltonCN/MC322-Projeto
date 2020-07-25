@@ -2,7 +2,6 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;

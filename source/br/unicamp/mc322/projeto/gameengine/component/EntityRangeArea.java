@@ -1,6 +1,5 @@
 package br.unicamp.mc322.projeto.gameengine.component;
 
-import br.unicamp.mc322.projeto.gameengine.component.Area;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;

@@ -60,9 +60,13 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      */
     protected Attack basicAttack;
     /**
-     * Ação de ataque básica
+     * Amigável (bonzinho) ou não (malvado)
      */
     protected boolean isFriendly;
+    /**
+     * Caster (faz magia) ou não
+     */
+    protected boolean caster;
     /**
      * Operation Creature
      *
@@ -192,6 +196,10 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
         }
         return score;
     }
+    
+	public int getInteligence() {
+		return PI;
+	}
 
 }
 

@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
+import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
@@ -117,7 +118,12 @@ public class SpartialEntityStoreService implements EntityStoreService
 
         removeEntity(origin);
 
-        entity.moveTo(end);
+        try {
+			entity.moveTo(end);
+		} catch (InvalidMovementException e) {
+			// Da forma que foi implementado, não precisamos nos preocupar muito com isso
+			e.printStackTrace();
+		}
 
         store(entity);
 
@@ -150,8 +156,7 @@ public class SpartialEntityStoreService implements EntityStoreService
     /**
      * Ordena a lista de entidades
      */
-    private void sort()
-    {
+    private void sort() {
         Collections.sort(list, new EntitySpartialComparator());
     }
 
@@ -160,8 +165,7 @@ public class SpartialEntityStoreService implements EntityStoreService
      * @param pose
      * @return índice da lista
      */
-    private int getIndex(Pose pose) throws NoSuchElementException
-    {
+    private int getIndex(Pose pose) throws NoSuchElementException {
         Iterator<Entity> iterator = list.iterator();
         
         int index = 0;

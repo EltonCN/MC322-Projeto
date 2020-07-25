@@ -15,7 +15,7 @@ public interface ResourceService
      * @param class - Classe
      * @param index - Índice do arquivo
      */
-    public void setFile ( String file, Class class, int index );
+    public void setFile (String file, Class c, int index);
 
     /**
      * Operation getResource

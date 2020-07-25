@@ -1,8 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
-import br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea;
-import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
@@ -49,10 +47,8 @@ public abstract class Entity
      * Executa operações em trocas de estágio
      *
      */
-    public void stageChanged ()
-    {
-        if(isPermanent() == false)
-        {
+    public void stageChanged () {
+        if(!isPermanent()) {
             this.disable();
         }
     }
