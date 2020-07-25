@@ -89,7 +89,7 @@ public class SpartialEntityStoreService implements EntityStoreService
             }
         }
 
-        return (Entity[]) result.toArray();
+        return result.toArray(new Entity[result.size()]);
     }
 
     @Override
@@ -117,6 +117,7 @@ public class SpartialEntityStoreService implements EntityStoreService
         }
 
         removeEntity(origin);
+        store(entity);
 
         try {
 			entity.moveTo(end);
