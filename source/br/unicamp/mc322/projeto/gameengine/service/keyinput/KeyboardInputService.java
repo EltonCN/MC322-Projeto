@@ -4,8 +4,13 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JPanel;
 
+import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
 public class KeyboardInputService implements KeyInputService {
 

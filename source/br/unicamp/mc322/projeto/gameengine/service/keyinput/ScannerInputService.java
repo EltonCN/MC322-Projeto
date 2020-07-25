@@ -2,8 +2,13 @@ package br.unicamp.mc322.projeto.gameengine.service.keyinput;
 
 import java.util.Scanner;
 
+import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
 public class ScannerInputService implements KeyInputService {
 	

@@ -61,14 +61,6 @@ public abstract class Player extends Creature implements Curable
 		// TODO Auto-generated method stub
 		return false;
 	}
-
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-		
-	}
-    
-    
     
     @Override
     public int getDefenseScore(){
