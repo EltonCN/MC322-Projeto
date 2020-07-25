@@ -117,7 +117,7 @@ public class StringImageOutputService implements ImageOutputService
         }
         
 
-        if(frame[xPosition][yPosition] != null )
+        if(frame[xPosition][yPosition] != null)
         {
             if(frame[xPosition][yPosition].getSpritePriority().ordinal() > extrinsic.getSpritePriority().ordinal())
             {
