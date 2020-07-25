@@ -12,8 +12,7 @@ import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.entityrunner.RunnableTurn;
 
-public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable, Attacker, Movable
-{
+public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable, Attacker, Movable {
     /** Attributes */
     /**
      * Número total de mãos que a criatura possui
@@ -83,7 +82,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	this.life = 1;
     	this.nAttackDice = nAttackDice;
     	this.nDefenseDice = nDefenseDice;
-    	totalHand = 2;
+    	totalHand = 2; // Não pretendemos implementar nenhuma criatura com número diferente, mas se quisermos no futuro é possível adaptar com facilidade
         basicMovement = new NullMovement();
         turn = false;
     }

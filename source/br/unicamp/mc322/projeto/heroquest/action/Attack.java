@@ -13,7 +13,7 @@ public interface Attack extends Action
     /**
      * Executa o ataque com um objetivo específico
      */
-    public void run ( Entity origin, Attackable target ) throws ActionFailedException;
+    public void run (Entity origin, Attackable target) throws ActionFailedException;
 
     
 }

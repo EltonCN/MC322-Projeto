@@ -60,6 +60,7 @@ public class HeroQuestGame
             {
                 runner.run();
                 output.update();
+                Thread.currentThread().sleep(200);
             }
             
         }
@@ -68,7 +69,10 @@ public class HeroQuestGame
             System.out.println("Não foi possível executar o serviço executor de entidades, o jogo será encerrado");
             e.printStackTrace();
             System.exit(1);
-        }
+        } catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         finally
         {
             

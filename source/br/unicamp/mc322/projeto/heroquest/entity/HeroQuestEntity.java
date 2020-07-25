@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
+import br.unicamp.mc322.projeto.heroquest.action.Movable;
 import br.unicamp.mc322.projeto.heroquest.component.LightObstructorArea;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
@@ -10,8 +11,7 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypableEntity;
 
-public abstract class HeroQuestEntity extends Entity implements PrototypableEntity
-{
+public abstract class HeroQuestEntity extends Entity implements PrototypableEntity, Movable {
     /** Attributes */
     /**
      * Define se a entidade deve ou não obstruir a visão
