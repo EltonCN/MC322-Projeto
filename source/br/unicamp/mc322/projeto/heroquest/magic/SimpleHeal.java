@@ -1,8 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.magic;
 
-import br.unicamp.mc322.projeto.heroquest.magic.Magic;
 import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
-import br.unicamp.mc322.projeto.gameengine.action.Action;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.action.Cure;

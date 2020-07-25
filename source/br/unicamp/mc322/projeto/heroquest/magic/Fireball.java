@@ -1,6 +1,5 @@
 package br.unicamp.mc322.projeto.heroquest.magic;
 
-import br.unicamp.mc322.projeto.heroquest.magic.Magic;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;

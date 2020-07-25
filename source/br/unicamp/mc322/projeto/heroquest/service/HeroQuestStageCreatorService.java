@@ -1,7 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.service;
 
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
-import br.unicamp.mc322.projeto.heroquest.service.StageType;
 
 public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
 {
