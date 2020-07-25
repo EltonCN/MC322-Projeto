@@ -51,8 +51,12 @@ public class AttackableRangeArea {
 		Attackable[] foes = getAttackablesInside();
 		for(int i = 0; i < foes.length; i++) 
 		{
-			if (isFriendly != ((Attackable) foes[i]).getIsFriendly())
-				remove(foes, i--); // O -- garante que todos os atacáveis serão visitados no for
+			try {
+				if (isFriendly != ((Attackable) foes[i]).getIsFriendly())
+					remove(foes, i--); // O -- garante que todos os atacáveis serão visitados no for
+			} catch (NullPointerException e) {
+				break;
+			}
 		}
 		
 		return foes;
@@ -61,7 +65,7 @@ public class AttackableRangeArea {
 	private Attackable[] getAttackablesInside() {
 		
 		Entity[] entities = area.getEntitiesInside();
-		Attackable[] attackables = new Attackable[225]; //TODO mudar 225 para uma cte de estágio
+		Attackable[] attackables = new Attackable[225]; // @todo TODO mudar 225 para uma cte de estágio
 		int added = 0;
 		
 		for(int i = 0; i < entities.length; i++) {

@@ -129,8 +129,7 @@ public class Pose
      * @param pose - A outra pose
      * @return boolean
      */
-    public boolean equal ( Pose pose )
-    {
+    public boolean equal(Pose pose) {
         if(this.x != pose.x)
         {
             return false;
