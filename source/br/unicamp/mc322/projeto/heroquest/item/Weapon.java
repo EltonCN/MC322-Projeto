@@ -16,7 +16,7 @@ public abstract class Weapon extends Item implements Attack
 {
     /** Attributes */
     /**
-     * Mãos que a arma consome
+     * Mãos que a arma utiliza
      */
     private int hand;
     /**
@@ -40,6 +40,16 @@ public abstract class Weapon extends Item implements Attack
         super(name, value);
         this.hand = hand;
         this.uses = uses;
+    }
+    
+    /**
+     * Operation getHands
+     * Retorna número de mãos necessárias para conduzir a arma
+     * 
+     * @return int
+     */
+    public int getHands() {
+    	return hand;
     }
     
     /*

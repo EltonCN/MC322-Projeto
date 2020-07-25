@@ -26,7 +26,7 @@ public class Skeleton extends Enemy
         super(pose, 3, 2, 4); // Balanceamento escolhido: focado em defesa
         basicMovement = new RandomMovement();
         basicAttack = new SimpleAttack(0, 1); //TODO @todo
-        weapon = Weapon.getRandomWeapon();
+        equipWeapon(Weapon.getRandomWeapon());
     }
 
     @Override

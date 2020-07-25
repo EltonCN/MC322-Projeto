@@ -2,6 +2,7 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.heroquest.item.Armor;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
+import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
@@ -49,7 +50,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     /**
      * Número de mãos sendo usadas
      */
-    protected int handUsed;
+    protected int usedHand;
     /**
      * Ação de movimentação básica
      */
@@ -69,6 +70,9 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Caster (faz magia) ou não
      */
     protected boolean caster;
+    
+    private static final int INVENTORY_LIMIT = 10;
+    
     /**
      * Operation Creature
      *
@@ -83,8 +87,11 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	this.nAttackDice = nAttackDice;
     	this.nDefenseDice = nDefenseDice;
     	totalHand = 2; // Não pretendemos implementar nenhuma criatura com número diferente, mas se quisermos no futuro é possível adaptar com facilidade
-        basicMovement = new NullMovement();
+        usedHand = 0; // No início, nenhuma mão está sendo usada, assume-se
+    	basicMovement = new NullMovement();
         turn = false;
+        equippedItem = new Item[10];
+        
     }
 
     /**
@@ -174,6 +181,17 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 
     public void moveBy(float deltaX, float deltaY) throws InvalidMovementException {
         moveBy(deltaX, deltaY, 0);
+    }
+    
+    /**
+     * Operation equipItem
+     * Permite que Criatura equipe um item segundo as regras do jogo:
+     * Dois itens de uma mão ou um item de uma duas mãos
+     * 
+     */
+    protected void equipWeapon(Weapon weapon) {
+    	if (usedHand + weapon.getHands() < 3)
+    		equippedItem[usedHand++] = weapon;
     }
 
     public void takeDamage(float damage) {
