@@ -85,10 +85,10 @@ public class HeroQuestGame
         StagePrototype stage0 = new StagePrototype();
 
 
-        EntityPrototype player = new EntityPrototype(Barbarian.class, new Pose(10,10));
+        EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
         stage0.addPrototype(player);
 
-        EntityPrototype monster = new EntityPrototype(Skeleton.class, new Pose(100,100));
+        EntityPrototype monster = new EntityPrototype(Skeleton.class, 2, 2);
         stage0.addPrototype(monster);
 
         ServiceManager m = ServiceManager.getInstance();
