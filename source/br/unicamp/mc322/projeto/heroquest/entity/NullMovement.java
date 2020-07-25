@@ -9,7 +9,7 @@ public class NullMovement implements Movement {
 	@Override
 	public void move(Movable movable) throws ActionFailedException {
 		// Fica parado!
-		
+
 	}
 
 }

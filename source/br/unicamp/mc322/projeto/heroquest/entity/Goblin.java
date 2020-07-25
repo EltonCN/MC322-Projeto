@@ -7,21 +7,20 @@ public class Goblin extends Enemy
 {
     /**
      * Operation Goblin
-     * Construtor de Goblin (DEVE: definir o movimento básico como Chase, e o ataque 
+     * Construtor de Goblin (DEVE: definir o movimento básico como Chase, e o ataque
      *
-     * @return 
+     * @return
      */
     public Goblin (Pose pose) {
     	super(pose);
     	basicMovement = new ChaseMovement();
     }
-    
+
     @Override
 	public void draw() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 
 }
-

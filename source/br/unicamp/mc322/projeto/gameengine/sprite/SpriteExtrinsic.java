@@ -2,7 +2,7 @@ package br.unicamp.mc322.projeto.gameengine.sprite;
 
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.gameengine.service.ResourceExtrinsic;
+import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceExtrinsic;
 
 public class SpriteExtrinsic
  implements ResourceExtrinsic

@@ -7,8 +7,8 @@ import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import java.util.LinkedList;
 
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
-import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
-import br.unicamp.mc322.projeto.gameengine.service.PrototypableEntity;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypableEntity;
 
 public abstract class HeroQuestEntity extends Entity implements PrototypableEntity
 {

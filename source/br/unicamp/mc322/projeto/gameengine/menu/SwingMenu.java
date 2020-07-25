@@ -1,7 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.menu;
 
-import br.unicamp.mc322.projeto.gameengine.service.Menu;
 import br.unicamp.mc322.projeto.gameengine.menu.SwingMenu;
+import br.unicamp.mc322.projeto.gameengine.service.menu.Menu;
 
 public class SwingMenu
  implements Menu

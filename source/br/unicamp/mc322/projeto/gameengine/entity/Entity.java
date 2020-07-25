@@ -2,12 +2,15 @@ package br.unicamp.mc322.projeto.gameengine.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.gameengine.service.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 
+/**
+ * Representações de objetos que compõem o jogo. Pode representar um personagem jogável, NPCs, plataformas, gatilhos de eventos.
+ */
 public abstract class Entity
 
 {

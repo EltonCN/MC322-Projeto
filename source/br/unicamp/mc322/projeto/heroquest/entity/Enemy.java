@@ -14,12 +14,12 @@ public abstract class Enemy extends Creature
 		basicMovement = new RandomMovement();
 		isFriendly = false;
 	}
-	
+
 	@Override
     public int getDefenseScore(){
     	int defenseFaces = 0;
     	for(int i = 0; i < getNDefenseDice(); i++) {
-    		if (CombatDice.getResult() == CombatDiceFace.MONSTERSHIELD) 
+    		if (CombatDice.getResult() == CombatDiceFace.MONSTERSHIELD)
     			defenseFaces += 1;
     	}
     	return defenseFaces;
@@ -40,7 +40,7 @@ public abstract class Enemy extends Creature
 			e.printStackTrace();
 		}
     }
-	
+
 	@Override
 	public void startTurn() {
 		// TODO Auto-generated method stub
@@ -54,4 +54,3 @@ public abstract class Enemy extends Creature
 
 
 }
-

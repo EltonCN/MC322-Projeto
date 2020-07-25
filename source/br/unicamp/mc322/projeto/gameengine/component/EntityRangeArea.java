@@ -3,13 +3,13 @@ package br.unicamp.mc322.projeto.gameengine.component;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.gameengine.service.EntityStoreService;
-import br.unicamp.mc322.projeto.gameengine.service.LogPriority;
-import br.unicamp.mc322.projeto.gameengine.service.LogService;
-import br.unicamp.mc322.projeto.gameengine.service.LogType;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
 public class EntityRangeArea extends Area {
     
