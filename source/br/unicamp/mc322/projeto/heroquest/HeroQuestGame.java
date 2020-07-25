@@ -56,29 +56,23 @@ public class HeroQuestGame
 
 
         loadDefaultStage();
-        try
-        {
-            while(true)
-            {
+        try {
+            while(true) {
                 runner.run();
                 output.update();
-                Thread.currentThread().sleep(200);
+                Thread.currentThread().sleep(1000);
             }
             
         }
-        catch(ServiceException e)
-        {
+        catch(ServiceException e) {
             System.out.println("Não foi possível executar o serviço executor de entidades, o jogo será encerrado");
             e.printStackTrace();
             System.exit(1);
         } catch (InterruptedException e) {
+            System.out.println("Não foi dar pause");
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        finally
-        {
-            
-        }
         
 
     }
@@ -94,7 +88,7 @@ public class HeroQuestGame
         EntityPrototype player = new EntityPrototype(Barbarian.class, new Pose(10,100));
         stage0.addPrototype(player);
 
-        EntityPrototype monster = new EntityPrototype(Skeleton.class, new Pose(100,100));
+        EntityPrototype monster = new EntityPrototype(Skeleton.class, new Pose(7,3));
         stage0.addPrototype(monster);
 
         ServiceManager m = ServiceManager.getInstance();

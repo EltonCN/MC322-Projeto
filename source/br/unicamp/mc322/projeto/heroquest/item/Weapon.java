@@ -1,7 +1,5 @@
 package br.unicamp.mc322.projeto.heroquest.item;
 
-import java.lang.reflect.InvocationTargetException;
-
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;

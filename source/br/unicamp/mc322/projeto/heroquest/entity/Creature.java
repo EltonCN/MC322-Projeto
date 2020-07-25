@@ -10,7 +10,14 @@ import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entityrunner.RunnableTurn;
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
 public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable, Attacker, Movable {
     /** Attributes */
@@ -33,7 +40,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     /**
      * Itens que possui equipados
      */
-    protected Item[] equippedItem;
+    protected Weapon[] equippedWeapons;
     /**
      * Armadura que a criatura está vestindo
      */
@@ -68,10 +75,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     /**
      * Caster (faz magia) ou não
      */
-    protected boolean caster;
-    
-    private static final int INVENTORY_LIMIT = 10;
-    
+    protected boolean caster;    
     /**
      * Operation Creature
      *
@@ -89,7 +93,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
         usedHand = 0; // No início, nenhuma mão está sendo usada, assume-se
     	basicMovement = new NullMovement();
         turn = false;
-        equippedItem = new Item[10];
+        equippedWeapons = new Weapon[2];
         
     }
 
@@ -186,11 +190,34 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Operation equipItem
      * Permite que Criatura equipe um item segundo as regras do jogo:
      * Dois itens de uma mão ou um item de uma duas mãos
-     * 
      */
     protected void equipWeapon(Weapon weapon) {
     	if (usedHand + weapon.getHands() < 3)
-    		equippedItem[usedHand++] = weapon;
+    		equippedWeapons[usedHand++] = weapon;
+    }
+    
+    /**
+     * Operation removeWeapon
+     * @param weapon
+     * @return Weapon
+     */
+    protected Weapon removeWeapon(int i) throws NullPointerException {
+    	if (equippedWeapons[i] != null) {
+    		Weapon toRemove = equippedWeapons[i];
+    		equippedWeapons[i] = null;
+    		usedHand -= toRemove.getHands();
+    		return toRemove;
+    	} else {
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature", "Não foi possível descartar a arma, pois ela não foi encontrada.");
+			} catch (NotAvaibleServiceException | DisabledServiceException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    		
+    	}
+    	return null;
     }
 
     public void takeDamage(float damage) {

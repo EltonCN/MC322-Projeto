@@ -1,11 +1,16 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
+import java.util.LinkedList;
+
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.action.DiceMovement;
+import br.unicamp.mc322.projeto.heroquest.action.Lootable;
+import br.unicamp.mc322.projeto.heroquest.action.Looter;
+import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
-public abstract class Player extends Creature implements Curable
+public abstract class Player extends Creature implements Curable, Looter
 {
 	/** Attributes */
     /**
@@ -46,6 +51,12 @@ public abstract class Player extends Creature implements Curable
     //Então, a gnt pode tirar esse método?
     protected boolean wantStopMoving() {
     	return false; //TODO ADD RELATION TO INPUT LATER
+    }
+    
+    public void loot(LinkedList<Item> loot) {
+    	for(Item i: loot) {
+    		addItemToInventory(i);
+    	}
     }
     
 
