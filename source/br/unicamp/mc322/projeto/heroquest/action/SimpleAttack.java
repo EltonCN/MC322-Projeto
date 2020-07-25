@@ -28,7 +28,7 @@ public class SimpleAttack
      * @param reach - Alcance do ataque
      * @return 
      */
-    public SimpleAttack ( int damageBonus, float reach )
+    public SimpleAttack (int damageBonus, float reach)
     {
         this.damageBonus = damageBonus;
         this.reach = reach;

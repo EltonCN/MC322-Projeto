@@ -11,6 +11,7 @@ import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
 import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 
 public class Skeleton extends Enemy
 {
@@ -24,7 +25,8 @@ public class Skeleton extends Enemy
     {
         super(pose, 3, 2, 4); // Balanceamento escolhido: focado em defesa
         basicMovement = new RandomMovement();
-        basicAttack = new SimpleAttack(0, 1); //TODO
+        basicAttack = new SimpleAttack(0, 1); //TODO @todo
+        weapon = Weapon.getRandomWeapon();
     }
 
     @Override
