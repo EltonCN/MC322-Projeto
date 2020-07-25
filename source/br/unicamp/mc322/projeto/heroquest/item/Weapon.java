@@ -31,7 +31,7 @@ public abstract class Weapon extends Item implements Attack
     }
     
     private Weapon getWeapon(int i) {
-    	
+    	return null;
     }
 
 }
