@@ -109,6 +109,8 @@ public abstract class Entity
     	
         ServiceManager m = ServiceManager.getInstance();
 
+        this.pose = new Pose(pose);
+
         try {
             EntityStoreService s = (EntityStoreService) m.getService(ServiceType.ENTITYSTORE);
 
@@ -118,8 +120,6 @@ public abstract class Entity
         } catch(NotAvaibleServiceException e) {
         	//TODO IMPLEMENT
         }
-        
-        this.pose = new Pose(pose);
     }
 
     /**

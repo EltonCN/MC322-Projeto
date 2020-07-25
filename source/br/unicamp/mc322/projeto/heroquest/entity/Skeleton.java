@@ -10,6 +10,7 @@ import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceType;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
+import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
 
 public class Skeleton extends Enemy
 {
@@ -23,7 +24,7 @@ public class Skeleton extends Enemy
     {
         super(pose, 3, 2, 4); // Balanceamento escolhido: focado em defesa
         basicMovement = new RandomMovement();
-        basicAttack = null; //TODO
+        basicAttack = new SimpleAttack(0, 1); //TODO
     }
 
     @Override
