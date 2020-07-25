@@ -21,11 +21,17 @@ public abstract class Weapon extends Item implements Attack
      * @param uses - Usos que a arma possui
      * @return 
      */
-    public Weapon (String name, float value, int hand, int uses )
-    {
+    
+    private static Class[] WEAPONS_IN_GAME = {LongSword.class, ShortSword.class, Dagger.class};
+    
+    public Weapon (String name, float value, int hand, int uses) {
         super(name, value);
         this.hand = hand;
         this.uses = uses;
+    }
+    
+    private Weapon getWeapon(int i) {
+    	
     }
 
 }

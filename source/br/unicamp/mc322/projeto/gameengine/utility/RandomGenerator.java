@@ -33,7 +33,7 @@ public class RandomGenerator
      * @param max - Maior número a ser gerado (inclusive)
      * @return 
      */
-    public RandomGenerator (int max){
+    public RandomGenerator (int max) {
     	this.min = 1;
     	this.max = max;
     }
@@ -45,7 +45,7 @@ public class RandomGenerator
      */
     public int getResult() {
     	Random rand = new Random();
-    	return (int) min + rand.nextInt(max - min) + 1;
+    	return (int) min + rand.nextInt(max - min - 1) + 1;
     }
 }
 
