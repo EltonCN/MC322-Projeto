@@ -12,7 +12,7 @@ public class MagicSkeleton extends Enemy implements Caster {
      * @return 
      */
     public MagicSkeleton(Pose pose) {
-    	super(pose);
+    	super(pose, 4, 4, 2); // Balanceamento escolhido: focado em ataque
     	basicMovement = new RandomMovement();
     	basicAttack = null; //TODO
     }
