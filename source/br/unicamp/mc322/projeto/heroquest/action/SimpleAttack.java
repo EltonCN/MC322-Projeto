@@ -40,13 +40,12 @@ public class SimpleAttack
      * @todo verificar se todos os castings são necessários
      * @todo mostrar em algum lugar os resultados dos dados bônus
      */
-    public void run(Entity origin) throws ActionFailedException
+    public void attack(Attacker origin) throws ActionFailedException
     {
-        Attacker attacker = convertToAttacker(origin);
-        
+   
         AttackableRangeArea area = new AttackableRangeArea(origin.getPose(), reach, metric);
 
-        Attackable[] targets = area.getAttackablesInside(attacker);
+        Attackable[] targets = area.getAttackablesInside(origin);
 
         if(targets.length == 0)
         {
@@ -66,21 +65,19 @@ public class SimpleAttack
 
         }
 
-        doAttack(attacker, finalTarget);
+        doAttack(origin, finalTarget);
 
     }
 
     @Override
-    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    public void attack(Attacker origin, Attackable target) throws ActionFailedException 
     {
         if(origin.getPose().distance(target.getPose(), metric) < this.reach)
         {
             throw new ActionFailedException("O alvo está fora de alcance");
         }
 
-        Attacker attacker = convertToAttacker(origin);
-
-        doAttack(attacker, target);
+        doAttack(origin, target);
     }
 
     private void doAttack(Attacker attacker, Attackable target)
@@ -107,23 +104,6 @@ public class SimpleAttack
         target.takeDamage((attackScore-defenseScore)+bonus);
 		
     }
-
-    private Attacker convertToAttacker(Entity entity) throws ActionFailedException
-    {
-        Attacker attacker;
-
-        try
-        {
-            attacker = (Attacker) entity;
-        }
-        catch(ClassCastException e)
-        {
-            throw new ActionFailedException("Entidade fornecida não é Attacker, apenas Attacker podem atacar", e);
-        }
-
-        return attacker;
-    }
-
     
 }
 

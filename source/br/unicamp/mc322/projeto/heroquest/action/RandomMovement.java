@@ -2,6 +2,7 @@ package br.unicamp.mc322.projeto.heroquest.action;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
+import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 
 public class RandomMovement implements Movement {
 

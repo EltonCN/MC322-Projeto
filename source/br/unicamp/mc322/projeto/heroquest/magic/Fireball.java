@@ -1,7 +1,6 @@
 package br.unicamp.mc322.projeto.heroquest.magic;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
-import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
@@ -30,25 +29,23 @@ public class Fireball extends Magic implements Attack
      * 
      * @todo Método para receber o objetivo do ataque
      */
-    public void run(Entity origin) throws ActionFailedException 
+    public void attack(Attacker origin) throws ActionFailedException 
     {
-        
-        Attacker attacker = convertToAttacker(origin);
-
         AttackableRangeArea area = new AttackableRangeArea(origin.getPose(), reach, metric);
 
-        Attackable[] targets = area.getAttackablesInside(attacker);
+        Attackable[] targets = area.getAttackablesInside(origin);
 
         if(targets.length == 0)
         {
             return;
         }
-        run(origin,targets[0]);
+
+        attack(origin,targets[0]);
 
     }
 
     @Override
-    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    public void attack(Attacker origin, Attackable target) throws ActionFailedException 
     {
         Caster caster = convertToCaster(origin);
        
@@ -69,16 +66,6 @@ public class Fireball extends Magic implements Attack
 
     }
 
-    private Attacker convertToAttacker(Entity origin) throws ActionFailedException
-    {
-        try 
-        {
-            return  (Attacker) origin;   
-        } catch (ClassCastException e) 
-        {
-            throw new ActionFailedException("Por ser uma magia de ataque, apenas atacantes podem lançá-la", e);
-        }
-    }
 
 
 }

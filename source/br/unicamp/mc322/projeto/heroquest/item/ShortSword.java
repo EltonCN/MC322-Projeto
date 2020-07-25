@@ -1,10 +1,10 @@
 package br.unicamp.mc322.projeto.heroquest.item;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
-import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
+import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
 
 public class ShortSword extends Weapon {
     private static final int hand = 1;
@@ -22,15 +22,15 @@ public class ShortSword extends Weapon {
     }
 
     @Override
-    public void run(Entity origin) throws ActionFailedException {
-        attack.run(origin);
+    public void attack(Attacker origin) throws ActionFailedException {
+        attack.attack(origin);
 
     }
 
     @Override
-    public void run(Entity origin, Attackable target) throws ActionFailedException 
+    public void attack(Attacker origin, Attackable target) throws ActionFailedException 
     {
-        attack.run(origin, target);
+        attack.attack(origin, target);
     }
 }
 

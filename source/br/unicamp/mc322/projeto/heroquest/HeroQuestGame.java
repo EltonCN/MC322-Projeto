@@ -16,6 +16,7 @@ import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceS
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototype;
+import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
@@ -23,7 +24,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 public class HeroQuestGame
 {
     public static void main(String[] args)
-    {
+    { 
         new HeroQuestGame();
     }
 
@@ -37,7 +38,8 @@ public class HeroQuestGame
         StringImageResourceService resource = new StringImageResourceService();
 
 
-        resource.setFile("SK",Skeleton.class, 0);
+        resource.setFile("SK", Skeleton.class, 0);
+        resource.setFile("Br", Barbarian.class, 0);
 
         StringImageOutputService output = new StringImageOutputService();
 
@@ -89,8 +91,8 @@ public class HeroQuestGame
         StagePrototype stage0 = new StagePrototype();
 
 
-        //EntityPrototype player = new EntityPrototype(Barbarian.class, new Pose(0,0));
-        //stage0.addPrototype(player);
+        EntityPrototype player = new EntityPrototype(Barbarian.class, new Pose(10,100));
+        stage0.addPrototype(player);
 
         EntityPrototype monster = new EntityPrototype(Skeleton.class, new Pose(100,100));
         stage0.addPrototype(monster);

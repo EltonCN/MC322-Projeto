@@ -7,7 +7,6 @@ import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
-import br.unicamp.mc322.projeto.heroquest.action.Movable;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;

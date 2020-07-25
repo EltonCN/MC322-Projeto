@@ -1,6 +1,7 @@
-package br.unicamp.mc322.projeto.heroquest.action;
+package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.heroquest.action.Movement;
 
 /**
  * @todo mover constantes de Movement para cá

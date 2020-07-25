@@ -95,8 +95,8 @@ public class StringImageOutputService implements ImageOutputService
      */
     public void addSprite(SpriteExtrinsic extrinsic) 
     {
-        int xPosition = (int) extrinsic.getPose().getX()/xSize;
-        int yPosition = (int) extrinsic.getPose().getY()/ySize;
+        int xPosition = (int) (xSpriteSize*(extrinsic.getPose().getX()/xSize));
+        int yPosition = (int) (ySpriteSize*(extrinsic.getPose().getY()/ySize));
 
         if( extrinsic.getPose().getX() < 0 ||xPosition> xSpriteSize)
         {

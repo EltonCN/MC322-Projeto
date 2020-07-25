@@ -1,6 +1,5 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
-import br.unicamp.mc322.projeto.heroquest.action.Movable;
 import br.unicamp.mc322.projeto.heroquest.component.LightObstructorArea;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;

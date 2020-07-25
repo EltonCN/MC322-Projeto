@@ -7,6 +7,7 @@ import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 import br.unicamp.mc322.projeto.heroquest.entity.Creature;
+import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 
 public class ChaseMovement implements Movement {
 	

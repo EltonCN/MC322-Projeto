@@ -3,7 +3,7 @@ package br.unicamp.mc322.projeto.heroquest.action;
 import br.unicamp.mc322.projeto.gameengine.action.Action;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
-import br.unicamp.mc322.projeto.heroquest.entity.Creature;
+import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 
 public interface Movement extends Action 
 {
@@ -18,22 +18,18 @@ public interface Movement extends Action
 	 */
 	public void move(Movable movable) throws ActionFailedException;
 	
-	public default void run (Entity origin) throws ActionFailedException {
-		run((Creature) origin);
-	}
-	
-	public default void run(Creature origin) throws ActionFailedException
+	public default void run (Entity origin) throws ActionFailedException 
 	{
 		try
 		{
-			move((Movable) origin);
+			Movable m = (Movable) origin;
+			
+			move(m);
 		}
 		catch(ClassCastException e)
 		{
 			throw new ActionFailedException("Apenas movíveis podem se mover", e);
 		}
-		
 	}
-
 }
 

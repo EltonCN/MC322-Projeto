@@ -5,6 +5,7 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyInputService;
+import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
 
 public class DiceMovement implements Movement
