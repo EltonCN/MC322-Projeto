@@ -1,19 +1,19 @@
 package br.unicamp.mc322.projeto.heroquest;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.gameengine.service.EntityPrototype;
-import br.unicamp.mc322.projeto.gameengine.service.ImageResourceService;
-import br.unicamp.mc322.projeto.gameengine.service.KeyboardInputService;
-import br.unicamp.mc322.projeto.gameengine.service.PrototypeStageCreatorService;
-import br.unicamp.mc322.projeto.gameengine.service.ScannerInputService;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
-import br.unicamp.mc322.projeto.gameengine.service.SpartialEntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.StagePrototype;
 import br.unicamp.mc322.projeto.gameengine.service.SwingScreen;
-import br.unicamp.mc322.projeto.gameengine.service.TerminalLogService;
-import br.unicamp.mc322.projeto.gameengine.service.TurnEntityRunnerService;
+import br.unicamp.mc322.projeto.gameengine.service.entityrunner.TurnEntityRunnerService;
+import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyboardInputService;
+import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
+import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
+import br.unicamp.mc322.projeto.gameengine.service.resource.ImageResourceService;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;

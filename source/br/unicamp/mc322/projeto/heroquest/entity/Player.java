@@ -55,5 +55,15 @@ public abstract class Player extends Creature implements Curable
     	}
     	return defenseFaces;
     }
+
+    public void run()
+    {
+        if(turn == true)
+        {
+
+        }
+
+        turn = false;
+    }
 }
 

@@ -9,7 +9,7 @@ import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.heroquest.action.Movable;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.gameengine.service.RunnableTurn;
+import br.unicamp.mc322.projeto.gameengine.service.entityrunner.RunnableTurn;
 
 public abstract class Creature extends HeroQuestEntity implements RunnableTurn, Attackable,Attacker, Movable
 {
@@ -62,6 +62,9 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Ação de ataque básica
      */
     protected boolean isFriendly;
+
+    protected boolean turn;
+
     /**
      * Operation Creature
      *
@@ -76,7 +79,8 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	this.nAttackDice = nAttackDice;
     	this.nDefenseDice = nDefenseDice;
     	totalHand = 2;
-    	basicMovement = new NullMovement();
+        basicMovement = new NullMovement();
+        turn = false;
     }
 
     /**
@@ -200,5 +204,14 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
         return score;
     }
 
+    public boolean isInTurn()
+    {
+        return turn;
+    }
+
+    public void startTurn()
+    {
+        turn = true;
+    }
 }
 
