@@ -1,6 +1,5 @@
 package br.unicamp.mc322.projeto.gameengine.sprite;
 
-import br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceExtrinsic;
 
@@ -19,9 +18,7 @@ public class SpriteExtrinsic
     /**
      * Prioridade na tela
      */
-    private int priority;
-    /** Associations */
-    private SpriteIntrinsic unnamed_1;
+    private SpritePriority priority;
     /**
      * Operation SpriteIntrinsic
      * Construtor de SpriteExtrinsic
@@ -29,22 +26,55 @@ public class SpriteExtrinsic
      * @param spriteIntrinsic - Sprite intrínseca correspondente
      * @return 
      */
-    public SpriteIntrinsic ( SpriteIntrinsic spriteIntrinsic ){}
+    public SpriteExtrinsic( SpriteIntrinsic spriteIntrinsic )
+    {
+        this.spriteIntrinsic = spriteIntrinsic;
+    }
     /**
      * Operation setPose
      * Define a pose
      *
      * @param pose - Pose da sprite
      */
-    public void setPose ( Pose pose ){}
+    public void setPose ( Pose pose )
+    {
+        this.pose = pose;
+    }
     /**
      * Operation setPriority
      * Define a prioridade da sprite
      *
      * @param low - Prioridade da Sprite
      */
-    public void setPriority ( SpritePriority low ){}
-	public void setPriority(SpritePriority low) {
-	}
+    public void setPriority ( SpritePriority priority )
+    {
+        this.priority = priority;
+    }
+
+    /**
+     * Retorna a sprite
+     * @return
+     */
+    public SpriteIntrinsic getSprite()
+    {
+        return this.spriteIntrinsic;
+    }
+
+    /**
+     * Retorna a prioridade da Sprite
+     * @return
+     */
+    public SpritePriority getSpritePriority()
+    {
+        return this.priority;
+    }
+
+    /**
+     * Retorna a pose da Sprite
+     */
+    public Pose getPose()
+    {
+        return pose;
+    }
 }
 

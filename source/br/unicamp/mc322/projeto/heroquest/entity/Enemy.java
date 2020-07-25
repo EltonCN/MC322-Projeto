@@ -8,11 +8,14 @@ import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
 public abstract class Enemy extends Creature
 {
+	private boolean turn;
 
 	public Enemy(Pose pose) {
 		super(pose, 3, 2, 2); //We decided as standards to enemys
 		basicMovement = new RandomMovement();
 		isFriendly = false;
+
+		turn = false;
 	}
 
 	@Override
@@ -39,17 +42,20 @@ public abstract class Enemy extends Creature
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+		turn = false;
     }
 
 	@Override
-	public void startTurn() {
-		// TODO Auto-generated method stub
+	public void startTurn() 
+	{
+		turn = true;
 	}
 
 	@Override
-	public boolean isInTurn() {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isInTurn() 
+	{
+		return turn;
 	}
 
 

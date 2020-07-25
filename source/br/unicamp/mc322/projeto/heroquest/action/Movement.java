@@ -6,8 +6,8 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 
 public interface Movement extends Action 
 {
-	public static final float xStepSize = 1;
-    public static final float yStepSize = 1;	
+	public static final float xStepSize = 48;
+    public static final float yStepSize = 48;	
 	/*
 	 * Operation Movement
 	 * It represents a pattern of movement

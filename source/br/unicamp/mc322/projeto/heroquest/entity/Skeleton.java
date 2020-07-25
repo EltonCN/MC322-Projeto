@@ -46,7 +46,8 @@ public class Skeleton extends Enemy
             ImageOutputService imageService = (ImageOutputService) m.getService(ServiceType.IMAGEOUTPUT);
 
             imageService.addSprite(sprite);
-        } catch(ServiceException e) {
+        } catch(ServiceException e) 
+        {
         	
         }
 

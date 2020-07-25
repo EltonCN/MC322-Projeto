@@ -2,8 +2,7 @@ package br.unicamp.mc322.projeto.gameengine.service.resource;
 
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 
-public interface ResourceService
- extends Service
+public interface ResourceService extends Service
 {
     /**
      * Operation setFile

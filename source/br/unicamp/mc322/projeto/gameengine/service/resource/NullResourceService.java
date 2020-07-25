@@ -4,11 +4,6 @@ public class NullResourceService
  implements ResourceService
 {
 
-    @Override
-    public void setFile(String file) 
-    {
-
-    }
 
     @Override
     public void setRoot(String rootFolder) 
@@ -26,6 +21,11 @@ public class NullResourceService
     public ResourceExtrinsic getResource(ResourceType resourceType, Class c, int index) 
     {
         return null;
+    }
+
+    @Override
+    public void setFile(String file, Class c, int index) {
+
     }
 }
 
