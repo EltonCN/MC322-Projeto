@@ -7,6 +7,12 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.imageoutput.ImageOutputService;
+import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceService;
+import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceType;
+import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
+import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 
 /**
  * Representações de objetos que compõem o jogo. Pode representar um personagem jogável, NPCs, plataformas, gatilhos de eventos.
@@ -76,13 +82,6 @@ public abstract class Entity
     }
 
     /**
-     * Operation draw
-     * Desenha a entidade na tela
-     *
-     */
-    public abstract void draw();
-
-    /**
      * Operation getPose
      * Retorna a pose da entidade
      *
@@ -134,6 +133,37 @@ public abstract class Entity
         
     	Pose end = new Pose(this.pose).move(deltaX, deltaY, deltaAngle);
     	moveTo(end);        
+    }
+    
+    /**
+     * 
+     * @TODO tratar exceções
+     */
+    /**
+     * Operation draw
+     * Desenha a entidade na tela
+     *
+     */
+    public void draw() {
+        try {
+            ServiceManager m = ServiceManager.getInstance();
+
+            ResourceService s = (ResourceService) m.getService(ServiceType.RESOURCE);
+
+            SpriteExtrinsic sprite = (SpriteExtrinsic) s.getResource(ResourceType.IMAGE, this.getClass(), 0);
+
+            sprite.setPose(this.getPose());
+
+            sprite.setPriority(SpritePriority.LOW);
+
+            ImageOutputService imageService = (ImageOutputService) m.getService(ServiceType.IMAGEOUTPUT);
+
+            imageService.addSprite(sprite);
+        } catch(ServiceException e) 
+        {
+        	
+        }
+
     }
     
 }

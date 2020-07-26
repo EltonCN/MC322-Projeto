@@ -6,10 +6,11 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
+import br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.StringSprite;
 
 /**
- * @todo verificacação de serviço desabilitado
+ * @TODO verificacao de servico desabilitado
  */
 public class StringImageOutputService implements ImageOutputService 
 {
@@ -22,10 +23,10 @@ public class StringImageOutputService implements ImageOutputService
 
     public StringImageOutputService()
     {
-        xSize = 16*48;
-        ySize = 9*48;
-        xSpriteSize = 16;
-        ySpriteSize = 9;
+        xSize = 672;
+        ySize = 336;
+        xSpriteSize = 14;
+        ySpriteSize = 7;
         ended = false;
 
 
@@ -63,18 +64,18 @@ public class StringImageOutputService implements ImageOutputService
 
         }
         
-        for(int j = ySpriteSize - 1; j >= 0; j--)
+        for(int i = 0; i<xSpriteSize; i++)
         {
-            for(int i = 0; i < xSpriteSize; i++)
+            for(int j = 0; j<ySpriteSize; j++)
             {
                 if(frame[i][j] == null)
                 {
-                    System.out.print("    ");
+                    System.out.print("  ");
                 }
                 else
                 {
                     StringSprite s = (StringSprite) frame[i][j].getSprite();
-                    System.out.print(" " + s.getSprite() + " ");
+                    System.out.print(s.getSprite());
                 }
             }
             System.out.println();
@@ -82,20 +83,20 @@ public class StringImageOutputService implements ImageOutputService
 
         for(int i = 0; i<nLineBreak; i++)
         {
-            System.out.println("---------------------------------------------------------------");
+            System.out.println("-----------------------------------------");
         }
 
     }
 
     @Override
     /**
-     * @todo lançar exceção para Sprite fora da tela
-     * @todo lançar exceção para Sprite que não seja string
+     * @TODO lançar exceção para Sprite fora da tela
+     * @TODO lançar exceção para Sprite que não seja string
      */
     public void addSprite(SpriteExtrinsic extrinsic) 
     {
-        int xPosition = (int) ((extrinsic.getPose().getX()/xSize*xSpriteSize));
-        int yPosition = (int) ((extrinsic.getPose().getY()/ySize*ySpriteSize));
+        int xPosition = (int) (xSpriteSize*(extrinsic.getPose().getX()/xSize));
+        int yPosition = (int) (ySpriteSize*(extrinsic.getPose().getY()/ySize));
 
         if( extrinsic.getPose().getX() < 0 ||xPosition> xSpriteSize)
         {
@@ -116,7 +117,7 @@ public class StringImageOutputService implements ImageOutputService
         }
         
 
-        if(frame[xPosition][yPosition] != null)
+        if(frame[xPosition][yPosition] != null )
         {
             if(frame[xPosition][yPosition].getSpritePriority().ordinal() > extrinsic.getSpritePriority().ordinal())
             {

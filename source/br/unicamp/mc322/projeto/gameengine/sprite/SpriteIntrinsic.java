@@ -16,6 +16,10 @@ public abstract class SpriteIntrinsic
      * @param file - 
      * @return 
      */
+    
+    
+    
+    
     public SpriteIntrinsic ( String file )
     {
         this.file = file;
