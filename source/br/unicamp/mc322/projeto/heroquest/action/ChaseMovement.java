@@ -43,18 +43,9 @@ public class ChaseMovement implements Movement {
 
 	@Override
 	public void move(Movable movable) throws ActionFailedException {
-		Attackable foe = null;
-		try {
-			foe = chooseFoe((Creature) movable, getFoes((Creature) movable));
-		} catch (ActionFailedException e) {
-			try {
-				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
-				l.sendLog(LogType.OTHER, LogPriority.LOG, "Chase Movement", "Chase Movement falhou: não há entidades atacáveis na tela");
-			} catch (NotAvaibleServiceException | DisabledServiceException e1) {
-				e1.printStackTrace();
-			}
+		Attackable foe = chooseFoe((Creature) movable, getFoes((Creature) movable));
 			
-		}
+		
 		if (((Entity) movable).getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN) == 1)
 			return; // Movable pode atacar foe: não é necessário se mover
 		
