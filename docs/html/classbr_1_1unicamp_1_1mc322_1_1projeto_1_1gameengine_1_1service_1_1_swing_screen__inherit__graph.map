@@ -1,6 +1,6 @@
 <map id="br.unicamp.mc322.projeto.gameengine.service.SwingScreen" name="br.unicamp.mc322.projeto.gameengine.service.SwingScreen">
-<area shape="rect" id="node1" title=" " alt="" coords="691,39,985,80"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_menu_service.html" title=" " alt="" coords="348,5,643,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="765,39,1060,80"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1menu_1_1_menu_service.html" title=" " alt="" coords="367,5,698,47"/>
 <area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service.html" title=" " alt="" coords="5,39,300,80"/>
-<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_image_output_service.html" title=" " alt="" coords="348,71,643,112"/>
+<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1imageoutput_1_1_image_output_service.html" title=" " alt="" coords="348,71,717,112"/>
 </map>

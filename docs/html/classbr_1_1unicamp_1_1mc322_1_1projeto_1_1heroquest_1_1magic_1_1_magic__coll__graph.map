@@ -1,4 +1,5 @@
 <map id="br.unicamp.mc322.projeto.heroquest.magic.Magic" name="br.unicamp.mc322.projeto.heroquest.magic.Magic">
-<area shape="rect" id="node1" title=" " alt="" coords="5,124,281,165"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_element.html" title=" " alt="" coords="5,5,281,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="393,39,669,80"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,5,295,47"/>
+<area shape="rect" id="node3" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_element.html" title=" " alt="" coords="12,71,288,112"/>
 </map>

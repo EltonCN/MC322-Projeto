@@ -14,13 +14,13 @@ public class Wall extends Obstacle {
 
 	public Wall(Pose pose) {
 		super(pose);
-		// TODO Auto-generated constructor stub
+		///@todo Auto-generated constructor stub
 	}
 	
 	@Override
     /**
      * 
-     * @TODO tratar exceções
+     * @todo tratar exceções
      */
     public void draw() {
         try {

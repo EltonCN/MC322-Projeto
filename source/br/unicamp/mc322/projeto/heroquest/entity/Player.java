@@ -64,13 +64,13 @@ public abstract class Player extends Creature implements Curable, Looter
 
 	@Override
 	public void startTurn() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 		
 	}
 
 	@Override
 	public boolean isInTurn() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 		return false;
 	}
     

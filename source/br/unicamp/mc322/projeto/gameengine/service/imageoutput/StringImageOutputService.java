@@ -9,7 +9,7 @@ import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.StringSprite;
 
 /**
- * @TODO verificacação de serviço desabilitado
+ * @todo verificacação de serviço desabilitado
  */
 public class StringImageOutputService implements ImageOutputService 
 {
@@ -89,8 +89,8 @@ public class StringImageOutputService implements ImageOutputService
 
     @Override
     /**
-     * @TODO lançar exceção para Sprite fora da tela
-     * @TODO lançar exceção para Sprite que não seja string
+     * @todo lançar exceção para Sprite fora da tela
+     * @todo lançar exceção para Sprite que não seja string
      */
     public void addSprite(SpriteExtrinsic extrinsic) 
     {

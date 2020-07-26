@@ -24,6 +24,10 @@ float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1p
 float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3dc39aedad4deaa45d64b6ef455c3679}{getX}} ()
 \item 
 float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_aa52ad6af6df8fd56a036b82b20b7144d}{getY}} ()
+\item 
+float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_adac45b6b344c60d1d6189fff54c030ee}{get\+Angle}} ()
+\item 
+boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3b5f6ccf51c1331be9898d280478e3cd}{is\+Position\+Occupiable}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
@@ -186,7 +190,13 @@ float
 \doxysubsubsection{\texorpdfstring{fixAngle()}{fixAngle()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+pose.\+Pose.\+fix\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Operation fix\+Angle Corrige o ângulo (mantém sempre entre 0 e 360) \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3dc39aedad4deaa45d64b6ef455c3679}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3dc39aedad4deaa45d64b6ef455c3679}} 
+Operation fix\+Angle Corrige o ângulo (mantém sempre entre 0 e 360) \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_adac45b6b344c60d1d6189fff54c030ee}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_adac45b6b344c60d1d6189fff54c030ee}} 
+\index{br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}!getAngle@{getAngle}}
+\index{getAngle@{getAngle}!br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}}
+\doxysubsubsection{\texorpdfstring{getAngle()}{getAngle()}}
+{\footnotesize\ttfamily float br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+pose.\+Pose.\+get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3dc39aedad4deaa45d64b6ef455c3679}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3dc39aedad4deaa45d64b6ef455c3679}} 
 \index{br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}!getX@{getX}}
 \index{getX@{getX}!br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}}
 \doxysubsubsection{\texorpdfstring{getX()}{getX()}}
@@ -198,6 +208,22 @@ Operation fix\+Angle Corrige o ângulo (mantém sempre entre 0 e 360) \mbox{\Hyp
 \doxysubsubsection{\texorpdfstring{getY()}{getY()}}
 {\footnotesize\ttfamily float br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+pose.\+Pose.\+getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3b5f6ccf51c1331be9898d280478e3cd}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a3b5f6ccf51c1331be9898d280478e3cd}} 
+\index{br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}!isPositionOccupiable@{isPositionOccupiable}}
+\index{isPositionOccupiable@{isPositionOccupiable}!br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}}
+\doxysubsubsection{\texorpdfstring{isPositionOccupiable()}{isPositionOccupiable()}}
+{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+pose.\+Pose.\+is\+Position\+Occupiable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation is\+Position\+Occupiable Verifica se a pose está ocupada por alguma entidade
+
+\begin{DoxyReturn}{Retorna}
+boolean 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000004}{Tarefa}}]
+\begin{DoxyItemize}
+\item tratar e gerar exceções 
+\end{DoxyItemize}\end{DoxyRefDesc}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a633e84179519d272b3775f50114a95d6}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_a633e84179519d272b3775f50114a95d6}} 
 \index{br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}!manhattanDistance@{manhattanDistance}}
 \index{manhattanDistance@{manhattanDistance}!br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}}
@@ -255,7 +281,7 @@ Operation move Movimenta/incrementa a pose
 \doxysubsubsection{\texorpdfstring{angle}{angle}}
 {\footnotesize\ttfamily float br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+pose.\+Pose.\+angle\hspace{0.3cm}{\ttfamily [private]}}
 
-Ângulo/rotação do elemento \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_afa3fe4d0add9a8017eda27aecb3547b2}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_afa3fe4d0add9a8017eda27aecb3547b2}} 
+Ângulo/rotação do elemento em graus \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_afa3fe4d0add9a8017eda27aecb3547b2}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose_afa3fe4d0add9a8017eda27aecb3547b2}} 
 \index{br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}!x@{x}}
 \index{x@{x}!br.unicamp.mc322.projeto.gameengine.pose.Pose@{br.unicamp.mc322.projeto.gameengine.pose.Pose}}
 \doxysubsubsection{\texorpdfstring{x}{x}}

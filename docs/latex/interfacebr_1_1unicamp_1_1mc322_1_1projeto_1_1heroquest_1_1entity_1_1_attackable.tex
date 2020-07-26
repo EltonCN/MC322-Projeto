@@ -14,7 +14,11 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \item 
 int \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a1620769a5c324f365b51a9689e9a32b1}{get\+Defense\+Score}} ()
 \item 
-void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a17cff74d9c61fc45a53e5b6822cc3f8d}{take\+Damage}} (int damage)
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_ad53a3c11c6d2cbbe912b663e04bd20cd}{take\+Damage}} (float damage)
+\item 
+boolean \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_add1c67c3298b0f05788bcd916c97b994}{get\+Is\+Friendly}} ()
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a9ce954026a8744f57386d9676743cdaf}{get\+Pose}} ()
 \end{DoxyCompactItemize}
 
 
@@ -34,11 +38,30 @@ int
 
 Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a7098d7bf877d8ff369edee3c58e41398}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a47bea01d7dee0c30fe06549bb2775205}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player}} e \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a8593d282808e5825fe90c963013bcf26}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy}}.
 
-\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a17cff74d9c61fc45a53e5b6822cc3f8d}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a17cff74d9c61fc45a53e5b6822cc3f8d}} 
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_add1c67c3298b0f05788bcd916c97b994}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_add1c67c3298b0f05788bcd916c97b994}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Attackable@{br.unicamp.mc322.projeto.heroquest.entity.Attackable}!getIsFriendly@{getIsFriendly}}
+\index{getIsFriendly@{getIsFriendly}!br.unicamp.mc322.projeto.heroquest.entity.Attackable@{br.unicamp.mc322.projeto.heroquest.entity.Attackable}}
+\doxysubsubsection{\texorpdfstring{getIsFriendly()}{getIsFriendly()}}
+{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Attackable.\+get\+Is\+Friendly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Verifica se é amigável \begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+
+
+Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a80412afc8538033b5a66b5d59a671b71}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a9ce954026a8744f57386d9676743cdaf}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_a9ce954026a8744f57386d9676743cdaf}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Attackable@{br.unicamp.mc322.projeto.heroquest.entity.Attackable}!getPose@{getPose}}
+\index{getPose@{getPose}!br.unicamp.mc322.projeto.heroquest.entity.Attackable@{br.unicamp.mc322.projeto.heroquest.entity.Attackable}}
+\doxysubsubsection{\texorpdfstring{getPose()}{getPose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Attackable.\+get\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_ad53a3c11c6d2cbbe912b663e04bd20cd}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_ad53a3c11c6d2cbbe912b663e04bd20cd}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Attackable@{br.unicamp.mc322.projeto.heroquest.entity.Attackable}!takeDamage@{takeDamage}}
 \index{takeDamage@{takeDamage}!br.unicamp.mc322.projeto.heroquest.entity.Attackable@{br.unicamp.mc322.projeto.heroquest.entity.Attackable}}
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Attackable.\+take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Attackable.\+take\+Damage (\begin{DoxyParamCaption}\item[{float}]{damage }\end{DoxyParamCaption})}
 
 Operation take\+Damage Faz a entidade receber uma quantidade de dano
 
@@ -49,7 +72,7 @@ Operation take\+Damage Faz a entidade receber uma quantidade de dano
 \end{DoxyParams}
 
 
-Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_ab61929c1be2e59339acef8a14b9ef660}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a3dba3b78525eaf21c2f4503519a5d08d}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
 
 
 

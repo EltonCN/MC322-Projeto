@@ -12,12 +12,12 @@ public class Obstacle extends HeroQuestEntity {
 
 	public Obstacle(Pose pose) {
 		super(pose);
-		// TODO Auto-generated constructor stub
+		///@todo Auto-generated constructor stub
 	}
 
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 		
 	}
 	

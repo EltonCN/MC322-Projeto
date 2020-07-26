@@ -10,7 +10,7 @@ public class Wizard extends Player implements Caster
 		super(pose, 1, 2, 4, "Wizard");
 		PI = 6;
 		setDagger();
-		// TODO ADD WEAPONS AND MAGIC
+		///@todo ADD WEAPONS AND MAGIC
 	}
 	
 	private void setDagger() {
@@ -20,7 +20,7 @@ public class Wizard extends Player implements Caster
 
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 
 	}
 }

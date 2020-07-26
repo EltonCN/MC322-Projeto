@@ -1,0 +1,13 @@
+<map id="br.unicamp.mc322.projeto.heroquest.entity.Attacker" name="br.unicamp.mc322.projeto.heroquest.entity.Attacker">
+<area shape="rect" id="node1" title=" " alt="" coords="5,185,279,227"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html" title=" " alt="" coords="327,185,600,227"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy.html" title=" " alt="" coords="648,104,921,145"/>
+<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player.html" title=" " alt="" coords="648,267,921,308"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_goblin.html" title=" " alt="" coords="977,5,1250,47"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_magic_skeleton.html" title=" " alt="" coords="977,71,1250,112"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton.html" title=" " alt="" coords="977,136,1250,177"/>
+<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian.html" title=" " alt="" coords="977,201,1250,243"/>
+<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_dwarf.html" title=" " alt="" coords="977,267,1250,308"/>
+<area shape="rect" id="node10" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf.html" title=" " alt="" coords="969,333,1257,359"/>
+<area shape="rect" id="node11" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard.html" title=" " alt="" coords="977,384,1250,425"/>
+</map>

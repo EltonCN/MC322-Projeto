@@ -1,0 +1,9 @@
+var namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource =
+[
+    [ "ImageResourceService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_image_resource_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_image_resource_service" ],
+    [ "NullResourceService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_null_resource_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_null_resource_service" ],
+    [ "ResourceExtrinsic", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_resource_extrinsic.html", null ],
+    [ "ResourceService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_resource_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_resource_service" ],
+    [ "ResourceType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_resource_type.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_resource_type" ],
+    [ "StringImageResourceService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_string_image_resource_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_string_image_resource_service" ]
+];

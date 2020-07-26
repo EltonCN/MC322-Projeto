@@ -65,7 +65,7 @@ public class AttackableRangeArea {
 	private Attackable[] getAttackablesInside() {
 		
 		Entity[] entities = area.getEntitiesInside();
-		Attackable[] attackables = new Attackable[225]; // @todo TODO mudar 225 para uma cte de estágio
+		Attackable[] attackables = new Attackable[225]; // @todo@todo mudar 225 para uma cte de estágio
 		int added = 0;
 		
 		for(int i = 0; i < entities.length; i++) {

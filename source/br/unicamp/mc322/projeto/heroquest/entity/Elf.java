@@ -9,12 +9,12 @@ public class Elf extends Player implements Caster {
 		super(pose, 2, 2, 6, "Elf");
 		caster = true;
 		PI = 4;
-		// TODO ADD WEAPONS AND MAGIC
+		///@todo ADD WEAPONS AND MAGIC
 	}
 
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 
 	}
 

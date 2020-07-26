@@ -33,13 +33,13 @@ public abstract class Enemy extends Creature
     	try {
 			basicMovement.run(this);
 		} catch (ActionFailedException e) {
-			// TODO Auto-generated catch block
+			///@todo Auto-generated catch block
 			e.printStackTrace();
 		}
     	try {
 			attack();
 		} catch (ActionFailedException e) {
-			// TODO Auto-generated catch block
+			///@todo Auto-generated catch block
 			e.printStackTrace();
 		}
 

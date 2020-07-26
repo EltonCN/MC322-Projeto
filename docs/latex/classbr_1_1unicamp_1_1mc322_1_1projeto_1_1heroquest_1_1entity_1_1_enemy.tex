@@ -11,8 +11,7 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy\+:
-\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,19 +21,25 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+enti
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a494ecec2b3a87a573dc378f5e6835585}{Enemy}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}})
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a510d9759e0bd61d22725c62817dc7ab2}{Enemy}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}}, int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_ad7cb21144f92565076130ff1bbd2fce9}{life}}, int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a53aa68994ec8906a974e012dc76c1da3}{n\+Attack\+Dice}}, int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_acaf348318cf724f34ae2b818e8468c03}{n\+Defense\+Dice}})
 \item 
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a8593d282808e5825fe90c963013bcf26}{get\+Defense\+Score}} ()
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a706d584c4d1ccca88c21e3de1297663f}{run}} ()
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a2a7548ebc93256b857dea3ef52046860}{start\+Turn}} ()
+\item 
+boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a3d4e4e41b0e8e7896b03de503146286f}{is\+In\+Turn}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Outros membros herdados}
 
 
 \doxysubsection{Documentação dos Construtores \& Destrutor}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a494ecec2b3a87a573dc378f5e6835585}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a494ecec2b3a87a573dc378f5e6835585}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a510d9759e0bd61d22725c62817dc7ab2}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a510d9759e0bd61d22725c62817dc7ab2}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}!Enemy@{Enemy}}
 \index{Enemy@{Enemy}!br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}}
 \doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
-{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy.\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy.\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose,  }\item[{int}]{life,  }\item[{int}]{n\+Attack\+Dice,  }\item[{int}]{n\+Defense\+Dice }\end{DoxyParamCaption})}
 
 
 
@@ -48,6 +53,52 @@ int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1enti
 Operation get\+Defense\+Score Retorna o numero de dados rolados com face de defesa pra cima 
 
 Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a7098d7bf877d8ff369edee3c58e41398}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a3d4e4e41b0e8e7896b03de503146286f}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a3d4e4e41b0e8e7896b03de503146286f}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}!isInTurn@{isInTurn}}
+\index{isInTurn@{isInTurn}!br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}}
+\doxysubsubsection{\texorpdfstring{isInTurn()}{isInTurn()}}
+{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy.\+is\+In\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation is\+In\+Turn Verifica se o turno da entidade terminou
+
+\begin{DoxyReturn}{Retorna}
+boolean 
+\end{DoxyReturn}
+
+
+Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a767bee483961ca30c39153b238bb5e15}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a706d584c4d1ccca88c21e3de1297663f}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a706d584c4d1ccca88c21e3de1297663f}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}!run@{run}}
+\index{run@{run}!br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation run \begin{DoxyReturn}{Retorna}
+
+
+
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000041}{Tarefa}}]Auto-\/generated catch block \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000042}{Tarefa}}]Auto-\/generated catch block \end{DoxyRefDesc}
+
+
+Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a361e39b0fe549e4ae9b0668deb796720}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a2a7548ebc93256b857dea3ef52046860}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_enemy_a2a7548ebc93256b857dea3ef52046860}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}!startTurn@{startTurn}}
+\index{startTurn@{startTurn}!br.unicamp.mc322.projeto.heroquest.entity.Enemy@{br.unicamp.mc322.projeto.heroquest.entity.Enemy}}
+\doxysubsubsection{\texorpdfstring{startTurn()}{startTurn()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Enemy.\+start\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation start\+Turn Inicia o turno da entidade 
+
+Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_adf77675348657a2838e228153921eeb4}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
 
 
 

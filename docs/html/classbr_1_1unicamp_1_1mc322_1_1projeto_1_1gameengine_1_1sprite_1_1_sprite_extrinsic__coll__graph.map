@@ -1,6 +1,7 @@
 <map id="br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic" name="br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic">
-<area shape="rect" id="node1" title=" " alt="" coords="443,71,729,112"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_resource_extrinsic.html" title=" " alt="" coords="14,5,309,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_intrinsic.html" title=" " alt="" coords="18,71,305,112"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="5,137,317,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="483,104,769,145"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1resource_1_1_resource_extrinsic.html" title=" " alt="" coords="5,5,353,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_intrinsic.html" title=" " alt="" coords="36,71,323,112"/>
+<area shape="rect" id="node4" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_priority.html" title=" " alt="" coords="36,136,323,177"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="23,202,335,229"/>
 </map>

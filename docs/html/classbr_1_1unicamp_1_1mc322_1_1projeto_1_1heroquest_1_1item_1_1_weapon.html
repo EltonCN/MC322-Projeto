@@ -88,7 +88,11 @@ $(document).ready(function(){initNavTree('classbr_1_1unicamp_1_1mc322_1_1projeto
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pub-static-methods">Membros públicos estáticos</a> &#124;
+<a href="#pro-attribs">Atributos Protegidos</a> &#124;
+<a href="#pri-static-methods">Membros privados estáticos</a> &#124;
 <a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="#pri-static-attribs">Atributos Privados Estáticos</a> &#124;
 <a href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon-members.html">Mostrar lista completa dos membros</a>  </div>
   <div class="headertitle">
 <div class="title">Referência à classe br.unicamp.mc322.projeto.heroquest.item.Weapon<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -99,11 +103,13 @@ Diagrama de heranças da classe br.unicamp.mc322.projeto.heroquest.item.Weapon</
 <div class="dyncontent">
 <div class="center"><img src="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon__inherit__graph.png" border="0" usemap="#br_8unicamp_8mc322_8projeto_8heroquest_8item_8_weapon_inherit__map" alt="Inheritance graph"/></div>
 <map name="br_8unicamp_8mc322_8projeto_8heroquest_8item_8_weapon_inherit__map" id="br_8unicamp_8mc322_8projeto_8heroquest_8item_8_weapon_inherit__map">
-<area shape="rect" title=" " alt="" coords="344,71,611,112"/>
-<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html" title=" " alt="" coords="659,5,925,47"/>
-<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html" title=" " alt="" coords="659,71,925,112"/>
-<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html" title=" " alt="" coords="659,136,925,177"/>
-<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="5,78,296,105"/>
+<area shape="rect" title=" " alt="" coords="681,71,948,112"/>
+<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html" title=" " alt="" coords="996,5,1263,47"/>
+<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html" title=" " alt="" coords="996,71,1263,112"/>
+<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html" title=" " alt="" coords="996,136,1263,177"/>
+<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="343,49,633,75"/>
+<area shape="rect" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="350,100,626,141"/>
+<area shape="rect" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,100,295,141"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <div class="dynheader">
@@ -111,18 +117,48 @@ Diagrama de colaboração para br.unicamp.mc322.projeto.heroquest.item.Weapon:</
 <div class="dyncontent">
 <div class="center"><img src="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon__coll__graph.png" border="0" usemap="#br_8unicamp_8mc322_8projeto_8heroquest_8item_8_weapon_coll__map" alt="Collaboration graph"/></div>
 <map name="br_8unicamp_8mc322_8projeto_8heroquest_8item_8_weapon_coll__map" id="br_8unicamp_8mc322_8projeto_8heroquest_8item_8_weapon_coll__map">
-<area shape="rect" title=" " alt="" coords="17,80,284,121"/>
-<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="5,5,296,32"/>
+<area shape="rect" title=" " alt="" coords="1089,49,1356,90"/>
+<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="709,5,1000,32"/>
+<area shape="rect" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="384,66,660,107"/>
+<area shape="rect" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html" title=" " alt="" coords="717,107,993,149"/>
+<area shape="rect" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,33,295,74"/>
+<area shape="rect" href="enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric.html" title=" " alt="" coords="9,98,291,139"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
-<tr class="memitem:a5e0dc1b3a9703a767976586bdbb175ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a5e0dc1b3a9703a767976586bdbb175ae">Weapon</a> (int <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a17cfadaa01dc3875d5030cd8b2eb5da7">hand</a>, int <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#ae1b095f36fc03cf04f279970a820eb77">uses</a>)</td></tr>
-<tr class="separator:a5e0dc1b3a9703a767976586bdbb175ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda3659033a0576a873cc4e0d20cc15c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#abda3659033a0576a873cc4e0d20cc15c">Weapon</a> (String <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#af8b1030e31713c21782dcdbdb965ef76">name</a>, float <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#af6dfc2ce5ab2ded9c80f8e3937a1930a">value</a>, int <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a17cfadaa01dc3875d5030cd8b2eb5da7">hand</a>, int <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#ae1b095f36fc03cf04f279970a820eb77">uses</a>)</td></tr>
+<tr class="separator:abda3659033a0576a873cc4e0d20cc15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4313f901d948c5dbf500e0a1e6fac218"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a4313f901d948c5dbf500e0a1e6fac218">getHands</a> ()</td></tr>
+<tr class="separator:a4313f901d948c5dbf500e0a1e6fac218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639b5f4c43fed0d7efb5f9644cf388c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a639b5f4c43fed0d7efb5f9644cf388c2">attack</a> (<a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker.html">Attacker</a> origin, <a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable.html">Attackable</a> target)  throws ActionFailedException </td></tr>
+<tr class="separator:a639b5f4c43fed0d7efb5f9644cf388c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8d565e7bae162a80a8bb5d08006461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#afb8d565e7bae162a80a8bb5d08006461">attack</a> (<a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker.html">Attacker</a> origin)  throws ActionFailedException </td></tr>
+<tr class="separator:afb8d565e7bae162a80a8bb5d08006461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item')"><img src="closed.png" alt="-"/>&#160;Membros públicos herdados de <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html">br.unicamp.mc322.projeto.heroquest.item.Item</a></td></tr>
 <tr class="memitem:ae55bfd8361e90b6dff8fd5934c28b048 inherit pub_methods_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#ae55bfd8361e90b6dff8fd5934c28b048">Item</a> (String <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#af8b1030e31713c21782dcdbdb965ef76">name</a>, float <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#af6dfc2ce5ab2ded9c80f8e3937a1930a">value</a>)</td></tr>
 <tr class="separator:ae55bfd8361e90b6dff8fd5934c28b048 inherit pub_methods_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack')"><img src="closed.png" alt="-"/>&#160;Membros públicos herdados de <a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html">br.unicamp.mc322.projeto.heroquest.action.Attack</a></td></tr>
+<tr class="memitem:a0bf50c6235faa27ca97387bf31fbac5c inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html#a0bf50c6235faa27ca97387bf31fbac5c">run</a> (<a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html">Entity</a> origin, <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html">Entity</a> target)  throws ActionFailedException     </td></tr>
+<tr class="separator:a0bf50c6235faa27ca97387bf31fbac5c inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d34bb49c2b9d8d991f79a528ba7b5cd inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td class="memItemLeft" align="right" valign="top">default void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html#a6d34bb49c2b9d8d991f79a528ba7b5cd">run</a> (<a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html">Entity</a> origin)  throws ActionFailedException     </td></tr>
+<tr class="separator:a6d34bb49c2b9d8d991f79a528ba7b5cd inherit pub_methods_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Membros públicos estáticos</h2></td></tr>
+<tr class="memitem:afa059014cd00d03f631daa987534505d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html">Weapon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#afa059014cd00d03f631daa987534505d">getRandomWeapon</a> ()</td></tr>
+<tr class="separator:afa059014cd00d03f631daa987534505d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atributos Protegidos</h2></td></tr>
+<tr class="memitem:a8baf81dd1ff281eb8a65404c8b7b078f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html">SimpleAttack</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a8baf81dd1ff281eb8a65404c8b7b078f">attack</a></td></tr>
+<tr class="separator:a8baf81dd1ff281eb8a65404c8b7b078f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Membros privados estáticos</h2></td></tr>
+<tr class="memitem:a0e2cccb6686afda9cb0604473ed91c20"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html">Weapon</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a0e2cccb6686afda9cb0604473ed91c20">getWeapon</a> (int i)</td></tr>
+<tr class="separator:a0e2cccb6686afda9cb0604473ed91c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atributos Privados</h2></td></tr>
@@ -131,17 +167,20 @@ Atributos Privados</h2></td></tr>
 <tr class="memitem:ae1b095f36fc03cf04f279970a820eb77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#ae1b095f36fc03cf04f279970a820eb77">uses</a></td></tr>
 <tr class="separator:ae1b095f36fc03cf04f279970a820eb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Atributos Privados Estáticos</h2></td></tr>
+<tr class="memitem:a2385a6ab124d6ea7d5b8f648a739e6ad"><td class="memItemLeft" align="right" valign="top">static final <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html">Weapon</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a2385a6ab124d6ea7d5b8f648a739e6ad">WEAPONS_IN_GAME</a> = {new <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html">LongSword</a>(), new <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html">ShortSword</a>(), new <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html">Dagger</a>()}</td></tr>
+<tr class="separator:a2385a6ab124d6ea7d5b8f648a739e6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Outros membros herdados</h2></td></tr>
-<tr class="inherit_header pro_attribs_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html">br.unicamp.mc322.projeto.heroquest.item.Item</a></td></tr>
-<tr class="memitem:af6dfc2ce5ab2ded9c80f8e3937a1930a inherit pro_attribs_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#af6dfc2ce5ab2ded9c80f8e3937a1930a">value</a></td></tr>
-<tr class="separator:af6dfc2ce5ab2ded9c80f8e3937a1930a inherit pro_attribs_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b1030e31713c21782dcdbdb965ef76 inherit pro_attribs_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html#af8b1030e31713c21782dcdbdb965ef76">name</a></td></tr>
-<tr class="separator:af8b1030e31713c21782dcdbdb965ef76 inherit pro_attribs_classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack')"><img src="closed.png" alt="-"/>&#160;Atributos Públicos Estáticos herdados de <a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html">br.unicamp.mc322.projeto.heroquest.action.Attack</a></td></tr>
+<tr class="memitem:a7557cfa67c507cc782baa95f591c9e64 inherit pub_static_attribs_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html#a7557cfa67c507cc782baa95f591c9e64">metric</a> = <a class="el" href="enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric.html#a46106b0650b1e518c4d3f6ca0e1d1931">Metric.EUCLIDEAN</a></td></tr>
+<tr class="separator:a7557cfa67c507cc782baa95f591c9e64 inherit pub_static_attribs_interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
-<a id="a5e0dc1b3a9703a767976586bdbb175ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e0dc1b3a9703a767976586bdbb175ae">&#9670;&nbsp;</a></span>Weapon()</h2>
+<a id="abda3659033a0576a873cc4e0d20cc15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda3659033a0576a873cc4e0d20cc15c">&#9670;&nbsp;</a></span>Weapon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,6 +188,18 @@ Outros membros herdados</h2></td></tr>
         <tr>
           <td class="memname">br.unicamp.mc322.projeto.heroquest.item.Weapon.Weapon </td>
           <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>hand</em>, </td>
         </tr>
@@ -177,7 +228,150 @@ Outros membros herdados</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Documentação dos métodos</h2>
+<a id="afb8d565e7bae162a80a8bb5d08006461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8d565e7bae162a80a8bb5d08006461">&#9670;&nbsp;</a></span>attack() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void br.unicamp.mc322.projeto.heroquest.item.Weapon.attack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker.html">Attacker</a>&#160;</td>
+          <td class="paramname"><em>origin</em></td><td>)</td>
+          <td> throws <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action_failed_exception.html">ActionFailedException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html#a235cc13d83ce188524ee91e291a82eec">br.unicamp.mc322.projeto.heroquest.action.Attack</a>.</p>
+
+</div>
+</div>
+<a id="a639b5f4c43fed0d7efb5f9644cf388c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639b5f4c43fed0d7efb5f9644cf388c2">&#9670;&nbsp;</a></span>attack() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void br.unicamp.mc322.projeto.heroquest.item.Weapon.attack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker.html">Attacker</a>&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable.html">Attackable</a>&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action_failed_exception.html">ActionFailedException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementa <a class="el" href="interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html#a18c7b46f9f7fd83224bf84a7d8ea303f">br.unicamp.mc322.projeto.heroquest.action.Attack</a>.</p>
+
+</div>
+</div>
+<a id="a4313f901d948c5dbf500e0a1e6fac218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4313f901d948c5dbf500e0a1e6fac218">&#9670;&nbsp;</a></span>getHands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int br.unicamp.mc322.projeto.heroquest.item.Weapon.getHands </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Operation getHands Retorna número de mãos necessárias para conduzir a arma</p>
+<dl class="section return"><dt>Retorna</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="afa059014cd00d03f631daa987534505d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa059014cd00d03f631daa987534505d">&#9670;&nbsp;</a></span>getRandomWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html">Weapon</a> br.unicamp.mc322.projeto.heroquest.item.Weapon.getRandomWeapon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e2cccb6686afda9cb0604473ed91c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2cccb6686afda9cb0604473ed91c20">&#9670;&nbsp;</a></span>getWeapon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html">Weapon</a> br.unicamp.mc322.projeto.heroquest.item.Weapon.getWeapon </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Documentação dos dados membro</h2>
+<a id="a8baf81dd1ff281eb8a65404c8b7b078f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8baf81dd1ff281eb8a65404c8b7b078f">&#9670;&nbsp;</a></span>attack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html">SimpleAttack</a> br.unicamp.mc322.projeto.heroquest.item.Weapon.attack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a17cfadaa01dc3875d5030cd8b2eb5da7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17cfadaa01dc3875d5030cd8b2eb5da7">&#9670;&nbsp;</a></span>hand</h2>
 
@@ -197,7 +391,7 @@ Outros membros herdados</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Attributes Mãos que a arma consome </p>
+<p>Attributes Mãos que a arma utiliza </p>
 
 </div>
 </div>
@@ -221,6 +415,29 @@ Outros membros herdados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Usos que a arma possui </p>
+
+</div>
+</div>
+<a id="a2385a6ab124d6ea7d5b8f648a739e6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2385a6ab124d6ea7d5b8f648a739e6ad">&#9670;&nbsp;</a></span>WEAPONS_IN_GAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html">Weapon</a> [] br.unicamp.mc322.projeto.heroquest.item.Weapon.WEAPONS_IN_GAME = {new <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html">LongSword</a>(), new <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html">ShortSword</a>(), new <a class="el" href="classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html">Dagger</a>()}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lista de armas presentes no jogo </p>
 
 </div>
 </div>

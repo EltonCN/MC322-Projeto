@@ -1,0 +1,12 @@
+<map id="br.unicamp.mc322.projeto.heroquest.entity.Wall" name="br.unicamp.mc322.projeto.heroquest.entity.Wall">
+<area shape="rect" id="node1" title=" " alt="" coords="2268,110,2567,137"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_obstacle.html" title=" " alt="" coords="1945,103,2219,144"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity.html" title=" " alt="" coords="1623,103,1896,144"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="776,5,1063,47"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="5,29,317,55"/>
+<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_area.html" title=" " alt="" coords="407,71,752,98"/>
+<area shape="rect" id="node6" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototypable_entity.html" title=" " alt="" coords="1087,129,1457,171"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1103,195,1441,236"/>
+<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html" title=" " alt="" coords="1119,64,1425,105"/>
+<area shape="rect" id="node10" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric.html" title=" " alt="" coords="20,96,303,137"/>
+</map>

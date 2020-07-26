@@ -1,5 +1,6 @@
 <map id="Representação gráfica da hiearquia da classe" name="Representação gráfica da hiearquia da classe">
-<area shape="rect" id="node1" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_identifier.html" title=" " alt="" coords="5,5,300,47"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_prototype.html" title=" " alt="" coords="348,39,643,80"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_stage_memento.html" title=" " alt="" coords="5,71,300,112"/>
+<area shape="rect" id="node1" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_sprite_intrinsic.html" title=" " alt="" coords="5,71,292,112"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_string_sprite.html" title=" " alt="" coords="340,5,627,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_swing_image.html" title=" " alt="" coords="340,71,627,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_swing_string_image.html" title=" " alt="" coords="340,136,627,177"/>
 </map>

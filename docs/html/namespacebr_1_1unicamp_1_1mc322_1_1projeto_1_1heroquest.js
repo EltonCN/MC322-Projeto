@@ -7,5 +7,5 @@ var namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest =
     [ "magic", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic.html", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic" ],
     [ "service", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service.html", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service" ],
     [ "utility", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1utility.html", "namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1utility" ],
-    [ "HeroQuestGame", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_hero_quest_game.html", null ]
+    [ "HeroQuestGame", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_hero_quest_game.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1_hero_quest_game" ]
 ];

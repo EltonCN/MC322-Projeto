@@ -44,7 +44,7 @@ public class Bag extends HeroQuestEntity implements Lootable {
 
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 
 	}
 

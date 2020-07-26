@@ -7,7 +7,7 @@ public class SwingStringImage extends SpriteIntrinsic
 
     public SwingStringImage(String file) {
         super(file);
-        // TODO Auto-generated constructor stub
+        ///@todo Auto-generated constructor stub
     }
 }
 

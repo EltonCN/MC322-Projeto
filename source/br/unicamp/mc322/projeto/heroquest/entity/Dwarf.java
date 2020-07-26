@@ -10,12 +10,12 @@ public class Dwarf extends Player
 		super(pose, 2, 2, 7, "Dwarf");
 		PI = 3;
 		equipWeapon(new ShortSword());
-		// TODO Auto-generated constructor stub
+		///@todo Auto-generated constructor stub
 	}
 	
 	@Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 		
 	}
 }

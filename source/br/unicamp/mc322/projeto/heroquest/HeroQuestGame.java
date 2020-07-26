@@ -21,6 +21,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
+import br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService;
 
 public class HeroQuestGame
 {
@@ -43,22 +44,21 @@ public class HeroQuestGame
         resource.setFile("BR", Barbarian.class, 0);
         resource.setFile("WW", Wall.class, 0);
 
-        StringImageOutputService output = new StringImageOutputService();
+        HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
 
         m.insertService(runner, ServiceType.GAMERUNNER);
         m.insertService(new SpartialEntityStoreService(), ServiceType.ENTITYSTORE);
-        m.insertService(new PrototypeStageCreatorService(), ServiceType.STAGECREATION);
+        m.insertService(new HeroQuestStageCreatorService(), ServiceType.STAGECREATION);
         m.insertService(new TerminalLogService(), ServiceType.LOG);
         //m.insertService(new ImageResourceService(), ServiceType.RESOURCE);      
         //m.insertService(new SwingScreen(),ServiceType.IMAGEOUTPUT);
         m.insertService(new ScannerInputService(), ServiceType.KEYINPUT);
         
         m.insertService(resource, ServiceType.RESOURCE);
-        m.insertService(output, ServiceType.IMAGEOUTPUT);
+        m.insertService(new StringImageOutputService(), ServiceType.IMAGEOUTPUT);
 
 
-        loadDefaultStage();
-        output.update();
+        stageCreator.loadDefaultStage();
         try {
             while(true) {
                 runner.run();
@@ -72,61 +72,11 @@ public class HeroQuestGame
             System.exit(1);
         } catch (InterruptedException e) {
             System.out.println("Não foi dar pause");
-			// TODO Auto-generated catch block
+			///@todo Auto-generated catch block
 			e.printStackTrace();
 		}
         
 
-    }
-
-    private void loadDefaultStage()
-    {
-        
-        
-
-        StagePrototype stage0 = new StagePrototype();
-        buildTheWall(stage0);
-
-        /*EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
-        stage0.addPrototype(player);*/
-
-        EntityPrototype monster = new EntityPrototype(Skeleton.class, 7, 3);
-        stage0.addPrototype(monster);
-
-        ServiceManager m = ServiceManager.getInstance();
-
-        try
-        {
-            PrototypeStageCreatorService s = (PrototypeStageCreatorService) m.getService(ServiceType.STAGECREATION);
-
-            s.insertStagePrototype(stage0);
-
-            s.loadStage(stage0);
-        }
-        catch(Exception e)
-        {
-            System.out.println("Não foi possível carregar os estágios. O jogo será encerrado");
-            e.printStackTrace();
-            System.exit(1);
-        }
-
-    }
-    
-    /**
-     * @todo TODO realocar para classe mais alocada
-     * @param stage
-     */
-    
-    private void buildTheWall(StagePrototype stage) {
-    	for(int i = 0; i < 16; i++) {
-    		stage.addPrototype(new EntityPrototype(Wall.class, i, 0));
-    		stage.addPrototype(new EntityPrototype(Wall.class, i, 8));
-    	}
-    	
-    	for(int j = 1; j < 8; j++) {
-    		stage.addPrototype(new EntityPrototype(Wall.class, 0, j));
-    		stage.addPrototype(new EntityPrototype(Wall.class, 15, j));
-    	}
     }
 }
 
