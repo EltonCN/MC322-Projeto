@@ -48,7 +48,7 @@ public class RandomGenerator
     	Random rand = new Random();
     	// Setando a semente com um número consideravelmente aleatório
     	rand.setSeed((new Date().getTime()) * new Date(new Date().toString().hashCode()).toString().hashCode() * System.nanoTime());
-    	return (int) min + rand.nextInt(max - min - 1) + 1;
+    	return (int) min + rand.nextInt() % (max - min + 1);
     }
 }
 

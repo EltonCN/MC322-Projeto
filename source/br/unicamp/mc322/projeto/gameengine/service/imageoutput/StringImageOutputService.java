@@ -22,10 +22,10 @@ public class StringImageOutputService implements ImageOutputService
 
     public StringImageOutputService()
     {
-        xSize = 672;
-        ySize = 336;
-        xSpriteSize = 14;
-        ySpriteSize = 7;
+        xSize = 16*48;
+        ySize = 9*48;
+        xSpriteSize = 16;
+        ySpriteSize = 9;
         ended = false;
 
 
@@ -82,7 +82,7 @@ public class StringImageOutputService implements ImageOutputService
 
         for(int i = 0; i<nLineBreak; i++)
         {
-            System.out.println("----------------------------");
+            System.out.println("---------------------------------------------------------------");
         }
 
     }
@@ -94,8 +94,8 @@ public class StringImageOutputService implements ImageOutputService
      */
     public void addSprite(SpriteExtrinsic extrinsic) 
     {
-        int xPosition = (int) (xSpriteSize*(extrinsic.getPose().getX()/xSize));
-        int yPosition = (int) (ySpriteSize*(extrinsic.getPose().getY()/ySize));
+        int xPosition = (int) ((extrinsic.getPose().getX()/xSize*xSpriteSize));
+        int yPosition = (int) ((extrinsic.getPose().getY()/ySize*ySpriteSize));
 
         if( extrinsic.getPose().getX() < 0 ||xPosition> xSpriteSize)
         {

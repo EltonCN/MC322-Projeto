@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.heroquest.item.Armor;
+import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
@@ -181,6 +182,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	return isFriendly;
     }
     /**
+    
      * Operation drop
      *
      * @return 
@@ -214,6 +216,11 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     		Weapon toRemove = equippedWeapons[i];
     		equippedWeapons[i] = null;
     		usedHand -= toRemove.getHands();
+    		if (i == 0) {
+    			equippedWeapons[0] = equippedWeapons[1];
+    			equippedWeapons[0] = null;
+    		}
+    		moveWeaponFromInventory();
     		return toRemove;
     	} else {
     		try {
@@ -256,6 +263,19 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	}
     }
 
+    private void moveWeaponFromInventory() {
+    	if (equippedWeapons.length != 0)
+    		return;
+    	for(Item i: inventory) {
+    		try {
+    			equipWeapon((Weapon) i);
+    			return;
+    		} catch(ClassCastException e) {
+    			// Não faça nada!
+    		}
+    	}
+    }
+    
     public void takeDamage(float damage) {
         if (this.armor == null) {
             this.life -= damage;
