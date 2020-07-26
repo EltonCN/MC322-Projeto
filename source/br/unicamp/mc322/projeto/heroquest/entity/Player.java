@@ -3,7 +3,6 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 import java.util.LinkedList;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
-import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -11,6 +10,9 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceExce
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.imageoutput.ImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyInputService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.heroquest.action.DiceMovement;
 import br.unicamp.mc322.projeto.heroquest.action.Looter;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
@@ -48,7 +50,14 @@ public abstract class Player extends Creature implements Curable, Looter
     public void cureLife(int hpPlus) {
     	if (hpPlus >= 0)
     		life += hpPlus;
-    	else; //TODO ADD EXCEPTION A1 MAYBE?
+    	else {
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Player", "Tentativa de usar cureLife para tirar vida");
+			} catch (NotAvaibleServiceException | DisabledServiceException e) {
+				e.printStackTrace();
+			}
+    	}
     }
     
     public void loot(LinkedList<Item> loot) {
@@ -118,16 +127,19 @@ public abstract class Player extends Creature implements Curable, Looter
 		       		choiseMade = true;
 		       	} 
 				
-				else if (order == '2' && caster) {
-		       		((Caster) this).runMagics();
-				}
-				
-				else if (order == '3') {
-		       		//interact(); @todo
+				else if (order == '2') {
+		       		interact();
+		       		choiseMade = true;
 		       	}
+				
+				else if (order == '3' && caster) {
+		       		((Caster) this).runMagics();
+		       		choiseMade = true;
+				}
 				
 				else if (order == '4') {
 					//procurar por tesouros() @todo
+					//talvez não precise se spawmer for interactable
 				}
 			} while(!choiseMade);
 			
@@ -139,5 +151,13 @@ public abstract class Player extends Creature implements Curable, Looter
 
         turn = false;
     }
+    
+    private void interact() {
+    	Interactable[] interactables = Interactable.getInteractablesNear(this);
+    	for(Interactable obj: interactables) {
+    		obj.interact(this);
+    	}
+    }
+    
 }
 

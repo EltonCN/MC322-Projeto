@@ -12,7 +12,7 @@ public interface ResourceService extends Service
      * @param class - Classe
      * @param index - Índice do arquivo
      */
-    public void setFile (String file, Class c, int index);
+    public void setFile (String file, Class<?> c, int index);
 
     /**
      * Operation getResource
@@ -23,7 +23,7 @@ public interface ResourceService extends Service
      * @param index - Índice do recurso
      * @return ResourceExtrinsic
      */
-    public ResourceExtrinsic getResource ( ResourceType resourceType, Class c, int index );
+    public ResourceExtrinsic getResource ( ResourceType resourceType, Class<?> c, int index );
 
     /**
      * Operation setRoot
