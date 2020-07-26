@@ -33,7 +33,7 @@ var NAVTREE =
       [ "Hierarquia de classes", "hierarchy.html", "hierarchy" ],
       [ "Componentes membro", "functions.html", [
         [ "Tudo", "functions.html", "functions_dup" ],
-        [ "Funções", "functions_func.html", null ],
+        [ "Funções", "functions_func.html", "functions_func" ],
         [ "Variáveis", "functions_vars.html", null ]
       ] ]
     ] ],
@@ -46,8 +46,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_action_8java.html",
-"classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_turn_entity_runner_service.html#ae22d255c23b40adb0acafd7067faa17b",
-"interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_image_output_service.html"
+"classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_service_exception.html#a8674dcbd0b554fe98721c680c96cc852",
+"classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton.html",
+"interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1gamerunner_1_1_runnable_turn.html#ada6b49aacb165f22643653b160d693f7"
 ];
 
 var SYNCONMSG = 'clique para desativar a sincronização do painel';

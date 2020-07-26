@@ -1,5 +1,6 @@
 <map id="br.unicamp.mc322.projeto.gameengine.component.Area" name="br.unicamp.mc322.projeto.gameengine.component.Area">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,351,73"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_entity_range_area.html" title=" " alt="" coords="399,5,717,47"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html" title=" " alt="" coords="405,71,711,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,351,105"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_direction.html" title=" " alt="" coords="399,5,717,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_entity_range_area.html" title=" " alt="" coords="399,71,717,112"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html" title=" " alt="" coords="405,136,711,177"/>
 </map>

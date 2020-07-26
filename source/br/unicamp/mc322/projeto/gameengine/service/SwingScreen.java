@@ -14,37 +14,37 @@ public class SwingScreen implements MenuService, ImageOutputService {
 
     @Override
     public void end() {
-        // TODO Auto-generated method stub
+        ///@todo Auto-generated method stub
 
     }
 
     @Override
     public void addMenu(Menu menu) {
-        // TODO Auto-generated method stub
+        ///@todo Auto-generated method stub
 
     }
 
     @Override
     public void update() {
-        // TODO Auto-generated method stub
+        ///@todo Auto-generated method stub
 
     }
 
     @Override
     public void addSprite(SpriteExtrinsic sprite) {
-        // TODO Auto-generated method stub
+        ///@todo Auto-generated method stub
 
     }
 
     @Override
     public int getXSize() {
-        // TODO Auto-generated method stub
+        ///@todo Auto-generated method stub
         return 0;
     }
 
     @Override
     public int getYSize() {
-        // TODO Auto-generated method stub
+        ///@todo Auto-generated method stub
         return 0;
     }
 }

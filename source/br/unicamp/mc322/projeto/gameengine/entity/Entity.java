@@ -115,9 +115,7 @@ public abstract class Entity
             EntityStoreService s = (EntityStoreService) m.getService(ServiceType.ENTITYSTORE);
 
             s.changePose(this.pose, pose);
-        } catch(DisabledServiceException e) {
-        	//TODO IMPLEMENT
-        } catch(NotAvaibleServiceException e) {
+        } catch(DisabledServiceException | NotAvaibleServiceException e) {
         	//TODO IMPLEMENT
         }
     }

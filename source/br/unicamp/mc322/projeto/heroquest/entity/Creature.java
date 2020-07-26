@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.heroquest.item.Armor;
+import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
@@ -11,9 +12,9 @@ import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
-import br.unicamp.mc322.projeto.gameengine.service.entityrunner.RunnableTurn;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.gamerunner.RunnableTurn;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
@@ -181,6 +182,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	return isFriendly;
     }
     /**
+    
      * Operation drop
      *
      * @return 
@@ -200,6 +202,8 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     protected void equipWeapon(Weapon weapon) {
     	if (usedHand + weapon.getHands() < totalHand + 1)
     		equippedWeapons[usedHand++] = weapon;
+    	else
+    		addItemToInventory(weapon);
     }
     
     /**
@@ -212,6 +216,11 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     		Weapon toRemove = equippedWeapons[i];
     		equippedWeapons[i] = null;
     		usedHand -= toRemove.getHands();
+    		if (i == 0) {
+    			equippedWeapons[0] = equippedWeapons[1];
+    			equippedWeapons[0] = null;
+    		}
+    		moveWeaponFromInventory();
     		return toRemove;
     	} else {
     		try {
@@ -254,6 +263,19 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	}
     }
 
+    private void moveWeaponFromInventory() {
+    	if (equippedWeapons.length != 0)
+    		return;
+    	for(Item i: inventory) {
+    		try {
+    			equipWeapon((Weapon) i);
+    			return;
+    		} catch(ClassCastException e) {
+    			// Não faça nada!
+    		}
+    	}
+    }
+    
     public void takeDamage(float damage) {
         if (this.armor == null) {
             this.life -= damage;

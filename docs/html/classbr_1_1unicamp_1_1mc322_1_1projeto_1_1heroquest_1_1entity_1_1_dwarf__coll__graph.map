@@ -1,22 +1,27 @@
 <map id="br.unicamp.mc322.projeto.heroquest.entity.Dwarf" name="br.unicamp.mc322.projeto.heroquest.entity.Dwarf">
-<area shape="rect" id="node1" title=" " alt="" coords="2668,399,2941,440"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player.html" title=" " alt="" coords="2345,399,2619,440"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html" title=" " alt="" coords="2023,357,2296,399"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity.html" title=" " alt="" coords="1596,129,1869,171"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="776,5,1063,47"/>
-<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="5,29,317,55"/>
-<area shape="rect" id="node10" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_area.html" title=" " alt="" coords="407,71,752,98"/>
-<area shape="rect" id="node7" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_prototypable_entity.html" title=" " alt="" coords="1108,129,1403,171"/>
-<area shape="rect" id="node8" title=" " alt="" coords="1087,195,1424,236"/>
-<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html" title=" " alt="" coords="1103,64,1408,105"/>
-<area shape="rect" id="node11" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric.html" title=" " alt="" coords="20,96,303,137"/>
-<area shape="rect" id="node12" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_runnable_turn.html" title=" " alt="" coords="1585,227,1880,268"/>
-<area shape="rect" id="node13" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_runnable.html" title=" " alt="" coords="1108,260,1403,301"/>
-<area shape="rect" id="node14" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable.html" title=" " alt="" coords="1596,292,1869,333"/>
-<area shape="rect" id="node15" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement.html" title=" " alt="" coords="1595,357,1871,399"/>
-<area shape="rect" id="node16" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="1111,395,1400,436"/>
-<area shape="rect" id="node19" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="1595,423,1871,464"/>
-<area shape="rect" id="node17" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_armor.html" title=" " alt="" coords="1599,552,1866,593"/>
-<area shape="rect" id="node18" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="1110,506,1401,533"/>
-<area shape="rect" id="node20" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_curable.html" title=" " alt="" coords="2023,423,2296,464"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2956,390,3229,432"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player.html" title=" " alt="" coords="2633,390,2907,432"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature.html" title=" " alt="" coords="2309,325,2583,366"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity.html" title=" " alt="" coords="1828,64,2101,105"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="776,33,1063,74"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="5,128,317,155"/>
+<area shape="rect" id="node10" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1component_1_1_area.html" title=" " alt="" coords="407,170,752,196"/>
+<area shape="rect" id="node7" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototypable_entity.html" title=" " alt="" coords="1087,32,1457,73"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1103,97,1441,138"/>
+<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area.html" title=" " alt="" coords="1119,162,1425,204"/>
+<area shape="rect" id="node11" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric.html" title=" " alt="" coords="20,416,303,457"/>
+<area shape="rect" id="node21" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="441,493,717,534"/>
+<area shape="rect" id="node12" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1gamerunner_1_1_runnable_turn.html" title=" " alt="" coords="1781,129,2148,170"/>
+<area shape="rect" id="node13" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1gamerunner_1_1_runnable.html" title=" " alt="" coords="1089,228,1455,269"/>
+<area shape="rect" id="node14" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable.html" title=" " alt="" coords="1828,194,2101,236"/>
+<area shape="rect" id="node15" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker.html" title=" " alt="" coords="1828,260,2101,301"/>
+<area shape="rect" id="node16" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html" title=" " alt="" coords="1828,325,2101,366"/>
+<area shape="rect" id="node17" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement.html" title=" " alt="" coords="1481,610,1757,652"/>
+<area shape="rect" id="node18" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="17,536,306,577"/>
+<area shape="rect" id="node19" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_armor.html" title=" " alt="" coords="1831,442,2098,484"/>
+<area shape="rect" id="node20" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item.html" title=" " alt="" coords="1127,446,1417,472"/>
+<area shape="rect" id="node22" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html" title=" " alt="" coords="1831,546,2098,588"/>
+<area shape="rect" id="node23" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html" title=" " alt="" coords="1134,552,1410,593"/>
+<area shape="rect" id="node24" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_curable.html" title=" " alt="" coords="2309,390,2583,432"/>
+<area shape="rect" id="node25" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_looter.html" title=" " alt="" coords="2308,456,2584,497"/>
 </map>

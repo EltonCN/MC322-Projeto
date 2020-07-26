@@ -21,27 +21,40 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+acti
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_a17a64898dad99f2d7d03a70ed809c39d}{run}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} origin)
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_aa047a5805defb7d7b3561bc1c13cdbb1}{move}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable}{Movable}} movable)  throws Action\+Failed\+Exception 
 \end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_a6d57024324be53e36b4d63bfebfb3c1e}{choose\+Foe}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature}{Creature}} mover, \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}\mbox{[}$\,$\mbox{]} foes)
+\item 
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_abcbcf666961978dbfe6c9c2502c08122}{get\+Foes}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature}{Creature}} mover)
+\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
 
 
 \doxysubsection{Documentação dos métodos}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_a17a64898dad99f2d7d03a70ed809c39d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_a17a64898dad99f2d7d03a70ed809c39d}} 
-\index{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}!run@{run}}
-\index{run@{run}!br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}}
-\doxysubsubsection{\texorpdfstring{run()}{run()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Chase\+Movement.\+run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{origin }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_a6d57024324be53e36b4d63bfebfb3c1e}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_a6d57024324be53e36b4d63bfebfb3c1e}} 
+\index{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}!chooseFoe@{chooseFoe}}
+\index{chooseFoe@{chooseFoe}!br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}}
+\doxysubsubsection{\texorpdfstring{chooseFoe()}{chooseFoe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Chase\+Movement.\+choose\+Foe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature}{Creature}}}]{mover,  }\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}\mbox{[}$\,$\mbox{]}}]{foes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
-Operation run Executa a ação.
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_abcbcf666961978dbfe6c9c2502c08122}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_abcbcf666961978dbfe6c9c2502c08122}} 
+\index{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}!getFoes@{getFoes}}
+\index{getFoes@{getFoes}!br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}}
+\doxysubsubsection{\texorpdfstring{getFoes()}{getFoes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Chase\+Movement.\+get\+Foes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature}{Creature}}}]{mover }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_aa047a5805defb7d7b3561bc1c13cdbb1}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_chase_movement_aa047a5805defb7d7b3561bc1c13cdbb1}} 
+\index{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}!move@{move}}
+\index{move@{move}!br.unicamp.mc322.projeto.heroquest.action.ChaseMovement@{br.unicamp.mc322.projeto.heroquest.action.ChaseMovement}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Chase\+Movement.\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable}{Movable}}}]{movable }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action_failed_exception}{Action\+Failed\+Exception}}}
 
 
-\begin{DoxyParams}{Parâmetros}
-{\em origin} & -\/ Entidade que executará a ação \\
-\hline
-\end{DoxyParams}
 
-
-Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action_ab2720f5b7538b14120a749b24c714441}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+action.\+Action}}.
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement_ad120c466b128da8c6980d705453fb6a7}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Movement}}.
 
 
 

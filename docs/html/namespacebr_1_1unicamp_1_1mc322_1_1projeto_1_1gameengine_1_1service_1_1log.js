@@ -1,0 +1,8 @@
+var namespacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log =
+[
+    [ "LogPriority", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_log_priority.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_log_priority" ],
+    [ "LogService", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_log_service.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_log_service" ],
+    [ "LogType", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_log_type.html", "enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_log_type" ],
+    [ "NullLogService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_null_log_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_null_log_service" ],
+    [ "TerminalLogService", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_terminal_log_service.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1log_1_1_terminal_log_service" ]
+];

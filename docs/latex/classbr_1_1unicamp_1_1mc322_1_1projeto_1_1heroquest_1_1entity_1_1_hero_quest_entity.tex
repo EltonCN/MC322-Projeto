@@ -11,8 +11,7 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity\+:
-\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,6 +24,15 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+enti
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a3b21e4ada07a5b73c106b747b884bbf3}{Hero\+Quest\+Entity}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}})
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_af78b1e4c6944a9c5ed9841576aa94db0}{toggle\+Obstructor}} (boolean visibility)
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_entity_prototype}{Entity\+Prototype}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a7a240aa67b3040e015471c85ca717e95}{create\+Prototype}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a609c27a1e56dd95972b9266822dc90d1}{add\+Item\+To\+Inventory}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}} item)
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_ad73543ec572fc0e74c11391fefab0159}{remove\+Item\+From\+Inventory}} (int i)
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Protegidos}
 \begin{DoxyCompactItemize}
@@ -37,10 +45,12 @@ Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroq
 boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a8386959a757d862437bfacd2864740ef}{obstructor}}
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area}{Light\+Obstructor\+Area}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a263954f833dab58b600340de0260bddf}{light\+Obstructor\+Area}}
-\item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area}{Light\+Obstructor\+Area}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_adbef42215eacac05fce5579cf9feefed}{unnamed\+\_\+5}}
 \end{DoxyCompactItemize}
-\doxysubsection*{Outros membros herdados}
+\doxysubsection*{Atributos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_ac6b75d02a9664057dc2e1a7a92e7924c}{I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+L\+I\+M\+IT}} = 5
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Documentação dos Construtores \& Destrutor}
@@ -63,6 +73,37 @@ Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1
 
 
 \doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a609c27a1e56dd95972b9266822dc90d1}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a609c27a1e56dd95972b9266822dc90d1}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!addItemToInventory@{addItemToInventory}}
+\index{addItemToInventory@{addItemToInventory}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
+\doxysubsubsection{\texorpdfstring{addItemToInventory()}{addItemToInventory()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+add\+Item\+To\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a7a240aa67b3040e015471c85ca717e95}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a7a240aa67b3040e015471c85ca717e95}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!createPrototype@{createPrototype}}
+\index{createPrototype@{createPrototype}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
+\doxysubsubsection{\texorpdfstring{createPrototype()}{createPrototype()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_entity_prototype}{Entity\+Prototype}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+create\+Prototype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation create\+Prototype Cria um protótipo da entidade
+
+\begin{DoxyReturn}{Retorna}
+Entity\+Prototype 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototypable_entity_a378069aad0015ae8e8f4205f165be19a}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototypable\+Entity}}.
+
+
+
+Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door_a02a2ab3e7479cb2a1630e2024203dab1}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Door}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_ad73543ec572fc0e74c11391fefab0159}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_ad73543ec572fc0e74c11391fefab0159}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!removeItemFromInventory@{removeItemFromInventory}}
+\index{removeItemFromInventory@{removeItemFromInventory}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
+\doxysubsubsection{\texorpdfstring{removeItemFromInventory()}{removeItemFromInventory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+remove\+Item\+From\+Inventory (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_af78b1e4c6944a9c5ed9841576aa94db0}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_af78b1e4c6944a9c5ed9841576aa94db0}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!toggleObstructor@{toggleObstructor}}
 \index{toggleObstructor@{toggleObstructor}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
@@ -85,7 +126,13 @@ Operation toggle\+Obstructor Alterna a propriedade de obstruir luz da entidade
 \doxysubsubsection{\texorpdfstring{inventory}{inventory}}
 {\footnotesize\ttfamily Linked\+List$<$\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}}$>$ br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+inventory\hspace{0.3cm}{\ttfamily [protected]}}
 
-Inventário da entidade \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a263954f833dab58b600340de0260bddf}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a263954f833dab58b600340de0260bddf}} 
+Inventário da entidade \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_ac6b75d02a9664057dc2e1a7a92e7924c}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_ac6b75d02a9664057dc2e1a7a92e7924c}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!INVENTORY\_LIMIT@{INVENTORY\_LIMIT}}
+\index{INVENTORY\_LIMIT@{INVENTORY\_LIMIT}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
+\doxysubsubsection{\texorpdfstring{INVENTORY\_LIMIT}{INVENTORY\_LIMIT}}
+{\footnotesize\ttfamily final int br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+I\+N\+V\+E\+N\+T\+O\+R\+Y\+\_\+\+L\+I\+M\+IT = 5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a263954f833dab58b600340de0260bddf}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a263954f833dab58b600340de0260bddf}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!lightObstructorArea@{lightObstructorArea}}
 \index{lightObstructorArea@{lightObstructorArea}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
 \doxysubsubsection{\texorpdfstring{lightObstructorArea}{lightObstructorArea}}
@@ -97,13 +144,7 @@ Area obstruidora de luz da entidade \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc3
 \doxysubsubsection{\texorpdfstring{obstructor}{obstructor}}
 {\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+obstructor\hspace{0.3cm}{\ttfamily [private]}}
 
-Attributes Define se a entidade deve ou não obstruir a visão \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_adbef42215eacac05fce5579cf9feefed}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_adbef42215eacac05fce5579cf9feefed}} 
-\index{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}!unnamed\_5@{unnamed\_5}}
-\index{unnamed\_5@{unnamed\_5}!br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity@{br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity}}
-\doxysubsubsection{\texorpdfstring{unnamed\_5}{unnamed\_5}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_light_obstructor_area}{Light\+Obstructor\+Area}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity.\+unnamed\+\_\+5\hspace{0.3cm}{\ttfamily [private]}}
-
-Associations 
+Attributes Define se a entidade deve ou não obstruir a visão 
 
 A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
 \item 

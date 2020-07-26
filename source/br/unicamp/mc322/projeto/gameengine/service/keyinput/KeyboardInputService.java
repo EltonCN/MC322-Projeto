@@ -27,12 +27,12 @@ public class KeyboardInputService implements KeyInputService {
 
 			@Override
 			public void keyTyped(KeyEvent e) { // faça nada
-				// TODO Auto-generated method stub
+				///@todo Auto-generated method stub
 			}
 
 			@Override
 			public void keyReleased(KeyEvent e) { // faça nada
-				// TODO Auto-generated method stub
+				///@todo Auto-generated method stub
 			}
         });
 
@@ -42,7 +42,7 @@ public class KeyboardInputService implements KeyInputService {
 
 	@Override
 	public void end() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 
 	}
 

@@ -1,0 +1,4 @@
+var interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototypable_entity =
+[
+    [ "createPrototype", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototypable_entity.html#a378069aad0015ae8e8f4205f165be19a", null ]
+];

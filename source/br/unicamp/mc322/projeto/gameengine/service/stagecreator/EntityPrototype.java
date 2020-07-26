@@ -6,6 +6,7 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.exception.EntityRecipeException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NoEntityException;
+import br.unicamp.mc322.projeto.heroquest.action.Movement;
 
 public class EntityPrototype
 {
@@ -13,7 +14,7 @@ public class EntityPrototype
     /**
      * Classe da entidade (deve ser subclasse de Entity)
      */
-    private Class entityClass;
+    private Class<?> entityClass;
     /**
      * Pose da entidade
      */
@@ -23,16 +24,24 @@ public class EntityPrototype
      */
     private Object[] arg;
 
-    public EntityPrototype(Class entityClass, Pose pose, Object... arg )
-    {
+    public EntityPrototype(Class<?> entityClass, Pose pose, Object... arg ) {
         this.entityClass = entityClass;
         this.pose = pose;
         this.arg = arg;
     }
+    
+    public EntityPrototype(Class<?> entityClass, int x, int y, Object... arg ) {
+    	this(entityClass, new Pose(x * Movement.xStepSize, y * Movement.yStepSize), arg ); //TODO @todo mudar onde a variável está
+    }
+    
+    public EntityPrototype(Class<?> entityClass, int x, int y, float angle, Object... arg ) {
+    	this(entityClass, new Pose(x * Movement.xStepSize, y * Movement.yStepSize, angle), arg ); //TODO @todo mudar onde a variável está
+    }
 
     public Entity instantiateEntity() throws EntityRecipeException
     {
-        Class[] argClassList = new Class[1+arg.length];
+        @SuppressWarnings("rawtypes")
+		Class[] argClassList = new Class[1+arg.length];
 
         Object[] argList = new Object[1+arg.length];
 
@@ -48,7 +57,7 @@ public class EntityPrototype
         Entity entity;
         try
         {
-            Constructor constructor = entityClass.getConstructor(argClassList);        
+            Constructor<?> constructor = entityClass.getConstructor(argClassList);        
 
             entity = (Entity) constructor.newInstance(argList);
         }

@@ -29,7 +29,7 @@ public class ScannerInputService implements KeyInputService {
 
 	@Override
 	public void end() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 		
 	}
 

@@ -18,7 +18,7 @@ public class Goblin extends Enemy
 
     @Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 
 	}
 

@@ -1,7 +1,7 @@
 <map id="br.unicamp.mc322.projeto.heroquest.magic.Teleport" name="br.unicamp.mc322.projeto.heroquest.magic.Teleport">
-<area shape="rect" id="node1" title=" " alt="" coords="740,43,1016,85"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic.html" title=" " alt="" coords="415,14,691,55"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_element.html" title=" " alt="" coords="12,14,288,55"/>
-<area shape="rect" id="node4" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement.html" title=" " alt="" coords="415,79,691,121"/>
-<area shape="rect" id="node5" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,79,295,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="719,35,995,76"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic.html" title=" " alt="" coords="393,71,669,112"/>
+<area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,7,295,48"/>
+<area shape="rect" id="node5" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement.html" title=" " alt="" coords="393,5,669,47"/>
+<area shape="rect" id="node4" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_element.html" title=" " alt="" coords="12,73,288,115"/>
 </map>

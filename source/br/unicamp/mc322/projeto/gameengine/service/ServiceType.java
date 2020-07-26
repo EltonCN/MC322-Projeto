@@ -1,7 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
-import br.unicamp.mc322.projeto.gameengine.service.entityrunner.NullEntityRunnerService;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.NullEntityStoreService;
+import br.unicamp.mc322.projeto.gameengine.service.gamerunner.NullGameRunnerService;
 import br.unicamp.mc322.projeto.gameengine.service.imageoutput.NullImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.NullKeyInputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.NullLogService;
@@ -16,7 +16,7 @@ public enum ServiceType
     /**
      * 
      */
-    LOG, ENTITYSTORE, STAGECREATION, KEYINPUT, IMAGEOUTPUT, ENTITYRUNNER, MENU, RESOURCE;
+    LOG, ENTITYSTORE, STAGECREATION, KEYINPUT, IMAGEOUTPUT, GAMERUNNER, MENU, RESOURCE;
 
     static final public int nServiceType = 8;
 
@@ -39,8 +39,8 @@ public enum ServiceType
                 service = new NullKeyInputService();
             case IMAGEOUTPUT:
                 service = new NullImageOutputService();
-            case ENTITYRUNNER:
-                service = new NullEntityRunnerService();
+            case GAMERUNNER:
+                service = new NullGameRunnerService();
             case MENU:
                 service = new NullMenuService();
             case RESOURCE:

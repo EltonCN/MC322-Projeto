@@ -57,10 +57,10 @@ public class Direction extends Area {
 			return (Entity[]) entities.toArray();
 			
 		} catch (NotAvaibleServiceException e) {
-			// TODO Auto-generated catch block
+			///@todo Auto-generated catch block
 			e.printStackTrace();
 		} catch (DisabledServiceException e) {
-			// TODO Auto-generated catch block
+			///@todo Auto-generated catch block
 			e.printStackTrace();
 		}
 		

@@ -19,7 +19,7 @@ public class MagicSkeleton extends Enemy implements Caster {
     
     @Override
 	public void draw() {
-		// TODO Auto-generated method stub
+		///@todo Auto-generated method stub
 		
 	}
 }

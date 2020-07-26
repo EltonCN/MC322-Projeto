@@ -69,13 +69,13 @@ public abstract class Weapon extends Item implements Attack {
     
     public static Weapon getRandomWeapon() {
     	try {
-    		return getWeapon(new RandomGenerator(WEAPONS_IN_GAME.length).getResult() - 1);
+    		return getWeapon(new RandomGenerator(WEAPONS_IN_GAME.length).getResult());
     	} catch (IndexOutOfBoundsException e) {
     		
     		LogService l;
 			try {
 				l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
-				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Weapon", "Atempt to getRandomWeapon failed, long sword returned instead.");
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Weapon", "Atempt to getRandomWeapon failed, long sword returned instead: " + e);
 			} catch (DisabledServiceException e1) {
 				e1.printStackTrace();
 			} catch (NotAvaibleServiceException e2) {
@@ -106,7 +106,18 @@ public abstract class Weapon extends Item implements Attack {
     @Override
     public void attack(Attacker origin) throws ActionFailedException {
         attack.attack(origin);
-        uses--;
+        if (--uses < 1)
+        	try {
+        		((Creature) origin).removeWeapon(this);
+        	} catch(ClassCastException e) {
+        		try {
+					LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+					l.sendLog(LogType.OTHER, LogPriority.ERROR, "Attacker's Weapon", "Tentativa de conversão inválida de Attacker para Creature");
+				} catch (NotAvaibleServiceException | DisabledServiceException e1) {
+					e1.printStackTrace();
+				}
+        		
+        	}
     }
 
 }

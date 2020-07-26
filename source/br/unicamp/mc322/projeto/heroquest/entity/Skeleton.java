@@ -32,7 +32,7 @@ public class Skeleton extends Enemy
     @Override
     /**
      * 
-     * @TODO tratar exceções
+     * @todo tratar exceções
      */
     public void draw() {
         try {

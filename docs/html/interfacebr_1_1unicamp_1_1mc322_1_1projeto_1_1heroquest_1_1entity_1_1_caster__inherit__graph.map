@@ -1,0 +1,6 @@
+<map id="br.unicamp.mc322.projeto.heroquest.entity.Caster" name="br.unicamp.mc322.projeto.heroquest.entity.Caster">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,279,98"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf.html" title=" " alt="" coords="327,5,615,32"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_magic_skeleton.html" title=" " alt="" coords="334,57,607,98"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard.html" title=" " alt="" coords="334,122,607,163"/>
+</map>
