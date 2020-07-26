@@ -20,6 +20,7 @@ import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
+import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 
 public class HeroQuestGame
 {
@@ -39,7 +40,8 @@ public class HeroQuestGame
 
 
         resource.setFile("SK", Skeleton.class, 0);
-        resource.setFile("Br", Barbarian.class, 0);
+        resource.setFile("BR", Barbarian.class, 0);
+        resource.setFile("WW", Wall.class, 0);
 
         StringImageOutputService output = new StringImageOutputService();
 
@@ -83,10 +85,10 @@ public class HeroQuestGame
         
 
         StagePrototype stage0 = new StagePrototype();
+        buildTheWall(stage0);
 
-
-        EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
-        stage0.addPrototype(player);
+        /*EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
+        stage0.addPrototype(player);*/
 
         EntityPrototype monster = new EntityPrototype(Skeleton.class, 7, 3);
         stage0.addPrototype(monster);
@@ -108,6 +110,23 @@ public class HeroQuestGame
             System.exit(1);
         }
 
+    }
+    
+    /**
+     * @todo TODO realocar para classe mais alocada
+     * @param stage
+     */
+    
+    private void buildTheWall(StagePrototype stage) {
+    	for(int i = 0; i < 16; i++) {
+    		stage.addPrototype(new EntityPrototype(Wall.class, i, 0));
+    		stage.addPrototype(new EntityPrototype(Wall.class, i, 8));
+    	}
+    	
+    	for(int j = 1; j < 8; j++) {
+    		stage.addPrototype(new EntityPrototype(Wall.class, 0, j));
+    		stage.addPrototype(new EntityPrototype(Wall.class, 15, j));
+    	}
     }
 }
 
