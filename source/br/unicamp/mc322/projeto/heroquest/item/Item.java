@@ -12,7 +12,6 @@ public abstract class Item
     /**
      * Nome do item
      */
-    @SuppressWarnings("unused")
 	private String name;
     /**
      * Operation Item
