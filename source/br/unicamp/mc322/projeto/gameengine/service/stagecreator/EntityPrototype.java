@@ -28,6 +28,16 @@ public class EntityPrototype
         this.entityClass = entityClass;
         this.pose = pose;
         this.arg = arg;
+
+        if(arg == null)
+        {
+            this.arg = new Object[0];
+        }
+    }
+
+    public void changePose(Pose pose)
+    {
+        this.pose = pose;
     }
     
     public EntityPrototype(Class<?> entityClass, int x, int y, Object... arg ) {
@@ -50,8 +60,8 @@ public class EntityPrototype
 
         for(int i = 0; i< arg.length; i++)
         {
-            argList[i+1] = arg[1];
-            argClassList[i+1] = arg[1].getClass();
+            argList[i+1] = arg[i];
+            argClassList[i+1] = arg[i].getClass();
         }
 
         Entity entity;
@@ -63,7 +73,7 @@ public class EntityPrototype
         }
         catch(NoSuchMethodException e)
         {
-            throw new EntityRecipeException("Não foi possível instanciar a entidade, construtor não encontrado" , e);
+            throw new EntityRecipeException("Não foi possível instanciar a entidade,"+this.entityClass.getName()+"construtor não encontrado" , e);
         }
         catch(ClassCastException e)
         {

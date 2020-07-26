@@ -28,6 +28,8 @@ public class PrototypeStageCreatorService implements StageCreatorService
      */
     private boolean ended;
 
+    private StageIdentifier actualStage;
+
     public PrototypeStageCreatorService()
     {
         this.ended = false;
@@ -41,7 +43,7 @@ public class PrototypeStageCreatorService implements StageCreatorService
      *
      * @param stagePrototype - Protótipo de estágio a ser inserido
      */
-    public void insertStagePrototype ( StagePrototype stagePrototype ) throws DisabledServiceException
+    public void insertStage( StagePrototype stagePrototype ) throws DisabledServiceException
     {
         if(ended)
         {
@@ -94,6 +96,8 @@ public class PrototypeStageCreatorService implements StageCreatorService
 
         unload();
         
+        actualStage = identifier;
+
         prototype.load();
 
     }
@@ -144,7 +148,13 @@ public class PrototypeStageCreatorService implements StageCreatorService
             }
         }
 
+        if(actualStage == null)
+        {
+            return;
+        }
 
+        StagePrototype stage = (StagePrototype) actualStage.getStage();
+        stage.createMemento();
     }
     
     private void sendDisabledMessage(String methodName)
@@ -161,6 +171,16 @@ public class PrototypeStageCreatorService implements StageCreatorService
         {
             
         }
+    }
+
+    @Override
+    /**
+     * @todo lidar com exceção ClassCastException
+     */
+    public void insertStage(Stage stage) 
+    {
+        stageList.add((StagePrototype) stage);
+
     }
 }
 

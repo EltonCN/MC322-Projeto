@@ -10,12 +10,19 @@ public class NullStageCreatorService
     }
 
     @Override
-    public void loadStage(StageIdentifier identifier) {
+    public void loadStage(StageIdentifier identifier) 
+    {
 
     }
 
     @Override
     public void unload() {
+
+    }
+
+    @Override
+    public void insertStage(Stage stage) 
+    {
 
     }
 }

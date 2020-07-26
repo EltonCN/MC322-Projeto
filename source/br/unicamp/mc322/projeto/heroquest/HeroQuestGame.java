@@ -1,5 +1,9 @@
 package br.unicamp.mc322.projeto.heroquest;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
@@ -9,7 +13,12 @@ import br.unicamp.mc322.projeto.gameengine.service.imageoutput.StringImageOutput
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
+import br.unicamp.mc322.projeto.heroquest.entity.Door;
+import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
+import br.unicamp.mc322.projeto.heroquest.entity.MagicSkeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 import br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService;
@@ -21,6 +30,9 @@ public class HeroQuestGame
         new HeroQuestGame();
     }
 
+    /**
+     * @todo Descobrir uma forma melhor para conseguir o path da pasta de estágios
+     */
     public HeroQuestGame()
     {
         ServiceManager m = ServiceManager.getInstance();
@@ -32,8 +44,11 @@ public class HeroQuestGame
 
 
         resource.setFile("SK", Skeleton.class, 0);
+        resource.setFile("MG", MagicSkeleton.class, 0);
+        resource.setFile("GO", Goblin.class, 0);
         resource.setFile("BR", Barbarian.class, 0);
         resource.setFile("WW", Wall.class, 0);
+        resource.setFile("DR", Door.class, 0);
 
         HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
 
@@ -48,9 +63,30 @@ public class HeroQuestGame
         m.insertService(resource, ServiceType.RESOURCE);
         m.insertService(new StringImageOutputService(), ServiceType.IMAGEOUTPUT);
 
+        
+        URL url=null;
+        try
+        {
+            url = this.getClass().getResource("dummy.txt");
+        }
+        catch(Exception e)
+        {
 
-        stageCreator.loadDefaultStage();
-        try {
+        }
+        
+        String path = url.getPath();
+
+        path = path.substring(0, path.length()-48);
+
+        String stagePath = path+"stages";
+
+        PrototypeLoader loader = new PrototypeLoader(stagePath);
+        
+
+        
+        try 
+        {
+            stageCreator.loadRandomStage();
             while(true) {
                 runner.run();
                 Thread.currentThread().sleep(1500);
@@ -64,7 +100,11 @@ public class HeroQuestGame
         } catch (InterruptedException e) {
             System.out.println("Não foi, dar pause");
 			e.printStackTrace();
-		}
+        }
+        catch(Exception e)
+        {
+           e.printStackTrace();
+        }
 
 
     }

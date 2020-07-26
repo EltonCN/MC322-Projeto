@@ -16,13 +16,13 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 
-public class StageMemento
+public class StageMemento implements Stage
 {
     /** Attributes */
     /**
      * Protótipos das entidades no estágio
      */
-    private LinkedList<EntityPrototype> entityPrototype;
+    protected LinkedList<EntityPrototype> entityPrototype;
 
     public StageMemento()
     {
@@ -39,6 +39,12 @@ public class StageMemento
     {
         this.entityPrototype.add(entityPrototype);
     }
+
+    public void addPrototype(LinkedList<EntityPrototype> list)
+    {
+        entityPrototype.addAll(list);
+    }
+
     /**
      * Operation load
      * Carrega o estágio
