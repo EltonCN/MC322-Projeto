@@ -3,13 +3,15 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 import java.util.LinkedList;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
+import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.imageoutput.ImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyInputService;
 import br.unicamp.mc322.projeto.heroquest.action.DiceMovement;
-import br.unicamp.mc322.projeto.heroquest.action.Lootable;
 import br.unicamp.mc322.projeto.heroquest.action.Looter;
 import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
@@ -21,7 +23,7 @@ public abstract class Player extends Creature implements Curable, Looter
     /**
      * Nome do jogador
      */
-    private String name;
+    protected String name;
     
 	
     public Player(Pose pose, int nAttackDice, int nDefenseDice, int life, String name) {
@@ -47,17 +49,6 @@ public abstract class Player extends Creature implements Curable, Looter
     	if (hpPlus >= 0)
     		life += hpPlus;
     	else; //TODO ADD EXCEPTION A1 MAYBE?
-    }
-    
-    /**
-     * Operation wantStopMoving
-     * informs whether the Player has stopped moving
-     * @return boolean
-     */
-    //Eu considerei que ele quer parar de se mover quando aperta qualquer outra tecla se não WASD
-    //Então, a gnt pode tirar esse método?
-    protected boolean wantStopMoving() {
-    	return false; //TODO ADD RELATION TO INPUT LATER
     }
     
     public void loot(LinkedList<Item> loot) {
@@ -91,35 +82,60 @@ public abstract class Player extends Creature implements Curable, Looter
 
     public void run()
     {
-        if (turn == true) {
-        	try {
-    			basicMovement.run(this);
-    		} catch (ActionFailedException e) {
-    			e.printStackTrace();
-    		}
-        	
-        	KeyInputService k;
-			try {
-				k = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
+        if (turn == false)
+        	return;
+       	try {
+   			basicMovement.run(this);
+  		} catch (ActionFailedException e) {
+   			e.printStackTrace();
+   		}
+       	
+       	
+       	try {
+			ImageOutputService output = (ImageOutputService) ServiceManager.getInstance().getService(ServiceType.IMAGEOUTPUT);
+			output.update();
+		} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+			e2.printStackTrace();
+		}
+       	
+       	
+       	
+       	KeyInputService k;
+       	try {
+			k = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
+			boolean choiseMade = false;
+			
+			do {
 				char order = k.getUserInput();
-	        	if (order == '1') {
+	        	
+				if (order == '1') 
+				{
 	        		try {
 	        			attack();
 	        		} catch (ActionFailedException e) {
-	        			e.printStackTrace();
 	        		}
-
-	        		turn = false;
-	        	} else if (order == '2') {
-	        		//interact();
-	        	}
-			} catch (NotAvaibleServiceException e1) {
-				e1.printStackTrace();
-			}
+		       		turn = false;
+		       		choiseMade = true;
+		       	} 
+				
+				else if (order == '2' && caster) {
+		       		((Caster) this).runMagics();
+				}
+				
+				else if (order == '3') {
+		       		//interact(); @todo
+		       	}
+				
+				else if (order == '4') {
+					//procurar por tesouros() @todo
+				}
+			} while(!choiseMade);
+			
+		} catch (NotAvaibleServiceException e1) {
+			e1.printStackTrace();
+		}
         	
         	
-        	
-        }
 
         turn = false;
     }

@@ -18,8 +18,7 @@ public class Fireball extends Magic implements Attack
     private static final float adjacentDistance = 1;
     private static final float reach = Movement.xStepSize*3;
 
-    Fireball() 
-    {
+    public Fireball() {
         super(magicalElement);
     }
 

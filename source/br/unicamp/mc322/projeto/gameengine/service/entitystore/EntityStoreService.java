@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.service.entitystore;
 
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
@@ -16,7 +17,7 @@ public interface EntityStoreService extends Service
      *
      * @param entity - Entidade a ser armazenada
      */
-    public void store (Entity entity) throws DisabledServiceException;
+    public void store (Entity entity) throws DisabledServiceException, DisabledEntityException;
 
     /**
      * Operation getRange
@@ -37,7 +38,7 @@ public interface EntityStoreService extends Service
      * @param final - Pose final da entidade
      * @param entity - Entidade que será movida
      */
-    public void changePose (Pose origin, Pose end) throws DisabledServiceException, NoSuchElementException;
+    public void changePose (Pose origin, Pose end) throws DisabledServiceException, NoSuchElementException, DisabledEntityException;
 
     /**
      * Operation removeEntity
@@ -67,6 +68,6 @@ public interface EntityStoreService extends Service
      * @param index - índice da entidade
      * @return - entidade correspondente ao índice
      */
-    public Entity getEntity(int index); 
+    public Entity getEntity(int index) throws DisabledServiceException,  DisabledEntityException; 
 }
 

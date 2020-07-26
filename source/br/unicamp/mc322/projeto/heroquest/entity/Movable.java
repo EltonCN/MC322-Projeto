@@ -1,7 +1,9 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
+import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 
 /**
  * @todo mover constantes de Movement para cá
@@ -11,7 +13,8 @@ public interface Movable
     public static final float xStepSize = Movement.xStepSize;
     public static final float yStepSize = Movement.yStepSize;
 
-    public void moveBy(float deltaX, float deltaY) throws InvalidMovementException;
+    public void moveByAndTurn(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException, DisabledEntityException;
+
 
     /**
      * Operation moveN Movimenta a entidade para o norte
@@ -19,34 +22,42 @@ public interface Movable
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveN() throws InvalidMovementException { // moveUp
-        moveBy(0, yStepSize);
+    public default void moveN() throws InvalidMovementException, DisabledEntityException { // moveUp
+    	moveByAndTurn(0, yStepSize, getDeltaAngle(90));
     }
+
     /**
      * Operation moveS
      * Movimenta a entidade para o norte
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveS() throws InvalidMovementException { // moveDown
-    	moveBy(0, -yStepSize);
+    public default void moveS() throws InvalidMovementException, DisabledEntityException { // moveDown
+    	moveByAndTurn(0, -yStepSize, getDeltaAngle(270));
     }
+    
     /**
      * Operation moveE
      * Movimenta a entidade para o norte
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveE() throws InvalidMovementException { // moveRight
-    	moveBy(xStepSize, 0);
+    public default void moveE() throws InvalidMovementException, DisabledEntityException { // moveRight
+    	moveByAndTurn(xStepSize, 0, getDeltaAngle(0));
     }
+    
     /**
      * Operation moveW
      * Movimenta a entidade para o norte
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveW() throws InvalidMovementException { // moveLeft
-    	moveBy(-xStepSize, 0);
+    public default void moveW() throws InvalidMovementException, DisabledEntityException { // moveLeft
+    	moveByAndTurn(-xStepSize, 0, getDeltaAngle(180));
     }
+    
+    public default float getDeltaAngle(float goal) {
+    	return goal - ((Entity) this).getPose().getAngle();
+    }
+
 }

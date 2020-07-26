@@ -11,7 +11,7 @@ public interface Interactable
      *
      * @param activator - Entidade que irá interagir com ela
      */
-    public void interact ( Entity activator );
+    public void interact (Entity activator);
 
 }
 

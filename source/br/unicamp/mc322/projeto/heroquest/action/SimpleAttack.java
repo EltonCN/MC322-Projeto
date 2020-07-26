@@ -53,7 +53,7 @@ public class SimpleAttack implements Attack {
         Attackable finalTarget = null;
         float minDistance = Float.MAX_VALUE;
 
-        for(Entity a : (Entity[]) targets )
+        for(Attackable a :  targets )
         {
             if(a.getPose().distance(origin.getPose(), metric) < minDistance)
             {
@@ -96,7 +96,7 @@ public class SimpleAttack implements Attack {
             }
         }
 
-        target.takeDamage((attackScore-defenseScore)+bonus);
+        target.takeDamage((attackScore - defenseScore) + bonus);
 		
     }
     

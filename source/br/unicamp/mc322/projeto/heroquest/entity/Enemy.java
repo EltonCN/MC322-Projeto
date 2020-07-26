@@ -3,7 +3,6 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
-import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
@@ -12,7 +11,6 @@ public abstract class Enemy extends Creature
 	public Enemy(Pose pose, int life, int nAttackDice, int nDefenseDice) {
 		super(pose, life, nAttackDice, nDefenseDice);
 		basicMovement = new RandomMovement();
-		basicAttack = new SimpleAttack(1, 1);
 		isFriendly = false;
 
 		turn = false;

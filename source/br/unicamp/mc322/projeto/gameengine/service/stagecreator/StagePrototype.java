@@ -8,6 +8,7 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 
 import java.util.LinkedList;
 
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 
 public class StagePrototype extends StageMemento implements StageIdentifier
@@ -43,7 +44,16 @@ public class StagePrototype extends StageMemento implements StageIdentifier
 
             for(int i = 0; i<s.countEntity(); i++)
             {
-                Entity entity = s.getEntity(i);
+                Entity entity;
+
+                try
+                {
+                    entity = s.getEntity(i);
+                }
+                catch(DisabledEntityException e)
+                {
+                    continue;
+                }
                 
                 try
                 {

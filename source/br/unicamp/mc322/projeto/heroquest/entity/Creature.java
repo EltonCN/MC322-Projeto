@@ -7,9 +7,11 @@ import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.NullMovement;
+import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -66,6 +68,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Ação de ataque básica
      */
     protected Attack basicAttack;
+    private static Attack PUNCH = new SimpleAttack(0, 1);
     /**
      * Amigável (bonzinho) ou não (malvado)
      */
@@ -76,14 +79,14 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     /**
      * Caster (faz magia) ou não
      */
-    protected boolean caster;    
+    protected boolean caster;
     /**
      * Operation Creature
      *
-     * @param pose - 
+     * @param pose -
      * @param nAttackDice - Quantidade de dados de ataque que a criatura possui
      * @param nDefenseDice - Quantidade de dados de defesa que a criatura possui
-     * @return 
+     * @return
      */
     public Creature(Pose pose, int nAttackDice, int nDefenseDice) {
     	super(pose);
@@ -93,19 +96,20 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	totalHand = 2; // Não pretendemos implementar nenhuma criatura com número diferente, mas se quisermos no futuro é possível adaptar com facilidade
         usedHand = 0; // No início, nenhuma mão está sendo usada, assume-se
     	basicMovement = new NullMovement();
+    	basicAttack = PUNCH; //Apenas um soco simples
         turn = false;
         equippedWeapons = new Weapon[2];
-        
+
     }
 
     /**
      * Operation Creature
      *
-     * @param pose - 
-     * @param life - 
+     * @param pose -
+     * @param life -
      * @param nAttackDice - Quantidade de dados de ataque que a criatura possui
      * @param nDefenseDice - Quantidade de dados de defesa que a criatura possui
-     * @return 
+     * @return
      */
     public Creature (Pose pose, int life, int nAttackDice, int nDefenseDice) {
     	this(pose, nAttackDice, nDefenseDice);
@@ -113,7 +117,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     }
     /**
      * Operation getNDefenseDice
-     * 
+     *
      * @return int
      */
     protected int getNDefenseDice() {
@@ -122,38 +126,22 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 
     /**
      * Operation run
-     * @return 
+     * @return
      *
-     * @return 
+     * @return
      */
     public abstract void run();
 
-    /**
-     * Operation sofrerAtaque
-     *
-     * @param damage
-     * @return void
-     */
-    public void takeDamage(int damage) {
-    	if (damage >= 0)
-    		life -= damage;
-    	else {
-    		try {
-				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
-				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature", "Operação inválida para número negativo");
-			} catch (NotAvaibleServiceException | DisabledServiceException e) {
-				e.printStackTrace();
-			}
-    	}
-    }
 
     /**
      * Operation attack
-     * 
-     * @return 
-     * @throws ActionFailedException 
+     *
+     * @return
+     * @throws ActionFailedException
      */
     protected void attack() throws ActionFailedException {
+    	if (equippedWeapons[0] != null)
+    		basicAttack = equippedWeapons[0];
     	basicAttack.run(this);
     }
 
@@ -163,15 +151,16 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      *
      * @param deltaX
      * @param deltaY
-     * @return 
+     * @return
      * @return boolean
-     * @throws InvalidMovementException 
+     * @throws InvalidMovementException
      */
-    protected void move(float deltaX, float deltaY) throws InvalidMovementException {
-    	moveBy(deltaX, deltaY, 0);
+    protected void move(float deltaX, float deltaY) throws InvalidMovementException, DisabledEntityException
+    {
+    	super.moveBy(deltaX, deltaY, 0);
     }
 
-    
+
     /**
      * Operation getDefenseScore
      * Retorna o numero de dados rolados com face de defesa pra cima
@@ -183,30 +172,32 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	return isFriendly;
     }
     /**
-    
+
      * Operation drop
      *
-     * @return 
-     * @throws InvalidMovementException 
+     * @return
+     * @throws InvalidMovementException
      *//*
     protected drop ();*/ //TODO ADD DROP LATER
-
-    public void moveBy(float deltaX, float deltaY) throws InvalidMovementException {
-        moveBy(deltaX, deltaY, 0);
-    }
     
+    public void moveByAndTurn(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException, DisabledEntityException {
+        super.moveBy(deltaX, deltaY, deltaAngle);
+    }
+
     /**
      * Operation equipItem
      * Permite que Criatura equipe um item segundo as regras do jogo:
      * Dois itens de uma mão ou um item de uma duas mãos
      */
     protected void equipWeapon(Weapon weapon) {
-    	if (usedHand + weapon.getHands() < totalHand + 1)
+    	if (usedHand + weapon.getHands() < totalHand + 1) {
     		equippedWeapons[usedHand++] = weapon;
+    		basicAttack = new SimpleAttack(0, 1);
+    	}
     	else
     		addItemToInventory(weapon);
     }
-    
+
     /**
      * Operation removeWeapon
      * @param weapon
@@ -219,9 +210,12 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     		usedHand -= toRemove.getHands();
     		if (i == 0) {
     			equippedWeapons[0] = equippedWeapons[1];
-    			equippedWeapons[0] = null;
+    			equippedWeapons[1] = null;
     		}
     		moveWeaponFromInventory();
+    		if (i == 0) {
+    			basicAttack = PUNCH;
+    		}
     		return toRemove;
     	} else {
     		try {
@@ -230,17 +224,17 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 			} catch (NotAvaibleServiceException | DisabledServiceException e) {
 				e.printStackTrace();
 			}
-    		
+
     	}
     	return null;
     }
-    
+
     public void removeWeapon(Weapon w) {
     	try {
 	    	if (equippedWeapons[0] == w)
-	    		removeWeapon(0);    		
+	    		removeWeapon(0);
 	    	else if (equippedWeapons[1] == w)
-	    		removeWeapon(1); 
+	    		removeWeapon(1);
 	    	else {
 	    		try {
 					LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
@@ -260,7 +254,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 			} catch (DisabledServiceException e1) {
 				e1.printStackTrace();
 			}
-    		
+
     	}
     }
 
@@ -276,15 +270,20 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     		}
     	}
     }
-    
-    public void takeDamage(float damage) {
-        if (this.armor == null) {
+
+    public void takeDamage(float damage) 
+    {
+        if (this.armor == null) 
+        {
             this.life -= damage;
-        } else {
+        } 
+        else 
+        {
             this.life -= armor.transformDamage(damage);
         }
 
-        if (life < 0) {
+        if (life < 0) 
+        {
             life = 0;
             this.disable();
         }
@@ -292,7 +291,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
 
     public int getAttackScore() {
         int score = 0;
-        
+
         for(int i = 0; i < nAttackDice; i++) {
 			if (CombatDice.getResult() == CombatDiceFace.SKULL){
 				score += 1;
@@ -300,7 +299,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
         }
         return score;
     }
-    
+
 	public int getInteligence() {
 		return PI;
 	}
@@ -315,4 +314,3 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
         turn = true;
     }
 }
-

@@ -69,7 +69,7 @@ public abstract class Weapon extends Item implements Attack {
     
     public static Weapon getRandomWeapon() {
     	try {
-    		return getWeapon(new RandomGenerator(WEAPONS_IN_GAME.length).getResult());
+    		return getWeapon(new RandomGenerator(WEAPONS_IN_GAME.length).getResult() - 1);
     	} catch (IndexOutOfBoundsException e) {
     		
     		LogService l;
@@ -86,6 +86,9 @@ public abstract class Weapon extends Item implements Attack {
     }
     
     @Override
+    /**
+     * @todo alterar dependência de criatura para attacker
+     */
     public void attack(Attacker origin, Attackable target) throws ActionFailedException {
         attack.attack(origin, target);
         if (--uses < 1)
@@ -104,6 +107,9 @@ public abstract class Weapon extends Item implements Attack {
     }
 
     @Override
+    /**
+     * @todo alterar dependência de criatura para attacker
+     */
     public void attack(Attacker origin) throws ActionFailedException {
         attack.attack(origin);
         if (--uses < 1)

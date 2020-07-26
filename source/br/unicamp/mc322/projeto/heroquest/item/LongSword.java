@@ -10,7 +10,7 @@ public class LongSword extends Weapon
     private static final int uses = Integer.MAX_VALUE;  
     private static final int value = 0;
     private static final String name = "Long Sword";
-    private static final float reach = Movement.xStepSize;
+    private static final float reach = 2 * Movement.xStepSize;
     private static final int damageBonus = 2;
 
     public LongSword() 
