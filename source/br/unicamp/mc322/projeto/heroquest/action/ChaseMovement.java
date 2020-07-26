@@ -14,7 +14,7 @@ public class ChaseMovement implements Movement {
 	
 	protected Attackable chooseFoe(Creature mover, Attackable[] foes) {
 		float minDistance = Float.MAX_VALUE;
-		Attackable theFoe = foes[0];
+		Attackable theFoe = null;
 		float distance;
 		for(Attackable foe: foes) {
 			distance = mover.getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN);
@@ -34,6 +34,9 @@ public class ChaseMovement implements Movement {
 	@Override
 	public void move(Movable movable) throws ActionFailedException {
 		Attackable foe = chooseFoe((Creature) movable, getFoes((Creature) movable));
+		
+		if (foe == null) return;
+		
 		if (((Entity) movable).getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN) == 1)
 			return; // Movable pode atacar foe: não é necessário se mover
 		
