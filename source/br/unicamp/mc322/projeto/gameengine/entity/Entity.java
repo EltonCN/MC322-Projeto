@@ -17,9 +17,7 @@ import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 /**
  * Representações de objetos que compõem o jogo. Pode representar um personagem jogável, NPCs, plataformas, gatilhos de eventos.
  */
-public abstract class Entity
-
-{
+public abstract class Entity {
     /** Attributes */
     /**
      * Pose da entidade

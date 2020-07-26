@@ -196,8 +196,9 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      *//*
     protected drop ();*/ //TODO ADD DROP LATER
 
-    public void moveBy(float deltaX, float deltaY) throws InvalidMovementException {
-        moveBy(deltaX, deltaY, 0);
+    
+    public void moveByAndTurn(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException {
+        moveBy(deltaX, deltaY, deltaAngle);
     }
 
     /**
