@@ -10,7 +10,7 @@ public class SimpleHeal extends Magic implements Cure {
     private static Element magicaElement = Element.WATER;
     private static int nCureD6 = 1;
 
-    SimpleHeal() {
+    public SimpleHeal() {
         super(magicaElement);
     }
 

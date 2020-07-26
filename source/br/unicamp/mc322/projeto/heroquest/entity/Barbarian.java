@@ -19,7 +19,6 @@ public class Barbarian extends Player
 		super(pose, 3, 2, 8, "Barbarian");
 		PI = 2;
 		equipWeapon(new LongSword());
-		basicAttack = new SimpleAttack(1, 1);
 		///@todo ADD WEAPONS
 	}
 

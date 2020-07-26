@@ -3,7 +3,9 @@ package br.unicamp.mc322.projeto.heroquest.action;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.imageoutput.ImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyInputService;
 import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
@@ -16,6 +18,7 @@ public class DiceMovement implements Movement
 		KeyInputService keyboard;
 		try {
 			keyboard = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
+			ImageOutputService output = (ImageOutputService) ServiceManager.getInstance().getService(ServiceType.IMAGEOUTPUT);
 			boolean doneMoving = false;
 			for(int i = 0; i < steps && !doneMoving; i++) {
 				try {
@@ -38,7 +41,11 @@ public class DiceMovement implements Movement
 				} catch (InvalidMovementException e) {
 					i--;
 				}
-				
+				try {
+					output.update();
+				} catch (DisabledServiceException e) {
+					e.printStackTrace();
+				}
 			}
 		} catch (NotAvaibleServiceException e) {
 			e.printStackTrace();

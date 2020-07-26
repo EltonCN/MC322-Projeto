@@ -23,7 +23,7 @@ public class Skeleton extends Enemy
      */
     public Skeleton (Pose pose)
     {
-        super(pose, 3, 2, 4); // Balanceamento escolhido: focado em defesa
+        super(pose, /*3, 2, 4*/1,1,1); // Balanceamento escolhido: focado em defesa
         basicMovement = new RandomMovement();
         basicAttack = new SimpleAttack(0, 1); //TODO @todo
         equipWeapon(Weapon.getRandomWeapon());

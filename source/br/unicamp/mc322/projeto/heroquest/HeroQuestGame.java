@@ -2,7 +2,6 @@ package br.unicamp.mc322.projeto.heroquest;
 
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
-import br.unicamp.mc322.projeto.gameengine.service.SwingScreen;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.gamerunner.TurnGameRunnerService;
@@ -10,9 +9,6 @@ import br.unicamp.mc322.projeto.gameengine.service.imageoutput.StringImageOutput
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
-import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
-import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
-import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototype;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;

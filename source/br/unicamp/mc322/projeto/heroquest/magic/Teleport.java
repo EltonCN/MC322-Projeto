@@ -9,10 +9,10 @@ import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 public class Teleport extends Magic implements Movement
 {
     private static final int nD6Dice = 2;
+    private static final Element magicalElement = Element.NEUTRAL;
 
-    Teleport(Element element) 
-    {
-        super(element);
+    public Teleport() {
+        super(magicalElement);
     }
 
     @Override
@@ -27,9 +27,8 @@ public class Teleport extends Magic implements Movement
 
         DiceMovement movement = new DiceMovement();
 
-        for(int i = 0; i<nD6Dice; i++)
+        for(int i = 0; i < nD6Dice; i++)
         {
-            movement.move(movable);
             movement.move(movable);
         }
     }

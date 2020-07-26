@@ -30,27 +30,21 @@ public abstract class Magic implements Action
      * @return - true se a magia é lançada com sucesso
      * @todo - Mostrar o resultado do dado em algum lugar
      */
-    protected boolean checkSucess(Caster caster)
-    {
-        if(D6Dice.getResult()<caster.getInteligence())
-        {
+    protected boolean checkSucess(Caster caster) {
+        if(D6Dice.getResult() < caster.getInteligence()) {
             return true;
         }
-        else
-        {
+        else {
             return false;
         }
     }
 
-    protected Caster convertToCaster(Object origin) throws ActionFailedException
-    {
-        try
-        {
+    protected Caster convertToCaster(Object origin) throws ActionFailedException {
+        try {
             return (Caster) origin;
         }
-        catch(ClassCastException e)
-        {
-            throw new ActionFailedException("A magia só pode ser lançada por conjuradores",e);
+        catch(ClassCastException e) {
+            throw new ActionFailedException("A magia só pode ser lançada por conjuradores", e);
         }
     }
 }

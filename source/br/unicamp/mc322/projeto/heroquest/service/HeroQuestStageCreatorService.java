@@ -5,6 +5,7 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototype;
+import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 
@@ -29,10 +30,10 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
         StagePrototype stage0 = new StagePrototype();
         buildTheWall(stage0);
 
-        /*EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
-        stage0.addPrototype(player);*/
+        EntityPrototype player = new EntityPrototype(Barbarian.class, 1, 1);
+        stage0.addPrototype(player);
 
-        EntityPrototype monster = new EntityPrototype(Skeleton.class, 7, 3);
+        EntityPrototype monster = new EntityPrototype(Skeleton.class, 6, 4);
         stage0.addPrototype(monster);
 
         ServiceManager m = ServiceManager.getInstance();
@@ -56,7 +57,8 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
 
     private void addRandomEnemy(StagePrototype stage)
     {
-        EntityPrototype monster = new EntityPrototype();
+    	Object[] args = {};
+        EntityPrototype monster = new EntityPrototype(null, null, args);
 
     }
 

@@ -55,6 +55,15 @@ public abstract class Weapon extends Item implements Attack {
     	return hand;
     }
     
+    /**
+     * Operation getAttack
+     * Retorna o Ataque implementado pela arma para ser usado pela criatura em sua posse
+     * @return Attack
+     */
+    public Attack getAttack() {
+    	return attack;
+    }
+    
     /*
      * Operation getWeapon
      * Retorna uma arma de certa classe a partir de um inteiro

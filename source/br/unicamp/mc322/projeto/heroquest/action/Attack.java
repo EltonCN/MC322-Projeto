@@ -7,51 +7,39 @@ import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
 
-public interface Attack extends Action
-{
+public interface Attack extends Action {
     public static Metric metric = Metric.EUCLIDEAN;
 
     /**
      * Executa o ataque com um objetivo específico
      */
-    public default void run (Entity origin, Entity target) throws ActionFailedException
-    {
+    public default void run (Entity origin, Entity target) throws ActionFailedException {
         Attacker a;
         Attackable t;
 
-        try
-		{
+        try	{
 			a = (Attacker) origin;
 			
-		}
-		catch(ClassCastException e)
-		{
+		} catch(ClassCastException e) {
 			throw new ActionFailedException("Apenas atacantes podem atacar", e);
         }
         
-        try
-		{
+        try {
 			t = (Attackable) target;
-		}
-		catch(ClassCastException e)
-		{
+		} catch(ClassCastException e) {
 			throw new ActionFailedException("Apenas atacáveis podem ser atacados", e);
         }
         
         attack(a, t);
     }
 
-    public default void run(Entity origin) throws ActionFailedException
-    {
+    public default void run(Entity origin) throws ActionFailedException {
         Attacker a;
 
-        try
-		{
+        try {
 			a = (Attacker) origin;
-			
 		}
-		catch(ClassCastException e)
-		{
+		catch(ClassCastException e) {
 			throw new ActionFailedException("Apenas atacantes podem atacar", e);
         }
 

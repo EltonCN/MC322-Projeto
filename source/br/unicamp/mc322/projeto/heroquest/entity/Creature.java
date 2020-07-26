@@ -6,6 +6,7 @@ import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
+import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
@@ -65,6 +66,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Ação de ataque básica
      */
     protected Attack basicAttack;
+    private static Attack PUNCH = new SimpleAttack(0, 1);
     /**
      * Amigável (bonzinho) ou não (malvado)
      */
@@ -92,6 +94,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	totalHand = 2; // Não pretendemos implementar nenhuma criatura com número diferente, mas se quisermos no futuro é possível adaptar com facilidade
         usedHand = 0; // No início, nenhuma mão está sendo usada, assume-se
     	basicMovement = new NullMovement();
+    	basicAttack = PUNCH; //Apenas um soco simples
         turn = false;
         equippedWeapons = new Weapon[2];
         
@@ -153,6 +156,8 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * @throws ActionFailedException 
      */
     protected void attack() throws ActionFailedException {
+    	if (equippedWeapons[0] != null)
+    		basicAttack = equippedWeapons[0].getAttack();
     	basicAttack.run(this);
     }
 
@@ -200,8 +205,10 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Dois itens de uma mão ou um item de uma duas mãos
      */
     protected void equipWeapon(Weapon weapon) {
-    	if (usedHand + weapon.getHands() < totalHand + 1)
+    	if (usedHand + weapon.getHands() < totalHand + 1) {
     		equippedWeapons[usedHand++] = weapon;
+    		basicAttack = new SimpleAttack(0, 1);
+    	}
     	else
     		addItemToInventory(weapon);
     }
@@ -218,9 +225,12 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     		usedHand -= toRemove.getHands();
     		if (i == 0) {
     			equippedWeapons[0] = equippedWeapons[1];
-    			equippedWeapons[0] = null;
+    			equippedWeapons[1] = null;
     		}
     		moveWeaponFromInventory();
+    		if (i == 0) {
+    			basicAttack = PUNCH;
+    		}
     		return toRemove;
     	} else {
     		try {

@@ -96,7 +96,7 @@ public class SimpleAttack implements Attack {
             }
         }
 
-        target.takeDamage((attackScore-defenseScore)+bonus);
+        target.takeDamage((attackScore - defenseScore) + bonus);
 		
     }
     
