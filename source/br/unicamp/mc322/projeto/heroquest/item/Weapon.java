@@ -78,7 +78,7 @@ public abstract class Weapon extends Item implements Attack {
     
     public static Weapon getRandomWeapon() {
     	try {
-    		return getWeapon(new RandomGenerator(WEAPONS_IN_GAME.length).getResult());
+    		return getWeapon(new RandomGenerator(WEAPONS_IN_GAME.length).getResult() - 1);
     	} catch (IndexOutOfBoundsException e) {
     		
     		LogService l;
