@@ -133,6 +133,7 @@ public abstract class Player extends Creature implements Curable, Looter
 			       			magicDone = true;
 			       		} 
 		       		} while(!magicDone);
+		       		choiseMade = true;
 				}
 				
 				else if (order == '3') {
