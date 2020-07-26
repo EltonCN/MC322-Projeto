@@ -81,70 +81,84 @@ public class RandomStageSpawner extends Entity
         createRandomEnemy();
 
         createRandomStatue();
+            
+        createRandomsSpawner();
 
         createRandomTrap();
     }
 
+
     /**
-     * @todo adicionar criação da trap
+     * Cria uma armadilha aleatória de acordo com as probabilidades
      */
     private void createRandomTrap()
     {
         if(D100Dice.getResult()<pTrap)
         {
-            //Adicionar trap...
+            Entity trap = new Trap(RandomPose.getResult());
+
+            generatedEntity.add(trap);
 
             createRandomStatue();
         }
     }
 
     /**
-     * @todo adicionar criação da estátua
+     * Cria uma estátua aleatória de acordo com as probabilidades
      */
     private void createRandomStatue()
     {
+
+        boolean add = false;
+
         if(type==StageType.ROOM)
         {
             if(D100Dice.getResult()<pStatue)
             {
-                //Adicionar estátua...
-
-                createRandomStatue();
+                add = true;
             }
         }
-        else
+        else if(D100Dice.getResult()<pStatueAisle)
         {
-            if(D100Dice.getResult()<pStatueAisle)
-            {
-                //Adicionar estátua...
-    
-                createRandomStatue();
-            }
+            add = true;
+            
+        }
+
+        if(add)
+        {
+            Entity statue = new Statue(RandomPose.getResult());
+            generatedEntity.add(statue);
+            createRandomStatue();
         }
     }
 
     /**
-     * @todo adicionar criação dos Spawners
+     * Cria um spawner aleatório de acordo com as probabilidades
      */
     private void createRandomsSpawner()
     {
+        boolean add = false;
+
         if(type==StageType.ROOM)
         {
             if(D100Dice.getResult()<pSpawner)
             {
-                //Adicionar spawner...
+                add = true;
 
-                createRandomsSpawner();
+                
             }
         }
-        else
+        else if(D100Dice.getResult()<pSpawnerAisle)
         {
-            if(D100Dice.getResult()<pSpawnerAisle)
-            {
-                //Adicionar spawner...
-    
-                createRandomsSpawner();
-            }
+                add = true;
+        }
+
+        if(add)
+        {
+            Entity statue = new SearchHotspot(RandomPose.getResult());
+            generatedEntity.add(statue);
+
+            createRandomsSpawner();
         }
     }
 
