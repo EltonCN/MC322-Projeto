@@ -1,4 +1,4 @@
-package br.unicamp.mc322.projeto.gameengine.service.entityrunner;
+package br.unicamp.mc322.projeto.gameengine.service.gamerunner;
 
 
 public interface Runnable

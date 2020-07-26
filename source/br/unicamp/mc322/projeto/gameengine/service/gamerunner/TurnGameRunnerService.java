@@ -1,4 +1,4 @@
-package br.unicamp.mc322.projeto.gameengine.service.entityrunner;
+package br.unicamp.mc322.projeto.gameengine.service.gamerunner;
 
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
@@ -12,7 +12,7 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
-public class TurnEntityRunnerService implements EntityRunnerService 
+public class TurnGameRunnerService implements GameRunnerService 
 {
     private boolean ended;
 
@@ -21,7 +21,7 @@ public class TurnEntityRunnerService implements EntityRunnerService
      * 
      * Define o serviço como não encerrado
      */
-    public TurnEntityRunnerService()
+    public TurnGameRunnerService()
     {
         this.ended = false;
     }

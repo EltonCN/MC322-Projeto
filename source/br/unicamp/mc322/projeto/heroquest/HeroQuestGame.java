@@ -2,9 +2,10 @@ package br.unicamp.mc322.projeto.heroquest;
 
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
-import br.unicamp.mc322.projeto.gameengine.service.entityrunner.TurnEntityRunnerService;
+import br.unicamp.mc322.projeto.gameengine.service.SwingScreen;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.gamerunner.TurnGameRunnerService;
 import br.unicamp.mc322.projeto.gameengine.service.imageoutput.StringImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
@@ -19,7 +20,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 public class HeroQuestGame
 {
     public static void main(String[] args)
-    { 
+    {
         new HeroQuestGame();
     }
 
@@ -29,7 +30,7 @@ public class HeroQuestGame
 
         m.setAllNullService();
 
-        TurnEntityRunnerService runner = new TurnEntityRunnerService();
+        TurnGameRunnerService runner = new TurnGameRunnerService();
         StringImageResourceService resource = new StringImageResourceService();
 
 
@@ -39,14 +40,14 @@ public class HeroQuestGame
 
         StringImageOutputService output = new StringImageOutputService();
 
-        m.insertService(runner, ServiceType.ENTITYRUNNER);
+        m.insertService(runner, ServiceType.GAMERUNNER);
         m.insertService(new SpartialEntityStoreService(), ServiceType.ENTITYSTORE);
         m.insertService(new PrototypeStageCreatorService(), ServiceType.STAGECREATION);
         m.insertService(new TerminalLogService(), ServiceType.LOG);
-        //m.insertService(new ImageResourceService(), ServiceType.RESOURCE);      
+        //m.insertService(new ImageResourceService(), ServiceType.RESOURCE);
         //m.insertService(new SwingScreen(),ServiceType.IMAGEOUTPUT);
         m.insertService(new ScannerInputService(), ServiceType.KEYINPUT);
-        
+
         m.insertService(resource, ServiceType.RESOURCE);
         m.insertService(output, ServiceType.IMAGEOUTPUT);
 
@@ -58,7 +59,7 @@ public class HeroQuestGame
                 runner.run();
                 Thread.currentThread().sleep(1500);
             }
-            
+
         }
         catch(ServiceException e) {
             System.out.println("Não foi possível executar o serviço executor de entidades, o jogo será encerrado");
@@ -68,14 +69,14 @@ public class HeroQuestGame
             System.out.println("Não foi, dar pause");
 			e.printStackTrace();
 		}
-        
+
 
     }
 
     private void loadDefaultStage()
     {
-        
-        
+
+
 
         StagePrototype stage0 = new StagePrototype();
         buildTheWall(stage0);
@@ -104,22 +105,21 @@ public class HeroQuestGame
         }
 
     }
-    
+
     /**
      * @todo TODO realocar para classe mais alocada
      * @param stage
      */
-    
+
     private void buildTheWall(StagePrototype stage) {
     	for(int i = 0; i < 16; i++) {
     		stage.addPrototype(new EntityPrototype(Wall.class, i, 0));
     		stage.addPrototype(new EntityPrototype(Wall.class, i, 8));
     	}
-    	
+
     	for(int j = 1; j < 8; j++) {
     		stage.addPrototype(new EntityPrototype(Wall.class, 0, j));
     		stage.addPrototype(new EntityPrototype(Wall.class, 15, j));
     	}
     }
 }
-
