@@ -1,0 +1,7 @@
+<map id="br.unicamp.mc322.projeto.heroquest.entity.RandomStageSpawner" name="br.unicamp.mc322.projeto.heroquest.entity.RandomStageSpawner">
+<area shape="rect" id="node1" title=" " alt="" coords="900,71,1173,112"/>
+<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity.html" title=" " alt="" coords="434,5,721,47"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose.html" title=" " alt="" coords="5,13,317,39"/>
+<area shape="rect" id="node4" title=" " alt="" coords="399,71,756,112"/>
+<area shape="rect" id="node5" href="$enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service_1_1_stage_type.html" title=" " alt="" coords="437,136,718,177"/>
+</map>

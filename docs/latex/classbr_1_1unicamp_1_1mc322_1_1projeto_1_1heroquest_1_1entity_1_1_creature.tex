@@ -11,7 +11,8 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature\+:\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,13 +28,11 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+enti
 \item 
 abstract void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a361e39b0fe549e4ae9b0668deb796720}{run}} ()
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_ab61929c1be2e59339acef8a14b9ef660}{take\+Damage}} (int damage)
-\item 
 abstract int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a7098d7bf877d8ff369edee3c58e41398}{get\+Defense\+Score}} ()
 \item 
 boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a80412afc8538033b5a66b5d59a671b71}{get\+Is\+Friendly}} ()
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a95d27695c11dfffc7db232423e0e0d51}{move\+By}} (float deltaX, float deltaY)  throws Invalid\+Movement\+Exception 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a14ba4bd82ed6fd4aa30028c3f48e57f0}{move\+By\+And\+Turn}} (float deltaX, float deltaY, float delta\+Angle)  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception 
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a8380213a72031b2e75217a1833e698cb}{remove\+Weapon}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon}{Weapon}} w)
 \item 
@@ -54,7 +53,7 @@ int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1enti
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a5277ab9df3e80267c8c77f52216515f7}{attack}} ()  throws Action\+Failed\+Exception 
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a3a84cf717f7c4f3a2d91858fe4235788}{move}} (float deltaX, float deltaY)  throws Invalid\+Movement\+Exception 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a3a84cf717f7c4f3a2d91858fe4235788}{move}} (float deltaX, float deltaY)  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception     
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a66be06094dbacb53f4ee2036c3b1c87c}{equip\+Weapon}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon}{Weapon}} weapon)
 \item 
@@ -98,6 +97,11 @@ int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1enti
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a53aa68994ec8906a974e012dc76c1da3}{n\+Attack\+Dice}}
 \item 
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_acaf348318cf724f34ae2b818e8468c03}{n\+Defense\+Dice}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack}{Attack}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a9ad61b44f9cc5ba3d37158da0d2cd792}{P\+U\+N\+CH}} = new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack}{Dice\+Attack}}(0, 1)
 \end{DoxyCompactItemize}
 \doxysubsection*{Outros membros herdados}
 
@@ -247,7 +251,7 @@ Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1her
 \index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!move@{move}}
 \index{move@{move}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
 \doxysubsubsection{\texorpdfstring{move()}{move()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+move (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+move (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}\hspace{0.3cm}{\ttfamily [protected]}}
 
 Operation move Movimenta a entidade
 
@@ -268,11 +272,11 @@ boolean
 {\em Invalid\+Movement\+Exception} & \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a95d27695c11dfffc7db232423e0e0d51}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a95d27695c11dfffc7db232423e0e0d51}} 
-\index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!moveBy@{moveBy}}
-\index{moveBy@{moveBy}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
-\doxysubsubsection{\texorpdfstring{moveBy()}{moveBy()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+move\+By (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a14ba4bd82ed6fd4aa30028c3f48e57f0}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a14ba4bd82ed6fd4aa30028c3f48e57f0}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!moveByAndTurn@{moveByAndTurn}}
+\index{moveByAndTurn@{moveByAndTurn}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
+\doxysubsubsection{\texorpdfstring{moveByAndTurn()}{moveByAndTurn()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+move\+By\+And\+Turn (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY,  }\item[{float}]{delta\+Angle }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation drop
 
@@ -286,7 +290,7 @@ Operation drop
 \end{DoxyExceptions}
 
 
-Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a273c43ffd47f95a10ba3be7727c1214b}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable}}.
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_ac4603ffd5c60cef7ff31a652e3311990}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable}}.
 
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a0351b902f20a785992f9efc005d8d599}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a0351b902f20a785992f9efc005d8d599}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!moveWeaponFromInventory@{moveWeaponFromInventory}}
@@ -350,7 +354,7 @@ Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1her
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a3dba3b78525eaf21c2f4503519a5d08d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a3dba3b78525eaf21c2f4503519a5d08d}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!takeDamage@{takeDamage}}
 \index{takeDamage@{takeDamage}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
-\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+take\+Damage (\begin{DoxyParamCaption}\item[{float}]{damage }\end{DoxyParamCaption})}
 
 Operation take\+Damage Faz a entidade receber uma quantidade de dano
@@ -364,22 +368,6 @@ Operation take\+Damage Faz a entidade receber uma quantidade de dano
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable_ad53a3c11c6d2cbbe912b663e04bd20cd}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Attackable}}.
 
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_ab61929c1be2e59339acef8a14b9ef660}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_ab61929c1be2e59339acef8a14b9ef660}} 
-\index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!takeDamage@{takeDamage}}
-\index{takeDamage@{takeDamage}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
-\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
-
-Operation sofrer\+Ataque
-
-
-\begin{DoxyParams}{Parâmetros}
-{\em damage} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Retorna}
-void 
-\end{DoxyReturn}
 
 
 \doxysubsection{Documentação dos dados membro}
@@ -449,7 +437,13 @@ Quantidade de dados de defesa que a entidade possui \mbox{\Hypertarget{classbr_1
 \doxysubsubsection{\texorpdfstring{PI}{PI}}
 {\footnotesize\ttfamily int br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+PI\hspace{0.3cm}{\ttfamily [protected]}}
 
-Pontos de inteligência da criatura \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a1e0c777219f67f977509273c3684a600}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a1e0c777219f67f977509273c3684a600}} 
+Pontos de inteligência da criatura \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a9ad61b44f9cc5ba3d37158da0d2cd792}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a9ad61b44f9cc5ba3d37158da0d2cd792}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!PUNCH@{PUNCH}}
+\index{PUNCH@{PUNCH}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
+\doxysubsubsection{\texorpdfstring{PUNCH}{PUNCH}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack}{Attack}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature.\+P\+U\+N\+CH = new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack}{Dice\+Attack}}(0, 1)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a1e0c777219f67f977509273c3684a600}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a1e0c777219f67f977509273c3684a600}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}!totalHand@{totalHand}}
 \index{totalHand@{totalHand}!br.unicamp.mc322.projeto.heroquest.entity.Creature@{br.unicamp.mc322.projeto.heroquest.entity.Creature}}
 \doxysubsubsection{\texorpdfstring{totalHand}{totalHand}}

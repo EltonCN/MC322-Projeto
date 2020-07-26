@@ -1,5 +1,6 @@
 <map id="br.unicamp.mc322.projeto.heroquest.action.Lootable" name="br.unicamp.mc322.projeto.heroquest.action.Lootable">
-<area shape="rect" id="node1" title=" " alt="" coords="15,95,291,136"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html" title=" " alt="" coords="5,184,301,211"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_interactable.html" title=" " alt="" coords="17,5,290,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="327,27,603,69"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html" title=" " alt="" coords="651,5,947,32"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_treasure.html" title=" " alt="" coords="665,57,932,98"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_interactable.html" title=" " alt="" coords="5,27,279,69"/>
 </map>

@@ -11,7 +11,8 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+se
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service\+:\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,13 +24,15 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+ser
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a42483d5f1da46a0ba908876782575cd6}{Prototype\+Stage\+Creator\+Service}} ()
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a88ebb5478adb7dc0924bbd3def3a124d}{insert\+Stage\+Prototype}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_prototype}{Stage\+Prototype}} stage\+Prototype)  throws Disabled\+Service\+Exception     
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_aaee52c39cface421173d475844f98bde}{insert\+Stage}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_prototype}{Stage\+Prototype}} stage\+Prototype)  throws Disabled\+Service\+Exception     
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_ad41abd5a06f03e0b50ecb2696576b234}{end}} ()
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_ae9afcf0f478545afe21cc8623d47c56e}{load\+Stage}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_identifier}{Stage\+Identifier}} identifier)  throws Disabled\+Service\+Exception, Invalid\+Stage\+Identifier\+Exception     
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a34f1dbea0075369923ce8e538f5cd1ea}{unload}} ()  throws Disabled\+Service\+Exception     
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_acad642c81d684cfbc3c867214682f612}{insert\+Stage}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage}{Stage}} stage)
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
@@ -42,6 +45,8 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1se
 Vector$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_prototype}{Stage\+Prototype}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a87a2bc81709e4d3d612257bab969ec8c}{stage\+List}}
 \item 
 boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a258e143fcde8ef115ee001c5adb573bd}{ended}}
+\item 
+\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_identifier}{Stage\+Identifier}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a7d8d3fbd6dc9e18d443849d765ecc318}{actual\+Stage}}
 \end{DoxyCompactItemize}
 
 
@@ -68,11 +73,23 @@ Operation end Encerra o serviço, que não deve mais realizar suas operações \
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1_service_afe8b52057d063bddecd796b70a1f243e}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+Service}}.
 
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a88ebb5478adb7dc0924bbd3def3a124d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a88ebb5478adb7dc0924bbd3def3a124d}} 
-\index{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}!insertStagePrototype@{insertStagePrototype}}
-\index{insertStagePrototype@{insertStagePrototype}!br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}}
-\doxysubsubsection{\texorpdfstring{insertStagePrototype()}{insertStagePrototype()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service.\+insert\+Stage\+Prototype (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_prototype}{Stage\+Prototype}}}]{stage\+Prototype }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_acad642c81d684cfbc3c867214682f612}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_acad642c81d684cfbc3c867214682f612}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}!insertStage@{insertStage}}
+\index{insertStage@{insertStage}!br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}}
+\doxysubsubsection{\texorpdfstring{insertStage()}{insertStage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service.\+insert\+Stage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage}{Stage}}}]{stage }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000029}{Tarefa}}]lidar com exceção Class\+Cast\+Exception \end{DoxyRefDesc}
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_creator_service_ad08c3ca1bf818e221593f67a201f1df2}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Stage\+Creator\+Service}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_aaee52c39cface421173d475844f98bde}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_aaee52c39cface421173d475844f98bde}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}!insertStage@{insertStage}}
+\index{insertStage@{insertStage}!br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}}
+\doxysubsubsection{\texorpdfstring{insertStage()}{insertStage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service.\+insert\+Stage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_prototype}{Stage\+Prototype}}}]{stage\+Prototype }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
 
 Operation insert\+Stage\+Prototype Insere um novo protótipo de estágio
 
@@ -91,6 +108,10 @@ Carrega um estágio
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_creator_service_abbd854018fce218f4e4d2058d829675c}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Stage\+Creator\+Service}}.
 
+
+
+Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1service_1_1_hero_quest_stage_creator_service_adf697b3113baab59fe07ce1c21755222}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+service.\+Hero\+Quest\+Stage\+Creator\+Service}}.
+
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_af6562c9d1e8897db3df1ca6392cac3ef}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_af6562c9d1e8897db3df1ca6392cac3ef}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}!sendDisabledMessage@{sendDisabledMessage}}
 \index{sendDisabledMessage@{sendDisabledMessage}!br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}}
@@ -104,7 +125,7 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameen
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service.\+unload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
 
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000019}{Tarefa}}]criar e lançar exceção para caso não exista um Entity\+Store\+Service \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000028}{Tarefa}}]criar e lançar exceção para caso não exista um Entity\+Store\+Service \end{DoxyRefDesc}
 
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_creator_service_a98e3c858d6ce0762b3cc460304373bc1}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Stage\+Creator\+Service}}.
@@ -112,6 +133,12 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameen
 
 
 \doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a7d8d3fbd6dc9e18d443849d765ecc318}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a7d8d3fbd6dc9e18d443849d765ecc318}} 
+\index{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}!actualStage@{actualStage}}
+\index{actualStage@{actualStage}!br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}}
+\doxysubsubsection{\texorpdfstring{actualStage}{actualStage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_identifier}{Stage\+Identifier}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+stagecreator.\+Prototype\+Stage\+Creator\+Service.\+actual\+Stage\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a258e143fcde8ef115ee001c5adb573bd}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_prototype_stage_creator_service_a258e143fcde8ef115ee001c5adb573bd}} 
 \index{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}!ended@{ended}}
 \index{ended@{ended}!br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService@{br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService}}

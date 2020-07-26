@@ -6,7 +6,7 @@ var classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon =
     [ "getHands", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a4313f901d948c5dbf500e0a1e6fac218", null ],
     [ "getRandomWeapon", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#afa059014cd00d03f631daa987534505d", null ],
     [ "getWeapon", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a0e2cccb6686afda9cb0604473ed91c20", null ],
-    [ "attack", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a8baf81dd1ff281eb8a65404c8b7b078f", null ],
+    [ "attack", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a0f5008a40a3234ae224a20bd5c97efa1", null ],
     [ "hand", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a17cfadaa01dc3875d5030cd8b2eb5da7", null ],
     [ "uses", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#ae1b095f36fc03cf04f279970a820eb77", null ],
     [ "WEAPONS_IN_GAME", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html#a2385a6ab124d6ea7d5b8f648a739e6ad", null ]

@@ -1,6 +1,7 @@
 var interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable =
 [
-    [ "moveBy", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html#a273c43ffd47f95a10ba3be7727c1214b", null ],
+    [ "getDeltaAngle", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html#a84559282a3344bca5e3b96182c21b17c", null ],
+    [ "moveByAndTurn", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html#ac4603ffd5c60cef7ff31a652e3311990", null ],
     [ "moveE", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html#a4f7f307ea8d1b7f0ef77f193be732e6c", null ],
     [ "moveN", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html#a34ed1e7adf5264e5ca71bbe963709adc", null ],
     [ "moveS", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html#aa42a519ff24d658ebc5d1c8e03989953", null ],
