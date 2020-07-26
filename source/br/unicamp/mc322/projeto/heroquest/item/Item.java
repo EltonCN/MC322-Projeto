@@ -27,6 +27,11 @@ public abstract class Item
         this.name = name;
         this.value = value;
     }
+    
+    
+    public float getValue() {
+    	return value;
+    }
 
 }
 

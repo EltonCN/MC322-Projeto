@@ -104,7 +104,7 @@ public abstract class Entity {
      */
     public final void moveTo(Pose pose) throws InvalidMovementException, DisabledEntityException
     {
-        if(enabled == false)
+        if (enabled == false)
         {
             throw new DisabledEntityException();
         }

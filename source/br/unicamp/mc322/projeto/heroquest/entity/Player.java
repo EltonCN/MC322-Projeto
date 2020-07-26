@@ -27,6 +27,8 @@ public abstract class Player extends Creature implements Curable, Looter
      */
     protected String name;
     
+    private float money;
+    
 	
     public Player(Pose pose, int nAttackDice, int nDefenseDice, int life, String name) {
 		super(pose, nAttackDice, nDefenseDice, life);
@@ -34,6 +36,7 @@ public abstract class Player extends Creature implements Curable, Looter
 		basicMovement = new DiceMovement();
 		isFriendly = true;
 		turn = false;
+		money = 0;
 	}
 	
     @Override
@@ -60,6 +63,10 @@ public abstract class Player extends Creature implements Curable, Looter
     	}
     }
     
+    /**
+     * Implementação padrão do que acontece quando Player loota algo
+     * Implementações diferenciadas podem ser chamadas usando apenas a interface Lootable
+     */
     public void loot(LinkedList<Item> loot) {
     	for(Item i: loot) {
     		addItemToInventory(i);
@@ -167,5 +174,8 @@ public abstract class Player extends Creature implements Curable, Looter
     	}
     }
     
+    public void enrich(Item it) {
+    	money += it.getValue();
+    }
 }
 
