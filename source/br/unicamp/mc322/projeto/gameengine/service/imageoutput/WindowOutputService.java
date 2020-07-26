@@ -6,11 +6,12 @@ import java.awt.FlowLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 
-public class WindowOutputService extends JFrame{
+
+public class WindowOutputService extends JFrame implements ImageOutputService{
 
 	/**
 	 * 
@@ -23,7 +24,7 @@ public class WindowOutputService extends JFrame{
 	private JLabel /*room*/background;
 //	private JLabel hallwaybackground;
 //	private JLabel downMenu;
-	private JPanel foreground;
+	private SpriteImageOutputService foreground;
 	
 	//É NECESSARIO FAZER ADD(FOREGROUND) ANTES DE ADD(BACKGROUND)
 		
@@ -43,7 +44,6 @@ public class WindowOutputService extends JFrame{
 		forceRefresh();
 	}
 
-	
 	//Set screen and foreground
 	private void setUI() {
 		setTitle("Heroe Quest");
@@ -60,26 +60,44 @@ public class WindowOutputService extends JFrame{
         setLayout(new BorderLayout()); //Esse é o layout do JFrame DA CLASSE 
 	}
 	
-	public void setForeground(SpriteExtrinsic sprite) {
-		//Esse é o painel de impressão da sala ou corredor
+	private void setForeground() {
 		
-		//O que é necessário: 
-		//	Quais entidades estão nele
-		//	Quais obstaculos estão nele
+		foreground = new SpriteImageOutputService();
 		
-		//Ideia:
-		//SpriteImageOutput deve ter acesso 
-	
 	}
-	
-	
 	
 	private void forceRefresh() {
 		setSize(horizontalDimension -1, verticalDimension -1);
         setSize(horizontalDimension, verticalDimension);	
 	}
 	
+	
+	@Override //throws DisabledServiceException
+	public void addSprite(SpriteExtrinsic sprite, int x, int y, int angle) {
+		
+		foreground.add(sprite, x, y, angle);
+		
+	}
+	
+	@Override
+	public void update() {
+		
+	}
+	
+	@Override
+	public int getXSize() {
+		return 0;
+	}
+	
+	public int getYSize() {
+		return 0;
+	}
 
+	@Override
+	public void end() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }
