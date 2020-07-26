@@ -60,7 +60,6 @@ public class HeroQuestGame
         try {
             while(true) {
                 runner.run();
-                output.update();
                 Thread.currentThread().sleep(3000);
             }
             
