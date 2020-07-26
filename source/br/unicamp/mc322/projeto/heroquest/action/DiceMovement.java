@@ -1,6 +1,8 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
@@ -13,7 +15,8 @@ import br.unicamp.mc322.projeto.heroquest.utility.D6Dice;
 public class DiceMovement implements Movement
 {
 	@Override
-	public void move(Movable mover) {
+	public void move(Movable mover) throws ActionFailedException
+	{
 		int steps = D6Dice.getResult(); // Rolling the dice
 		KeyInputService keyboard;
 		try {
@@ -22,7 +25,8 @@ public class DiceMovement implements Movement
 			boolean doneMoving = false;
 			for(int i = 0; i < steps && !doneMoving; i++) {
 				try {
-					switch(keyboard.getUserInput()) {
+					switch(keyboard.getUserInput()) 
+					{
 						case 'a':
 							mover.moveW();
 							break;
@@ -38,16 +42,31 @@ public class DiceMovement implements Movement
 						default:
 							doneMoving = true;
 					}
-				} catch (InvalidMovementException e) {
+				} 
+				catch (InvalidMovementException e) 
+				{
 					i--;
 				}
-				try {
+				catch(DisabledEntityException e)
+				{
+					throw new ActionFailedException("Entidades desabilitadas não podem se mover", e);
+				}
+
+
+
+				try 
+				{
 					output.update();
-				} catch (DisabledServiceException e) {
+				} 
+				catch (DisabledServiceException e) 
+				{
 					e.printStackTrace();
 				}
+				
 			}
-		} catch (NotAvaibleServiceException e) {
+		} 
+		catch (NotAvaibleServiceException e)
+		 {
 			e.printStackTrace();
 			System.exit(1); // Jogo não funciona sem input: Finaliza!
 		}

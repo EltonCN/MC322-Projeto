@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.service.stagecreator;
 
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -123,7 +124,16 @@ public class PrototypeStageCreatorService implements StageCreatorService
         
         for(int i = 0; i<s.countEntity(); i++)
         {
-            Entity e = s.getEntity(i);
+            Entity e = null;
+            try
+            {
+                e = s.getEntity(i);
+            }
+            catch(DisabledEntityException ex)
+            {
+                continue;
+            }
+            
             
             e.stageChanged();
 

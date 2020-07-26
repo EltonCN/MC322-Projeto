@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 
 /**
@@ -11,7 +12,7 @@ public interface Movable
     public static final float xStepSize = Movement.xStepSize;
     public static final float yStepSize = Movement.yStepSize;
 
-    public void moveBy(float deltaX, float deltaY) throws InvalidMovementException;
+    public void moveBy(float deltaX, float deltaY) throws InvalidMovementException, DisabledEntityException;
 
     /**
      * Operation moveN Movimenta a entidade para o norte
@@ -19,7 +20,8 @@ public interface Movable
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveN() throws InvalidMovementException { // moveUp
+    public default void moveN() throws InvalidMovementException, DisabledEntityException
+     { // moveUp
         moveBy(0, yStepSize);
     }
     /**
@@ -28,7 +30,8 @@ public interface Movable
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveS() throws InvalidMovementException { // moveDown
+    public default void moveS() throws InvalidMovementException, DisabledEntityException
+     { // moveDown
     	moveBy(0, -yStepSize);
     }
     /**
@@ -37,7 +40,8 @@ public interface Movable
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveE() throws InvalidMovementException { // moveRight
+    public default void moveE() throws InvalidMovementException, DisabledEntityException
+     { // moveRight
     	moveBy(xStepSize, 0);
     }
     /**
@@ -46,7 +50,8 @@ public interface Movable
      * @return boolean
      * @throws InvalidMovementException 
      */
-    public default void moveW() throws InvalidMovementException { // moveLeft
+    public default void moveW() throws InvalidMovementException, DisabledEntityException
+     { // moveLeft
     	moveBy(-xStepSize, 0);
     }
 }

@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.service.entitystore;
 
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
@@ -11,6 +12,11 @@ import java.util.NoSuchElementException;
 import java.util.Collections;
 import java.util.Iterator;
 
+/**
+ * Armazena as entidades considerando as poses
+ * 
+ * @todo homogenizar lançamento de exceções "DisableEntity" e "DisableService"
+ */
 public class SpartialEntityStoreService implements EntityStoreService 
 {
     /**
@@ -38,12 +44,17 @@ public class SpartialEntityStoreService implements EntityStoreService
     }
 
     @Override
-    public void store(Entity entity) throws DisabledServiceException
+    public void store(Entity entity) throws DisabledServiceException, DisabledEntityException
     {
         if(ended)
         {
             throw new DisabledServiceException("Serviço armazenador 'SpartialEntityStoreService' desabilitado");
         }
+        if(entity.isEnabled() == false)
+        {
+            throw new DisabledEntityException();
+        }
+
         
         Iterator<Entity> iterator = list.iterator();
         EntitySpartialComparator comp = new EntitySpartialComparator();
@@ -67,6 +78,7 @@ public class SpartialEntityStoreService implements EntityStoreService
     @Override
     /**
      * @todo Otimizar para considerar a ordenação da lista
+     * @todo Implementar melhor remoção dos elementos desabilitados
      */
     public Entity[] getRange(Pose origin, float radius, Metric metric) throws DisabledServiceException
      {
@@ -76,12 +88,20 @@ public class SpartialEntityStoreService implements EntityStoreService
         }
         
         LinkedList<Entity> result = new LinkedList<Entity>();
+        LinkedList<Entity> toRemove = new LinkedList<Entity>();
 
         Iterator<Entity> iterator = list.iterator();
 
         while(iterator.hasNext())
         {
             Entity e = iterator.next();
+            
+            if(e.isEnabled() == false)
+            {  
+                toRemove.add(e);
+                continue;
+            }
+
 
             if(e.getPose().distance(origin,metric) <= radius)
             {
@@ -89,11 +109,17 @@ public class SpartialEntityStoreService implements EntityStoreService
             }
         }
 
+
+        for(Entity e : toRemove)
+        {
+            list.remove(e);
+        }
+
         return result.toArray(new Entity[result.size()]);
     }
 
     @Override
-    public void changePose ( Pose origin, Pose end ) throws DisabledServiceException, NoSuchElementException
+    public void changePose ( Pose origin, Pose end ) throws DisabledServiceException, NoSuchElementException, DisabledEntityException
      {
         if(ended)
         {
@@ -137,8 +163,20 @@ public class SpartialEntityStoreService implements EntityStoreService
         {
             throw new DisabledServiceException("Serviço armazenador 'SpartialEntityStoreService' desabilitado");
         }
+
+        Entity entity = null;
+
+        try
+        {
+            entity = getEntity(pose);
+        }
+        catch(DisabledEntityException e)
+        {
+
+        }
         
-        Entity entity = getEntity(pose);
+
+        entity.disable();
 
         removeEntity(entity);
     }
@@ -151,6 +189,8 @@ public class SpartialEntityStoreService implements EntityStoreService
             throw new DisabledServiceException("Serviço armazenador 'SpartialEntityStoreService' desabilitado");
         }
         
+        entity.disable();
+
         list.remove(entity);
     }
 
@@ -174,6 +214,7 @@ public class SpartialEntityStoreService implements EntityStoreService
         {
             Entity e = iterator.next();
 
+
             if(e.getPose().equal(pose))
             {
                 return index;
@@ -189,7 +230,7 @@ public class SpartialEntityStoreService implements EntityStoreService
      * @param pose
      * @return
      */
-    private Entity getEntity(Pose pose) throws NoSuchElementException
+    private Entity getEntity(Pose pose) throws NoSuchElementException, DisabledEntityException
     {
         Iterator<Entity> iterator = list.iterator();
         
@@ -199,6 +240,12 @@ public class SpartialEntityStoreService implements EntityStoreService
 
             if(e.getPose().equal(pose))
             {
+                if(e.isEnabled() == false)
+                {
+                    list.remove(e);
+
+                    throw new DisabledEntityException();
+                }
                 return e;
             }
 
@@ -213,7 +260,18 @@ public class SpartialEntityStoreService implements EntityStoreService
     }
 
     @Override
-    public Entity getEntity(int index) {
+    /**
+     * @todo lançar exceção caso a entidade não exista
+     */
+    public Entity getEntity(int index) 
+    {
+        Entity e = list.get(index);
+        if(e.isEnabled() == false)
+        {
+            list.remove(e);
+            return null;
+        }
+
         return list.get(index);
     }
 }

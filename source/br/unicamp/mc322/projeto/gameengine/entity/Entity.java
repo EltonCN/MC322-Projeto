@@ -37,7 +37,9 @@ public abstract class Entity
      * @return
      */
     
-    public Entity (Pose pose) {
+    public Entity (Pose pose)
+    {
+        enabled = true;
     	this.pose = pose;
     }
 
@@ -78,7 +80,7 @@ public abstract class Entity
      *
      */
     public void disable (  ) {
-    	enabled = false; //TODO FINISH IMPLEMENTING! @Elton
+    	enabled = false;
     }
 
     /**
@@ -102,7 +104,13 @@ public abstract class Entity
      * @throws InvalidMovementException 
      * @todo Lidar com exceções
      */
-    public final void moveTo(Pose pose) throws InvalidMovementException {
+    public final void moveTo(Pose pose) throws InvalidMovementException, DisabledEntityException
+    {
+        if(enabled == false)
+        {
+            throw new DisabledEntityException();
+        }
+        
     	if (!pose.isPositionOccupiable())
     		throw new InvalidMovementException();
     	
@@ -129,8 +137,13 @@ public abstract class Entity
      * @return boolean - Did the move succeed?
      * @throws InvalidMovementException 
      */
-    protected final void moveBy(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException {
-        
+    protected final void moveBy(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException, DisabledEntityException
+    {
+        if(enabled == false)
+        {
+            throw new DisabledEntityException();
+        }
+
     	Pose end = new Pose(this.pose).move(deltaX, deltaY, deltaAngle);
     	moveTo(end);        
     }
@@ -144,7 +157,12 @@ public abstract class Entity
      * Desenha a entidade na tela
      *
      */
-    public void draw() {
+    public void draw() 
+    {
+        if(enabled == false)
+        {
+            return;
+        }
         try {
             ServiceManager m = ServiceManager.getInstance();
 

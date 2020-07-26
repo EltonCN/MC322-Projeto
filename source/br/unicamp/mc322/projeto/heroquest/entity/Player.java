@@ -108,11 +108,11 @@ public abstract class Player extends Creature implements Curable, Looter
 			do {
 				char order = k.getUserInput();
 	        	
-				if (order == '1') {
+				if (order == '1') 
+				{
 	        		try {
 	        			attack();
 	        		} catch (ActionFailedException e) {
-	        			e.printStackTrace();
 	        		}
 		       		turn = false;
 		       		choiseMade = true;
@@ -127,9 +127,8 @@ public abstract class Player extends Creature implements Curable, Looter
 			       		if (magicChosen < num) {
 			       			try {
 								((Caster) this).getMagic(Character.getNumericValue(magicChosen)).run((Entity) this);
-							} catch (ActionFailedException e) {
-								// Esperamos que isso não ocorra pela restrição da condicional
-								e.printStackTrace();
+							} catch (ActionFailedException e) 
+							{
 							};
 			       			magicDone = true;
 			       		} 

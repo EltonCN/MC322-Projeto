@@ -8,9 +8,23 @@ public class CombatDice {
      * Gera um resultado do dado
      *
      * @return CombatDiceFace
+     * @todo alterar método após corrigir o dado
      */
-    public static CombatDiceFace getResult() {
-    	return faces[D6Dice.getResult() - 1];
+    public static CombatDiceFace getResult()
+    {
+        int result = D6Dice.getResult();
+
+
+        if(result<0)
+        {
+            result =0;
+        }
+        if(result>5)
+        {
+            result = 5;
+        }
+
+    	return faces[result];
     }
 }
 
