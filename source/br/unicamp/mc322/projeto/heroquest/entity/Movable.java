@@ -21,7 +21,7 @@ public interface Movable
      * @throws InvalidMovementException 
      */
     public default void moveN() throws InvalidMovementException { // moveUp
-        moveBy(0, yStepSize, getDeltaAngle(90));
+    	moveByAndTurn(0, yStepSize, getDeltaAngle(90));
     }
     /**
      * Operation moveS
@@ -30,7 +30,7 @@ public interface Movable
      * @throws InvalidMovementException 
      */
     public default void moveS() throws InvalidMovementException { // moveDown
-    	moveBy(0, -yStepSize, getDeltaAngle(270));
+    	moveByAndTurn(0, -yStepSize, getDeltaAngle(270));
     }
     /**
      * Operation moveE
@@ -39,7 +39,7 @@ public interface Movable
      * @throws InvalidMovementException 
      */
     public default void moveE() throws InvalidMovementException { // moveRight
-    	moveBy(xStepSize, 0, getDeltaAngle(0));
+    	moveByAndTurn(xStepSize, 0, getDeltaAngle(0));
     }
     /**
      * Operation moveW
@@ -48,7 +48,7 @@ public interface Movable
      * @throws InvalidMovementException 
      */
     public default void moveW() throws InvalidMovementException { // moveLeft
-    	moveBy(-xStepSize, 0, getDeltaAngle(180));
+    	moveByAndTurn(-xStepSize, 0, getDeltaAngle(180));
     }
     
     public default float getDeltaAngle(float goal) {
