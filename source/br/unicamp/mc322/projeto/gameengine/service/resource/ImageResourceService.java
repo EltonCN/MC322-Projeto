@@ -18,8 +18,8 @@ public class ImageResourceService
     /**
      * Tabela de Hash dos arquivos, chaveados a partir do tipo de entidade. Pode conte
      */
-    private Hashtable<Class, LinkedList<String>> files;
-
+    private Hashtable<Class, LinkedList<String>> files; 
+    
     @Override
     public void end() {
         // TODO Auto-generated method stub
