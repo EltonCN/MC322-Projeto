@@ -63,12 +63,10 @@ public class TurnEntityRunnerService implements EntityRunnerService
 
         EntityStoreService s;
 
-        try
-        {
+        try {
             s = (EntityStoreService) m.getService(ServiceType.ENTITYSTORE);
         }
-        catch(NotAvaibleServiceException e)
-        {
+        catch(NotAvaibleServiceException e) {
             throw new NotAvaibleServiceException("Não é possível utilizar esse serviço sem um armazenador de entidades", e);
         }
 
@@ -78,28 +76,24 @@ public class TurnEntityRunnerService implements EntityRunnerService
         {
             Entity entity = s.getEntity(i);
 
-            try
-            {
+            try {
                 RunnableTurn runnableEntity = (RunnableTurn) entity;
 
                 runnableEntity.startTurn();
 
-                try
-                {
+                try {
                     imageOutput.update();
                 }
-                catch(ServiceException e)
-                {
+                catch(ServiceException e) {
+                	
                 }
 
-                while(runnableEntity.isInTurn())
-                {
+                while(runnableEntity.isInTurn()) {
                     runnableEntity.run();
                 }
             }
-            catch(ClassCastException e)
-            {
-
+            catch(ClassCastException e){
+            	
             }
         }
         

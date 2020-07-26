@@ -2,6 +2,7 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 
 import java.util.LinkedList;
 
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.action.DiceMovement;
 import br.unicamp.mc322.projeto.heroquest.action.Lootable;
@@ -24,6 +25,7 @@ public abstract class Player extends Creature implements Curable, Looter
 		this.name = name;
 		basicMovement = new DiceMovement();
 		isFriendly = true;
+		turn = false;
 	}
 	
     @Override
@@ -64,14 +66,13 @@ public abstract class Player extends Creature implements Curable, Looter
 
 	@Override
 	public void startTurn() {
-		// TODO Auto-generated method stub
+		turn = true;
 		
 	}
 
 	@Override
 	public boolean isInTurn() {
-		// TODO Auto-generated method stub
-		return false;
+		return turn;
 	}
     
     @Override
@@ -86,9 +87,21 @@ public abstract class Player extends Creature implements Curable, Looter
 
     public void run()
     {
-        if(turn == true)
-        {
+        if(turn == true) {
+        	try {
+    			basicMovement.run(this);
+    		} catch (ActionFailedException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+        	try {
+    			attack();
+    		} catch (ActionFailedException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
 
+    		turn = false;
         }
 
         turn = false;

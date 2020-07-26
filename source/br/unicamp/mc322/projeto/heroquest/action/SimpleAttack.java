@@ -8,9 +8,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
-public class SimpleAttack
- implements Attack
-{
+public class SimpleAttack implements Attack {
     /** Attributes */
     /**
      * Dano do ataque
@@ -86,17 +84,14 @@ public class SimpleAttack
 
         int attackScore = attacker.getAttackScore(); 
 
-        if(attackScore<defenseScore)
-        {
+        if(attackScore < defenseScore) {
             return;
         }
 
         int bonus = 0;
 
-        for(int i = 0; i<damageBonus; i++)
-        {
-            if(CombatDice.getResult() == CombatDiceFace.SKULL)
-            {
+        for(int i = 0; i < damageBonus; i++) {
+            if(CombatDice.getResult() == CombatDiceFace.SKULL) {
                 bonus += 1;
             }
         }

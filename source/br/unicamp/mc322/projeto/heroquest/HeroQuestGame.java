@@ -1,24 +1,18 @@
 package br.unicamp.mc322.projeto.heroquest;
 
-import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
-import br.unicamp.mc322.projeto.gameengine.service.SwingScreen;
 import br.unicamp.mc322.projeto.gameengine.service.entityrunner.TurnEntityRunnerService;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.imageoutput.StringImageOutputService;
-import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyboardInputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
-import br.unicamp.mc322.projeto.gameengine.service.resource.ImageResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototype;
-import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
-import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 
@@ -62,7 +56,7 @@ public class HeroQuestGame
         try {
             while(true) {
                 runner.run();
-                Thread.currentThread().sleep(3000);
+                Thread.currentThread().sleep(1500);
             }
             
         }
@@ -71,8 +65,7 @@ public class HeroQuestGame
             e.printStackTrace();
             System.exit(1);
         } catch (InterruptedException e) {
-            System.out.println("Não foi dar pause");
-			// TODO Auto-generated catch block
+            System.out.println("Não foi, dar pause");
 			e.printStackTrace();
 		}
         
@@ -87,8 +80,8 @@ public class HeroQuestGame
         StagePrototype stage0 = new StagePrototype();
         buildTheWall(stage0);
 
-        /*EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 6);
-        stage0.addPrototype(player);*/
+        EntityPrototype player = new EntityPrototype(Barbarian.class, 1, 1);
+        stage0.addPrototype(player);
 
         EntityPrototype monster = new EntityPrototype(Skeleton.class, 7, 3);
         stage0.addPrototype(monster);
