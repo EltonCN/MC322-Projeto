@@ -18,7 +18,7 @@ public class ImageResourceService
     /**
      * Tabela de Hash dos arquivos, chaveados a partir do tipo de entidade. Pode conte
      */
-    private Hashtable<Class, LinkedList<String>> files; 
+    private Hashtable<Class<?>, LinkedList<String>> files; 
     
     @Override
     public void end() {
@@ -27,7 +27,7 @@ public class ImageResourceService
     }
 
     @Override
-    public void setFile(String file, Class c, int index) 
+    public void setFile(String file, Class<?> c, int index) 
     {
         if(files.get(c) == null)
         {
@@ -50,7 +50,7 @@ public class ImageResourceService
     }
 
     @Override
-    public ResourceExtrinsic getResource(ResourceType resourceType, Class c, int index) 
+    public ResourceExtrinsic getResource(ResourceType resourceType, Class<?> c, int index) 
     {
         String file = files.get(c).get(index);
 

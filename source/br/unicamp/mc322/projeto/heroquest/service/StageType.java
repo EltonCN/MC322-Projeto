@@ -3,6 +3,6 @@ package br.unicamp.mc322.projeto.heroquest.service;
 
 public enum StageType
 {
-      ROOM, AISLE;
+      ROOM, HALLWAY;
 }
 

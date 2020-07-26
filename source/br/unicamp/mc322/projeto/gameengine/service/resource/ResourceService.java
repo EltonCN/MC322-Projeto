@@ -10,9 +10,9 @@ public interface ResourceService extends Service
      *
      * @param file - Arquivo
      * @param class - Classe
-     * @param index - √çndice do arquivo
+     * @param index - √ndice do arquivo
      */
-    public void setFile (String file, Class c, int index);
+    public void setFile (String file, Class<?> c, int index);
 
     /**
      * Operation getResource
@@ -20,10 +20,10 @@ public interface ResourceService extends Service
      *
      * @param resourceType - Tipo do recurso que ser√° carregado
      * @param class - Classe ao qual o recurso pertence
-     * @param index - √çndice do recurso
+     * @param index - √ndice do recurso
      * @return ResourceExtrinsic
      */
-    public ResourceExtrinsic getResource ( ResourceType resourceType, Class c, int index );
+    public ResourceExtrinsic getResource ( ResourceType resourceType, Class<?> c, int index );
 
     /**
      * Operation setRoot
