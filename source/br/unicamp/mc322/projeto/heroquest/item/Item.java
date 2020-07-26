@@ -32,6 +32,10 @@ public abstract class Item
     public float getValue() {
     	return value;
     }
+    
+    public String getName() {
+    	return name;
+    }
 
 }
 

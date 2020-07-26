@@ -27,7 +27,8 @@ public abstract class Player extends Creature implements Curable, Looter
      */
     protected String name;
     
-    private float money;
+    @SuppressWarnings("unused")
+	private float money;
     
 	
     public Player(Pose pose, int nAttackDice, int nDefenseDice, int life, String name) {
@@ -42,6 +43,14 @@ public abstract class Player extends Creature implements Curable, Looter
     @Override
     public boolean isPermanent() {
     	return true;
+    }
+    
+    @Override
+    protected void addItemToInventory(Item item) {
+    	if (!item.getName().equals("Golden Coin"))
+    		super.addItemToInventory(item);
+    	else
+    		enrich(item);
     }
     
     /**
@@ -70,6 +79,9 @@ public abstract class Player extends Creature implements Curable, Looter
     public void loot(LinkedList<Item> loot) {
     	for(Item i: loot) {
     		addItemToInventory(i);
+    	}
+    	for(int i = 0; i < loot.size(); i++)  {
+    		loot.remove();
     	}
     }
     
@@ -130,7 +142,7 @@ public abstract class Player extends Creature implements Curable, Looter
 	        			attack();
 	        		} catch (ActionFailedException e) {
 	        		}
-		       		turn = false;
+		       		
 		       		choiseMade = true;
 		       	} 
 				
@@ -152,11 +164,10 @@ public abstract class Player extends Creature implements Curable, Looter
 						}
 					}
 				}
-				
-				else if (order == '4') {
-					//tentar detectar armadilha() @todo
-				}
+
 			} while(!choiseMade);
+			
+			turn = false;
 			
 		} catch (NotAvaibleServiceException e1) {
 			e1.printStackTrace();
@@ -175,7 +186,21 @@ public abstract class Player extends Creature implements Curable, Looter
     }
     
     public void enrich(Item it) {
-    	money += it.getValue();
+    	float value = it.getValue();
+    	if (value < 0) {
+    		
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Player", "Operação inválida para número negativo");
+				money -= value;
+				return;
+			} catch (NotAvaibleServiceException | DisabledServiceException e) {
+				e.printStackTrace();
+			}
+
+    		
+    	}
+    	money += value;
     }
 }
 

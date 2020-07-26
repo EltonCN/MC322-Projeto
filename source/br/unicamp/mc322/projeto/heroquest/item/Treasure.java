@@ -4,7 +4,6 @@ import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.action.Lootable;
 import br.unicamp.mc322.projeto.heroquest.action.Looter;
 import br.unicamp.mc322.projeto.heroquest.entity.HeroQuestEntity;
-import br.unicamp.mc322.projeto.heroquest.entity.Player;
 
 public class Treasure extends HeroQuestEntity implements Lootable {
 	
@@ -15,9 +14,7 @@ public class Treasure extends HeroQuestEntity implements Lootable {
 
 	@Override
 	public void toBeLooted(Looter looter) {
-		for(int i = 0; i < inventory.size(); i++) {
-			((Player) looter).enrich(inventory.get(i));
-		}	
+		looter.loot(inventory);
 	}
 	
 	private void setDefaultTreasure() {
