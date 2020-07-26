@@ -16,7 +16,7 @@ public abstract class SpriteIntrinsic
      * @param file - 
      * @return 
      */
-    
+    public String getPath() {return file;}
     
     
     

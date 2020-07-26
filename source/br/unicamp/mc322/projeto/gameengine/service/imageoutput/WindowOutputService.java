@@ -7,7 +7,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 
 
@@ -21,25 +20,20 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
 	private static final int verticalDimension = 700;
 	
 	
-	private JLabel /*room*/background;
-//	private JLabel hallwaybackground;
-//	private JLabel downMenu;
+	private JLabel background;
 	private SpriteImageOutputService foreground;
-	
-	//É NECESSARIO FAZER ADD(FOREGROUND) ANTES DE ADD(BACKGROUND)
-		
+			
 	
 	public WindowOutputService() {
+
+		setForeground();
+		setBackground();
 		setUI();
 		
-		//O que é necessário: 
-		//	se é um corredor ou sala
+			
 		
-		background = new JLabel(new ImageIcon("PATH_TO_BACKGROUND_IMAGE"));
 		
-		add(background, BorderLayout.NORTH);
 		
-		background.setLayout(new FlowLayout());
 		
 		forceRefresh();
 	}
@@ -48,21 +42,25 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
 	private void setUI() {
 		setTitle("Heroe Quest");
 		
-		setForeground();
 		add(foreground);
-       
+		add(background, BorderLayout.NORTH);
+		
         setSize(horizontalDimension, verticalDimension);
         setLocationRelativeTo(null);
-        
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
-     
-        setLayout(new BorderLayout()); //Esse é o layout do JFrame DA CLASSE 
+        setLayout(new BorderLayout()); 
 	}
 	
 	private void setForeground() {
 		
 		foreground = new SpriteImageOutputService();
+		
+	}
+	private void setBackground() {
+		//NECESSARIO SABER SE É SALA OU CORREDOR
+		background = new JLabel(new ImageIcon("PATH_TO_BACKGROUND_IMAGE"));
+		background.setLayout(new FlowLayout());
 		
 	}
 	
@@ -84,15 +82,6 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
 		
 	}
 	
-	@Override
-	public int getXSize() {
-		return 0;
-	}
-	
-	public int getYSize() {
-		return 0;
-	}
-
 	@Override
 	public void end() {
 		// TODO Auto-generated method stub

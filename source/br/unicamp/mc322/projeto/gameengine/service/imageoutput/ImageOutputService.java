@@ -18,17 +18,7 @@ public interface ImageOutputService extends Service {
      */
     public void addSprite(SpriteExtrinsic sprite, int x, int y, int angle) throws DisabledServiceException;
 
-    /**
-     * Retorna a dimensão x da tela
-     * @return
-     */
-    public int getXSize() throws DisabledServiceException;
 
-    /**
-     * Retorna a dimensão y da tela
-     * @return
-     */
-    public int getYSize() throws DisabledServiceException;
 
 }
 
