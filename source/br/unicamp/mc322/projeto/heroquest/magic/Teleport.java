@@ -30,7 +30,6 @@ public class Teleport extends Magic implements Movement
         for(int i = 0; i<nD6Dice; i++)
         {
             movement.move(movable);
-            movement.move(movable);
         }
     }
 }
