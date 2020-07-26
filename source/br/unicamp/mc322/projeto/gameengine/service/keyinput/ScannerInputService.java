@@ -10,9 +10,16 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
+/**
+ * Leitura de input a partir do teclado com Scanner
+ * @author lucas
+ *
+ */
 public class ScannerInputService implements KeyInputService {
 	
-	Scanner input;
+	private Scanner input;
+	@SuppressWarnings("unused")
+	private boolean ended;
 	
 	public ScannerInputService() {
 		this.input = new Scanner(System.in);
@@ -25,11 +32,12 @@ public class ScannerInputService implements KeyInputService {
 			e.printStackTrace();
 		}
 		
+		ended = false;
 	}
 
 	@Override
 	public void end() {
-		///@todo Auto-generated method stub
+		ended = true;
 		
 	}
 

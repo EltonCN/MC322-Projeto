@@ -1,8 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.service;
 
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
-import br.unicamp.mc322.projeto.gameengine.service.Service;
-import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
@@ -36,7 +34,7 @@ public class ServiceManager
      */
     public void insertService ( Service service, ServiceType serviceType )
     {
-        if(this.service[serviceType.ordinal()] != null)
+        if (this.service[serviceType.ordinal()] != null)
         {
             this.service[serviceType.ordinal()].end();
         }

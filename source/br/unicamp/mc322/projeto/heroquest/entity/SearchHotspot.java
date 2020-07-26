@@ -1,6 +1,5 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
-import br.unicamp.mc322.projeto.gameengine.component.EntityRangeArea;
 import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
@@ -34,11 +33,11 @@ public class SearchHotspot extends HeroQuestEntity implements Interactable {
 	}
 	
 	private void invokeMonster() {
-		invokeEntity(EnemyDice.getEnemy(getUniquePose()));
+		invokeEntity(EnemyDice.getEnemy(getUniqueRandomPose()));
 	}
 	
 	private void invokeTreasure() {
-		invokeEntity(new Treasure(getUniquePose()));
+		invokeEntity(new Treasure(getUniqueRandomPose()));
 	}
 	
 	private void invokeEntity(Entity e) {		
@@ -48,7 +47,7 @@ public class SearchHotspot extends HeroQuestEntity implements Interactable {
 		} catch (NotAvaibleServiceException | DisabledServiceException | DisabledEntityException e1) {
 			try {
 				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
-				l.sendLog(LogType.OTHER, LogPriority.ERROR, "SearchHotspot", "Falha em instanciar entidade necessária: " + e);
+				l.sendLog(LogType.ENTITYSTORE, LogPriority.ERROR, "SearchHotspot", "Temos um problema: " + e);
 			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
 				e2.printStackTrace();
 			}
@@ -56,24 +55,10 @@ public class SearchHotspot extends HeroQuestEntity implements Interactable {
 		
 	}
 	
-	private Pose getUniquePose() {
-		Entity[] entities = new EntityRangeArea().getEntitiesInside();
-		
-		boolean unique = false;
+	private Pose getUniqueRandomPose() {
 		Pose p = RandomPose.getResult();
-		
-		while(!unique) {
-			unique = true;
-			
-			
-			for(int i = 0; i < entities.length; i++) {
-				if (entities[i].getPose().equals(p))
-					unique = false;
-			}
-			
+		while(!p.isPositionOccupiable())
 			p = RandomPose.getResult();
-			
-		}
 		
 		return p;
 	}
