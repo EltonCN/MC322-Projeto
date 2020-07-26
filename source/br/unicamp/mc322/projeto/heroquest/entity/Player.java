@@ -119,21 +119,7 @@ public abstract class Player extends Creature implements Curable, Looter
 		       	} 
 				
 				else if (order == '2' && caster) {
-		       		int num = ((Caster) this).getNMagics();
-		       		boolean magicDone = false;
-		       		
-		       		do {
-			       		char magicChosen = k.getUserInput();
-			       		if (magicChosen < num) {
-			       			try {
-								((Caster) this).getMagic(Character.getNumericValue(magicChosen)).run((Entity) this);
-							} catch (ActionFailedException e) 
-							{
-							};
-			       			magicDone = true;
-			       		} 
-		       		} while(!magicDone);
-		       		choiseMade = true;
+		       		((Caster) this).runMagics();
 				}
 				
 				else if (order == '3') {

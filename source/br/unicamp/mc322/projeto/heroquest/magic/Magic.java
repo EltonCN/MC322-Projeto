@@ -17,7 +17,8 @@ public abstract class Magic implements Action
     /**
      * Elemento da magia
      */
-    private Element element;
+    @SuppressWarnings("unused")
+	private Element element;
 
     Magic(Element element)
     {

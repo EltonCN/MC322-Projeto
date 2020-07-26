@@ -21,7 +21,8 @@ public class StringImageOutputService implements ImageOutputService
     private SpriteExtrinsic[][] frame;
     private int xSize, ySize;
     private int xSpriteSize, ySpriteSize;
-    private boolean ended;
+    @SuppressWarnings("unused")
+	private boolean ended;
 
     private static final int nLineBreak = 10;
 
@@ -115,7 +116,8 @@ public class StringImageOutputService implements ImageOutputService
 
         try
         {
-            StringSprite sprite = (StringSprite) extrinsic.getSprite();
+            @SuppressWarnings("unused")
+			StringSprite sprite = (StringSprite) extrinsic.getSprite();
         }
         catch(ClassCastException e)
         {

@@ -34,5 +34,10 @@ public class MagicSkeleton extends Enemy implements Caster {
 	public int getNMagics() {
 		return 1;
 	}
+	
+	@Override
+	public void runMagics() {
+		return;
+	}
 }
 

@@ -12,7 +12,8 @@ public abstract class Item
     /**
      * Nome do item
      */
-    private String name;
+    @SuppressWarnings("unused")
+	private String name;
     /**
      * Operation Item
      * Construtor de item
