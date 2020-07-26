@@ -1,5 +1,7 @@
 package br.unicamp.mc322.projeto.gameengine.service.resource;
 
+import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
+
 public class ImageResourceService
  implements ResourceService
 {
@@ -7,7 +9,7 @@ public class ImageResourceService
     /**
      * Hash map das sprites já carregadas
      */
-    private Sprite[] sprite;
+    private SpriteExtrinsic[] sprite;
     /**
      * Tabela de Hash dos arquivos, chaveados a partir do tipo de entidade. Pode conte
      */
