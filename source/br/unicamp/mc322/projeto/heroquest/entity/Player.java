@@ -4,6 +4,10 @@ import java.util.LinkedList;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyInputService;
 import br.unicamp.mc322.projeto.heroquest.action.DiceMovement;
 import br.unicamp.mc322.projeto.heroquest.action.Lootable;
 import br.unicamp.mc322.projeto.heroquest.action.Looter;
@@ -87,21 +91,34 @@ public abstract class Player extends Creature implements Curable, Looter
 
     public void run()
     {
-        if(turn == true) {
+        if (turn == true) {
         	try {
     			basicMovement.run(this);
     		} catch (ActionFailedException e) {
-    			// TODO Auto-generated catch block
     			e.printStackTrace();
     		}
-        	try {
-    			attack();
-    		} catch (ActionFailedException e) {
-    			// TODO Auto-generated catch block
-    			e.printStackTrace();
-    		}
+        	
+        	KeyInputService k;
+			try {
+				k = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
+				char order = k.getUserInput();
+	        	if (order == '1') {
+	        		try {
+	        			attack();
+	        		} catch (ActionFailedException e) {
+	        			e.printStackTrace();
+	        		}
 
-    		turn = false;
+	        		turn = false;
+	        	} else if (order == '2') {
+	        		//interact();
+	        	}
+			} catch (NotAvaibleServiceException e1) {
+				e1.printStackTrace();
+			}
+        	
+        	
+        	
         }
 
         turn = false;
