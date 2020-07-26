@@ -24,6 +24,11 @@ public class EntityRangeArea extends Area {
     {
         super(origin, range, metric);
     }
+    
+    public EntityRangeArea() {
+    	super(new Pose(0,0,0), Integer.MIN_VALUE, Metric.MANHATTAN);
+    }
+
 
     /**
      * Operation getEntitiesInside

@@ -4,6 +4,11 @@ import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.entity.*;
 
+/**
+ * 
+ * Serve para criação de inimigos aleatória
+ *
+ */
 
 public class EnemyDice
 {
