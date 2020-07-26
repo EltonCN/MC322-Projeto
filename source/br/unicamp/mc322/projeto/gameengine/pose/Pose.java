@@ -247,4 +247,23 @@ public class Pose
         return possibleFutureArea.getEntitiesInside().length == 0;
 
     }
+
+    /**
+     * Subtrai a pose de outra pose.
+     * Não subtrai os ângulos
+     * @param p
+     * @return
+     */
+    public Pose minus(Pose p)
+    {
+        return new Pose(this.x-p.x, this.y-p.y, this.angle);
+    }
+
+    /**
+     * Cálcula o ângulo em graus do vetor gerado pelo ponto onde a pose está
+     */
+    public float vectorAngle()
+    {
+        return (float) Math.toDegrees(Math.atan2(this.y, this.x));
+    }
 }
