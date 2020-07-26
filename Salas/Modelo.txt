@@ -1,0 +1,28 @@
+<entity classname=>
+	<pose x= y= angle= />
+	<arg className= value=>
+		<arg></arg>
+	</arg>
+
+</entity>
+
+<entity className="br.unicamp.mc322.projeto.heroquest.entity.Skeleton">
+	<pose x="100" y="200" angle="0" />
+</entity>
+
+<entity>
+	<className> br.unicamp.mc322.projeto.heroquest.entity.Door </className>
+	<pose>
+		<x> 200 </x>
+		<y> 100 </y>
+		<angle> 0 </angle>
+	</pose>
+	<arg>
+		<className> br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile </className>
+		<arg>
+			<className> String </className>
+			<value> "stage1.xml" </value>
+		</arg>
+	</args>
+
+</entity>

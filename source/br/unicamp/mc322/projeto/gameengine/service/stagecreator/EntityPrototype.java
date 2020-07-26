@@ -28,6 +28,11 @@ public class EntityPrototype
         this.entityClass = entityClass;
         this.pose = pose;
         this.arg = arg;
+
+        if(arg == null)
+        {
+            this.arg = new Object[0];
+        }
     }
     
     public EntityPrototype(Class<?> entityClass, int x, int y, Object... arg ) {

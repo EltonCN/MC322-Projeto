@@ -1,0 +1,3 @@
+<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Skeleton">
+	<pose x="288" y="192" angle="0" />
+</entity>

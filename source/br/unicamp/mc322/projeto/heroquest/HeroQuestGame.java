@@ -9,6 +9,8 @@ import br.unicamp.mc322.projeto.gameengine.service.imageoutput.StringImageOutput
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
@@ -48,9 +50,18 @@ public class HeroQuestGame
         m.insertService(resource, ServiceType.RESOURCE);
         m.insertService(new StringImageOutputService(), ServiceType.IMAGEOUTPUT);
 
+        PrototypeLoader loader = new PrototypeLoader();
 
-        stageCreator.loadDefaultStage();
-        try {
+        StageIdentifier stage = loader.load("stage0.xml");
+
+        stageCreator.insertStage(stage.getStage());
+
+        
+
+        //stageCreator.loadDefaultStage();
+        try 
+        {
+            stageCreator.loadStage(stage);
             while(true) {
                 runner.run();
                 Thread.currentThread().sleep(1500);
@@ -64,7 +75,11 @@ public class HeroQuestGame
         } catch (InterruptedException e) {
             System.out.println("Não foi, dar pause");
 			e.printStackTrace();
-		}
+        }
+        catch(Exception e)
+        {
+           e.printStackTrace();
+        }
 
 
     }
