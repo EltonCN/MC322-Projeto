@@ -59,7 +59,6 @@ public class Trap extends HeroQuestEntity implements Attacker, RunnableTurn, Int
 					l.sendLog(LogType.OTHER, LogPriority.ERROR, "Trap", "A armadilha foi ativada, mas não conseguiu atacar");
 
 				} catch (NotAvaibleServiceException | DisabledServiceException e1) {
-					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
