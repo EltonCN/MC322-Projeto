@@ -12,7 +12,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 
 public class ChaseMovement implements Movement {
 	
-	protected Attackable chooseFoe(Creature mover, Attackable[] foes) {
+	protected Attackable chooseFoe(Creature mover, Attackable[] foes) throws ActionFailedException {
 		float minDistance = Float.MAX_VALUE;
 		Attackable theFoe = null;
 		float distance;
@@ -21,9 +21,12 @@ public class ChaseMovement implements Movement {
 			if (distance < minDistance) {
 				theFoe = foe;
 				minDistance = distance;
-				
 			}
 		}
+		
+		if (theFoe == null)
+			throw new ActionFailedException("Não há inimigos na tela para perseguir");
+		
 		return theFoe;
 	}
 	
@@ -34,8 +37,7 @@ public class ChaseMovement implements Movement {
 	@Override
 	public void move(Movable movable) throws ActionFailedException {
 		Attackable foe = chooseFoe((Creature) movable, getFoes((Creature) movable));
-		
-		if (foe == null) return;
+			
 		
 		if (((Entity) movable).getPose().distance(((Entity) foe).getPose(), Metric.MANHATTAN) == 1)
 			return; // Movable pode atacar foe: não é necessário se mover

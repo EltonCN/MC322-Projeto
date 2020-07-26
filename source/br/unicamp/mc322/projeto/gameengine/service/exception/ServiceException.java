@@ -9,7 +9,12 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
  */
 public class ServiceException extends Exception
 {
-    public ServiceException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3477717369884636723L;
+
+	public ServiceException(String s)
     {
         super(s);
     }
