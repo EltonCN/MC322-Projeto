@@ -132,9 +132,18 @@ public abstract class Player extends Creature implements Curable, Looter
 		       		choiseMade = true;
 		       	}
 				
-				else if (order == '3' && caster) {
-		       		((Caster) this).runMagics();
-		       		choiseMade = true;
+				else if (order == '3') {
+					try {
+			       		((Caster) this).runMagics();
+			       		choiseMade = true;
+					} catch (ActionFailedException e1) {
+						try {
+							LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+							l.sendLog(LogType.OTHER, LogPriority.LOG, "Player", "Tentativa inválida de usar magia: " + e1);
+						} catch (NotAvaibleServiceException | DisabledServiceException e) {
+							e.printStackTrace();
+						}
+					}
 				}
 				
 				else if (order == '4') {
