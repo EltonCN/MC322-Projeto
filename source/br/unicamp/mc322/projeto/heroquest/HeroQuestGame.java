@@ -4,9 +4,9 @@ import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.SwingScreen;
-import br.unicamp.mc322.projeto.gameengine.service.entityrunner.TurnEntityRunnerService;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.gamerunner.TurnGameRunnerService;
 import br.unicamp.mc322.projeto.gameengine.service.imageoutput.StringImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.KeyboardInputService;
 import br.unicamp.mc322.projeto.gameengine.service.keyinput.ScannerInputService;
@@ -35,7 +35,7 @@ public class HeroQuestGame
 
         m.setAllNullService();
 
-        TurnEntityRunnerService runner = new TurnEntityRunnerService();
+        TurnGameRunnerService runner = new TurnGameRunnerService();
         StringImageResourceService resource = new StringImageResourceService();
 
 
@@ -45,7 +45,7 @@ public class HeroQuestGame
 
         StringImageOutputService output = new StringImageOutputService();
 
-        m.insertService(runner, ServiceType.ENTITYRUNNER);
+        m.insertService(runner, ServiceType.GAMERUNNER);
         m.insertService(new SpartialEntityStoreService(), ServiceType.ENTITYSTORE);
         m.insertService(new PrototypeStageCreatorService(), ServiceType.STAGECREATION);
         m.insertService(new TerminalLogService(), ServiceType.LOG);
@@ -62,7 +62,7 @@ public class HeroQuestGame
         try {
             while(true) {
                 runner.run();
-                Thread.currentThread().sleep(3000);
+                Thread.currentThread().sleep(1000);
             }
             
         }

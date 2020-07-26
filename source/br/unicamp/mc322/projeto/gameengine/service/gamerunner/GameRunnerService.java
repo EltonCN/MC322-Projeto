@@ -1,4 +1,4 @@
-package br.unicamp.mc322.projeto.gameengine.service.entityrunner;
+package br.unicamp.mc322.projeto.gameengine.service.gamerunner;
 
 import br.unicamp.mc322.projeto.gameengine.service.Service;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
@@ -7,7 +7,7 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceEx
 /**
  * Serviço executor em loops de entidades
  */
-public interface EntityRunnerService extends Service
+public interface GameRunnerService extends Service
 {
     /**
      * Operation run
