@@ -9,7 +9,12 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
  */
 public class DisabledServiceException extends ServiceException
 {
-    public DisabledServiceException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6190869166870192206L;
+
+	public DisabledServiceException(String s)
     {
         super(s);
     }

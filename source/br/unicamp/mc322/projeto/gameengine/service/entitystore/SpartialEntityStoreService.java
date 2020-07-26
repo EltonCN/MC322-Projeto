@@ -197,7 +197,8 @@ public class SpartialEntityStoreService implements EntityStoreService
     /**
      * Ordena a lista de entidades
      */
-    private void sort() {
+    @SuppressWarnings("unused")
+	private void sort() { // Método adicionado por ter potencial de ser útil em extensões
         Collections.sort(list, new EntitySpartialComparator());
     }
 
@@ -206,7 +207,8 @@ public class SpartialEntityStoreService implements EntityStoreService
      * @param pose
      * @return índice da lista
      */
-    private int getIndex(Pose pose) throws NoSuchElementException {
+    @SuppressWarnings("unused")
+	private int getIndex(Pose pose) throws NoSuchElementException { // Método adicionado por ter potencial de ser útil em extensões
         Iterator<Entity> iterator = list.iterator();
         
         int index = 0;

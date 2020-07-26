@@ -9,7 +9,12 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
  */
 public class EntityRecipeException extends Exception
 {
-    public EntityRecipeException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7626673779498383468L;
+
+	public EntityRecipeException(String s)
     {
         super(s);
     }
