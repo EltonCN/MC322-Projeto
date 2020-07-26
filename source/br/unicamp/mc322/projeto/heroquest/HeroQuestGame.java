@@ -1,5 +1,9 @@
 package br.unicamp.mc322.projeto.heroquest;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService;
@@ -24,6 +28,9 @@ public class HeroQuestGame
         new HeroQuestGame();
     }
 
+    /**
+     * @todo Descobrir uma forma melhor para conseguir o path da pasta de estágios
+     */
     public HeroQuestGame()
     {
         ServiceManager m = ServiceManager.getInstance();
@@ -52,7 +59,24 @@ public class HeroQuestGame
         m.insertService(resource, ServiceType.RESOURCE);
         m.insertService(new StringImageOutputService(), ServiceType.IMAGEOUTPUT);
 
-        PrototypeLoader loader = new PrototypeLoader();
+        
+        URL url=null;
+        try
+        {
+            url = this.getClass().getResource("dummy.txt");
+        }
+        catch(Exception e)
+        {
+
+        }
+        
+        String path = url.getPath();
+
+        path = path.substring(0, path.length()-48);
+
+        String stagePath = path+"stages";
+
+        PrototypeLoader loader = new PrototypeLoader(stagePath);
 
         StageIdentifier stage = loader.load("stage0.xml");
 

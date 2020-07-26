@@ -16,14 +16,27 @@ import java.util.LinkedList;
 
 public class PrototypeLoader 
 {
+    private String rootDir;
+
+    public PrototypeLoader(String rootDir)
+    {
+
+        if(rootDir.charAt(rootDir.length()-1) != '/')
+        {
+            rootDir = rootDir+"/";
+        }
+
+        this.rootDir = rootDir;
+    }
+
     public StagePrototype load(String dir)
     {
         ///@todo alterar para referência da pasta definida no construtor
         File file = null;
         try
         {
-            URL url = this.getClass().getResource(dir);
-            file = new File(url.toURI());
+            String filePath = rootDir+dir;
+            file = new File(filePath);
         }
         catch(Exception e)
         {
