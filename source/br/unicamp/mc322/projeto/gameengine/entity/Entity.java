@@ -9,6 +9,9 @@ import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceExce
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.imageoutput.ImageOutputService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceType;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
@@ -121,7 +124,12 @@ public abstract class Entity {
 
             s.changePose(this.pose, pose);
         } catch(DisabledServiceException | NotAvaibleServiceException e) {
-        	e.printStackTrace();
+        	try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.ENTITYSTORE, LogPriority.ERROR, "EntityStore", "Há um problema: " + e);
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
         }
     }
 

@@ -123,7 +123,12 @@ public class PrototypeStageCreatorService implements StageCreatorService
         }
         catch(NotAvaibleServiceException e)
         {
-            
+        	try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "PrototypeStageCreatorService", "Há um problema: " + e);
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
         }
         
         for(int i = 0; i<s.countEntity(); i++)
@@ -175,11 +180,20 @@ public class PrototypeStageCreatorService implements StageCreatorService
 
     @Override
     /**
-     * @todo lidar com exceção ClassCastException
+     * 
      */
     public void insertStage(Stage stage) 
     {
+    	try {
         stageList.add((StagePrototype) stage);
+    	} catch (ClassCastException e) {
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "PrototyoeStageCreatorService", "Há um problema (" + e + "): tentativa de inserir um estágio que não compatível com o serviço implementado");
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
+    	}
 
     }
 }

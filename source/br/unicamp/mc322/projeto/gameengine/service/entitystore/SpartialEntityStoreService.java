@@ -263,7 +263,7 @@ public class SpartialEntityStoreService implements EntityStoreService
 
     @Override
     /**
-     * @todo lançar exceção caso a entidade não exista
+     * 
      */
     public Entity getEntity(int index) throws DisabledEntityException
     {

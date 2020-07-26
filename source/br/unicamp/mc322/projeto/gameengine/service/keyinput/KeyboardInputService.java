@@ -12,10 +12,18 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
+/**
+ * Leitura de input a partir do teclado com KeyEvent
+ * @author lucas
+ *
+ */
+
 public class KeyboardInputService implements KeyInputService {
 
-	JPanel watcher;
-	KeyEvent lastEvent;
+	private JPanel watcher;
+	private KeyEvent lastEvent;
+	@SuppressWarnings("unused")
+	private boolean ended;
 
 	public KeyboardInputService() throws NotAvaibleServiceException {
 		watcher = (JPanel) ServiceManager.getInstance().getService(ServiceType.IMAGEOUTPUT);
@@ -36,13 +44,13 @@ public class KeyboardInputService implements KeyInputService {
 			}
         });
 
-
+		ended = false;
 		lastEvent = null;
 	}
 
 	@Override
 	public void end() {
-		///@todo Auto-generated method stub
+		ended = true;
 
 	}
 

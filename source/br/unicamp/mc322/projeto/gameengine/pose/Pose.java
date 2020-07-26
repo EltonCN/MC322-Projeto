@@ -240,11 +240,13 @@ public class Pose
      * Verifica se a pose está ocupada por alguma entidade
      * 
      * @return boolean
-     * @todo - tratar e gerar exceções
+     * 
      */
 	public boolean isPositionOccupiable() {
-        EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 0, Metric.MANHATTAN);
-        return possibleFutureArea.getEntitiesInside().length == 0;
+		int size = 1;
+		EntityRangeArea possibleFutureArea = new EntityRangeArea(this, 0, Metric.MANHATTAN);
+		size = possibleFutureArea.getEntitiesInside().length;
+		return size == 0;
 
     }
 
