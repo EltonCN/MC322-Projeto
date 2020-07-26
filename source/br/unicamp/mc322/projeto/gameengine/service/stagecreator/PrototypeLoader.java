@@ -89,6 +89,7 @@ public class PrototypeLoader
         NodeList poseNode = element.getElementsByTagName("pose");
 
         Pose pose;
+        
 
         if(poseNode.getLength() == 0)
         {
@@ -99,9 +100,10 @@ public class PrototypeLoader
             pose = loadPose(poseNode.item(0));
         }
 
-        NodeList argList = element.getElementsByTagName("arg");
+        LinkedList<Node> argNode = getArgNodes(node);
         
-        Object[] arg = loadArg(argList);
+
+        Object[] arg = loadArg(argNode);
 
 
         return new EntityPrototype(prototypeClass, pose, arg);
@@ -118,23 +120,42 @@ public class PrototypeLoader
         return new Pose(x,y,angle);
     }
 
+    private LinkedList<Node> getArgNodes(Node node)
+    {
+        Element element = (Element) node;
+
+        NodeList children = element.getChildNodes();
+
+        LinkedList<Node> argNode = new LinkedList<Node>();
+
+        for(int i = 0; i< children.getLength(); i++)
+        {
+            if(children.item(i).getNodeName() == "arg")
+            {
+                argNode.add(children.item(i));
+            }
+        }
+
+        return argNode;
+    }
+
     /**
      * Carrega os argumentos do EntityProtype no arquivo
      * @param nodeList
      * @return
      */
-    private Object[] loadArg(NodeList nodeList)
+    private Object[] loadArg(LinkedList<Node> nodeList)
     {  
-        if(nodeList.getLength() == 0)
+        if(nodeList.size() == 0)
         {
-            return null;
+            return new Object[0];
         }
 
         LinkedList<Object> argList = new LinkedList<Object>();
 
-        for(int i = 0; i<nodeList.getLength(); i++)
+        for(int i = 0; i<nodeList.size(); i++)
         {
-            argList.add(loadArg(nodeList.item(i)));
+            argList.add(loadArg(nodeList.get(i)));
         }
 
         return argList.toArray(new Object[argList.size()]);
@@ -149,8 +170,28 @@ public class PrototypeLoader
     private Object loadArg(Node node)
     { 
         Element element = (Element) node;
-        String className = element.getAttribute("className");
+        String className = element.getAttribute("classname");
         Class argClass;
+
+        Object arg = null;
+        String stringValue = element.getAttribute("value");
+
+
+        switch(className)
+        {
+            case "Integer":
+                arg = Integer.parseInt(stringValue);
+                return arg;
+
+            case "String":
+                arg = stringValue;
+                return arg;
+
+            case "Float":
+                arg = Float.parseFloat(stringValue);
+                return arg;
+
+        }
 
         try
         {
@@ -162,51 +203,29 @@ public class PrototypeLoader
             return null;
         }
 
+
+        LinkedList<Node> subArgNode = getArgNodes(node);
         
+        Object[] subArgList = loadArg(subArgNode);
+        Class[] subArgClassList = new Class[subArgList.length];
 
-        String stringValue = element.getAttribute("value");
-
-        Object arg = null;
-
-        if(stringValue.equals(""))
+        for(int i = 0; i< subArgList.length; i++)
         {
-            Object[] subArgList = loadArg(element.getElementsByTagName("arg"));
-            Class[] subArgClassList = new Class[subArgList.length];
-
-            for(int i = 0; i< subArgList.length; i++)
-            {
-                subArgClassList[i] = subArgList[i].getClass();
-            }
-
-            try
-            {
-                Constructor<?> constructor = argClass.getConstructor(subArgClassList);        
-
-                arg =  constructor.newInstance(subArgList);
-            }
-            catch(Exception e)
-            {
-                ///@todo Tratar exceções
-            }
-
+            subArgClassList[i] = subArgList[i].getClass();
         }
-        else
+
+        try
         {
-            switch(className)
-            {
-                case "Integer":
-                    arg = Integer.parseInt(stringValue);
-                break;
+            Constructor<?> constructor = argClass.getConstructor(subArgClassList);        
 
-                case "String":
-                    arg = stringValue;
-                break;
-
-                case "Float":
-                    arg = Float.parseFloat(stringValue);
-                break;
-            }
+            arg =  constructor.newInstance(subArgList);
         }
+        catch(Exception e)
+        {
+            ///@todo Tratar exceções
+            e.printStackTrace();
+        }
+
 
         return arg;
     }

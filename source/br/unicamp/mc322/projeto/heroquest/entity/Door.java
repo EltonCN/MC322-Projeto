@@ -23,11 +23,18 @@ public class Door extends HeroQuestEntity implements Interactable
      * @param stage - Estágio para o qual a porta deve levar
      * @return
      */
-    public Door(Pose pose, StagePrototype stage, StageIdentifier identifier) 
+    public Door(Pose pose, StageIdentifier identifier) 
     {
         super(pose);
 
         this.identifier = identifier;
+    }
+
+    public Door(Pose pose, StagePrototypeFile identifier)
+    {
+        super(pose);
+
+        this.identifier = (StageIdentifier) identifier;
     }
 
     @Override

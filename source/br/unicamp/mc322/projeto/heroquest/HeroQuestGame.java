@@ -12,6 +12,7 @@ import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceS
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
+import br.unicamp.mc322.projeto.heroquest.entity.Door;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 import br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService;
@@ -36,6 +37,7 @@ public class HeroQuestGame
         resource.setFile("SK", Skeleton.class, 0);
         resource.setFile("BR", Barbarian.class, 0);
         resource.setFile("WW", Wall.class, 0);
+        resource.setFile("DR", Door.class, 0);
 
         HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
 
