@@ -1,7 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
-import br.unicamp.mc322.projeto.heroquest.action.RandomMovement;
+import br.unicamp.mc322.projeto.heroquest.action.RandomChaseMovement;
 import br.unicamp.mc322.projeto.heroquest.magic.Magic;
 import br.unicamp.mc322.projeto.heroquest.magic.MagicMissile;
 
@@ -16,7 +16,7 @@ public class MagicSkeleton extends Enemy implements Caster {
      */
     public MagicSkeleton(Pose pose) {
     	super(pose, 4, 4, 2); // Balanceamento escolhido: focado em ataque
-    	basicMovement = new RandomMovement();
+    	basicMovement = new RandomChaseMovement();
     	basicAttack = new MagicMissile();
     }
     

@@ -12,7 +12,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 
 public class ChaseMovement implements Movement {
 	
-	private Attackable chooseFoe(Creature mover, Attackable[] foes) {
+	protected Attackable chooseFoe(Creature mover, Attackable[] foes) {
 		float minDistance = Float.MAX_VALUE;
 		Attackable theFoe = foes[0];
 		float distance;
@@ -27,7 +27,7 @@ public class ChaseMovement implements Movement {
 		return theFoe;
 	}
 	
-	private Attackable[] getFoes(Creature mover) {
+	protected Attackable[] getFoes(Creature mover) {
 		return new AttackableRangeArea().getAttackablesInside(mover);
 	}
 
