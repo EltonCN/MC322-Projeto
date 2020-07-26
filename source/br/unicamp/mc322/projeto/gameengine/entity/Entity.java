@@ -121,7 +121,7 @@ public abstract class Entity {
 
             s.changePose(this.pose, pose);
         } catch(DisabledServiceException | NotAvaibleServiceException e) {
-        	//TODO IMPLEMENT
+        	e.printStackTrace();
         }
     }
 

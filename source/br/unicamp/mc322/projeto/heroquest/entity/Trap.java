@@ -9,6 +9,7 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.gamerunner.RunnableTurn;
+import br.unicamp.mc322.projeto.gameengine.service.imageoutput.ImageOutputService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
@@ -52,6 +53,9 @@ public class Trap extends HeroQuestEntity implements Attacker, RunnableTurn, Int
 		if (active)
 			try {
 				attack();
+				ImageOutputService out = (ImageOutputService) ServiceManager.getInstance().getService(ServiceType.IMAGEOUTPUT);
+				out.update();
+				
 			} catch (ActionFailedException e) {
 				
 				try {
@@ -61,6 +65,9 @@ public class Trap extends HeroQuestEntity implements Attacker, RunnableTurn, Int
 				} catch (NotAvaibleServiceException | DisabledServiceException e1) {
 					e1.printStackTrace();
 				}
+			} catch (NotAvaibleServiceException | DisabledServiceException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		
 	}
