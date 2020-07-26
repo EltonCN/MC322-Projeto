@@ -6,6 +6,12 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
+import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.Element;
@@ -84,7 +90,26 @@ public class PrototypeLoader
         {
             Node node = nodeList.item(i);
 
-            prototypeList.add(loadEntityPrototype(node));
+
+            EntityPrototype e = loadEntityPrototype(node);
+
+            if(e == null)
+            {
+                try
+                {
+                    LogService s = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+
+                    s.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "PrototyLoad error", "Não foi possível carregar um protótipo de entidade");
+                }
+                catch(ServiceException ex)
+                {
+                }
+                
+
+                continue;
+            }
+
+            prototypeList.add(e);
         }
 
         ///@todo precisa criar um construtor para inserir um índice para o estágio, e carregar o índice do arquivo

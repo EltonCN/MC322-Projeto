@@ -34,6 +34,11 @@ public class EntityPrototype
             this.arg = new Object[0];
         }
     }
+
+    public void changePose(Pose pose)
+    {
+        this.pose = pose;
+    }
     
     public EntityPrototype(Class<?> entityClass, int x, int y, Object... arg ) {
     	this(entityClass, new Pose(x * Movement.xStepSize, y * Movement.yStepSize), arg ); //TODO @todo mudar onde a variável está

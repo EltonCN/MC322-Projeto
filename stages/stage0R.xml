@@ -1,0 +1,13 @@
+<prototype>
+    <entity classname="br.unicamp.mc322.projeto.heroquest.entity.RandomStageSpawner">
+        <pose x="0" y="0" angle="0"/>
+        <arg classname="Integer" value="0"/>
+    </entity>
+
+	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
+		<pose x="100" y ="100" angle="0" />
+		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
+			<arg classname="String" value="stage0.xml"/>
+		</arg>
+	</entity>
+</prototype>

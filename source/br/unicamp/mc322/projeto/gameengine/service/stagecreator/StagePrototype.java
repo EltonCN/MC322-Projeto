@@ -15,7 +15,7 @@ public class StagePrototype extends StageMemento implements StageIdentifier
     /**
      * Cópia do estágio modificado após descarregá-lo
      */
-    private StageMemento memento;
+    protected StageMemento memento;
 
 
     public StagePrototype()

@@ -18,6 +18,9 @@ import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 
+/**
+ * @todo implementar ended
+ */
 public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
 {
     /** Attributes */
@@ -34,15 +37,33 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
     public void loadDefaultStage() throws DisabledServiceException
     {
         PrototypeLoader loader = new PrototypeLoader();
-        StageIdentifier stageI = loader.load("stage0.xml");
+        StageIdentifier identifier = loader.load("stage0.xml");
+        
+        this.loadStage(identifier);
 
-        Stage stage = stageI.getStage();
+
+    }
+
+    public void loadRandomStage() throws DisabledServiceException
+    {
+        PrototypeLoader loader = new PrototypeLoader();
+        StageIdentifier identifier = loader.load("stage0R.xml");
+
+        loadStage(identifier);
+
+    }
+
+    public void loadStage(StageIdentifier identifier) throws DisabledServiceException
+    {
+        addWall((StagePrototype) identifier.getStage());
+
+        Stage stage = identifier.getStage();
 
         this.insertStage(stage);
-        
+
         try
         {
-            this.loadStage(stageI);
+            super.loadStage(identifier);
         }
         catch(InvalidStageIdentifierException e)
         {
@@ -62,21 +83,7 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
 
             System.exit(1);
         }
-
-    }
-
-    public void loadStage(StageIdentifier identifier) throws DisabledServiceException, InvalidStageIdentifierException
-    {
-        addWall((StagePrototype) identifier.getStage());
-
-        super.loadStage(identifier);
-    }
-
-    private void addRandomEnemy(StagePrototype stage)
-    {
-    	Object[] args = {};
-        EntityPrototype monster = new EntityPrototype(null, null, args);
-
+        
     }
 
 

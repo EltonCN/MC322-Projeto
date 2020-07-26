@@ -22,7 +22,7 @@ public class StageMemento implements Stage
     /**
      * Protótipos das entidades no estágio
      */
-    private LinkedList<EntityPrototype> entityPrototype;
+    protected LinkedList<EntityPrototype> entityPrototype;
 
     public StageMemento()
     {

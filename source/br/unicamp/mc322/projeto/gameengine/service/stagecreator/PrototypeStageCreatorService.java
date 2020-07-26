@@ -28,6 +28,8 @@ public class PrototypeStageCreatorService implements StageCreatorService
      */
     private boolean ended;
 
+    private StageIdentifier actualStage;
+
     public PrototypeStageCreatorService()
     {
         this.ended = false;
@@ -94,6 +96,8 @@ public class PrototypeStageCreatorService implements StageCreatorService
 
         unload();
         
+        actualStage = identifier;
+
         prototype.load();
 
     }
@@ -144,7 +148,13 @@ public class PrototypeStageCreatorService implements StageCreatorService
             }
         }
 
+        if(actualStage == null)
+        {
+            return;
+        }
 
+        StagePrototype stage = (StagePrototype) actualStage.getStage();
+        stage.createMemento();
     }
     
     private void sendDisabledMessage(String methodName)
