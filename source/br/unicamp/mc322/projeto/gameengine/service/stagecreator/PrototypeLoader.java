@@ -14,19 +14,34 @@ import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.util.LinkedList;
 
+/**
+ * Carrega um estágio do disco
+ * 
+ * @todo O atributo estático para evitar que o StagePrototypeFile dependa da posição da pasta raiz pode indicar um singleton ou absorção ao PrototypeStageCreator
+ */
 public class PrototypeLoader 
 {
-    private String rootDir;
+    private static String rootDir;
 
     public PrototypeLoader(String rootDir)
     {
+        setRootDir(rootDir);
+        
+    }
 
+    public PrototypeLoader()
+    {
+
+    }
+
+    public void setRootDir(String rootDir)
+    {
         if(rootDir.charAt(rootDir.length()-1) != '/')
         {
             rootDir = rootDir+"/";
         }
 
-        this.rootDir = rootDir;
+        PrototypeLoader.rootDir = rootDir;
     }
 
     public StagePrototype load(String dir)

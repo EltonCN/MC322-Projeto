@@ -77,17 +77,12 @@ public class HeroQuestGame
         String stagePath = path+"stages";
 
         PrototypeLoader loader = new PrototypeLoader(stagePath);
-
-        StageIdentifier stage = loader.load("stage0.xml");
-
-        stageCreator.insertStage(stage.getStage());
-
         
 
-        //stageCreator.loadDefaultStage();
+        
         try 
         {
-            stageCreator.loadStage(stage);
+            stageCreator.loadDefaultStage();
             while(true) {
                 runner.run();
                 Thread.currentThread().sleep(1500);

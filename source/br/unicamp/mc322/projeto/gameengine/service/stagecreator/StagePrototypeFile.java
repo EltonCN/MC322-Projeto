@@ -10,9 +10,9 @@ public class StagePrototypeFile implements StageIdentifier
     }
 
     @Override
-    public Stage getStage() {
-        // TODO Auto-generated method stub
-        return null;
+    public Stage getStage() 
+    {
+        return new PrototypeLoader().load(file);
     }
     
 }

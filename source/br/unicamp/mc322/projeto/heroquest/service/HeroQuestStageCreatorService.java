@@ -2,8 +2,17 @@ package br.unicamp.mc322.projeto.heroquest.service;
 
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.InvalidStageIdentifierException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCreatorService;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.Stage;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototype;
 import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
 import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
@@ -22,37 +31,45 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
     /**
      * Cria os estágios padrões do jogo
      */
-    public void loadDefaultStage()
+    public void loadDefaultStage() throws DisabledServiceException
     {
+        PrototypeLoader loader = new PrototypeLoader();
+        StageIdentifier stageI = loader.load("stage0.xml");
+
+        Stage stage = stageI.getStage();
+
+        this.insertStage(stage);
         
-        
-
-        StagePrototype stage0 = new StagePrototype();
-        buildTheWall(stage0);
-
-        EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 3);
-        stage0.addPrototype(player);
-
-        EntityPrototype monster = new EntityPrototype(Skeleton.class, 6, 4);
-        stage0.addPrototype(monster);
-
-        ServiceManager m = ServiceManager.getInstance();
-
         try
         {
-            PrototypeStageCreatorService s = (PrototypeStageCreatorService) m.getService(ServiceType.STAGECREATION);
-
-            s.insertStagePrototype(stage0);
-
-            s.loadStage(stage0);
+            this.loadStage(stageI);
         }
-        catch(Exception e)
+        catch(InvalidStageIdentifierException e)
         {
-            System.out.println("Não foi possível carregar os estágios. O jogo será encerrado");
-            e.printStackTrace();
+            try
+            {
+                ServiceManager m = ServiceManager.getInstance();
+
+                LogService s = (LogService) m.getService(ServiceType.LOG);
+
+                s.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "HeroQuestStageCreatorService", "Não foi possível carregar os estágios");
+            }
+            catch(ServiceException e2)
+            {
+
+            }
+            
+
             System.exit(1);
         }
 
+    }
+
+    public void loadStage(StageIdentifier identifier) throws DisabledServiceException, InvalidStageIdentifierException
+    {
+        addWall((StagePrototype) identifier.getStage());
+
+        super.loadStage(identifier);
     }
 
     private void addRandomEnemy(StagePrototype stage)
@@ -68,7 +85,7 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
      * @param stage - o estágio que possuirá as paredes
      * @todo utilizar constantes para representar o tamanho das salas
      */
-    private void buildTheWall(StagePrototype stage) {
+    private void addWall(StagePrototype stage) {
     	for(int i = 0; i < 16; i++) {
     		stage.addPrototype(new EntityPrototype(Wall.class, i, 0));
     		stage.addPrototype(new EntityPrototype(Wall.class, i, 8));
