@@ -6,13 +6,13 @@ import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 
 public interface ImageOutputService extends Service {
     /**
-     * Operation update Atualiza a saída
+     * Operation update Atualiza a saida
      *
      */
     public void update() throws DisabledServiceException;
 
     /**
-     * Operation addSprite Adiciona uma imagem a saída
+     * Operation addSprite Adiciona uma imagem a saida
      *
      * @param sprite - Sprite a ser adicionado
      */
@@ -28,7 +28,7 @@ public interface ImageOutputService extends Service {
      * Retorna a dimensão y da tela
      * @return
      */
-    public int getYSize() throws DisabledServiceException;;
+    public int getYSize() throws DisabledServiceException;
 
 }
 

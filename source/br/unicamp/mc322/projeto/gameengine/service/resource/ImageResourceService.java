@@ -12,5 +12,25 @@ public class ImageResourceService
      * Tabela de Hash dos arquivos, chaveados a partir do tipo de entidade. Pode conte
      */
     private Map hashTable;
+	@Override
+	public void end() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setFile(String file, Class c, int index) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public ResourceExtrinsic getResource(ResourceType resourceType, Class c, int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setRoot(String rootFolder) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 

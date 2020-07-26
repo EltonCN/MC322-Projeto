@@ -6,17 +6,17 @@ public class NullImageOutputService implements ImageOutputService {
 
     @Override
     public void end() {
-
+    	//void
     }
 
     @Override
     public void update() {
-
+    	//void
     }
 
     @Override
     public void addSprite(SpriteExtrinsic sprite) {
-
+    	//void
     }
 
     @Override

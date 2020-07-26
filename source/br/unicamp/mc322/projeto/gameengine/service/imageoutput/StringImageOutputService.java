@@ -10,7 +10,7 @@ import br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic;
 import br.unicamp.mc322.projeto.gameengine.sprite.StringSprite;
 
 /**
- * @TODO verificacação de serviço desabilitado
+ * @TODO verificacao de servico desabilitado
  */
 public class StringImageOutputService implements ImageOutputService 
 {
