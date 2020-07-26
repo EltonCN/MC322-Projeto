@@ -2,6 +2,7 @@ package br.unicamp.mc322.projeto.gameengine.service.stagecreator;
 
 import java.util.LinkedList;
 
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -88,7 +89,11 @@ public class StageMemento
             }
             catch(DisabledServiceException e)
             {
-
+                ///@todo verificar necessidade de encerrar o programa
+            }
+            catch(DisabledEntityException e)
+            {
+                //Faz nada
             }
             
         }

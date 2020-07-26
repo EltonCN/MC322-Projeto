@@ -16,32 +16,5 @@ public class Wall extends Obstacle {
 		super(pose);
 		///@todo Auto-generated constructor stub
 	}
-	
-	@Override
-    /**
-     * 
-     * @todo tratar exceções
-     */
-    public void draw() {
-        try {
-            ServiceManager m = ServiceManager.getInstance();
-
-            ResourceService s = (ResourceService) m.getService(ServiceType.RESOURCE);
-
-            SpriteExtrinsic sprite = (SpriteExtrinsic) s.getResource(ResourceType.IMAGE, this.getClass(), 0);
-
-            sprite.setPose(this.getPose());
-
-            sprite.setPriority(SpritePriority.LOW);
-
-            ImageOutputService imageService = (ImageOutputService) m.getService(ServiceType.IMAGEOUTPUT);
-
-            imageService.addSprite(sprite);
-        } catch(ServiceException e) 
-        {
-        	
-        }
-
-    }
 
 }

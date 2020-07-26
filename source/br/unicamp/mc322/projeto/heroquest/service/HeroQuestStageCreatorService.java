@@ -30,7 +30,7 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
         StagePrototype stage0 = new StagePrototype();
         buildTheWall(stage0);
 
-        EntityPrototype player = new EntityPrototype(Barbarian.class, 1, 1);
+        EntityPrototype player = new EntityPrototype(Barbarian.class, 6, 3);
         stage0.addPrototype(player);
 
         EntityPrototype monster = new EntityPrototype(Skeleton.class, 6, 4);

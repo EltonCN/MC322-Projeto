@@ -11,6 +11,7 @@ import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -131,24 +132,6 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      */
     public abstract void run();
 
-    /**
-     * Operation sofrerAtaque
-     *
-     * @param damage
-     * @return void
-     */
-    public void takeDamage(int damage) {
-    	if (damage >= 0)
-    		life -= damage;
-    	else {
-    		try {
-				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
-				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Creature", "Operação inválida para número negativo");
-			} catch (NotAvaibleServiceException | DisabledServiceException e) {
-				e.printStackTrace();
-			}
-    	}
-    }
 
     /**
      * Operation attack
@@ -158,7 +141,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      */
     protected void attack() throws ActionFailedException {
     	if (equippedWeapons[0] != null)
-    		basicAttack = equippedWeapons[0].getAttack();
+    		basicAttack = equippedWeapons[0];
     	basicAttack.run(this);
     }
 
@@ -172,8 +155,9 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * @return boolean
      * @throws InvalidMovementException
      */
-    protected void move(float deltaX, float deltaY) throws InvalidMovementException {
-    	moveBy(deltaX, deltaY, 0);
+    protected void move(float deltaX, float deltaY) throws InvalidMovementException, DisabledEntityException
+    {
+    	super.moveBy(deltaX, deltaY, 0);
     }
 
 
@@ -195,10 +179,9 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * @throws InvalidMovementException
      *//*
     protected drop ();*/ //TODO ADD DROP LATER
-
     
-    public void moveByAndTurn(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException {
-        moveBy(deltaX, deltaY, deltaAngle);
+    public void moveByAndTurn(float deltaX, float deltaY, float deltaAngle) throws InvalidMovementException, DisabledEntityException {
+        super.moveBy(deltaX, deltaY, deltaAngle);
     }
 
     /**
@@ -288,14 +271,19 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     	}
     }
 
-    public void takeDamage(float damage) {
-        if (this.armor == null) {
+    public void takeDamage(float damage) 
+    {
+        if (this.armor == null) 
+        {
             this.life -= damage;
-        } else {
+        } 
+        else 
+        {
             this.life -= armor.transformDamage(damage);
         }
 
-        if (life < 0) {
+        if (life < 0) 
+        {
             life = 0;
             this.disable();
         }

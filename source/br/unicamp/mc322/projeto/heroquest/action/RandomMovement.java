@@ -1,6 +1,8 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
+import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.entity.Movable;
 
@@ -9,7 +11,7 @@ public class RandomMovement implements Movement {
 	
 
 	@Override
-	public void move(Movable mover) {
+	public void move(Movable mover) throws ActionFailedException {
 		boolean didItMove  = false;
 		while(!didItMove) {
 			
@@ -29,8 +31,15 @@ public class RandomMovement implements Movement {
 					break;
 				}
 				didItMove = true;
-			} catch(InvalidMovementException e) {
-				//Não faça nada: comportamento esperado!
+			} 
+			catch(InvalidMovementException e) 
+			{
+				throw new ActionFailedException("Movimento inválido", e);
+			}
+			catch(DisabledEntityException e)
+
+			{
+				throw new ActionFailedException("Não é possível mover entidades desabilitadas", e);
 			}
 			
 		}

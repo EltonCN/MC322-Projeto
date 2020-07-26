@@ -1,6 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.service.imageoutput;
 
-
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
@@ -58,7 +58,15 @@ public class StringImageOutputService implements ImageOutputService
 
             for(int i = 0; i< s.countEntity(); i++)
             {
-                s.getEntity(i).draw();
+                try
+                {
+                    s.getEntity(i).draw();
+                }
+                catch(DisabledEntityException e)
+                {
+                    
+                }
+                
             }
         }
         catch(ServiceException e)

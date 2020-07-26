@@ -1,5 +1,6 @@
 package br.unicamp.mc322.projeto.gameengine.service.gamerunner;
 
+import br.unicamp.mc322.projeto.gameengine.entity.DisabledEntityException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -74,7 +75,15 @@ public class TurnGameRunnerService implements GameRunnerService
 
         for(int i = 0; i<s.countEntity(); i++)
         {
-            Entity entity = s.getEntity(i);
+            Entity entity = null;
+            try
+            {
+                entity = s.getEntity(i);
+            } catch (DisabledEntityException e)
+            {
+                continue;
+            }
+            
 
             try {
                 RunnableTurn runnableEntity = (RunnableTurn) entity;
