@@ -11,7 +11,8 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player\+:\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,16 +37,28 @@ boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a47bea01d7dee0c30fe06549bb2775205}{get\+Defense\+Score}} ()
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a506da711e9c76eb1f97c89581d79b000}{run}} ()
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a3b5fba600e3bc7be598223302488b93c}{enrich}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}} it)
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros protegidos}
 \begin{DoxyCompactItemize}
 \item 
-boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a5d778ba4eb8e58bf514c2ca86bc38a3a}{want\+Stop\+Moving}} ()
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a4e2d8ae99a1bb8db359d7a51e05e9b2e}{add\+Item\+To\+Inventory}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}} item)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a1b557c93100b21065b26a4d1caef3b7a}{name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a5dfddc2e8789c20cb60b04f213986a45}{interact}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Privados}
 \begin{DoxyCompactItemize}
 \item 
-String \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a1b557c93100b21065b26a4d1caef3b7a}{name}}
+float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_aa2e61e4fed18d4cae33858dd0d19e7bc}{money}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Outros membros herdados}
 
@@ -60,6 +73,16 @@ String \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1e
 
 
 \doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a4e2d8ae99a1bb8db359d7a51e05e9b2e}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a4e2d8ae99a1bb8db359d7a51e05e9b2e}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!addItemToInventory@{addItemToInventory}}
+\index{addItemToInventory@{addItemToInventory}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
+\doxysubsubsection{\texorpdfstring{addItemToInventory()}{addItemToInventory()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+add\+Item\+To\+Inventory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_hero_quest_entity_a609c27a1e56dd95972b9266822dc90d1}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Hero\+Quest\+Entity}}.
+
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a6acf2a27cc5af822310724416f588d9b}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a6acf2a27cc5af822310724416f588d9b}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!cureLife@{cureLife}}
 \index{cureLife@{cureLife}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
@@ -75,6 +98,12 @@ Operation cure\+Life
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_curable_a71456640efc82a1987c19a5fa1190abb}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Curable}}.
 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a3b5fba600e3bc7be598223302488b93c}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a3b5fba600e3bc7be598223302488b93c}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!enrich@{enrich}}
+\index{enrich@{enrich}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
+\doxysubsubsection{\texorpdfstring{enrich()}{enrich()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+enrich (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}}}]{it }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a47bea01d7dee0c30fe06549bb2775205}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a47bea01d7dee0c30fe06549bb2775205}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!getDefenseScore@{getDefenseScore}}
 \index{getDefenseScore@{getDefenseScore}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
@@ -84,6 +113,12 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroqu
 Operation get\+Defense\+Score Retorna o numero de dados rolados com face de defesa pra cima 
 
 Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a7098d7bf877d8ff369edee3c58e41398}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a5dfddc2e8789c20cb60b04f213986a45}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a5dfddc2e8789c20cb60b04f213986a45}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!interact@{interact}}
+\index{interact@{interact}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
+\doxysubsubsection{\texorpdfstring{interact()}{interact()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+interact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a73892729ac5287528ce7b700f32fc007}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a73892729ac5287528ce7b700f32fc007}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!isInTurn@{isInTurn}}
@@ -96,8 +131,6 @@ Operation is\+In\+Turn Verifica se o turno da entidade terminou
 \begin{DoxyReturn}{Retorna}
 boolean 
 \end{DoxyReturn}
-\begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000049}{Tarefa}}]Auto-\/generated method stub \end{DoxyRefDesc}
 
 
 Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a767bee483961ca30c39153b238bb5e15}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
@@ -123,7 +156,7 @@ Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gam
 \doxysubsubsection{\texorpdfstring{loot()}{loot()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+loot (\begin{DoxyParamCaption}\item[{Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_item}{Item}} $>$}]{loot }\end{DoxyParamCaption})}
 
-
+Implementação padrão do que acontece quando \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player}{Player}} loota algo Implementações diferenciadas podem ser chamadas usando apenas a interface Lootable 
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_looter_a4c36ca7f5eb50714dfe4f62b6e4858fa}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Looter}}.
 
@@ -148,29 +181,24 @@ Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1her
 \doxysubsubsection{\texorpdfstring{startTurn()}{startTurn()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+start\+Turn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Operation start\+Turn Inicia o turno da entidade \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000048}{Tarefa}}]Auto-\/generated method stub \end{DoxyRefDesc}
-
+Operation start\+Turn Inicia o turno da entidade 
 
 Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_adf77675348657a2838e228153921eeb4}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
 
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a5d778ba4eb8e58bf514c2ca86bc38a3a}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a5d778ba4eb8e58bf514c2ca86bc38a3a}} 
-\index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!wantStopMoving@{wantStopMoving}}
-\index{wantStopMoving@{wantStopMoving}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
-\doxysubsubsection{\texorpdfstring{wantStopMoving()}{wantStopMoving()}}
-{\footnotesize\ttfamily boolean br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+want\+Stop\+Moving (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-Operation want\+Stop\+Moving informs whether the \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player}{Player}} has stopped moving \begin{DoxyReturn}{Retorna}
-boolean 
-\end{DoxyReturn}
 
 
 \doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_aa2e61e4fed18d4cae33858dd0d19e7bc}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_aa2e61e4fed18d4cae33858dd0d19e7bc}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!money@{money}}
+\index{money@{money}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
+\doxysubsubsection{\texorpdfstring{money}{money}}
+{\footnotesize\ttfamily float br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+money\hspace{0.3cm}{\ttfamily [private]}}
+
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a1b557c93100b21065b26a4d1caef3b7a}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a1b557c93100b21065b26a4d1caef3b7a}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}!name@{name}}
 \index{name@{name}!br.unicamp.mc322.projeto.heroquest.entity.Player@{br.unicamp.mc322.projeto.heroquest.entity.Player}}
 \doxysubsubsection{\texorpdfstring{name}{name}}
-{\footnotesize\ttfamily String br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+name\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily String br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player.\+name\hspace{0.3cm}{\ttfamily [protected]}}
 
 Attributes Nome do jogador 
 

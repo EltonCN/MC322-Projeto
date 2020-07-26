@@ -11,7 +11,8 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf\+:\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -24,6 +25,15 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+enti
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_a1cb7157d0f2f3b352f67f2856b21b45e}{Elf}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}})
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_adf0b81e342f2b0266a0e178e4b38ce63}{draw}} ()
+\item 
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_ad7358129f5f15a4bc9c3a088889712a6}{get\+Magic}} (int i)
+\item 
+int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_af6efb783b29b158b6cf18db81668835d}{get\+N\+Magics}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_a1513b7f250e69a19501ee5ae446742ba}{magics}} = \{new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_simple_heal}{Simple\+Heal}}()\}
 \end{DoxyCompactItemize}
 \doxysubsection*{Outros membros herdados}
 
@@ -36,7 +46,7 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1ent
 {\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf.\+Elf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000039}{Tarefa}}]A\+DD W\+E\+A\+P\+O\+NS A\+ND M\+A\+G\+IC \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000047}{Tarefa}}]A\+DD W\+E\+A\+P\+O\+NS A\+ND M\+A\+G\+IC \end{DoxyRefDesc}
 
 
 \doxysubsection{Documentação dos métodos}
@@ -46,11 +56,40 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1ent
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Operation draw Desenha a entidade na tela \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000040}{Tarefa}}]Auto-\/generated method stub \end{DoxyRefDesc}
+@\+T\+O\+DO tratar exceções Operation draw Desenha a entidade na tela \begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000048}{Tarefa}}]Auto-\/generated method stub \end{DoxyRefDesc}
 
 
-Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af6fd4585bd5acab1377063b7a2d7ac10}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity}}.
+Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af7ebeab7de7f6211aa884bdc61cd6a01}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_ad7358129f5f15a4bc9c3a088889712a6}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_ad7358129f5f15a4bc9c3a088889712a6}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Elf@{br.unicamp.mc322.projeto.heroquest.entity.Elf}!getMagic@{getMagic}}
+\index{getMagic@{getMagic}!br.unicamp.mc322.projeto.heroquest.entity.Elf@{br.unicamp.mc322.projeto.heroquest.entity.Elf}}
+\doxysubsubsection{\texorpdfstring{getMagic()}{getMagic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf.\+get\+Magic (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_caster_a7ee9916dc76e9ba0b1bf2e9c6b6cad02}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Caster}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_af6efb783b29b158b6cf18db81668835d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_af6efb783b29b158b6cf18db81668835d}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Elf@{br.unicamp.mc322.projeto.heroquest.entity.Elf}!getNMagics@{getNMagics}}
+\index{getNMagics@{getNMagics}!br.unicamp.mc322.projeto.heroquest.entity.Elf@{br.unicamp.mc322.projeto.heroquest.entity.Elf}}
+\doxysubsubsection{\texorpdfstring{getNMagics()}{getNMagics()}}
+{\footnotesize\ttfamily int br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf.\+get\+N\+Magics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_caster_af01336f7d3bd2cbd887169a720124e88}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Caster}}.
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_a1513b7f250e69a19501ee5ae446742ba}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_a1513b7f250e69a19501ee5ae446742ba}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Elf@{br.unicamp.mc322.projeto.heroquest.entity.Elf}!magics@{magics}}
+\index{magics@{magics}!br.unicamp.mc322.projeto.heroquest.entity.Elf@{br.unicamp.mc322.projeto.heroquest.entity.Elf}}
+\doxysubsubsection{\texorpdfstring{magics}{magics}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf.\+magics = \{new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_simple_heal}{Simple\+Heal}}()\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 

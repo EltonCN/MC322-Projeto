@@ -1,6 +1,9 @@
 <map id="br.unicamp.mc322.projeto.heroquest.entity.Interactable" name="br.unicamp.mc322.projeto.heroquest.entity.Interactable">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,279,76"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_lootable.html" title=" " alt="" coords="339,5,615,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door.html" title=" " alt="" coords="327,71,627,98"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html" title=" " alt="" coords="675,13,971,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,115,279,157"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_lootable.html" title=" " alt="" coords="339,27,615,69"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door.html" title=" " alt="" coords="327,93,627,120"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_search_hotspot.html" title=" " alt="" coords="340,145,613,186"/>
+<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_trap.html" title=" " alt="" coords="327,211,626,237"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag.html" title=" " alt="" coords="675,5,971,32"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_treasure.html" title=" " alt="" coords="689,57,956,98"/>
 </map>

@@ -1,11 +1,13 @@
 <map id="br.unicamp.mc322.projeto.heroquest.action.Attack" name="br.unicamp.mc322.projeto.heroquest.action.Attack">
-<area shape="rect" id="node1" title=" " alt="" coords="343,104,619,145"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html" title=" " alt="" coords="667,5,943,47"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html" title=" " alt="" coords="671,71,938,112"/>
-<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_fireball.html" title=" " alt="" coords="667,136,943,177"/>
-<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic_missile.html" title=" " alt="" coords="667,201,943,243"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,104,295,145"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html" title=" " alt="" coords="991,5,1257,47"/>
-<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html" title=" " alt="" coords="991,71,1257,112"/>
-<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html" title=" " alt="" coords="991,136,1257,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="343,152,619,193"/>
+<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack.html" title=" " alt="" coords="991,5,1267,47"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html" title=" " alt="" coords="667,64,943,105"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_unfailable_attack.html" title=" " alt="" coords="991,71,1267,112"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_weapon.html" title=" " alt="" coords="671,181,938,223"/>
+<area shape="rect" id="node10" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_fireball.html" title=" " alt="" coords="667,247,943,288"/>
+<area shape="rect" id="node11" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic_missile.html" title=" " alt="" coords="667,312,943,353"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,152,295,193"/>
+<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_dagger.html" title=" " alt="" coords="995,136,1262,177"/>
+<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_long_sword.html" title=" " alt="" coords="995,201,1262,243"/>
+<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1item_1_1_short_sword.html" title=" " alt="" coords="995,267,1262,308"/>
 </map>

@@ -2,11 +2,12 @@
 \label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack}\index{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack@{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}}
 
 
-Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack\nopagebreak
+Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=297pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack__inherit__graph}
+\includegraphics[width=350pt]{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -27,15 +28,18 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1act
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_ab1480a3ae6179d94aec401cf8337140c}{attack}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker}{Attacker}} origin, \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} target)  throws Action\+Failed\+Exception      
 \end{DoxyCompactItemize}
-\doxysubsection*{Membros privados}
+\doxysubsection*{Membros protegidos}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_aed65a669b1688c0d5bc2c8f911ff5767}{do\+Attack}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker}{Attacker}} attacker, \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} target)
+abstract void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_a0fb00148f0fa59d22bf495fab30ef074}{do\+Attack}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker}{Attacker}} attacker, \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} target)
 \end{DoxyCompactItemize}
-\doxysubsection*{Atributos Privados}
+\doxysubsection*{Atributos Protegidos}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_ab593980360a6a40b34ca0c328eaca6a9}{damage\+Bonus}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
 \item 
 float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_a5d7b66a39a36ce4628bcc523e66ea8ff}{reach}}
 \end{DoxyCompactItemize}
@@ -49,18 +53,6 @@ float \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1ac
 \doxysubsubsection{\texorpdfstring{SimpleAttack()}{SimpleAttack()}}
 {\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack.\+Simple\+Attack (\begin{DoxyParamCaption}\item[{int}]{damage\+Bonus,  }\item[{float}]{reach }\end{DoxyParamCaption})}
 
-Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack}{Simple\+Attack}} Construtor de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack}{Simple\+Attack}}
-
-
-\begin{DoxyParams}{Parâmetros}
-{\em damage\+Bonus} & -\/ Bônus de dano do ataque \\
-\hline
-{\em reach} & -\/ Alcance do ataque \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Retorna}
-
-\end{DoxyReturn}
 
 
 \doxysubsection{Documentação dos métodos}
@@ -71,7 +63,7 @@ Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack.\+attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker}{Attacker}}}]{origin }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action_failed_exception}{Action\+Failed\+Exception}}}
 
 Executa o ataque \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000029}{Tarefa}}]verificar se todos os castings são necessários 
+\item[\mbox{\hyperlink{todo__todo000039}{Tarefa}}]verificar se todos os castings são necessários 
 
 mostrar em algum lugar os resultados dos dados bônus \end{DoxyRefDesc}
 
@@ -88,11 +80,15 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroqu
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack_a18c7b46f9f7fd83224bf84a7d8ea303f}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Attack}}.
 
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_aed65a669b1688c0d5bc2c8f911ff5767}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_aed65a669b1688c0d5bc2c8f911ff5767}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_a0fb00148f0fa59d22bf495fab30ef074}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_a0fb00148f0fa59d22bf495fab30ef074}} 
 \index{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack@{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}!doAttack@{doAttack}}
 \index{doAttack@{doAttack}!br.unicamp.mc322.projeto.heroquest.action.SimpleAttack@{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}}
 \doxysubsubsection{\texorpdfstring{doAttack()}{doAttack()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack.\+do\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker}{Attacker}}}]{attacker,  }\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily abstract void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack.\+do\+Attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attacker}{Attacker}}}]{attacker,  }\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack_a47124817d2d79b5a035a1c94b39f5114}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Dice\+Attack}} e \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_unfailable_attack_ac4115a44eac6fd791ccdce50a7a64b0e}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Unfailable\+Attack}}.
 
 
 
@@ -101,7 +97,7 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroqu
 \index{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack@{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}!damageBonus@{damageBonus}}
 \index{damageBonus@{damageBonus}!br.unicamp.mc322.projeto.heroquest.action.SimpleAttack@{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}}
 \doxysubsubsection{\texorpdfstring{damageBonus}{damageBonus}}
-{\footnotesize\ttfamily int br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack.\+damage\+Bonus\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily int br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+action.\+Simple\+Attack.\+damage\+Bonus\hspace{0.3cm}{\ttfamily [protected]}}
 
 Attributes Dano do ataque \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_a5d7b66a39a36ce4628bcc523e66ea8ff}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack_a5d7b66a39a36ce4628bcc523e66ea8ff}} 
 \index{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack@{br.unicamp.mc322.projeto.heroquest.action.SimpleAttack}!reach@{reach}}

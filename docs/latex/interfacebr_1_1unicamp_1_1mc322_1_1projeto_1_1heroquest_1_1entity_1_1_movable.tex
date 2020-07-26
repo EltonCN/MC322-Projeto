@@ -12,15 +12,17 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \doxysubsection*{Membros públicos}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a273c43ffd47f95a10ba3be7727c1214b}{move\+By}} (float deltaX, float deltaY)  throws Invalid\+Movement\+Exception
+void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_ac4603ffd5c60cef7ff31a652e3311990}{move\+By\+And\+Turn}} (float deltaX, float deltaY, float delta\+Angle)  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception
 \item 
-default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a34ed1e7adf5264e5ca71bbe963709adc}{moveN}} ()  throws Invalid\+Movement\+Exception 
+default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a34ed1e7adf5264e5ca71bbe963709adc}{moveN}} ()  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception 
 \item 
-default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_aa42a519ff24d658ebc5d1c8e03989953}{moveS}} ()  throws Invalid\+Movement\+Exception 
+default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_aa42a519ff24d658ebc5d1c8e03989953}{moveS}} ()  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception 
 \item 
-default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a4f7f307ea8d1b7f0ef77f193be732e6c}{moveE}} ()  throws Invalid\+Movement\+Exception 
+default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a4f7f307ea8d1b7f0ef77f193be732e6c}{moveE}} ()  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception 
 \item 
-default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_afb72736abc6a915f1a3ee1282bc56b5f}{moveW}} ()  throws Invalid\+Movement\+Exception 
+default void \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_afb72736abc6a915f1a3ee1282bc56b5f}{moveW}} ()  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception 
+\item 
+default float \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a84559282a3344bca5e3b96182c21b17c}{get\+Delta\+Angle}} (float goal)
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Públicos Estáticos}
 \begin{DoxyCompactItemize}
@@ -33,25 +35,31 @@ static final float \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1
 
 \doxysubsection{Descrição detalhada}
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000045}{Tarefa}}]mover constantes de Movement para cá \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000051}{Tarefa}}]mover constantes de Movement para cá \end{DoxyRefDesc}
 
 
 \doxysubsection{Documentação dos métodos}
-\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a273c43ffd47f95a10ba3be7727c1214b}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a273c43ffd47f95a10ba3be7727c1214b}} 
-\index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!moveBy@{moveBy}}
-\index{moveBy@{moveBy}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
-\doxysubsubsection{\texorpdfstring{moveBy()}{moveBy()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+move\+By (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a84559282a3344bca5e3b96182c21b17c}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a84559282a3344bca5e3b96182c21b17c}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!getDeltaAngle@{getDeltaAngle}}
+\index{getDeltaAngle@{getDeltaAngle}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
+\doxysubsubsection{\texorpdfstring{getDeltaAngle()}{getDeltaAngle()}}
+{\footnotesize\ttfamily default float br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+get\+Delta\+Angle (\begin{DoxyParamCaption}\item[{float}]{goal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_ac4603ffd5c60cef7ff31a652e3311990}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_ac4603ffd5c60cef7ff31a652e3311990}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!moveByAndTurn@{moveByAndTurn}}
+\index{moveByAndTurn@{moveByAndTurn}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
+\doxysubsubsection{\texorpdfstring{moveByAndTurn()}{moveByAndTurn()}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+move\+By\+And\+Turn (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY,  }\item[{float}]{delta\+Angle }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 
 
-Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a95d27695c11dfffc7db232423e0e0d51}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
+Implementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_creature_a14ba4bd82ed6fd4aa30028c3f48e57f0}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Creature}}.
 
 \mbox{\Hypertarget{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a4f7f307ea8d1b7f0ef77f193be732e6c}\label{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable_a4f7f307ea8d1b7f0ef77f193be732e6c}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!moveE@{moveE}}
 \index{moveE@{moveE}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
 \doxysubsubsection{\texorpdfstring{moveE()}{moveE()}}
-{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation moveE Movimenta a entidade para o norte \begin{DoxyReturn}{Retorna}
 boolean 
@@ -65,7 +73,7 @@ boolean
 \index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!moveN@{moveN}}
 \index{moveN@{moveN}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
 \doxysubsubsection{\texorpdfstring{moveN()}{moveN()}}
-{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation moveN Movimenta a entidade para o norte
 
@@ -81,7 +89,7 @@ boolean
 \index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!moveS@{moveS}}
 \index{moveS@{moveS}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
 \doxysubsubsection{\texorpdfstring{moveS()}{moveS()}}
-{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation moveS Movimenta a entidade para o norte \begin{DoxyReturn}{Retorna}
 boolean 
@@ -95,7 +103,7 @@ boolean
 \index{br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}!moveW@{moveW}}
 \index{moveW@{moveW}!br.unicamp.mc322.projeto.heroquest.entity.Movable@{br.unicamp.mc322.projeto.heroquest.entity.Movable}}
 \doxysubsubsection{\texorpdfstring{moveW()}{moveW()}}
-{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+{\footnotesize\ttfamily default void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Movable.\+moveW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation moveW Movimenta a entidade para o norte \begin{DoxyReturn}{Retorna}
 boolean 
