@@ -1,7 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.item;
 
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
-import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.action.DiceAttack;
 
 
 public class ShortSword extends Weapon {
@@ -14,6 +14,6 @@ public class ShortSword extends Weapon {
 
     public ShortSword() {
             super(name, value, hand, uses);
-            attack = new SimpleAttack(damageBonus, reach);
+            attack = new DiceAttack(damageBonus, reach);
         }
     }

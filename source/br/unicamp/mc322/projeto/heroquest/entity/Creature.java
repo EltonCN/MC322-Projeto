@@ -7,7 +7,7 @@ import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 import br.unicamp.mc322.projeto.heroquest.action.Movement;
 import br.unicamp.mc322.projeto.heroquest.action.NullMovement;
-import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.action.DiceAttack;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
 import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
@@ -68,7 +68,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
      * Ação de ataque básica
      */
     protected Attack basicAttack;
-    private static Attack PUNCH = new SimpleAttack(0, 1);
+    private static Attack PUNCH = new DiceAttack(0, 1);
     /**
      * Amigável (bonzinho) ou não (malvado)
      */
@@ -192,7 +192,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
     protected void equipWeapon(Weapon weapon) {
     	if (usedHand + weapon.getHands() < totalHand + 1) {
     		equippedWeapons[usedHand++] = weapon;
-    		basicAttack = new SimpleAttack(0, 1);
+    		basicAttack = new DiceAttack(0, 1);
     	}
     	else
     		addItemToInventory(weapon);

@@ -147,8 +147,7 @@ public abstract class Player extends Creature implements Curable, Looter
 				}
 				
 				else if (order == '4') {
-					//procurar por tesouros() @todo
-					//talvez não precise se spawmer for interactable
+					//tentar detectar armadilha() @todo
 				}
 			} while(!choiseMade);
 			
