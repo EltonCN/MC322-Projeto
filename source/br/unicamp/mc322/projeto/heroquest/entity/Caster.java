@@ -1,6 +1,7 @@
 package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
+import br.unicamp.mc322.projeto.gameengine.action.InvalidMovementException;
 import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
@@ -18,7 +19,7 @@ public interface Caster
     public Magic getMagic(int i);
     public int getNMagics();
     
-    public default void runMagics() {
+    public default void runMagics() throws ActionFailedException {
     	
     	try {
     		if (!((Player) this).caster) return;
@@ -44,11 +45,15 @@ public interface Caster
 	       		if (magicChosen < num) {
 	       			try {
 						((Caster) this).getMagic(Character.getNumericValue(magicChosen)).run((Entity) this);
-					} catch (ActionFailedException e) {
+						magicDone = true;
+					} 
+	       			catch (ClassCastException e) {
+	       				throw new ActionFailedException(e.toString() + ": apenas Casters podem usar magia");
+	       			}
+	       			catch (ActionFailedException e) {
 						LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
-						l.sendLog(LogType.OTHER, LogPriority.LOG, "Player", "Action failed ("  + e + "): magic unsuccessful");
-					};
-	       			magicDone = true;
+						l.sendLog(LogType.OTHER, LogPriority.LOG, "Player", "Action failed ("  + e + "): magia malsucedida");
+					}
 	       		} 
 	   		} while(!magicDone);
     } catch (Exception e) {

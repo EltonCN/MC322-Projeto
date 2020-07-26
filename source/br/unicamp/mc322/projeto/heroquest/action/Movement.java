@@ -18,7 +18,7 @@ public interface Movement extends Action
 	 */
 	public void move(Movable movable) throws ActionFailedException;
 	
-	public default void run (Entity origin) throws ActionFailedException 
+	public default void run(Entity origin) throws ActionFailedException 
 	{
 		try
 		{
