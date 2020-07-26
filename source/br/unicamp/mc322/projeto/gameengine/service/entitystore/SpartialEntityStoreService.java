@@ -263,13 +263,13 @@ public class SpartialEntityStoreService implements EntityStoreService
     /**
      * @todo lançar exceção caso a entidade não exista
      */
-    public Entity getEntity(int index) 
+    public Entity getEntity(int index) throws DisabledEntityException
     {
         Entity e = list.get(index);
         if(e.isEnabled() == false)
         {
             list.remove(e);
-            return null;
+            throw new DisabledEntityException();
         }
 
         return list.get(index);
