@@ -154,22 +154,23 @@ public abstract class Player extends Creature implements Curable, Looter
 
 			do {
 				char order = k.getUserInput();
-
-				if (order == '1') {
-					try {
-						attack();
-					} catch (ActionFailedException e) {
-					}
-
-					choiseMade = true;
-				}
-
-				else if (order == '2') {
-					interact();
-					choiseMade = true;
-				}
-
-				else if (order == '3') {
+	        	
+				if (order == '1') //attack
+				{
+	        		try {
+	        			attack();
+	        		} catch (ActionFailedException e) {
+	        		}
+		       		
+		       		choiseMade = true;
+		       	} 
+				
+				else if (order == '2') { //interact
+		       		interact();
+		       		choiseMade = true;
+		       	}
+				
+				else if (order == '3') { //magic
 					try {
 						((Caster) this).runMagics();
 						choiseMade = true;
@@ -267,7 +268,7 @@ public abstract class Player extends Creature implements Curable, Looter
 
 				if(visionArea.isInside(squareCenter) == false)
 				{
-					continue;
+					//continue;
 				}
 
 				boolean isBlocked = false;
@@ -292,7 +293,7 @@ public abstract class Player extends Creature implements Curable, Looter
 			}
 		}
 
-
+		System.out.println();
 
 	}
 
@@ -325,7 +326,13 @@ public abstract class Player extends Creature implements Curable, Looter
 
 	public void stageChanged()
 	{
-		Arrays.fill(visualized, Boolean.FALSE);
+		for(int i = 0; i<visualized.length; i++)
+		{
+			for(int j = 0; j<visualized[i].length; j++)
+			{
+				visualized[i][j] = false;
+			}
+		}
 	}
 }
 
