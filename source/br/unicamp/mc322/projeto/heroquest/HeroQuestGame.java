@@ -19,6 +19,7 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
+import br.unicamp.mc322.projeto.gameengine.service.resource.ImageResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
@@ -40,6 +41,7 @@ public class HeroQuestGame
         new HeroQuestGame();
     }
     
+    /*
     private void setAllFiles(StringImageResourceService resource) {
     	resource.setFile("SpriteSheet/EntitiesSprites/enemies/skeleton/south/idle.png", Skeleton.class, 0);
         resource.setFile("SpriteSheet/EntitiesSprites/enemies/magic_skeleton/south/atack.png", MagicSkeleton.class, 0);
@@ -56,7 +58,7 @@ public class HeroQuestGame
         resource.setFile("SpriteSheet/ItensSprites/consumable/potion.png", SearchHotspot.class, 0);
         resource.setFile("SpriteSheet/notVisible.png", Player.class, 0);
     	
-    }
+    }*/
     
     /**
      * @todo Descobrir uma forma melhor para conseguir o path da pasta de estágios
@@ -69,10 +71,10 @@ public class HeroQuestGame
         m.setAllNullService();
 
         TurnGameRunnerService runner = new TurnGameRunnerService();
-        StringImageResourceService resource = new StringImageResourceService();
+        ImageResourceService resource = new ImageResourceService();
 
         //--------------------
-        setAllFiles(resource);
+        //setAllFiles(resource);
         //--------------------
         
         HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
@@ -88,6 +90,20 @@ public class HeroQuestGame
         m.insertService(resource, ServiceType.RESOURCE);
         m.insertService(new StringImageOutputService(), ServiceType.IMAGEOUTPUT);
 
+        resource.setFile("SK", Skeleton.class, 0);
+        resource.setFile("MG", MagicSkeleton.class, 0);
+        resource.setFile("GO", Goblin.class, 0);
+        resource.setFile("BR", Barbarian.class, 0);
+        resource.setFile("WI", Wizard.class, 0);
+        resource.setFile("EL", Elf.class, 0);
+        resource.setFile("DW", Dwarf.class, 0);
+        resource.setFile("ST", Statue.class, 0);
+        resource.setFile("WW", Wall.class, 0);
+        resource.setFile("DR", Door.class, 0);
+        resource.setFile("TR", Treasure.class, 0);
+        resource.setFile("TP", Trap.class, 0);
+        resource.setFile("SH", SearchHotspot.class, 0);
+        resource.setFile("  ", Player.class, 0);
 
         URL url=null;
         try
