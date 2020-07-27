@@ -30,12 +30,15 @@ import br.unicamp.mc322.projeto.heroquest.item.Item;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
 import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
-public abstract class Player extends Creature implements Curable, Looter {
+public abstract class Player extends Creature implements Curable, Looter
+ {
 	/** Attributes */
 	/**
 	 * Nome do jogador
 	 */
 	protected String name;
+
+	private static float visionAngle = 45;
 
 	@SuppressWarnings("unused")
 	private float money;
@@ -225,7 +228,7 @@ public abstract class Player extends Creature implements Curable, Looter {
 
 		super.draw();
 
-		DirectionArea visionArea = new DirectionArea(this.getPose(), 500, Metric.MANHATTAN, 45);
+		DirectionArea visionArea = new DirectionArea(this.getPose(), 500, Metric.MANHATTAN, visionAngle);
 
 		Entity[] inside = visionArea.getEntitiesInside();
 
@@ -239,7 +242,10 @@ public abstract class Player extends Creature implements Curable, Looter {
 				
 				if(blocker.blocksLight() == true)
 				{
-					blockedRegion.add(new DirectionArea(blocker.getPose(), 500, Metric.MANHATTAN, 45));
+					float angle = blocker.getPose().minus(this.getPose()).getAngle();
+					Pose regionPose = blocker.getPose().move(0, 0,  angle);
+
+					blockedRegion.add(new DirectionArea(regionPose, 500, Metric.MANHATTAN, visionAngle));
 				}
 			}
 			catch(ClassCastException ex) 
@@ -254,11 +260,15 @@ public abstract class Player extends Creature implements Curable, Looter {
 			{
 				if(visualized[i][j] == true)
 				{
-
 					continue;
 				}
 
 				Pose squareCenter = new Pose(i*Movement.xStepSize,j*Movement.yStepSize,0);
+
+				if(visionArea.isInside(squareCenter) == false)
+				{
+					continue;
+				}
 
 				boolean isBlocked = false;
 
