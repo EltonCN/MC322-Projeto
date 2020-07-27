@@ -5,30 +5,16 @@
     </entity>
 
 	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
-		<pose x="336" y ="336" angle="0" />
-		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
-			<arg classname="String" value="stage1R.xml"/>
-		</arg>
-	</entity>
-
-	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
 		<pose x="48" y ="192" angle="0" />
 		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
-			<arg classname="String" value="stage4R.xml"/>
+			<arg classname="String" value="stage0R.xml"/>
 		</arg>
 	</entity>
 	
 	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
 		<pose x="672" y ="192" angle="0" />
 		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
-			<arg classname="String" value="stage11R.xml"/>
-		</arg>
-	</entity>
-
-	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
-		<pose x="336" y ="336" angle="0" />
-		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
-			<arg classname="String" value="stage10R.xml"/>
+			<arg classname="String" value="stage12R.xml"/>
 		</arg>
 	</entity>
 

@@ -96,7 +96,7 @@ public class StringImageOutputService implements ImageOutputService
 
     }
 
-    @Override
+    
     /**
      * @TODO lançar exceção para Sprite fora da tela
      * @TODO lançar exceção para Sprite que não seja string
@@ -150,15 +150,19 @@ public class StringImageOutputService implements ImageOutputService
 
     }
 
-    @Override
     public int getXSize() 
     {
         return xSize;
     }
 
-    @Override
     public int getYSize() {
         return ySize;
     }
+
+	@Override
+	public void addSprite(SpriteExtrinsic sprite, int angle) throws DisabledServiceException {
+		addSprite(sprite);
+		
+	}
     
 }

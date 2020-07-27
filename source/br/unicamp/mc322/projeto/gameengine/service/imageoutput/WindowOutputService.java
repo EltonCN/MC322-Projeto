@@ -6,80 +6,92 @@ import java.awt.FlowLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
 
-public class WindowOutputService extends JFrame{
+
+public class WindowOutputService extends JFrame implements ImageOutputService{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 474318554059464017L;
-	private static final int horizontalDimension = 900;
-	private static final int verticalDimension = 700;
+	static final int horizontalDimension = 900;
+	static final int verticalDimension = 700;
+	private boolean ended;
 	
-	
-	private JLabel /*room*/background;
-//	private JLabel hallwaybackground;
-//	private JLabel downMenu;
-	private JPanel foreground;
-	
-	//É NECESSARIO FAZER ADD(FOREGROUND) ANTES DE ADD(BACKGROUND)
-		
+	private JLabel background;
+	private SpriteImageOutputService foreground;
+			
 	
 	public WindowOutputService() {
+		ended = false;
+		
+		setForeground();
+		setBackground();
 		setUI();
 		
-		//O que é necessário: 
-		//	se é um corredor ou sala
-		
-		background = new JLabel(new ImageIcon("PATH_TO_BACKGROUND_IMAGE"));
-		
-		add(background, BorderLayout.NORTH);
-		
-		background.setLayout(new FlowLayout());
-		
+			
+	
 		forceRefresh();
 	}
 
-	
 	//Set screen and foreground
 	private void setUI() {
 		setTitle("Heroe Quest");
 		
-		setForeground();
 		add(foreground);
-       
+		add(background, BorderLayout.NORTH);
+		
         setSize(horizontalDimension, verticalDimension);
         setLocationRelativeTo(null);
-        
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
-     
-        setLayout(new BorderLayout()); //Esse é o layout do JFrame DA CLASSE 
+        setLayout(new BorderLayout()); 
 	}
 	
-	public void setForeground(SpriteExtrinsic sprite) {
-		//Esse é o painel de impressão da sala ou corredor
+	private void setForeground() {
 		
-		//O que é necessário: 
-		//	Quais entidades estão nele
-		//	Quais obstaculos estão nele
+		foreground = new SpriteImageOutputService();
 		
-		//Ideia:
-		//SpriteImageOutput deve ter acesso 
-	
 	}
-	
-	
+	private void setBackground() {
+		//NECESSARIO SABER SE É SALA OU CORREDOR
+		background = new JLabel(new ImageIcon("PATH_TO_BACKGROUND_IMAGE"));
+		background.setLayout(new FlowLayout());
+		
+	}
 	
 	private void forceRefresh() {
 		setSize(horizontalDimension -1, verticalDimension -1);
         setSize(horizontalDimension, verticalDimension);	
 	}
 	
-
+	private boolean hasEnded() {
+		return this.ended;
+	}
+		
+	@Override
+	public void addSprite(SpriteExtrinsic sprite) {		
+		if (hasEnded()) {}
+		else {
+			foreground.add(sprite);
+		}	
+	}
+	
+	@Override
+	public void update() {
+		if (hasEnded()) {}
+		else {
+			foreground.refreshMap();		
+		}
+	}
+	
+	@Override
+	public void end() {
+		this.ended = true;
+		
+	}
 	
 	
 }
