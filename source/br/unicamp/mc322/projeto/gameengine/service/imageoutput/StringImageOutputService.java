@@ -11,6 +11,7 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
+import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 import br.unicamp.mc322.projeto.gameengine.sprite.StringSprite;
 
 /**
@@ -127,6 +128,10 @@ public class StringImageOutputService implements ImageOutputService
         try {
 	        if(frame[xPosition][yPosition] != null )
 	        {
+                if(extrinsic.getSpritePriority() == SpritePriority.HIGH)
+                {
+
+                }
 	            if(frame[xPosition][yPosition].getSpritePriority().ordinal() > extrinsic.getSpritePriority().ordinal())
 	            {
 	                return;
