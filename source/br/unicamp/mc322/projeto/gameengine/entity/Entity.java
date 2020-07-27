@@ -182,7 +182,7 @@ public abstract class Entity {
 
             ImageOutputService imageService = (ImageOutputService) m.getService(ServiceType.IMAGEOUTPUT);
 
-            imageService.addSprite(sprite, (int) pose.getAngle());
+            imageService.addSprite(sprite);
         } catch(ServiceException e) 
         {
         	
