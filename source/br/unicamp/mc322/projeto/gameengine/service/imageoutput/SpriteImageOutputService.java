@@ -26,13 +26,14 @@ public class SpriteImageOutputService extends JPanel{
 	 */
 	private static final long serialVersionUID = -9215279814288548818L;
 	
-	private static final int horizontalEdge = 66;
-	private static final int verticalEdge = 0;
 	private static final int gridSquareSize = 48;
 	//Sizes given in pixels in order to handle 48 pixels squared of grid/sprite dimension
 	private static final int horizontalSize = 16*gridSquareSize;
 	private static final int verticalSize = 9*gridSquareSize;
 	//The map will have proportion of 16:9
+	private static final int horizontalEdge = (WindowOutputService.horizontalDimension -horizontalSize)/2;
+	private static final int verticalEdge = (WindowOutputService.verticalDimension -verticalSize)/2;;
+
 	private Graphics g;
 	
 		
@@ -44,7 +45,8 @@ public class SpriteImageOutputService extends JPanel{
 		
 		// TODO testar com repaint()
 		//Verificar como deletar g e criar outra do 0
-		paintComponent(g);
+//		paintComponent(g);
+		repaint();
 	}
 	
 	private void setGUI() {
@@ -83,7 +85,15 @@ public class SpriteImageOutputService extends JPanel{
 			else 
 				{i = new ImageIcon(se.getSprite().getPath()).getImage();}
 			
-			g2d.drawImage(i, (int) se.getPose().getX(), (int) se.getPose().getY(), this);
+			
+			
+			//This operation is made so the reference point shifts to
+			//the upper left corner of the grid and the map. Before that
+			//the reference was the lower left both map and grid.
+			int coordY = verticalEdge +verticalSize -((int) se.getPose().getY() +48);
+			int coordX = horizontalEdge +(int) se.getPose().getX();
+			
+			g2d.drawImage(i, coordX, coordY, this);
 		
 			
 		}catch(ServiceException e) {
@@ -132,7 +142,20 @@ public class SpriteImageOutputService extends JPanel{
 		
 	}
 	
-	void add(SpriteExtrinsic sprite, int x, int y, int angle) {
+	void refreshMap() {
+		Graphics g_aux = g.create();
+		
+		g.dispose();
+		
+		this.g = g_aux;
+		
+		// TODO testar com repaint()
+		//Verificar como deletar g e criar outra do 0
+//		paintComponent(g);
+		repaint();
+	}
+	
+	void add(SpriteExtrinsic sprite, int angle) {
 		
 //		repaint();
 		

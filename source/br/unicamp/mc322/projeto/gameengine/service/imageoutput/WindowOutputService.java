@@ -16,25 +16,23 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
 	 * 
 	 */
 	private static final long serialVersionUID = 474318554059464017L;
-	private static final int horizontalDimension = 900;
-	private static final int verticalDimension = 700;
-	
+	static final int horizontalDimension = 900;
+	static final int verticalDimension = 700;
+	private boolean ended;
 	
 	private JLabel background;
 	private SpriteImageOutputService foreground;
 			
 	
 	public WindowOutputService() {
-
+		ended = false;
+		
 		setForeground();
 		setBackground();
 		setUI();
 		
 			
-		
-		
-		
-		
+	
 		forceRefresh();
 	}
 
@@ -69,22 +67,30 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
         setSize(horizontalDimension, verticalDimension);	
 	}
 	
+	private boolean hasEnded() {
+		return this.ended;
+	}
+	
 	
 	@Override //throws DisabledServiceException
-	public void addSprite(SpriteExtrinsic sprite, int x, int y, int angle) {
-		
-		foreground.add(sprite, x, y, angle);
-		
+	public void addSprite(SpriteExtrinsic sprite, int angle) {
+		if (hasEnded()) {}
+		else {
+			foreground.add(sprite, angle);
+		}
 	}
 	
 	@Override
 	public void update() {
-		
+		if (hasEnded()) {}
+		else {
+			foreground.refreshMap();		
+		}
 	}
 	
 	@Override
 	public void end() {
-		// TODO Auto-generated method stub
+		this.ended = true;
 		
 	}
 	

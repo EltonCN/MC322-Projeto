@@ -16,7 +16,7 @@ public interface ImageOutputService extends Service {
      *
      * @param sprite - Sprite a ser adicionado
      */
-    public void addSprite(SpriteExtrinsic sprite, int x, int y, int angle) throws DisabledServiceException;
+    public void addSprite(SpriteExtrinsic sprite, int angle) throws DisabledServiceException;
 
 
 
