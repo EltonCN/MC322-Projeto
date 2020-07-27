@@ -32,7 +32,7 @@
 	</entity>
 
 	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Trap">
-		<pose x="384" y="576" angle="0" />
+		<pose x="624" y="240" angle="0" />
 	</entity>
 
 	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.SearchHotspot">
@@ -42,7 +42,14 @@
 	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
 		<pose x="672" y ="192" angle="0" />
 		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
-			<arg classname="String" value="stage1.xml"/>
+			<arg classname="String" value="stage0.xml"/>
+		</arg>
+	</entity>
+
+	<entity classname="br.unicamp.mc322.projeto.heroquest.entity.Door">
+		<pose x="48" y ="192" angle="0" />
+		<arg classname="br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototypeFile">
+			<arg classname="String" value="stage2.xml"/>
 		</arg>
 	</entity>
 </prototype>
