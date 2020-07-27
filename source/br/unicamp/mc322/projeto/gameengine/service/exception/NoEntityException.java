@@ -9,7 +9,12 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
  */
 public class NoEntityException extends Exception
 {
-    public NoEntityException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7988827036805259189L;
+
+	public NoEntityException(String s)
     {
         super(s);
     }

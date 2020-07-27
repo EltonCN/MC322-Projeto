@@ -4,7 +4,12 @@ package br.unicamp.mc322.projeto.gameengine.action;
 public class ActionFailedException extends Exception
 
 {
-    public ActionFailedException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6596316614139923040L;
+
+	public ActionFailedException(String s)
     {
         super(s);
     }

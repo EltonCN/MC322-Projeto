@@ -12,6 +12,9 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
+import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 
 public class Direction extends Area {
 
@@ -56,12 +59,13 @@ public class Direction extends Area {
 			}
 			return (Entity[]) entities.toArray();
 			
-		} catch (NotAvaibleServiceException e) {
-			///@todo Auto-generated catch block
-			e.printStackTrace();
-		} catch (DisabledServiceException e) {
-			///@todo Auto-generated catch block
-			e.printStackTrace();
+		} catch (NotAvaibleServiceException | DisabledServiceException e) {
+			try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.ENTITYSTORE, LogPriority.ERROR, "SearchHotspot", "Há um problema: " + e);
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
 		}
 		
 		return new Entity[0];

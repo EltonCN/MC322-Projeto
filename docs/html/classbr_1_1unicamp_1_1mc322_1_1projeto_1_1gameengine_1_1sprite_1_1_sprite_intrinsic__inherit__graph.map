@@ -1,6 +1,5 @@
 <map id="br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic" name="br.unicamp.mc322.projeto.gameengine.sprite.SpriteIntrinsic">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,292,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,292,80"/>
 <area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_string_sprite.html" title=" " alt="" coords="340,5,627,47"/>
 <area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_swing_image.html" title=" " alt="" coords="340,71,627,112"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1sprite_1_1_swing_string_image.html" title=" " alt="" coords="340,136,627,177"/>
 </map>

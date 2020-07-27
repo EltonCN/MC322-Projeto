@@ -2,7 +2,8 @@
 \label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}\index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
 
 
-Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity\nopagebreak
+Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -31,16 +32,16 @@ boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ace6c297ccac178dc05deca0847f73d2e}{disable}} ()
 \item 
-abstract void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af6fd4585bd5acab1377063b7a2d7ac10}{draw}} ()
-\item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a2db607f3c7ff64080f8e556c8edd2792}{get\+Pose}} ()
 \item 
-final void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_aafaa0ab1078e613c6969fbcce4c0e5f8}{move\+To}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}})  throws Invalid\+Movement\+Exception 
+final void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_aafaa0ab1078e613c6969fbcce4c0e5f8}{move\+To}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}})  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception     
+\item 
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af7ebeab7de7f6211aa884bdc61cd6a01}{draw}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros protegidos}
 \begin{DoxyCompactItemize}
 \item 
-final void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae0a9c516080f87e680a3d9dda7481a89}{move\+By}} (float deltaX, float deltaY, float delta\+Angle)  throws Invalid\+Movement\+Exception 
+final void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae0a9c516080f87e680a3d9dda7481a89}{move\+By}} (float deltaX, float deltaY, float delta\+Angle)  throws Invalid\+Movement\+Exception, Disabled\+Entity\+Exception     
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Protegidos}
 \begin{DoxyCompactItemize}
@@ -83,15 +84,15 @@ Operation \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_
 \doxysubsubsection{\texorpdfstring{disable()}{disable()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Operation disable Desativa a entidade \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af6fd4585bd5acab1377063b7a2d7ac10}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af6fd4585bd5acab1377063b7a2d7ac10}} 
+Operation disable Desativa a entidade \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af7ebeab7de7f6211aa884bdc61cd6a01}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af7ebeab7de7f6211aa884bdc61cd6a01}} 
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!draw@{draw}}
 \index{draw@{draw}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily abstract void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Operation draw Desenha a entidade na tela 
+@\+T\+O\+DO tratar exceções Operation draw Desenha a entidade na tela 
 
-Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door_aec716508d5dabef1b69e1f5aba86bf14}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Door}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag_a3fc2c7fac9685804c37cdbdbf952909e}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Bag}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton_adab4702b9e88f9332b8f768e63ed00f8}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Skeleton}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wall_a1141ab0c230bba2edde720c061222127}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wall}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9eaf1b2fc0eff4b97e9d4c4d25f0c97e}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_magic_skeleton_a26766b90e779b6a5413b12ce27d17492}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Magic\+Skeleton}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_goblin_a347441fe96042a1b51af0085f50f6ccc}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Goblin}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_obstacle_a9b4fd63d102babfb993026e9cac7d6d4}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Obstacle}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_barbarian_af31640a8e8a7e3dde2ea5793fcae7ad3}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Barbarian}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_dwarf_afb48df14a1a675d09d822fa3dc839205}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Dwarf}} e \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_adf0b81e342f2b0266a0e178e4b38ce63}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf}}.
+Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_trap_a95fa453b00aeb5692fa69b27b0e234cd}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Trap}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_door_aec716508d5dabef1b69e1f5aba86bf14}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Door}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_bag_a3fc2c7fac9685804c37cdbdbf952909e}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Bag}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_magic_skeleton_a26766b90e779b6a5413b12ce27d17492}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Magic\+Skeleton}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_elf_adf0b81e342f2b0266a0e178e4b38ce63}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Elf}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_goblin_a347441fe96042a1b51af0085f50f6ccc}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Goblin}} e \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_dwarf_afb48df14a1a675d09d822fa3dc839205}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Dwarf}}.
 
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a2db607f3c7ff64080f8e556c8edd2792}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a2db607f3c7ff64080f8e556c8edd2792}} 
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!getPose@{getPose}}
@@ -128,13 +129,13 @@ boolean
 \end{DoxyReturn}
 
 
-Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a98766ef1d82065d38c9e7a3387400a9c}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player}} e \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_obstacle_a0fbbe0fb3a821b155dd0b50e7ce89617}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Obstacle}}.
+Reimplementado em \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player_a98766ef1d82065d38c9e7a3387400a9c}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Player}}.
 
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae0a9c516080f87e680a3d9dda7481a89}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_ae0a9c516080f87e680a3d9dda7481a89}} 
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!moveBy@{moveBy}}
 \index{moveBy@{moveBy}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
 \doxysubsubsection{\texorpdfstring{moveBy()}{moveBy()}}
-{\footnotesize\ttfamily final void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+move\+By (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY,  }\item[{float}]{delta\+Angle }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily final void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+move\+By (\begin{DoxyParamCaption}\item[{float}]{deltaX,  }\item[{float}]{deltaY,  }\item[{float}]{delta\+Angle }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}\hspace{0.3cm}{\ttfamily [protected]}}
 
 Operation move\+By Move a entidade por um deslocamento específico
 
@@ -159,7 +160,7 @@ boolean -\/ Did the move succeed?
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!moveTo@{moveTo}}
 \index{moveTo@{moveTo}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}
 \doxysubsubsection{\texorpdfstring{moveTo()}{moveTo()}}
-{\footnotesize\ttfamily final void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}}
+{\footnotesize\ttfamily final void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity.\+move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception}{Invalid\+Movement\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation move\+To Move a entidade para uma pose específica
 
@@ -177,7 +178,7 @@ boolean -\/ Did the move succeed?
 \hline
 \end{DoxyExceptions}
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000003}{Tarefa}}]Lidar com exceções \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000004}{Tarefa}}]Lidar com exceções \end{DoxyRefDesc}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af63e56b0023e7b7903af32ea0a2c240d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af63e56b0023e7b7903af32ea0a2c240d}} 
 \index{br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}!stageChanged@{stageChanged}}
 \index{stageChanged@{stageChanged}!br.unicamp.mc322.projeto.gameengine.entity.Entity@{br.unicamp.mc322.projeto.gameengine.entity.Entity}}

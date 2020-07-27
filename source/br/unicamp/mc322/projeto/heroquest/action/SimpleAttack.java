@@ -1,31 +1,23 @@
 package br.unicamp.mc322.projeto.heroquest.action;
 
 import br.unicamp.mc322.projeto.gameengine.action.ActionFailedException;
-import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
-import br.unicamp.mc322.projeto.heroquest.utility.CombatDice;
-import br.unicamp.mc322.projeto.heroquest.utility.CombatDiceFace;
 
-public class SimpleAttack implements Attack {
-    /** Attributes */
+public abstract class SimpleAttack implements Attack {
+
+	/** Attributes */
     /**
      * Dano do ataque
      */
-    private int damageBonus;
+    protected int damageBonus;
     /**
      * Alcance do ataque
      */
     private float reach;
-    /**
-     * Operation SimpleAttack
-     * Construtor de SimpleAttack
-     *
-     * @param damageBonus - Bônus de dano do ataque
-     * @param reach - Alcance do ataque
-     * @return 
-     */
+    /**/
+	
     public SimpleAttack (int damageBonus, float reach)
     {
         this.damageBonus = damageBonus;
@@ -77,28 +69,7 @@ public class SimpleAttack implements Attack {
 
         doAttack(origin, target);
     }
-
-    private void doAttack(Attacker attacker, Attackable target)
-    {
-        int defenseScore = target.getDefenseScore();
-
-        int attackScore = attacker.getAttackScore(); 
-
-        if(attackScore < defenseScore) {
-            return;
-        }
-
-        int bonus = 0;
-
-        for(int i = 0; i < damageBonus; i++) {
-            if(CombatDice.getResult() == CombatDiceFace.SKULL) {
-                bonus += 1;
-            }
-        }
-
-        target.takeDamage((attackScore - defenseScore) + bonus);
-		
-    }
     
-}
+    protected abstract void doAttack(Attacker attacker, Attackable target);
 
+}

@@ -27,6 +27,9 @@ public abstract class Player extends Creature implements Curable, Looter
      */
     protected String name;
     
+    @SuppressWarnings("unused")
+	private float money;
+    
 	
     public Player(Pose pose, int nAttackDice, int nDefenseDice, int life, String name) {
 		super(pose, nAttackDice, nDefenseDice, life);
@@ -34,11 +37,20 @@ public abstract class Player extends Creature implements Curable, Looter
 		basicMovement = new DiceMovement();
 		isFriendly = true;
 		turn = false;
+		money = 0;
 	}
 	
     @Override
     public boolean isPermanent() {
     	return true;
+    }
+    
+    @Override
+    protected void addItemToInventory(Item item) {
+    	if (!item.getName().equals("Golden Coin"))
+    		super.addItemToInventory(item);
+    	else
+    		enrich(item);
     }
     
     /**
@@ -60,9 +72,16 @@ public abstract class Player extends Creature implements Curable, Looter
     	}
     }
     
+    /**
+     * Implementação padrão do que acontece quando Player loota algo
+     * Implementações diferenciadas podem ser chamadas usando apenas a interface Lootable
+     */
     public void loot(LinkedList<Item> loot) {
     	for(Item i: loot) {
     		addItemToInventory(i);
+    	}
+    	for(int i = 0; i < loot.size(); i++)  {
+    		loot.remove();
     	}
     }
     
@@ -117,31 +136,38 @@ public abstract class Player extends Creature implements Curable, Looter
 			do {
 				char order = k.getUserInput();
 	        	
-				if (order == '1') 
+				if (order == '1') //attack
 				{
 	        		try {
 	        			attack();
 	        		} catch (ActionFailedException e) {
 	        		}
-		       		turn = false;
+		       		
 		       		choiseMade = true;
 		       	} 
 				
-				else if (order == '2') {
+				else if (order == '2') { //interact
 		       		interact();
 		       		choiseMade = true;
 		       	}
 				
-				else if (order == '3' && caster) {
-		       		((Caster) this).runMagics();
-		       		choiseMade = true;
+				else if (order == '3') { //magic
+					try {
+			       		((Caster) this).runMagics();
+			       		choiseMade = true;
+					} catch (ActionFailedException e1) {
+						try {
+							LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+							l.sendLog(LogType.OTHER, LogPriority.LOG, "Player", "Tentativa inválida de usar magia: " + e1);
+						} catch (NotAvaibleServiceException | DisabledServiceException e) {
+							e.printStackTrace();
+						}
+					}
 				}
-				
-				else if (order == '4') {
-					//procurar por tesouros() @todo
-					//talvez não precise se spawmer for interactable
-				}
+
 			} while(!choiseMade);
+			
+			turn = false;
 			
 		} catch (NotAvaibleServiceException e1) {
 			e1.printStackTrace();
@@ -159,5 +185,22 @@ public abstract class Player extends Creature implements Curable, Looter
     	}
     }
     
+    public void enrich(Item it) {
+    	float value = it.getValue();
+    	if (value < 0) {
+    		
+    		try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.OTHER, LogPriority.ERROR, "Player", "Operação inválida para número negativo");
+				money -= value;
+				return;
+			} catch (NotAvaibleServiceException | DisabledServiceException e) {
+				e.printStackTrace();
+			}
+
+    		
+    	}
+    	money += value;
+    }
 }
 

@@ -1,5 +1,3 @@
 <map id="Representação gráfica da hiearquia da classe" name="Representação gráfica da hiearquia da classe">
-<area shape="rect" id="node1" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_identifier.html" title=" " alt="" coords="5,5,376,47"/>
-<area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_prototype.html" title=" " alt="" coords="424,39,795,80"/>
-<area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_stage_memento.html" title=" " alt="" coords="5,71,376,112"/>
+<area shape="rect" id="node1" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1stagecreator_1_1_entity_prototype.html" title=" " alt="" coords="5,5,376,47"/>
 </map>

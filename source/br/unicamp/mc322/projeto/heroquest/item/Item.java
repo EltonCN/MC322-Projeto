@@ -12,7 +12,6 @@ public abstract class Item
     /**
      * Nome do item
      */
-    @SuppressWarnings("unused")
 	private String name;
     /**
      * Operation Item
@@ -26,6 +25,15 @@ public abstract class Item
     {
         this.name = name;
         this.value = value;
+    }
+    
+    
+    public float getValue() {
+    	return value;
+    }
+    
+    public String getName() {
+    	return name;
     }
 
 }

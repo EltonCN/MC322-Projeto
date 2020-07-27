@@ -39,8 +39,11 @@ public class DiceMovement implements Movement
 						case 'd':
 							mover.moveE();
 							break;
-						default:
+						case 'q':
 							doneMoving = true;
+							break;
+						default:
+							break; // Usuário se enganou: espere ele digitar uma tecla válida
 					}
 				} 
 				catch (InvalidMovementException e) 

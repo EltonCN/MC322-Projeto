@@ -16,6 +16,12 @@ public interface StageCreatorService
     public void loadStage ( StageIdentifier identifier ) throws DisabledServiceException, InvalidStageIdentifierException;
 
     /**
+     * Insere um estágio no criador
+     * @param stage - estágio a ser inserido
+     */
+    public void insertStage(Stage stage);
+
+    /**
      * Operation unload
      * Descarrega o estágio atual
      *

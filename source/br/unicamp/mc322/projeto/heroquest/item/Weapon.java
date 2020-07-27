@@ -10,7 +10,7 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.utility.RandomGenerator;
 import br.unicamp.mc322.projeto.heroquest.action.Attack;
-import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.action.DiceAttack;
 import br.unicamp.mc322.projeto.heroquest.entity.Attackable;
 import br.unicamp.mc322.projeto.heroquest.entity.Attacker;
 import br.unicamp.mc322.projeto.heroquest.entity.Creature;
@@ -30,7 +30,7 @@ public abstract class Weapon extends Item implements Attack {
      */
     private static final Weapon[] WEAPONS_IN_GAME = {new LongSword(), new ShortSword(), new Dagger()};
 
-    protected SimpleAttack attack;
+    protected DiceAttack attack;
     /**
      * Operation Weapon
      * Construtor de Weapon

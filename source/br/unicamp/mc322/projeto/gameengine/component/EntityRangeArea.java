@@ -24,6 +24,11 @@ public class EntityRangeArea extends Area {
     {
         super(origin, range, metric);
     }
+    
+    public EntityRangeArea() {
+    	super(new Pose(0,0,0), Integer.MIN_VALUE, Metric.MANHATTAN);
+    }
+
 
     /**
      * Operation getEntitiesInside
@@ -51,7 +56,7 @@ public class EntityRangeArea extends Area {
             }
             catch(ServiceException e2)
             {
-
+            	e2.printStackTrace();
             }
 
             return new Entity[0];

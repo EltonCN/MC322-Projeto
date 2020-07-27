@@ -11,7 +11,8 @@ Diagrama de heranças da classe br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+ent
 \end{figure}
 
 
-Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard\+:\nopagebreak
+Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,12 +24,19 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+enti
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a85b398b79e58d2cdd124bed43d62835f}{Wizard}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_a5d94623f8a8c4320626f60df3e94d5f1}{pose}})
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9eaf1b2fc0eff4b97e9d4c4d25f0c97e}{draw}} ()
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a03c195f7c3bbc7702c263a91772b57c9}{get\+Magic}} (int i)
+\item 
+int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9fb5c8bca1fc21b9347b22d64d97e71d}{get\+N\+Magics}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a25fd6963b67e45a0fa9d590e5fd7cb7e}{set\+Dagger}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados Estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static final \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a4beecf8631f2c757c5c5ec565d2f1b39}{magics}} = \{new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_fireball}{Fireball}}(), new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic_missile}{Magic\+Missile}}(), new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_teleport}{Teleport}}()\}
 \end{DoxyCompactItemize}
 \doxysubsection*{Outros membros herdados}
 
@@ -41,27 +49,44 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1ent
 {\footnotesize\ttfamily br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard.\+Wizard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption})}
 
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000053}{Tarefa}}]A\+DD W\+E\+A\+P\+O\+NS A\+ND M\+A\+G\+IC \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000056}{Tarefa}}]A\+DD W\+E\+A\+P\+O\+NS A\+ND M\+A\+G\+IC \end{DoxyRefDesc}
 
 
 \doxysubsection{Documentação dos métodos}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9eaf1b2fc0eff4b97e9d4c4d25f0c97e}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9eaf1b2fc0eff4b97e9d4c4d25f0c97e}} 
-\index{br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}!draw@{draw}}
-\index{draw@{draw}!br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}}
-\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard.\+draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Operation draw Desenha a entidade na tela \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000054}{Tarefa}}]Auto-\/generated method stub \end{DoxyRefDesc}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a03c195f7c3bbc7702c263a91772b57c9}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a03c195f7c3bbc7702c263a91772b57c9}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}!getMagic@{getMagic}}
+\index{getMagic@{getMagic}!br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}}
+\doxysubsubsection{\texorpdfstring{getMagic()}{getMagic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard.\+get\+Magic (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
 
 
-Reimplementado de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity_af6fd4585bd5acab1377063b7a2d7ac10}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+entity.\+Entity}}.
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_caster_a7ee9916dc76e9ba0b1bf2e9c6b6cad02}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Caster}}.
+
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9fb5c8bca1fc21b9347b22d64d97e71d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a9fb5c8bca1fc21b9347b22d64d97e71d}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}!getNMagics@{getNMagics}}
+\index{getNMagics@{getNMagics}!br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}}
+\doxysubsubsection{\texorpdfstring{getNMagics()}{getNMagics()}}
+{\footnotesize\ttfamily int br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard.\+get\+N\+Magics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_caster_af01336f7d3bd2cbd887169a720124e88}{br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Caster}}.
 
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a25fd6963b67e45a0fa9d590e5fd7cb7e}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a25fd6963b67e45a0fa9d590e5fd7cb7e}} 
 \index{br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}!setDagger@{setDagger}}
 \index{setDagger@{setDagger}!br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}}
 \doxysubsubsection{\texorpdfstring{setDagger()}{setDagger()}}
 {\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard.\+set\+Dagger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a4beecf8631f2c757c5c5ec565d2f1b39}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wizard_a4beecf8631f2c757c5c5ec565d2f1b39}} 
+\index{br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}!magics@{magics}}
+\index{magics@{magics}!br.unicamp.mc322.projeto.heroquest.entity.Wizard@{br.unicamp.mc322.projeto.heroquest.entity.Wizard}}
+\doxysubsubsection{\texorpdfstring{magics}{magics}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic}{Magic}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+entity.\+Wizard.\+magics = \{new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_fireball}{Fireball}}(), new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_magic_missile}{Magic\+Missile}}(), new \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1magic_1_1_teleport}{Teleport}}()\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 

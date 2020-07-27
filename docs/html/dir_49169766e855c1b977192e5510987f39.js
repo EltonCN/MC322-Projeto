@@ -9,6 +9,9 @@ var dir_49169766e855c1b977192e5510987f39 =
     [ "Cure.java", "_cure_8java.html", [
       [ "Cure", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_cure.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_cure" ]
     ] ],
+    [ "DiceAttack.java", "_dice_attack_8java.html", [
+      [ "DiceAttack", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack" ]
+    ] ],
     [ "DiceMovement.java", "_dice_movement_8java.html", [
       [ "DiceMovement", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_movement.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_movement" ]
     ] ],
@@ -21,6 +24,12 @@ var dir_49169766e855c1b977192e5510987f39 =
     [ "Movement.java", "_movement_8java.html", [
       [ "Movement", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_movement" ]
     ] ],
+    [ "NullMovement.java", "_null_movement_8java.html", [
+      [ "NullMovement", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_null_movement.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_null_movement" ]
+    ] ],
+    [ "RandomChaseMovement.java", "_random_chase_movement_8java.html", [
+      [ "RandomChaseMovement", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_random_chase_movement.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_random_chase_movement" ]
+    ] ],
     [ "RandomMovement.java", "_random_movement_8java.html", [
       [ "RandomMovement", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_random_movement.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_random_movement" ]
     ] ],
@@ -29,5 +38,8 @@ var dir_49169766e855c1b977192e5510987f39 =
     ] ],
     [ "SimpleAttack.java", "_simple_attack_8java.html", [
       [ "SimpleAttack", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_simple_attack" ]
+    ] ],
+    [ "UnfailableAttack.java", "_unfailable_attack_8java.html", [
+      [ "UnfailableAttack", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_unfailable_attack.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_unfailable_attack" ]
     ] ]
 ];

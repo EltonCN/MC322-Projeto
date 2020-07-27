@@ -7,5 +7,10 @@ package br.unicamp.mc322.projeto.gameengine.entity;
 public class DisabledEntityException extends Exception
 
 {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4729992993252846792L;
 }
 

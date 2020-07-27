@@ -48,17 +48,26 @@ var dir_581752da2cc6301a03e0af4698720c05 =
     [ "Movable.java", "_movable_8java.html", [
       [ "Movable", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable.html", "interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_movable" ]
     ] ],
-    [ "NullMovement.java", "_null_movement_8java.html", [
-      [ "NullMovement", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_null_movement.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_null_movement" ]
-    ] ],
     [ "Obstacle.java", "_obstacle_8java.html", [
       [ "Obstacle", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_obstacle.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_obstacle" ]
     ] ],
     [ "Player.java", "_player_8java.html", [
       [ "Player", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_player" ]
     ] ],
+    [ "RandomStageSpawner.java", "_random_stage_spawner_8java.html", [
+      [ "RandomStageSpawner", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_random_stage_spawner.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_random_stage_spawner" ]
+    ] ],
+    [ "SearchHotspot.java", "_search_hotspot_8java.html", [
+      [ "SearchHotspot", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_search_hotspot.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_search_hotspot" ]
+    ] ],
     [ "Skeleton.java", "_skeleton_8java.html", [
       [ "Skeleton", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_skeleton" ]
+    ] ],
+    [ "Statue.java", "_statue_8java.html", [
+      [ "Statue", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_statue.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_statue" ]
+    ] ],
+    [ "Trap.java", "_trap_8java.html", [
+      [ "Trap", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_trap.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_trap" ]
     ] ],
     [ "Wall.java", "_wall_8java.html", [
       [ "Wall", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wall.html", "classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_wall" ]

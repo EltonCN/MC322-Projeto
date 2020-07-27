@@ -28,9 +28,7 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+comp
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a1af59553f81dc7597b0cc42ec5f9d611}{remove}} (\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}\mbox{[}$\,$\mbox{]} at, int i)
-\item 
-\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a5bb4d29aaf572939b768647ceff78867}{get\+Attackables\+Inside}} ()
+Vector$<$ \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_aee4394fab7fc9527e5d8a4eb1993db3d}{get\+Attackables\+Inside}} ()
 \end{DoxyCompactItemize}
 
 
@@ -53,11 +51,11 @@ Representa uma área de alcance de ataque
 
 
 \doxysubsection{Documentação dos métodos}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a5bb4d29aaf572939b768647ceff78867}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a5bb4d29aaf572939b768647ceff78867}} 
+\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_aee4394fab7fc9527e5d8a4eb1993db3d}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_aee4394fab7fc9527e5d8a4eb1993db3d}} 
 \index{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}!getAttackablesInside@{getAttackablesInside}}
 \index{getAttackablesInside@{getAttackablesInside}!br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}}
 \doxysubsubsection{\texorpdfstring{getAttackablesInside()}{getAttackablesInside()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+component.\+Attackable\+Range\+Area.\+get\+Attackables\+Inside (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Vector$<$\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}$>$ br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+component.\+Attackable\+Range\+Area.\+get\+Attackables\+Inside (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a5e3567ee7e85469af6b34139539620b6}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a5e3567ee7e85469af6b34139539620b6}} 
 \index{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}!getAttackablesInside@{getAttackablesInside}}
@@ -68,7 +66,7 @@ Representa uma área de alcance de ataque
 Retorna todos os atacáveis que não são do tipo do atacante, ie, todos que ele pode atacar
 
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000030}{Tarefa}}]implementar método inteiro \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000040}{Tarefa}}]implementar método inteiro \end{DoxyRefDesc}
 \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_ae7a2b2ec35c95be721d7642b917ea9b6}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_ae7a2b2ec35c95be721d7642b917ea9b6}} 
 \index{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}!getAttackablesInside@{getAttackablesInside}}
 \index{getAttackablesInside@{getAttackablesInside}!br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}}
@@ -78,13 +76,7 @@ Retorna todos os atacáveis que não são do tipo do atacante, ie, todos que ele
 Retorna todos os atacáveis que são do tipo de amigável dado
 
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000031}{Tarefa}}]implementar método inteiro \end{DoxyRefDesc}
-\mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a1af59553f81dc7597b0cc42ec5f9d611}\label{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1component_1_1_attackable_range_area_a1af59553f81dc7597b0cc42ec5f9d611}} 
-\index{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}!remove@{remove}}
-\index{remove@{remove}!br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea@{br.unicamp.mc322.projeto.heroquest.component.AttackableRangeArea}}
-\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+heroquest.\+component.\+Attackable\+Range\+Area.\+remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1entity_1_1_attackable}{Attackable}}\mbox{[}$\,$\mbox{]}}]{at,  }\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
+\item[\mbox{\hyperlink{todo__todo000041}{Tarefa}}]implementar método inteiro \end{DoxyRefDesc}
 
 
 \doxysubsection{Documentação dos dados membro}

@@ -9,7 +9,12 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
  */
 public class InvalidStageIdentifierException extends Exception
 {
-    public InvalidStageIdentifierException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2344905675282468305L;
+
+	public InvalidStageIdentifierException(String s)
     {
         super(s);
     }

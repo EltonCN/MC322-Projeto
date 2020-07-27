@@ -14,10 +14,6 @@ public class Obstacle extends HeroQuestEntity {
 		super(pose);
 		///@todo Auto-generated constructor stub
 	}
-	
-	@Override
-	public boolean isPermanent() {
-		return true;
-	}
+
 
 }

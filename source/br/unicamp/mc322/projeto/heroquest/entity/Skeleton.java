@@ -2,7 +2,7 @@ package br.unicamp.mc322.projeto.heroquest.entity;
 
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.heroquest.action.RandomChaseMovement;
-import br.unicamp.mc322.projeto.heroquest.action.SimpleAttack;
+import br.unicamp.mc322.projeto.heroquest.action.DiceAttack;
 import br.unicamp.mc322.projeto.heroquest.item.Weapon;
 
 public class Skeleton extends Enemy
@@ -17,7 +17,7 @@ public class Skeleton extends Enemy
     {
         super(pose, /*3, 2, 4*/1,1,1); // Balanceamento escolhido: focado em defesa
         basicMovement = new RandomChaseMovement();
-        basicAttack = new SimpleAttack(0, 1); //TODO @todo
+        basicAttack = new DiceAttack(0, 1); //TODO @todo
         equipWeapon(Weapon.getRandomWeapon());
     }
 

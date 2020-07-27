@@ -1,11 +1,12 @@
 <map id="Representação gráfica da hiearquia da classe" name="Representação gráfica da hiearquia da classe">
-<area shape="rect" id="node1" title=" " alt="" coords="5,177,85,203"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,209,85,235"/>
 <area shape="rect" id="node2" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action_failed_exception.html" title=" " alt="" coords="166,5,455,47"/>
 <area shape="rect" id="node3" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_invalid_movement_exception.html" title=" " alt="" coords="166,71,455,112"/>
-<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_entity_recipe_exception.html" title=" " alt="" coords="133,136,488,177"/>
-<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception.html" title=" " alt="" coords="133,201,488,243"/>
-<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_no_entity_exception.html" title=" " alt="" coords="133,267,488,308"/>
-<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_service_exception.html" title=" " alt="" coords="133,332,488,373"/>
-<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception.html" title=" " alt="" coords="536,299,891,340"/>
-<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_not_avaible_service_exception.html" title=" " alt="" coords="536,364,891,405"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception.html" title=" " alt="" coords="167,136,454,177"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_entity_recipe_exception.html" title=" " alt="" coords="133,201,488,243"/>
+<area shape="rect" id="node6" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_invalid_stage_identifier_exception.html" title=" " alt="" coords="133,267,488,308"/>
+<area shape="rect" id="node7" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_no_entity_exception.html" title=" " alt="" coords="133,332,488,373"/>
+<area shape="rect" id="node8" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_service_exception.html" title=" " alt="" coords="133,397,488,439"/>
+<area shape="rect" id="node9" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception.html" title=" " alt="" coords="536,364,891,405"/>
+<area shape="rect" id="node10" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_not_avaible_service_exception.html" title=" " alt="" coords="536,429,891,471"/>
 </map>

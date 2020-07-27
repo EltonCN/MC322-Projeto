@@ -1,5 +1,7 @@
 <map id="br.unicamp.mc322.projeto.heroquest.action.SimpleAttack" name="br.unicamp.mc322.projeto.heroquest.action.SimpleAttack">
-<area shape="rect" id="node1" title=" " alt="" coords="12,184,288,225"/>
-<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="12,95,288,136"/>
-<area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,5,295,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="667,39,943,80"/>
+<area shape="rect" id="node4" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_dice_attack.html" title=" " alt="" coords="991,5,1267,47"/>
+<area shape="rect" id="node5" href="$classbr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_unfailable_attack.html" title=" " alt="" coords="991,71,1267,112"/>
+<area shape="rect" id="node2" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1heroquest_1_1action_1_1_attack.html" title=" " alt="" coords="343,39,619,80"/>
+<area shape="rect" id="node3" href="$interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1action_1_1_action.html" title=" " alt="" coords="5,39,295,80"/>
 </map>

@@ -3,6 +3,7 @@ package br.unicamp.mc322.projeto.gameengine.service.imageoutput;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+
 import java.awt.Image;
 import java.awt.Toolkit;
 
@@ -16,8 +17,10 @@ import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
 import br.unicamp.mc322.projeto.gameengine.service.entitystore.EntityStoreService;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.resource.ImageResourceService;
+
 import br.unicamp.mc322.projeto.gameengine.service.resource.ResourceType;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
+import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 
 public class SpriteImageOutputService extends JPanel{
 
@@ -25,16 +28,17 @@ public class SpriteImageOutputService extends JPanel{
 	 * 
 	 */
 	private static final long serialVersionUID = -9215279814288548818L;
-	
 	private static final int gridSquareSize = 48;
 	//Sizes given in pixels in order to handle 48 pixels squared of grid/sprite dimension
 	private static final int horizontalSize = 16*gridSquareSize;
 	private static final int verticalSize = 9*gridSquareSize;
 	//The map will have proportion of 16:9
+
 	private static final int horizontalEdge = (WindowOutputService.horizontalDimension -horizontalSize)/2;
 	private static final int verticalEdge = (WindowOutputService.verticalDimension -verticalSize)/2;;
 
 	private Graphics g;
+
 	
 		
 	public SpriteImageOutputService() {
@@ -63,6 +67,7 @@ public class SpriteImageOutputService extends JPanel{
 		
 	}
 	
+
 	private void doDrawing(Graphics g, Entity toDraw) throws DisabledEntityException {
 		
 		Graphics2D g2d = (Graphics2D) g;
@@ -76,7 +81,7 @@ public class SpriteImageOutputService extends JPanel{
 			ImageResourceService s = (ImageResourceService) m.getService(ServiceType.RESOURCE);
 	        
 			SpriteExtrinsic se = (SpriteExtrinsic) s.getResource(ResourceType.IMAGE, toDraw.getClass(), 0);
-	        //AINDA É PRECISO DECIDIR SOBRE O USO DO INDEX, TALVEZ TENHA QUE HAVER 2 DELES
+	        //AINDA ï¿½ PRECISO DECIDIR SOBRE O USO DO INDEX, TALVEZ TENHA QUE HAVER 2 DELES
 			
 			
 			Image i;
@@ -103,7 +108,7 @@ public class SpriteImageOutputService extends JPanel{
 		
 	} 
 	
-	//FUNÇÃO QUE PEGA A LISTA DE ENTIDADES NA SALA
+	//FUNï¿½ï¿½O QUE PEGA A LISTA DE ENTIDADES NA SALA
 	private void requestEntities(Graphics g) {
 				
 		try {
@@ -158,6 +163,8 @@ public class SpriteImageOutputService extends JPanel{
 	void add(SpriteExtrinsic sprite, int angle) {
 		
 //		repaint();
+
+	
 		
 	}
 	

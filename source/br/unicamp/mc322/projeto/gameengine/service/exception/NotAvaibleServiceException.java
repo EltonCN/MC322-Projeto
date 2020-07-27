@@ -9,7 +9,12 @@ package br.unicamp.mc322.projeto.gameengine.service.exception;
  */
 public class NotAvaibleServiceException extends ServiceException
 {
-    public NotAvaibleServiceException(String s)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6604135569482582619L;
+
+	public NotAvaibleServiceException(String s)
     {
         super(s);
     }

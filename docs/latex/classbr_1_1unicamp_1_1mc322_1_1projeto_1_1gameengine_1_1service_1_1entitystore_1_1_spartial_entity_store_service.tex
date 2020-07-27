@@ -25,11 +25,11 @@ Diagrama de colaboração para br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+ser
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a0653116a1e0e6214f831118a016e6a6e}{end}} ()
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_aaa3c93921243be7c333154c64451c72e}{store}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)  throws Disabled\+Service\+Exception     
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_aaa3c93921243be7c333154c64451c72e}{store}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} entity)  throws Disabled\+Service\+Exception, Disabled\+Entity\+Exception     
 \item 
 \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a79656815c876477f764e5bf9a7d0373c}{get\+Range}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} origin, float radius, \mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric}{Metric}} metric)  throws Disabled\+Service\+Exception      
 \item 
-void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a863ef6faaad0c36eaa20839be2329a8d}{change\+Pose}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} origin, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a0653116a1e0e6214f831118a016e6a6e}{end}})  throws Disabled\+Service\+Exception, No\+Such\+Element\+Exception      
+void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a863ef6faaad0c36eaa20839be2329a8d}{change\+Pose}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} origin, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a0653116a1e0e6214f831118a016e6a6e}{end}})  throws Disabled\+Service\+Exception, No\+Such\+Element\+Exception, Disabled\+Entity\+Exception      
 \item 
 void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_ab7fb97ae2bca940d54a34af2c9d63cc6}{remove\+Entity}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} pose)  throws Disabled\+Service\+Exception     
 \item 
@@ -37,7 +37,7 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1se
 \item 
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a0adcdde7f476ca8f08956689a85c4df9}{count\+Entity}} ()  throws Disabled\+Service\+Exception 
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a61650f6491bee893658ca5a5d8d09f82}{get\+Entity}} (int index)
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_a61650f6491bee893658ca5a5d8d09f82}{get\+Entity}} (int index)  throws Disabled\+Entity\+Exception     
 \end{DoxyCompactItemize}
 \doxysubsection*{Membros privados}
 \begin{DoxyCompactItemize}
@@ -46,7 +46,7 @@ void \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1se
 \item 
 int \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_acd16de1c0fe0924f989eae07ab7c50fd}{get\+Index}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} pose)  throws No\+Such\+Element\+Exception 
 \item 
-\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_ad38a93dd26b050c9bc87caab3db237ae}{get\+Entity}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} pose)  throws No\+Such\+Element\+Exception     
+\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_ad38a93dd26b050c9bc87caab3db237ae}{get\+Entity}} (\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}} pose)  throws No\+Such\+Element\+Exception, Disabled\+Entity\+Exception     
 \end{DoxyCompactItemize}
 \doxysubsection*{Atributos Privados}
 \begin{DoxyCompactItemize}
@@ -55,6 +55,13 @@ boolean \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_
 \item 
 Linked\+List$<$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_spartial_entity_store_service_acb7766c6b2d7d7a721fe53d7deb4af78}{list}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Armazena as entidades considerando as poses
+
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000006}{Tarefa}}]homogenizar lançamento de exceções \char`\"{}\+Disable\+Entity\char`\"{} e \char`\"{}\+Disable\+Service\char`\"{} \end{DoxyRefDesc}
 
 
 \doxysubsection{Documentação dos Construtores \& Destrutor}
@@ -71,7 +78,7 @@ Construtor de \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameeng
 \index{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}!changePose@{changePose}}
 \index{changePose@{changePose}!br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}}
 \doxysubsubsection{\texorpdfstring{changePose()}{changePose()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+change\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{origin,  }\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{end }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}, No\+Such\+Element\+Exception}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+change\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{origin,  }\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{end }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}, No\+Such\+Element\+Exception, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation change\+Pose Altera a pose de alguma entidade
 
@@ -118,16 +125,10 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameen
 \index{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}!getEntity@{getEntity}}
 \index{getEntity@{getEntity}!br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}}
 \doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+get\+Entity (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+get\+Entity (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
-Retorna uma entidade pelo índice 
-\begin{DoxyParams}{Parâmetros}
-{\em index} & -\/ índice da entidade \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Retorna}
--\/ entidade correspondente ao índice 
-\end{DoxyReturn}
+\begin{DoxyRefDesc}{Tarefa}
+\item[\mbox{\hyperlink{todo__todo000008}{Tarefa}}]lançar exceção caso a entidade não exista \end{DoxyRefDesc}
 
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_entity_store_service_a3dcbdcf90e679583dbe46133ac0a01ba}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Entity\+Store\+Service}}.
@@ -136,7 +137,7 @@ Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameen
 \index{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}!getEntity@{getEntity}}
 \index{getEntity@{getEntity}!br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}}
 \doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+get\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption}) throws No\+Such\+Element\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+get\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{pose }\end{DoxyParamCaption}) throws No\+Such\+Element\+Exception, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}\hspace{0.3cm}{\ttfamily [private]}}
 
 Retorna a entidade em uma posa 
 \begin{DoxyParams}{Parâmetros}
@@ -167,7 +168,9 @@ Retorna o índice da entidade em uma pose
 {\footnotesize\ttfamily \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}} \mbox{[}$\,$\mbox{]} br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+get\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_pose}{Pose}}}]{origin,  }\item[{float}]{radius,  }\item[{\mbox{\hyperlink{enumbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1pose_1_1_metric}{Metric}}}]{metric }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
 
 \begin{DoxyRefDesc}{Tarefa}
-\item[\mbox{\hyperlink{todo__todo000005}{Tarefa}}]Otimizar para considerar a ordenação da lista \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000007}{Tarefa}}]Otimizar para considerar a ordenação da lista 
+
+Implementar melhor remoção dos elementos desabilitados \end{DoxyRefDesc}
 
 
 Implementa \mbox{\hyperlink{interfacebr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1entitystore_1_1_entity_store_service_a2f4beab3f272a9988773bd62082e23ac}{br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Entity\+Store\+Service}}.
@@ -216,7 +219,7 @@ Ordena a lista de entidades \mbox{\Hypertarget{classbr_1_1unicamp_1_1mc322_1_1pr
 \index{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}!store@{store}}
 \index{store@{store}!br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService@{br.unicamp.mc322.projeto.gameengine.service.entitystore.SpartialEntityStoreService}}
 \doxysubsubsection{\texorpdfstring{store()}{store()}}
-{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}}
+{\footnotesize\ttfamily void br.\+unicamp.\+mc322.\+projeto.\+gameengine.\+service.\+entitystore.\+Spartial\+Entity\+Store\+Service.\+store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_entity}{Entity}}}]{entity }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1service_1_1exception_1_1_disabled_service_exception}{Disabled\+Service\+Exception}}, \mbox{\hyperlink{classbr_1_1unicamp_1_1mc322_1_1projeto_1_1gameengine_1_1entity_1_1_disabled_entity_exception}{Disabled\+Entity\+Exception}}}
 
 Operation store Armazena uma entidade
 
