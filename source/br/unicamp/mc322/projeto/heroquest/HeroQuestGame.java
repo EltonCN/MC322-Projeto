@@ -22,19 +22,8 @@ import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.EntityPrototype;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
-import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
-import br.unicamp.mc322.projeto.heroquest.entity.Door;
-import br.unicamp.mc322.projeto.heroquest.entity.Dwarf;
-import br.unicamp.mc322.projeto.heroquest.entity.Elf;
-import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
-import br.unicamp.mc322.projeto.heroquest.entity.MagicSkeleton;
-import br.unicamp.mc322.projeto.heroquest.entity.SearchHotspot;
-import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
-import br.unicamp.mc322.projeto.heroquest.entity.Statue;
-import br.unicamp.mc322.projeto.heroquest.entity.Trap;
-import br.unicamp.mc322.projeto.heroquest.entity.Wall;
-import br.unicamp.mc322.projeto.heroquest.entity.Wizard;
-import br.unicamp.mc322.projeto.heroquest.item.Treasure;
+import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
+import br.unicamp.mc322.projeto.heroquest.entity.*;
 import br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService;
 
 /**
@@ -74,9 +63,10 @@ public class HeroQuestGame
         resource.setFile("ST", Statue.class, 0);
         resource.setFile("WW", Wall.class, 0);
         resource.setFile("DR", Door.class, 0);
-        resource.setFile("TR", Treasure.class, 0);
+        //resource.setFile("TR", Treasure.class, 0);
         resource.setFile("TP", Trap.class, 0);
         resource.setFile("SH", SearchHotspot.class, 0);
+        resource.setFile("  ", Player.class, 0);
 
         HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
 
@@ -116,7 +106,8 @@ public class HeroQuestGame
         try 
         {
         	choosePlayer(stageCreator); // Players na ordem alfabética de 1 a 4
-        	chooseStage(stageCreator); // 1 default 2 random
+        	//chooseStage(stageCreator); // 1 default 2 random
+            stageCreator.loadDefaultStage();
             while(true) {
                 runner.run();
                 Thread.currentThread().sleep(1500);

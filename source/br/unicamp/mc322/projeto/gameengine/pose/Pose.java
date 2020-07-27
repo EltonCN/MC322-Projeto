@@ -32,6 +32,8 @@ public class Pose
         this.x = 0;
         this.y = 0;
         this.angle = 0;
+
+        fixAngle();
     }
     /**
      * Operation Pose
@@ -46,6 +48,8 @@ public class Pose
         this.x = x;
         this.y = y;
         this.angle = 0;
+
+        fixAngle();
     }
     /**
      * Operation Pose
@@ -125,7 +129,7 @@ public class Pose
     /**
      * Operation equal
      * Compara pose com outra
-     *
+     * Não considera o ângulo
      * @param pose - A outra pose
      * @return boolean
      */
@@ -135,10 +139,6 @@ public class Pose
             return false;
         }
         if(this.y != pose.y)
-        {
-            return false;
-        }
-        if(this.angle != pose.angle)
         {
             return false;
         }
@@ -195,12 +195,13 @@ public class Pose
      */
     private void fixAngle (  )
     {
+
         while(angle > 360)
         {
             angle %= 360;
         }
 
-        while(angle < 360)
+        while(angle < 0)
         {
             angle += 360;
         }
