@@ -108,6 +108,30 @@ public class SpriteImageOutputService extends JPanel{
 		
 	} 
 	
+	private void doDrawing(Graphics g, SpriteExtrinsic se) {
+		
+		Graphics2D g2d = (Graphics2D) g;
+		
+		setGrid(g2d);
+		
+		
+		Image i;
+		if (se == null) 
+			{i = null;}
+		else 
+			{i = new ImageIcon(se.getSprite().getPath()).getImage();}
+					
+			
+		//This operation is made so the reference point shifts to
+		//the upper left corner of the grid and the map. Before that
+		//the reference was the lower left both map and grid.
+		int coordY = verticalEdge +verticalSize -((int) se.getPose().getY() +48);
+		int coordX = horizontalEdge +(int) se.getPose().getX();
+			
+		g2d.drawImage(i, coordX, coordY, this);
+			
+	}
+	
 	//FUN��O QUE PEGA A LISTA DE ENTIDADES NA SALA
 	private void requestEntities(Graphics g) {
 				
@@ -126,7 +150,6 @@ public class SpriteImageOutputService extends JPanel{
         	
         }
 	}
-	
 	
 	private void setGrid(Graphics2D g2d) {
 		g2d.setColor(Color.WHITE);
@@ -160,13 +183,12 @@ public class SpriteImageOutputService extends JPanel{
 		repaint();
 	}
 	
-	void add(SpriteExtrinsic sprite, int angle) {
+	void add(SpriteExtrinsic sprite) {
 		
-//		repaint();
-
-	
+		doDrawing(g, sprite);
 		
+		refreshMap();
+		repaint();
 	}
 	
-
 }

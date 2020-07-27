@@ -70,14 +70,13 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
 	private boolean hasEnded() {
 		return this.ended;
 	}
-	
-	
-	@Override //throws DisabledServiceException
-	public void addSprite(SpriteExtrinsic sprite, int angle) {
+		
+	@Override
+	public void addSprite(SpriteExtrinsic sprite) {		
 		if (hasEnded()) {}
 		else {
-			foreground.add(sprite, angle);
-		}
+			foreground.add(sprite);
+		}	
 	}
 	
 	@Override
