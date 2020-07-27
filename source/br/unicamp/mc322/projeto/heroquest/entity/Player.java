@@ -136,7 +136,7 @@ public abstract class Player extends Creature implements Curable, Looter
 			do {
 				char order = k.getUserInput();
 	        	
-				if (order == '1') 
+				if (order == '1') //attack
 				{
 	        		try {
 	        			attack();
@@ -146,12 +146,12 @@ public abstract class Player extends Creature implements Curable, Looter
 		       		choiseMade = true;
 		       	} 
 				
-				else if (order == '2') {
+				else if (order == '2') { //interact
 		       		interact();
 		       		choiseMade = true;
 		       	}
 				
-				else if (order == '3') {
+				else if (order == '3') { //magic
 					try {
 			       		((Caster) this).runMagics();
 			       		choiseMade = true;

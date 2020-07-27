@@ -14,8 +14,6 @@ import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeStageCr
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.Stage;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StagePrototype;
-import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
-import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
 import br.unicamp.mc322.projeto.heroquest.entity.Wall;
 
 /**
@@ -27,8 +25,10 @@ public class HeroQuestStageCreatorService extends PrototypeStageCreatorService
     /**
      * Tipo de cada estágio
      */
-    private StageType[] stageType;
-    private int enemyCounter;
+    @SuppressWarnings("unused")
+	private StageType[] stageType;
+    @SuppressWarnings("unused")
+	private int enemyCounter;
 
 
     /**

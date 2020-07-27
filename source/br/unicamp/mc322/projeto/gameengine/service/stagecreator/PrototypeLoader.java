@@ -8,6 +8,8 @@ import org.w3c.dom.NodeList;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceManager;
 import br.unicamp.mc322.projeto.gameengine.service.ServiceType;
+import br.unicamp.mc322.projeto.gameengine.service.exception.DisabledServiceException;
+import br.unicamp.mc322.projeto.gameengine.service.exception.NotAvaibleServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.exception.ServiceException;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
@@ -135,7 +137,12 @@ public class PrototypeLoader
         }
         catch(ClassNotFoundException e)
         {
-            ///@todo tratar exceções
+            try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "PrototypeLoades", "Há um problema: " + e);
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
             return null;
         }
 
@@ -252,7 +259,12 @@ public class PrototypeLoader
         }
         catch(ClassNotFoundException e)
         {
-            ///@todo tratar exceções
+            try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "PrototypeLoader", "Há um problema: " + e);
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
             return null;
         }
 
@@ -275,7 +287,12 @@ public class PrototypeLoader
         }
         catch(Exception e)
         {
-            ///@todo Tratar exceções
+        	try {
+				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
+				l.sendLog(LogType.STAGECREATOR, LogPriority.ERROR, "PrototypeLoader", "Há um problema: " + e);
+			} catch (NotAvaibleServiceException | DisabledServiceException e2) {
+				e2.printStackTrace();
+			}
             e.printStackTrace();
         }
 
