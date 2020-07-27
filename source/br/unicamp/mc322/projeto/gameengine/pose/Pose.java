@@ -125,7 +125,7 @@ public class Pose
     /**
      * Operation equal
      * Compara pose com outra
-     *
+     * Não considera o ângulo
      * @param pose - A outra pose
      * @return boolean
      */
@@ -135,10 +135,6 @@ public class Pose
             return false;
         }
         if(this.y != pose.y)
-        {
-            return false;
-        }
-        if(this.angle != pose.angle)
         {
             return false;
         }

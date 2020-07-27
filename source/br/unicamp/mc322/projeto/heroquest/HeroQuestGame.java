@@ -15,12 +15,7 @@ import br.unicamp.mc322.projeto.gameengine.service.log.TerminalLogService;
 import br.unicamp.mc322.projeto.gameengine.service.resource.StringImageResourceService;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.PrototypeLoader;
 import br.unicamp.mc322.projeto.gameengine.service.stagecreator.StageIdentifier;
-import br.unicamp.mc322.projeto.heroquest.entity.Barbarian;
-import br.unicamp.mc322.projeto.heroquest.entity.Door;
-import br.unicamp.mc322.projeto.heroquest.entity.Goblin;
-import br.unicamp.mc322.projeto.heroquest.entity.MagicSkeleton;
-import br.unicamp.mc322.projeto.heroquest.entity.Skeleton;
-import br.unicamp.mc322.projeto.heroquest.entity.Wall;
+import br.unicamp.mc322.projeto.heroquest.entity.*;
 import br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService;
 
 public class HeroQuestGame
@@ -49,6 +44,7 @@ public class HeroQuestGame
         resource.setFile("BR", Barbarian.class, 0);
         resource.setFile("WW", Wall.class, 0);
         resource.setFile("DR", Door.class, 0);
+        resource.setFile("  ", Player.class, 0);
 
         HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
 
@@ -86,7 +82,7 @@ public class HeroQuestGame
         
         try 
         {
-            stageCreator.loadRandomStage();
+            stageCreator.loadDefaultStage();
             while(true) {
                 runner.run();
                 Thread.currentThread().sleep(1500);
