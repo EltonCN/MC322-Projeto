@@ -39,7 +39,25 @@ public class HeroQuestGame
     {
         new HeroQuestGame();
     }
-
+    
+    private void setAllFiles(StringImageResourceService resource) {
+    	resource.setFile("SpriteSheet/EntitiesSprites/enemies/skeleton/south/idle.png", Skeleton.class, 0);
+        resource.setFile("SpriteSheet/EntitiesSprites/enemies/magic_skeleton/south/atack.png", MagicSkeleton.class, 0);
+        resource.setFile("SpriteSheet/EntitiesSprites/enemies/goblin/south/idle.png", Goblin.class, 0);
+        resource.setFile("SpriteSheet/EntitiesSprites/heroes/barbarian/south/idle.png", Barbarian.class, 0);
+        resource.setFile("SpriteSheet/EntitiesSprites/heroes/wizard/south/idle.png", Wizard.class, 0);
+        resource.setFile("SpriteSheet/EntitiesSprites/heroes/elf/south/idle.png", Elf.class, 0);
+        resource.setFile("SpriteSheet/EntitiesSprites/heroes/dwarf/south/idle.png", Dwarf.class, 0);
+        resource.setFile("SpriteSheet/ScenarioSprites/obstacles/water_font.png", Statue.class, 0);
+        resource.setFile("SpriteSheet/ScenarioSprites/ground/rocks.png", Wall.class, 0);
+        resource.setFile("SpriteSheet/ScenarioSprites/ground/gravel.png", Door.class, 0);
+        resource.setFile("SpriteSheet/ScenarioSprites/loot/closed_chest.png", Treasure.class, 0);
+        resource.setFile("SpriteSheet/ScenarioSprites/loot/opened_bag.png", Trap.class, 0);
+        resource.setFile("SpriteSheet/ItensSprites/consumable/potion.png", SearchHotspot.class, 0);
+        resource.setFile("SpriteSheet/notVisible.png", Player.class, 0);
+    	
+    }
+    
     /**
      * @todo Descobrir uma forma melhor para conseguir o path da pasta de estágios
      */
@@ -53,22 +71,10 @@ public class HeroQuestGame
         TurnGameRunnerService runner = new TurnGameRunnerService();
         StringImageResourceService resource = new StringImageResourceService();
 
-
-        resource.setFile("SK", Skeleton.class, 0);
-        resource.setFile("MG", MagicSkeleton.class, 0);
-        resource.setFile("GO", Goblin.class, 0);
-        resource.setFile("BR", Barbarian.class, 0);
-        resource.setFile("WI", Wizard.class, 0);
-        resource.setFile("EL", Elf.class, 0);
-        resource.setFile("DW", Dwarf.class, 0);
-        resource.setFile("ST", Statue.class, 0);
-        resource.setFile("WW", Wall.class, 0);
-        resource.setFile("DR", Door.class, 0);
-        resource.setFile("TR", Treasure.class, 0);
-        resource.setFile("TP", Trap.class, 0);
-        resource.setFile("SH", SearchHotspot.class, 0);
-        resource.setFile("  ", Player.class, 0);
-
+        //--------------------
+        setAllFiles(resource);
+        //--------------------
+        
         HeroQuestStageCreatorService stageCreator = new HeroQuestStageCreatorService();
 
         m.insertService(runner, ServiceType.GAMERUNNER);
