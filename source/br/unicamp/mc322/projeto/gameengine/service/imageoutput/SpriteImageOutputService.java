@@ -146,7 +146,7 @@ public class SpriteImageOutputService extends JPanel{
 		}
 		
 	}
-	
+	//uncharted territory
 	void refreshMap() {
 		Graphics g_aux = g.create();
 		
