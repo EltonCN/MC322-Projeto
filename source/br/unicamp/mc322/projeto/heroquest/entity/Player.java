@@ -38,7 +38,7 @@ public abstract class Player extends Creature implements Curable, Looter
 	 */
 	protected String name;
 
-	private static float visionAngle = 45;
+	private static float visionAngle = 30;
 
 	@SuppressWarnings("unused")
 	private float money;
@@ -229,6 +229,9 @@ public abstract class Player extends Creature implements Curable, Looter
 
 		super.draw();
 
+		if(false)
+			return;
+
 		DirectionArea visionArea = new DirectionArea(this.getPose(), 500, Metric.MANHATTAN, visionAngle);
 
 		Entity[] inside = visionArea.getEntitiesInside();
@@ -237,6 +240,11 @@ public abstract class Player extends Creature implements Curable, Looter
 
 		for(Entity e: inside)
 		{
+			if(e.equals(this))
+			{
+				continue;
+			}
+
 			try
 			{
 				HeroQuestEntity blocker = (HeroQuestEntity) e;
@@ -246,7 +254,7 @@ public abstract class Player extends Creature implements Curable, Looter
 					float angle = blocker.getPose().minus(this.getPose()).getAngle();
 					Pose regionPose = blocker.getPose().move(0, 0,  angle);
 
-					blockedRegion.add(new DirectionArea(regionPose, 500, Metric.MANHATTAN, visionAngle));
+					blockedRegion.add(new DirectionArea(getPose(), 500, Metric.MANHATTAN, visionAngle));
 				}
 			}
 			catch(ClassCastException ex) 
@@ -266,9 +274,19 @@ public abstract class Player extends Creature implements Curable, Looter
 
 				Pose squareCenter = new Pose(i*Movement.xStepSize,j*Movement.yStepSize,0);
 
+				if(this.getPose().equal(squareCenter))
+				{
+					continue;
+				}
+
 				if(visionArea.isInside(squareCenter) == false)
 				{
-					//continue;
+					if(visualized[i][j] == false)
+					{
+						drawBlockedArea(squareCenter);
+					}
+
+					continue;
 				}
 
 				boolean isBlocked = false;
@@ -286,14 +304,8 @@ public abstract class Player extends Creature implements Curable, Looter
 					visualized[i][j] = true;
 				}
 
-				if(visualized[i][j] == false)
-				{
-					drawBlockedArea(squareCenter);
-				}
 			}
 		}
-
-		System.out.println();
 
 	}
 
