@@ -107,8 +107,7 @@ public class HeroQuestGame
         try
         {
         	choosePlayer(stageCreator); // Players na ordem alfabética de 1 a 4
-        	//chooseStage(stageCreator); // 1 default 2 random
-            stageCreator.loadDefaultStage();
+        	chooseStage(stageCreator); // 1 default 2 random
             while(true) {
                 runner.run();
                 Thread.currentThread().sleep(1500);
