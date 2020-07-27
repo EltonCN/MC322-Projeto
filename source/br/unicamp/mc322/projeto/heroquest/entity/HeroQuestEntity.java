@@ -49,10 +49,10 @@ public abstract class HeroQuestEntity extends Entity implements PrototypableEnti
      * Operation toggleObstructor
      * Alterna a propriedade de obstruir luz da entidade
      *
-     * @param visibility -
+     * @param visibility - Indica se a entidade deve obstruir luz
      */
-    public void toggleObstructor(boolean visibility) {
-        this.obstructor = visibility;
+    public void toggleObstructor(boolean obstructor) {
+        this.obstructor = obstructor;
     }
     
     protected void addItemToInventory(Item item) {
@@ -78,6 +78,11 @@ public abstract class HeroQuestEntity extends Entity implements PrototypableEnti
     @Override
 	public EntityPrototype createPrototype() {
 		return new EntityPrototype(getClass(), getPose());
-	}
+    }
+    
+    public boolean blocksLight()
+    {
+        return this.obstructor;
+    }
 }
 
