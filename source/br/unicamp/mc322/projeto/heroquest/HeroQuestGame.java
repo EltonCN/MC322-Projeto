@@ -27,7 +27,7 @@ import br.unicamp.mc322.projeto.heroquest.entity.*;
 import br.unicamp.mc322.projeto.heroquest.service.HeroQuestStageCreatorService;
 
 /**
- * 
+ *
  * Método que inicia o jogo
  * É altamente recomendável que a wiki/documentação seja lida antes de ler/executar o código
  *
@@ -81,7 +81,7 @@ public class HeroQuestGame
         m.insertService(resource, ServiceType.RESOURCE);
         m.insertService(new StringImageOutputService(), ServiceType.IMAGEOUTPUT);
 
-        
+
         URL url=null;
         try
         {
@@ -91,7 +91,7 @@ public class HeroQuestGame
         {
 
         }
-        
+
         String path = url.getPath();
 
         path = path.substring(0, path.length() - 48);
@@ -100,10 +100,10 @@ public class HeroQuestGame
 
         @SuppressWarnings("unused")
 		PrototypeLoader loader = new PrototypeLoader(stagePath);
-        
 
-        
-        try 
+
+
+        try
         {
         	choosePlayer(stageCreator); // Players na ordem alfabética de 1 a 4
         	//chooseStage(stageCreator); // 1 default 2 random
@@ -127,28 +127,28 @@ public class HeroQuestGame
            e.printStackTrace();
         }
     }
-    
+
     private void chooseStage(HeroQuestStageCreatorService h) {
     	try {
 			KeyInputService k = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
-			
+
 			boolean loadedStage = false;
 			do {
 				char order = k.getUserInput();
-				
+
 				if (order == '1') {
 					h.loadDefaultStage();
 					loadedStage = true;
 				}
-				
+
 				else if (order == '2') {
 					h.loadRandomStage();
 					loadedStage = true;
 				}
 			} while(!loadedStage);
-			
-			
-			
+
+
+
 		} catch (NotAvaibleServiceException | DisabledServiceException e) {
 			try {
 				LogService l = (LogService) ServiceManager.getInstance().getService(ServiceType.LOG);
@@ -157,39 +157,39 @@ public class HeroQuestGame
 				e2.printStackTrace();
 			}
 		}
-    	
+
     }
-    
+
     private void choosePlayer(HeroQuestStageCreatorService h) {
-    	
+
 			KeyInputService k;
-			
+
 			try {
 				k = (KeyInputService) ServiceManager.getInstance().getService(ServiceType.KEYINPUT);
-				
+
 				boolean loadedPlayer = false;
-				do { 
+				do {
 					char order = k.getUserInput();
 					if (order == '1') {
 						getPlayer(Barbarian.class);
 						loadedPlayer = true;
 					}
-					
+
 					else if (order == '2') {
 						getPlayer(Dwarf.class);
 						loadedPlayer = true;
 					}
-					
+
 					else if (order == '3') {
 						getPlayer(Elf.class);
 						loadedPlayer = true;
 					}
-					
+
 					else if (order == '4') {
 						getPlayer(Wizard.class);
 						loadedPlayer = true;
 					}
-					
+
 					} while(!loadedPlayer);
 			} catch (NotAvaibleServiceException | DisabledServiceException | DisabledEntityException | EntityRecipeException e) {
 				try {
@@ -199,21 +199,21 @@ public class HeroQuestGame
 					e2.printStackTrace();
 				}
 			}
-			
-			
 
-			
+
+
+
     }
-    
+
     private void getPlayer(Class<?> c) throws NotAvaibleServiceException, DisabledServiceException, DisabledEntityException, EntityRecipeException {
     	EntityStoreService e;
 		e = (EntityStoreService) ServiceManager.getInstance().getService(ServiceType.ENTITYSTORE);
 
-    	
-    
+
+
     	Object[] args = {};
     	e.store(new EntityPrototype(c, 1, 1, 0, args).instantiateEntity());
     }
-    
-    
+
+
 }
