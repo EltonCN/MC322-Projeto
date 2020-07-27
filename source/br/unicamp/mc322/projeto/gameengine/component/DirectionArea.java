@@ -37,7 +37,7 @@ public class DirectionArea extends EntityRangeArea
 
         for(Entity e : all)
         {
-            float angle = e.getPose().minus(this.origin).getAngle();
+            float angle = e.getPose().minus(this.origin).vectorAngle();
 
             if(angle<maxAngle && angle>minAngle)
             {
@@ -60,7 +60,7 @@ public class DirectionArea extends EntityRangeArea
         }
 
 
-         float angle = pose.minus(this.origin).getAngle();
+        float angle = pose.minus(this.origin).vectorAngle();
 
         if(angle<maxAngle && angle>minAngle)
         {

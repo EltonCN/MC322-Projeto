@@ -11,6 +11,7 @@ import br.unicamp.mc322.projeto.gameengine.service.log.LogPriority;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogService;
 import br.unicamp.mc322.projeto.gameengine.service.log.LogType;
 import br.unicamp.mc322.projeto.gameengine.sprite.SpriteExtrinsic;
+import br.unicamp.mc322.projeto.gameengine.sprite.SpritePriority;
 import br.unicamp.mc322.projeto.gameengine.sprite.StringSprite;
 
 /**
@@ -95,7 +96,7 @@ public class StringImageOutputService implements ImageOutputService
 
     }
 
-    @Override
+    
     /**
      * @TODO lançar exceção para Sprite fora da tela
      * @TODO lançar exceção para Sprite que não seja string
@@ -127,6 +128,10 @@ public class StringImageOutputService implements ImageOutputService
         try {
 	        if(frame[xPosition][yPosition] != null )
 	        {
+                if(extrinsic.getSpritePriority() == SpritePriority.HIGH)
+                {
+
+                }
 	            if(frame[xPosition][yPosition].getSpritePriority().ordinal() > extrinsic.getSpritePriority().ordinal())
 	            {
 	                return;
@@ -145,15 +150,19 @@ public class StringImageOutputService implements ImageOutputService
 
     }
 
-    @Override
     public int getXSize() 
     {
         return xSize;
     }
 
-    @Override
     public int getYSize() {
         return ySize;
     }
+
+	@Override
+	public void addSprite(SpriteExtrinsic sprite, int angle) throws DisabledServiceException {
+		addSprite(sprite);
+		
+	}
     
 }
