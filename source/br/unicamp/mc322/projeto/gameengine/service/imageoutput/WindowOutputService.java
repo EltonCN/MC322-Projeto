@@ -57,7 +57,7 @@ public class WindowOutputService extends JFrame implements ImageOutputService{
 	}
 	private void setBackground() {
 		//NECESSARIO SABER SE É SALA OU CORREDOR
-		background = new JLabel(new ImageIcon("SpriteSheet/background.png"));
+		background = new JLabel(new ImageIcon("PATH_TO_BACKGROUND_IMAGE"));
 		background.setLayout(new FlowLayout());
 		
 	}
