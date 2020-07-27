@@ -6,6 +6,9 @@ import br.unicamp.mc322.projeto.gameengine.entity.Entity;
 import br.unicamp.mc322.projeto.gameengine.pose.Metric;
 import br.unicamp.mc322.projeto.gameengine.pose.Pose;
 
+/**
+ * Área setor circular
+ */
 public class DirectionArea extends EntityRangeArea 
 {
     float opening;
@@ -44,5 +47,26 @@ public class DirectionArea extends EntityRangeArea
         }
 
         return result.toArray(new Entity[result.size()]);
+    }
+
+    /**
+     * Verifica se uma pose está dentro da área
+     */
+    public boolean isInside (Pose pose)
+    {
+        if(super.isInside(pose) == false)
+        {
+            return false;
+        }
+
+
+         float angle = pose.minus(this.origin).getAngle();
+
+        if(angle<maxAngle && angle>minAngle)
+        {
+            return true;
+        }
+
+        return false;
     }
 }

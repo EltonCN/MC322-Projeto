@@ -51,7 +51,8 @@ public class Area
      * @param pose - Pose a ser verificada
      * @return boolean
      */
-    public boolean isInside (Pose pose) { // Checks if a Pose is inside a round OR square circle
+    public boolean isInside (Pose pose) 
+    { 
         if (origin.distance(pose, metric) <= range) {
             return true;
         }

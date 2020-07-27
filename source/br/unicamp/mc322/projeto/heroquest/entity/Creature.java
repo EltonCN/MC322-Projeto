@@ -100,6 +100,7 @@ public abstract class Creature extends HeroQuestEntity implements RunnableTurn, 
         turn = false;
         equippedWeapons = new Weapon[2];
 
+        toggleObstructor(true);
     }
 
     /**
